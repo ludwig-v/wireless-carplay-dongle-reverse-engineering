@@ -1,0 +1,118 @@
+#B=\Mirrorlink\iLink_public\images\;
+#Z=\win8\common\;
+#R=\Riddle\;
+uipath="./";
+
+[APP(CWndManage)]animate=0;[/]
+
+[APP:AutoPlay(CBox_MainWnd)]classname=AutoPlay;descx=full;descy=full;z-order=TOP;hide=1;[/]
+	[::s(CColorbutton)]color=<0,0,0>;cx=full;cy=full;[/]
+	[::s(CMoveColor)]z=10;color=<0,0,0>;cx=1;cy=1;[/]
+	[::version(CTxt)]z=30;desy=(480-74-30)*full/480;cx=full-10;cy=full*30/480;txtsize=16;txtpos=2|4;[/]
+
+	[App:alwaysOnTopWnd(CVirManageApp)]parent=AutoPlay;descx=full;descy=full-74*full/480;z=30;[/]
+		[::showtip(CTxt)]z=30;txtcolor=<0xff,0,0>;desy=center;cx=full;cy=full*50/480;txtsize=full*48/800; txt="";hide=1;[/]
+		[::showtipbkg(CColorbutton)]color=<0x90,0x90,0x90>;desy=center;cx=full;cy=full*70/480;hide=1;[/]
+		[::debuginfo(CTxt)]z=30;cx=full;cy=full*30/480;txtsize=full*20/800; txt="";[/]
+
+	[App:Theme0_PageWnd_Unreg(Theme0_PageWnd_UnReg)]parent=AutoPlay;descx=full;descy=full-74*full/480;z=3;[/]
+		[::s(Theme0_RegResult_CTXT)]txtcolor=<0xff,0xff,0xff>;italic=1;bold=2;desy=center;cx=full;cy=47*full/480;txtsize=40*full/800;z=2;[/]
+		[App:Theme0_PageWnd_UnReg_Waiting(Theme0_PageWnd_UnReg_Waiting)]parent=Theme0_PageWnd_Unreg;descx=full;descy=full-74*full/480;z=3;[/]
+			[::s(CBmpbutton)]bmp=%R%weburl.png;desx=center;desy=center;z=10;[/]
+			[::theme0unregwifiinfo(CTxt)]txtcolor=<0xff,0xff,0xff>;italic=1;bold=2;desy=(480-74-30*3)*full/480;cx=full;cy=30*full/480;txtsize=23*full/800;[/]
+			[::s(CTxt)]txtcolor=<0x37,0xd5,0x93>;bold=2;desy=(480-74-30*2)*full/480;cx=full;cy=30*full/480;txtsize=23*full/800; langid=1018;[/]
+	
+	[App:Theme0_PageWnd_HardwareFail(Theme0_PageWnd_HardWareFail)]parent=AutoPlay;descx=full;descy=full-74*full/480;z=3;[/]
+		[::s(Theme0_HardwareFail_CTXT)]txtcolor=<0xff,0x0,0x0>;italic=1;bold=2;desy=center;cx=full;cy=47*full/480;txtsize=40*full/800;langid=1019;z=2;[/]
+
+	[App:Theme0_PageWnd_Wait0(Theme0_PageWnd_Wait)]parent=AutoPlay;descx=full;descy=full;z=3;[/]
+		[::tip0(CTxt)]txtcolor=<0x37,0xd5,0x93>;bold=2;desy=60*full/480;cx=full;cy=30*full/480;txtsize=23*full/800; langid=1002;[/]
+		[::mybtname(Theme0_BTNameTxt)]txtcolor=<0xff,0xff,0xff>;bold=2;italic=1; desy=122*full/480;cx=full;cy=39*full/480;txtsize=32*full/800; txt="...";[/]
+		[::tip1(CTxt)]txtcolor=<0x37,0xd5,0x93>;bold=2;desy=190*full/480;cx=full;cy=30*full/480;txtsize=23*full/800; langid=1008;[/]
+		[::s(CBmpbutton)]bmp=%R%usbintro.png;desx=center;desy=240*full/480;[/]
+			
+	[App:Theme0_PageWnd_Wait1(Theme0_PageWnd_Wait_Select)]parent=AutoPlay;descx=full;descy=full;z=3;[/]
+		[::tip0(CTxt)]txtcolor=<0x37,0xd5,0x93>;bold=2;desy=66*full/480;cx=full/2;cy=30*full/480;txtsize=23*full/800; langid=1002;[/]
+		[::mybtname(Theme0_BTNameTxt)]txtcolor=<0xff,0xff,0xff>;bold=2;italic=1; desy=120*full/480;cx=full/2;cy=39*full/480;txtsize=32*full/800; txt="...";[/]
+		[::tip1(CTxt)]txtcolor=<0x37,0xd5,0x93>;bold=2;desy=186*full/480;cx=full/2;cy=30*full/480;txtsize=23*full/800; langid=1008;[/]
+		[::s(CBmpbutton)]bmp=%R%usbintro.png;desx=111*full/800;desy=240*full/480;[/]
+		[::tip2(CTxt)]txtcolor=<0x37,0xd5,0x93>;bold=2;desx=full/2;desy=62*full/480;cx=full/2;cy=30*full/480;txtsize=23*full/800; langid=1001;[/]
+		[::list(Theme0_PageWnd_WireLessDeviceBondList)]knobwork=1;radmove=0;rows=3;drawboard=0;drawrawbkg=0;focuscolor=<0x37,0xd5,0x93>;linebar=%R%linebar.png;desx=full/2+ (full/2-(340*full/800))/2 ;desy=109*full/480;cx=340*full/800;cy=274*full/480;id=x;[/]
+			
+	[App:Theme0_PageWnd_Search(Theme0_PageWnd_Search)]parent=AutoPlay;descx=full;descy=full;z=3;[/]
+		[::tip(CTxt)]txtcolor=<0x37,0xd5,0x93>;bold=2;desy=62*full/480;cx=full;cy=30*full/480;txtsize=28*full/800; langid=1003;[/]
+		[::s(CBmpbutton)]bmp=%R%btintro_cn.png;desx=center;desy=full*124/480;z=10;[/]
+	
+	[App:Theme0_PageWnd_SearchFound(Theme0_PageWnd_SearchFound)]parent=AutoPlay;descx=full;descy=full;z=3;[/]	
+		[::tip(CTxt)]txtcolor=<0x37,0xd5,0x93>;bold=2;desy=62*full/480;cx=full;cy=30*full/480;txtsize=28*full/800; langid=1009;[/]
+		[::list(Theme0_PageWnd_WireLessDeviceFoundList)]knobwork=1;radmove=0;rows=3;drawboard=0;drawrawbkg=0;focuscolor=<0x37,0xd5,0x93>;linebar=%R%linebar.png;desx=center;desy=109*full/480;cx=400*full/800;cy=274*full/480;id=x;[/]
+	
+	[App:Theme0_PageWnd_Linking(Theme0_PageWnd_Linking)]parent=AutoPlay;descx=full;descy=full;z=3;[/]
+		[::s(Theme0_LinkingTypeIntro)]txtcolor=<0xff,0xff,0xff>;italic=1;bold=2;desy=(480/2-47)*full/(2*480);cx=full;cy=47*full/480;txtsize=32*full/800;z=2;[/]
+		[::s(Theme0_LinkingIntro)]txtcolor=<0xff,0xff,0xff>;italic=1;bold=2;desy=center;cx=full;cy=47*full/480;txtsize=40*full/800;z=2;[/]
+		[::s(Theme0_LinkingTipAction)][/]
+
+	[App:Theme0_PageWnd_Update(Theme0_PageWnd_UpdateWnd)]parent=AutoPlay;descx=full;descy=full;z=3;[/]
+		[::s(Theme0_UpdateIntro)]txtcolor=<0xff,0xff,0xff>;italic=1;bold=2;desy=center;cx=full;cy=47*full/480;txtsize=40*full/800;z=2;[/]
+
+	[App:Theme0_PageWnd_ForgetDeviceWnd(Theme0_PageWnd_ForgetDeviceWnd)]parent=AutoPlay;descx=full;descy=full;z=3;[/]
+		[::s(Theme0_LinkingIntro)]txtcolor=<0xff,0xff,0xff>;italic=1;bold=2;desy=center;cx=full;cy=47*full/480;txtsize=40*full/800;z=2;[/]
+		
+	[App:Theme0_TipWnd(Theme0_TipWnd)]parent=AutoPlay;desy=full-(74*full/480);descx=full;descy=42*full/480;z=4;[/]
+		[::s(CColorbutton)]z=1;color=<0x17,0x61,0x87>;alpha=200;cx=full;cy=full;[/]
+		[::s(Theme0_TipWnd_TipTxt)]z=2;txtcolor=<0xff,0xff,0xff>;cx=full;cy=full;txtsize=26*full/800;[/]
+		
+	[App:DownControlWnd(CVirManageApp)]parent=AutoPlay;desy=down;descx=full;descy=74*full/480;z=5;[/]
+		[::highlight(CColorbutton)]color=<0x77,0x77,0x77>;cx=full;cy=1;desy=1;z=2;[/]
+		[::bkg(CColorbutton)]color=<0x44,0x44,0x44>;cx=full;cy=74*full/480;desy=2;[/]
+		[::s(Theme0_Home)]z=2;knobwork=1;
+			bmp=%R%home.png;
+			desx=left;desy=center;id=x;[/]
+		[::s(Theme0_SearchButton)]z=2;knobwork=1;
+			lbmp=%R%dbutleft.png;lbmp=%R%dbutleftp.png;
+			mbmp=%R%dbutmid.png;mbmp=%R%dbutmidp.png;
+			rbmp=%R%dbutright.png;rbmp=%R%dbutrightp.png;
+			desx=center;desy=down;langid=1000;txtsize=26*full/800;id=x;hide=1;[/]
+		[::s(Theme0_SearchCancelButton)]z=2;knobwork=1;
+			lbmp=%R%dbutleft.png;lbmp=%R%dbutleftp.png;
+			mbmp=%R%dbutmid.png;mbmp=%R%dbutmidp.png;
+			rbmp=%R%dbutright.png;rbmp=%R%dbutrightp.png;
+			desx=center;desy=down;langid=1006;txtsize=26*full/800;id=x;hide=1;[/]
+		[::s(Theme0_LinkCancelButton)]z=2;knobwork=1;
+			lbmp=%R%dbutleft.png;lbmp=%R%dbutleftp.png;
+			mbmp=%R%dbutmid.png;mbmp=%R%dbutmidp.png;
+			rbmp=%R%dbutright.png;rbmp=%R%dbutrightp.png;
+			desx=center;desy=down;langid=1006;txtsize=26*full/800;id=x;hide=1;[/]
+		[::s(Theme0_RebootButton)]z=2;knobwork=1;
+			lbmp=%R%dbutleft.png;lbmp=%R%dbutleftp.png;
+			mbmp=%R%dbutmid.png;mbmp=%R%dbutmidp.png;
+			rbmp=%R%dbutright.png;rbmp=%R%dbutrightp.png;
+			desx=center;desy=down;langid=1017;txtsize=26*full/800;id=x;hide=1;[/]
+		[::s(Theme0_LangSwitchButton)]z=2;knobwork=1;
+			bmp=%R%Language.png;
+			desx=right;desy=center;id=x;[/]
+		
+		[App:fsl(CVirManageApp)]parent=DownControlWnd;descx=full/2;descy=74*full/480;z=5;[/]
+			[::s(Theme0_ForgetDeviceOK)]z=2;knobwork=1;
+				lbmp=%R%dbutleft.png;lbmp=%R%dbutleftp.png;
+				mbmp=%R%dbutmid.png;mbmp=%R%dbutmidp.png;
+				rbmp=%R%dbutright.png;rbmp=%R%dbutrightp.png;
+				desx=center;desy=down;langid=1012;txtsize=26*full/800;id=x;hide=1;[/]
+
+		[App:fsr(CVirManageApp)]parent=DownControlWnd;desx=full/2;descx=full/2;descy=74*full/480;z=5;[/]
+			[::s(Theme0_ForgetDeviceCancel)]z=2;knobwork=1;
+				lbmp=%R%dbutleft.png;lbmp=%R%dbutleftp.png;
+				mbmp=%R%dbutmid.png;mbmp=%R%dbutmidp.png;
+				rbmp=%R%dbutright.png;rbmp=%R%dbutrightp.png;
+				desx=center;desy=down;langid=1006;txtsize=26*full/800;id=x;hide=1;[/]
+		
+		
+		
+		//[::s(CBmpbutton)]bmp=%R%test.png;z=100;[/]
+	//[::s(CTxtButton)]bmp=%B%backPop.png;bmp=%B%backPress.png;bpushup=1;desx=30*full/1024;desy=20*full/600;z=20;id=x;[/]
+	//[::s(CAndroidMirrorTypeToggler)]cnt=2;cx=194;id=x;bkgl=%Z%dl.png;bkgm=%Z%dm.png;bkgr=%Z%dr.png;bmpl=%Z%sl.png;bmpm=%Z%sm.png;bmpr=%Z%sr.png;
+	//				desx=center;desy=center;txt="AndroidAuto";txt="CarLife";z=10;[/] 
+	bmp=%R%listup0.png;
+	bmp=%R%listup1.png;
+	bmp=%R%listdown0.png;
+	bmp=%R%listdown1.png;
