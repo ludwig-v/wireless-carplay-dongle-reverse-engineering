@@ -1,0 +1,1581 @@
+Save last log when reboot
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                10.0M      8.8M      1.2M  88% /
+devtmpfs                 43.2M         0     43.2M   0% /dev
+tmpfs                    59.3M      7.4M     51.9M  12% /tmp
+/dev/sda1                14.9G      9.7M     14.9G   0% /mnt/UPAN
+MemTotal:         121380 kB
+MemFree:           50948 kB
+MemAvailable:      62688 kB
+Buffers:            7644 kB
+Cached:            14156 kB
+SwapCached:            0 kB
+Active:            48764 kB
+Inactive:          10900 kB
+Active(anon):      38864 kB
+Inactive(anon):     6588 kB
+Active(file):       9900 kB
+Inactive(file):     4312 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:             0 kB
+HighFree:              0 kB
+LowTotal:         121380 kB
+LowFree:           50948 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         37892 kB
+Mapped:             2676 kB
+Shmem:              7572 kB
+Slab:               6576 kB
+SReclaimable:       2528 kB
+SUnreclaim:         4048 kB
+KernelStack:         672 kB
+PageTables:          596 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:       60688 kB
+Committed_AS:     291448 kB
+VmallocTotal:    1941504 kB
+VmallocUsed:        8528 kB
+VmallocChunk:    1694472 kB
+S   UID   PID  PPID   VSZ   RSS TTY   STIME TIME     CMD
+S     0     1     0  2168   392 0:0   23:59 00:00:01 init
+S     0     2     0     0     0 0:0   23:59 00:00:00 [kthreadd]
+S     0     3     2     0     0 0:0   23:59 00:00:00 [ksoftirqd/0]
+S     0     4     2     0     0 0:0   23:59 00:00:00 [kworker/0:0]
+S     0     5     2     0     0 0:0   23:59 00:00:00 [kworker/0:0H]
+S     0     6     2     0     0 0:0   23:59 00:00:00 [kworker/u2:0]
+S     0     7     2     0     0 0:0   23:59 00:00:00 [rcu_preempt]
+S     0     8     2     0     0 0:0   23:59 00:00:00 [rcu_sched]
+S     0     9     2     0     0 0:0   23:59 00:00:00 [rcu_bh]
+S     0    10     2     0     0 0:0   23:59 00:00:00 [migration/0]
+S     0    11     2     0     0 0:0   23:59 00:00:00 [khelper]
+S     0    12     2     0     0 0:0   23:59 00:00:00 [kdevtmpfs]
+S     0    13     2     0     0 0:0   23:59 00:00:00 [writeback]
+S     0    14     2     0     0 0:0   23:59 00:00:00 [bioset]
+S     0    15     2     0     0 0:0   23:59 00:00:00 [crypto]
+S     0    16     2     0     0 0:0   23:59 00:00:00 [kblockd]
+S     0    17     2     0     0 0:0   23:59 00:00:00 [ata_sff]
+S     0    18     2     0     0 0:0   23:59 00:00:00 [khubd]
+S     0    19     2     0     0 0:0   23:59 00:00:00 [kworker/u2:1]
+S     0    26     2     0     0 0:0   23:59 00:00:00 [kworker/0:1]
+S     0    27     2     0     0 0:0   23:59 00:00:00 [cfg80211]
+S     0    28     2     0     0 0:0   23:59 00:00:00 [cfinteractive]
+S     0    29     2     0     0 0:0   23:59 00:00:00 [kswapd0]
+S     0    30     2     0     0 0:0   23:59 00:00:00 [fsnotify_mark]
+S     0    39     2     0     0 0:0   23:59 00:00:00 [spi32766]
+S     0    42     2     0     0 0:0   23:59 00:00:00 [ci_otg]
+S     0    43     2     0     0 0:0   23:59 00:00:00 [ci_otg]
+S     0    44     2     0     0 0:0   23:59 00:00:00 [kworker/u2:2]
+S     0    45     2     0     0 0:0   23:59 00:00:00 [btfwwork]
+S     0    46     2     0     0 0:0   23:59 00:00:00 [kworker/u2:3]
+S     0    47     2     0     0 0:0   23:59 00:00:00 [ipv6_addrconf]
+S     0    48     2     0     0 0:0   23:59 00:00:00 [krfcommd]
+S     0    49     2     0     0 0:0   23:59 00:00:00 [deferwq]
+S     0    50     2     0     0 0:0   23:59 00:00:00 [irq/81-imx_ther]
+S     0    51     2     0     0 0:0   23:59 00:00:05 [ksdioirqd/mmc0]
+S     0    52     2     0     0 0:0   23:59 00:00:00 [jffs2_gcd_mtd2]
+S     0    63     1  2168    40 0:0   23:59 00:00:00 init
+S     0    77     1  146m 30764 0:0   23:59 00:00:56 ./fakeiOSDevice
+S     0    87     1  2748  1252 0:0   00:00 00:00:00 mdnsd
+S     0    98     2     0     0 0:0   00:00 00:00:00 [kworker/0:2]
+S     0   102     1  2236   540 0:0   00:00 00:00:00 boa
+S     0   134     2     0     0 0:0   00:00 00:00:00 [kworker/u3:0]
+S     0   135     2     0     0 0:0   00:00 00:00:00 [hci0]
+S     0   136     2     0     0 0:0   00:00 00:00:00 [hci0]
+S     0   139     2     0     0 0:0   00:00 00:00:00 [kworker/u3:1]
+S     0   141     2     0     0 0:0   00:00 00:00:00 [kworker/u3:2]
+S     0   142     1  1900   196 0:0   00:00 00:00:00 rtk_hciattach -s 115200 t
+S     0   163     1  9680  3844 0:0   00:00 00:00:00 /tmp/ARMadb-driver
+S     0   171   163 36984  4496 0:0   00:00 00:00:08 /tmp/ARMadb-driver
+S     0   172   163 19348  4104 0:0   00:00 00:00:00 /tmp/ARMadb-driver
+S     0   200     1 26144  4224 0:0   00:00 00:00:00 bluetoothDaemon -n
+D     0   251     2     0     0 0:0   00:00 00:00:01 [RTW_XMIT_THREAD]
+D     0   252     2     0     0 0:0   00:00 00:00:05 [RTW_RECV_THREAD]
+D     0   253     2     0     0 0:0   00:00 00:00:02 [RTW_CMD_THREAD]
+S     0   254     1  4348  1604 0:0   00:00 00:00:00 dbus-daemon --system --pr
+D     0   256     2     0     0 0:0   00:00 00:00:01 [RTWHALXT]
+S     0   287     1  2352   756 0:0   00:00 00:00:00 hostapd /etc/hostapd.conf
+S     0   294     1  2168   252 0:0   00:00 00:00:00 udhcpd
+S     0   627     2     0     0 0:0   00:03 00:00:00 [scsi_eh_0]
+S     0   628     2     0     0 0:0   00:03 00:00:00 [scsi_tmf_0]
+S     0   629     2     0     0 0:0   00:03 00:00:00 [usb-storage]
+S     0   655     2     0     0 0:0   00:03 00:00:00 [kworker/0:1H]
+S     0  1263     1  2168   260 0:0   00:03 00:00:00 /bin/sh /script/after_shu
+R     0  1276  1263  2172   260 0:0   00:03 00:00:00 ps -l
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 3.14.52+g94d07bb (haiguangyin@ubuntu) (gcc version 5.4.0 20160609 (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.9) ) #69 SMP PREEMPT Fri Jun 26 14:43:25 CST 2020
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: Freescale i.MX6 UltraLite 14x14 EVK Board
+[    0.000000] cma: CMA: reserved 32 MiB at 84000000
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 32768
+[    0.000000] free_area_init_node: node 0, pgdat 807fba80, node_mem_map 87ee7000
+[    0.000000]   Normal zone: 256 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 32768 pages, LIFO batch:7
+[    0.000000] PERCPU: Embedded 8 pages/cpu @87ed2000 s8256 r8192 d16320 u32768
+[    0.000000] pcpu-alloc: s8256 r8192 d16320 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 32512
+[    0.000000] Kernel command line: root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=21e0000.qspi:256k(uboot),5888K(kernel),10240K(rootfs) rootwait quiet rw
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 88404K/131072K available (5397K kernel code, 906K rwdata, 1628K rodata, 208K init, 398K bss, 42668K reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0x88800000 - 0xff000000   (1896 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0x88000000   ( 128 MB)
+[    0.000000]     pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+[    0.000000]     modules : 0x7f000000 - 0x7fe00000   (  14 MB)
+[    0.000000]       .text : 0x80008000 - 0x806e48f0   (7027 kB)
+[    0.000000]       .init : 0x806e5000 - 0x80719040   ( 209 kB)
+[    0.000000]       .data : 0x8071a000 - 0x807fca80   ( 907 kB)
+[    0.000000]        .bss : 0x807fca8c - 0x808602cc   ( 399 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] Switching to timer-based delay loop
+[    0.000024] sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 1431655765682ns
+[    0.001525] clocksource_of_init: no matching clocksources found
+[    0.001890] Console: colour dummy device 80x30
+[    0.002018] console [tty0] enabled
+[    0.002053] Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=30000)
+[    0.002082] pid_max: default: 32768 minimum: 301
+[    0.002485] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.002510] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.004239] CPU: Testing write buffer coherency: ok
+[    0.004786] CPU0: update cpu_power 1024
+[    0.004811] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.004867] Setting up static identity map for 0x80523da8 - 0x80523e00
+[    0.040848] Brought up 1 CPUs
+[    0.040874] SMP: Total of 1 processors activated (6.00 BogoMIPS).
+[    0.040886] CPU: All CPU(s) started in SVC mode.
+[    0.042302] devtmpfs: initialized
+[    0.054332] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.055115] pinctrl core: initialized pinctrl subsystem
+[    0.056000] regulator-dummy: no parameters
+[    0.059279] NET: Registered protocol family 16
+[    0.077282] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.078730] cpuidle: using governor ladder
+[    0.078748] cpuidle: using governor menu
+[    0.079130] Use WDOG1 as reset source
+[    0.099532] syscon 20c8000.anatop: regmap [mem 0x020c8000-0x020c8fff] registered
+[    0.100277] vdd3p0: 2625 <--> 3400 mV at 3000 mV 
+[    0.101377] cpu: 725 <--> 1450 mV at 1150 mV 
+[    0.102355] vddsoc: 725 <--> 1450 mV at 1175 mV 
+[    0.107798] syscon 20e4000.iomuxc-gpr: regmap [mem 0x020e4000-0x020e7fff] registered
+[    0.114742] syscon 21ac000.romcp: regmap [mem 0x021ac000-0x021affff] registered
+[    0.116626] syscon 21bc000.ocotp-ctrl: regmap [mem 0x021bc000-0x021bffff] registered
+[    0.123469] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.123492] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.124593] imx6ul-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+[    0.126767] 20dc000.gpc supply pu not found, using dummy regulator
+[    0.240613] bio: create slab <bio-0> at 0
+[    0.247999] mxs-dma 1804000.dma-apbh: initialized
+[    0.248965] can-3v3: 3300 mV 
+[    0.249663] wlreg_on: 3300 mV 
+[    0.250581] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58, base_baud = 5000000) is a IMX
+[    0.252494] 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 59, base_baud = 5000000) is a IMX
+[    0.253671] 21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 60, base_baud = 5000000) is a IMX
+[    0.255365] SCSI subsystem initialized
+[    0.255842] libata version 3.00 loaded.
+[    0.256300] usbcore: registered new interface driver usbfs
+[    0.256465] usbcore: registered new interface driver hub
+[    0.256778] usbcore: registered new device driver usb
+[    0.261668] i2c i2c-0: IMX I2C adapter registered
+[    0.262535] i2c i2c-1: IMX I2C adapter registered
+[    0.263501] Advanced Linux Sound Architecture Driver Initialized.
+[    0.265624] Bluetooth: Core ver 2.18
+[    0.265741] NET: Registered protocol family 31
+[    0.265755] Bluetooth: HCI device and connection manager initialized
+[    0.265793] Bluetooth: HCI socket layer initialized
+[    0.265819] Bluetooth: L2CAP socket layer initialized
+[    0.265901] Bluetooth: SCO socket layer initialized
+[    0.266840] cfg80211: Calling CRDA to update world regulatory domain
+[    0.267624] Switched to clocksource mxc_timer1
+[    0.294645] NET: Registered protocol family 2
+[    0.296867] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.296931] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.296986] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.297097] TCP: reno registered
+[    0.297127] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.297183] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.298056] NET: Registered protocol family 1
+[    0.300742] ldo2p5-dummy: no parameters
+[    0.302923] Bus freq driver module loaded
+[    0.304896] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.326561] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.328685] fuse init (API version 7.22)
+[    0.329940] msgmni has been set to 236
+[    0.332113] io scheduler noop registered
+[    0.332134] io scheduler deadline registered
+[    0.332227] io scheduler cfq registered (default)
+[    0.333407] imx-weim 21b8000.weim: Driver registered.
+[    0.339671] imx-sdma 20ec000.sdma: no event needs to be remapped
+[    0.339882] imx-sdma 20ec000.sdma: loaded firmware 3.2
+[    0.348799] imx-sdma 20ec000.sdma: initialized
+[    0.350083] serial: Freescale lpuart driver
+[    0.377052] brd: module loaded
+[    0.390015] loop: module loaded
+[    0.396089] fsl-quadspi 21e0000.qspi: mx25l12805d (16384 Kbytes)
+[    0.396142] 3 cmdlinepart partitions found on MTD device 21e0000.qspi
+[    0.396158] Creating 3 MTD partitions on "21e0000.qspi":
+[    0.396184] 0x000000000000-0x000000040000 : "uboot"
+[    0.399350] 0x000000040000-0x000000600000 : "kernel"
+[    0.402158] 0x000000600000-0x000001000000 : "rootfs"
+[    0.405047] fsl-quadspi 21e0000.qspi: QuadSPI SPI NOR flash driver
+[    0.405979] spi_gpio spi4.14: gpio-miso property not found, switching to no-rx mode
+[    0.409401] usbcore: registered new interface driver cdc_ether
+[    0.409542] usbcore: registered new interface driver cdc_subset
+[    0.409674] usbcore: registered new interface driver zaurus
+[    0.409742] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.409757] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    0.410208] usbcore: registered new interface driver usb-storage
+[    0.410350] usbcore: registered new interface driver usb_ehset_test
+[    0.414390] setup_reset_gpios:-2, flags 0
+[    0.414535] imx_usb 2184000.usb: pinctrl_hsic_idle lookup failed, err=-19
+[    0.414558] imx_usb 2184000.usb: pinctrl_hsic_active lookup failed, err=-19
+[    0.414671] 2184000.usb supply vbus not found, using dummy regulator
+[    0.415308] ci_hdrc ci_hdrc.0: ChipIdea HDRC found, revision: 25, lpm: 0; cap: 8881e100 op: 8881e140
+[    0.415912] mxs_phy 20c9000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.418528] ci_hdrc ci_hdrc.0: It is OTG capable controller
+[    0.419896] ci_hdrc ci_hdrc.0: Init set fsm->a_vbus_vld = 1
+[    0.420018] ci_hdrc ci_hdrc.0: at ci_runtime_suspend
+[    0.420473] ci_hdrc ci_hdrc.0: at ci_controller_resume
+[    0.420867] setup_reset_gpios:-2, flags 0
+[    0.421179] imx_usb 2184200.usb: pinctrl_hsic_idle lookup failed, err=-19
+[    0.421206] imx_usb 2184200.usb: pinctrl_hsic_active lookup failed, err=-19
+[    0.421308] 2184200.usb supply vbus not found, using dummy regulator
+[    0.421996] ci_hdrc ci_hdrc.1: ChipIdea HDRC found, revision: 25, lpm: 0; cap: 88846300 op: 88846340
+[    0.422566] mxs_phy 20ca000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.423587] [otg_statemachine]  fsm->id = 0
+[    0.423603] [otg_set_state]  Set state: a_idle
+[    0.423623] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 1
+[    0.423647] ci_hdrc ci_hdrc.0: ci_otg_start_host 1
+[    0.423703] ci_hdrc ci_hdrc.0: EHCI Host Controller
+[    0.423776] ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+[    0.425195] ci_hdrc ci_hdrc.1: It is OTG capable controller
+[    0.429037] snvs_pwrkey 20cc000.snvs-pwrkey: can't get snvs clock
+[    0.429862] input: 20cc000.snvs-pwrkey as /devices/soc0/soc.1/2000000.aips-bus/20cc000.snvs-pwrkey/input/input0
+[    0.430049] snvs_pwrkey 20cc000.snvs-pwrkey: i.MX snvs powerkey probed
+[    0.430735] snvs_rtc 20cc034.snvs-rtc-lp: can't get snvs-rtc clock
+[    0.431088] check_alarm_past: alarm in the past
+[    0.431946] snvs_rtc 20cc034.snvs-rtc-lp: rtc core: registered 20cc034.snvs-rtc-lp as rtc0
+[    0.432269] i2c /dev entries driver
+[    0.434256] imx2-wdt 20bc000.wdog: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=0)
+[    0.434713] Bluetooth: HCI UART driver ver 2.2.3b3fa69.20191024-161739
+[    0.434729] Bluetooth: HCI H4 protocol initialized
+[    0.434743] Bluetooth: HCI Realtek H5 protocol initialized
+[    0.434756] rtk_btcoex: rtk_btcoex_init: version: 1.2
+[    0.434768] rtk_btcoex: create workqueue
+[    0.435111] rtk_btcoex: alloc buffers 1408, 2240 for ev and l2
+[    0.435762] sdhci: Secure Digital Host Controller Interface driver
+[    0.435774] sdhci: Copyright(c) Pierre Ossman
+[    0.435785] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.437817] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+[    0.438529] usb usb1: is_b_host:0, config:822a4800, parent:  (null), root_hub=8228dc00
+[    0.438562] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.438587] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.438608] usb usb1: Product: EHCI Host Controller
+[    0.438630] usb usb1: Manufacturer: Linux 3.14.52+g94d07bb ehci_hcd
+[    0.438651] usb usb1: SerialNumber: ci_hdrc.0
+[    0.440499] hub 1-0:1.0: USB hub found
+[    0.440606] hub 1-0:1.0: 1 port detected
+[    0.441538] [otg_statemachine]  quit statemachine, changed = 1
+[    0.443001] mmc0: no vqmmc regulator found
+[    0.444669] [otg_set_state]  Set state: a_wait_vrise
+[    0.444711] [otg_statemachine]  quit statemachine, changed = 1
+[    0.487687] mmc0: SDHCI controller on 2190000.usdhc [2190000.usdhc] using ADMA
+[    0.496410] mmc1: no vqmmc regulator found
+[    0.496438] mmc1: no vmmc regulator found
+[    0.498181] sdhci-esdhc-imx 2190000.usdhc: card claims to support voltages below defined range 90ffffff
+[    0.516111] mmc0: new high speed SDIO card at address 0001
+[    0.537783] mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+[    0.548106] [otg_set_state]  Set state: a_wait_bcon
+[    0.548145] [otg_statemachine]  quit statemachine, changed = 1
+[    0.548476] wm8960 0-001a: Failed to issue reset
+[    0.561108] wm8960: probe of 0-001a failed with error -5
+[    0.575444] fsl-asrc 2034000.asrc: driver registered
+[    0.600333] TCP: cubic registered
+[    0.608408] NET: Registered protocol family 10
+[    0.623186] sit: IPv6 over IPv4 tunneling driver
+[    0.625208] NET: Registered protocol family 17
+[    0.628288] Bluetooth: RFCOMM TTY layer initialized
+[    0.628346] Bluetooth: RFCOMM socket layer initialized
+[    0.628403] Bluetooth: RFCOMM ver 1.11
+[    0.628434] lib80211: common routines for IEEE802.11 drivers
+[    0.628451] lib80211_crypt: registered algorithm 'NULL'
+[    0.628464] lib80211_crypt: registered algorithm 'WEP'
+[    0.628476] lib80211_crypt: registered algorithm 'CCMP'
+[    0.628488] lib80211_crypt: registered algorithm 'TKIP'
+[    0.629967] cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    0.649441] can-3v3: disabling
+[    0.649463] regulator-dummy: disabling
+[    0.651031] file system registered
+[    0.651766] android_usb gadget: android_usb ready
+[    0.651881] snvs_rtc 20cc034.snvs-rtc-lp: setting system clock to 1970-01-01 00:15:09 UTC (909)
+[    0.721500] ALSA device list:
+[    0.721517]   No soundcards found.
+[    1.549981] random: nonblocking pool is initialized
+[    1.919083] VFS: Mounted root (jffs2 filesystem) on device 31:2.
+[    1.927787] devtmpfs: mounted
+[    1.928594] Freeing unused kernel memory: 208K (806e5000 - 80719000)
+[    3.047924] ci_hdrc ci_hdrc.0: at ci_runtime_suspend
+[    3.048038] imx_usb 2184000.usb: at imx_controller_suspend
+[    6.279258] android_usb: already disabled
+[    6.281040] android_enable_function: iap2
+[    6.281070] android_enable_function: ncmandroid_usb gadget: _iap2_bind_config
+[    6.281378] ncm_function_bind_config MAC: 00:00:00:00:00:00
+[    6.296239] zero gadget: audio_buf_size 48000, req_buf_size 192, req_count 256
+[    6.296296] zero gadget: iPhone, version: Kevin Shi 2020
+[    6.296309] zero gadget: iPhone, serial: 41de1cfe2e099bec5932187411378387653dbc63 
+[    6.296321] zero gadget: zero ready
+[    6.296453] [otg_statemachine]  fsm->id = 1
+[    6.296466] [otg_set_state]  Set state: b_idle
+[    6.296491] [otg_statemachine]  quit statemachine, changed = 1
+[    6.296692] [otg_set_state]  Set state: b_peripheral
+[    6.296715] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 2
+[    6.296736] ci_hdrc ci_hdrc.1: ci_otg_start_gadget 1
+[    6.296806] imx_usb 2184200.usb: unknown event
+[    6.296847] [otg_statemachine]  quit statemachine, changed = 1
+[    6.320970] [otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 0 0 1
+[    6.320989] [otg_statemachine]  quit statemachine, changed = 0
+[    6.328890] ncm0: MAC c2:8e:30:52:e9:a3
+[    6.328909] ncm0: HOST MAC 26:98:d9:34:fd:a1
+[    6.359926] ncm0: eth_open
+[    6.359955] ncm0: eth_start
+[    6.626159] zero gadget: high-speed config #2: ipod
+[    6.626215] zero gadget: Set iPod Hid Interface Alt
+[    6.629036] zero gadget: non-core control req22.01 v0100 i0081 l3
+[    6.629082] zero gadget: f_audio_setup req22.01 v0100 i0081 l3
+[    6.629405] zero gadget: non-core control reqa2.81 v0100 i0081 l3
+[    6.629447] zero gadget: f_audio_setup reqa2.81 v0100 i0081 l3
+[    6.632051] zero gadget: non-core control req21.0a v0000 i0002 l0
+[    6.632091] zero gadget: f_audio_setup req21.0a v0000 i0002 l0
+[    6.632275] zero gadget: non-core control req81.06 v2200 i0002 l208
+[    6.632313] zero gadget: f_audio_setup req81.06 v2200 i0002 l208
+[    6.637127] ipod_iap2_open
+[    6.641738] zero gadget: non-core control reqa1.01 v0101 i0002 l6
+[    6.641793] zero gadget: f_audio_setup reqa1.01 v0101 i0002 l6
+[    6.642010] zero gadget: non-core control reqa1.01 v0102 i0002 l10
+[    6.642052] zero gadget: f_audio_setup reqa1.01 v0102 i0002 l10
+[    6.642231] zero gadget: non-core control reqa1.01 v0103 i0002 l14
+[    6.642272] zero gadget: f_audio_setup reqa1.01 v0103 i0002 l14
+[    6.642479] zero gadget: non-core control reqa1.01 v0104 i0002 l18
+[    6.642517] zero gadget: f_audio_setup reqa1.01 v0104 i0002 l18
+[    6.642731] zero gadget: non-core control reqa1.01 v0105 i0002 l26
+[    6.642768] zero gadget: f_audio_setup reqa1.01 v0105 i0002 l26
+[    6.642978] zero gadget: non-core control reqa1.01 v0106 i0002 l50
+[    6.643016] zero gadget: f_audio_setup reqa1.01 v0106 i0002 l50
+[    6.643238] zero gadget: non-core control reqa1.01 v0107 i0002 l96
+[    6.643277] zero gadget: f_audio_setup reqa1.01 v0107 i0002 l96
+[    6.643486] zero gadget: non-core control reqa1.01 v0108 i0002 l194
+[    6.643522] zero gadget: f_audio_setup reqa1.01 v0108 i0002 l194
+[    6.643734] zero gadget: non-core control reqa1.01 v0109 i0002 l258
+[    6.643774] zero gadget: f_audio_setup reqa1.01 v0109 i0002 l258
+[    6.644003] zero gadget: non-core control reqa1.01 v010a i0002 l386
+[    6.644039] zero gadget: f_audio_setup reqa1.01 v010a i0002 l386
+[    6.644230] zero gadget: non-core control reqa1.01 v010b i0002 l514
+[    6.644265] zero gadget: f_audio_setup reqa1.01 v010b i0002 l514
+[    6.644498] zero gadget: non-core control reqa1.01 v010c i0002 l768
+[    6.644535] zero gadget: f_audio_setup reqa1.01 v010c i0002 l768
+[    6.686098] zero gadget: non-core control reqc0.33 v0000 i0000 l4
+[    6.686155] zero gadget: iph_ctrlrequest c0.33 v0000 i0000 l4
+[    6.686192] zero gadget: unknown class-specific control req c0.33 v0000 i0000 l4
+[    6.686229] zero gadget: iph_ctrlrequest value: -95
+[    6.886828] zero gadget: non-core control reqc0.53 v0000 i0000 l4
+[    6.886886] zero gadget: iph_ctrlrequest c0.53 v0000 i0000 l4
+[    6.886934] zero gadget: iph_ctrlrequest value: 0
+[    6.892504] zero gadget: non-core control req40.51 v0001 i0000 l0
+[    6.892547] zero gadget: iph_ctrlrequest 40.51 v0001 i0000 l0
+[    6.892593] zero gadget: iph_ctrlrequest value: 0
+[    6.937715] f_iphone: do_hnp
+[    6.938036] [otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 1 0 0
+[    6.938051] [otg_set_state]  Set state: b_wait_acon
+[    6.938067] [otg_set_protocol]  Changing role fsm->protocol= 2; new protocol= 1
+[    6.938088] ci_hdrc ci_hdrc.1: ci_otg_start_gadget 0
+[    6.938132] zero gadget: iPod Function Disabled!!!
+[    6.938168] imx_usb 2184200.usb: unknown event
+[    6.938241] ci_hdrc ci_hdrc.1: ci_otg_start_host 1
+[    6.938287] ci_hdrc ci_hdrc.1: EHCI Host Controller
+[    6.938326] ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 2
+[    6.957740] ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+[    6.958324] usb usb2: is_b_host:1, config:8375d400, parent:  (null), root_hub=8378a000
+[    6.958351] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[    6.958371] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    6.958387] usb usb2: Product: EHCI Host Controller
+[    6.958404] usb usb2: Manufacturer: Linux 3.14.52+g94d07bb ehci_hcd
+[    6.958420] usb usb2: SerialNumber: ci_hdrc.1
+[    6.968527] hub 2-0:1.0: USB hub found
+[    6.968664] hub 2-0:1.0: 1 port detected
+[    6.969458] [otg_statemachine]  quit statemachine, changed = 1
+[    7.001520] [otg_statemachine]  OTG_STATE_B_WAIT_ACON:, 1 1 0 0
+[    7.001538] [otg_set_state]  Set state: b_host
+[    7.001557] [otg_statemachine]  quit statemachine, changed = 1
+[    7.062550] ipod_iap2_flush
+[    7.067688] ipod_iap2_release
+[    7.237793] usb 2-1: new high-speed USB device number 2 using ci_hdrc
+[    7.279937] usb 2-1: is_b_host:1, config:837a4200, parent:8378a000, root_hub=8378a000
+[    7.279967] usb 2-1: New USB device found, idVendor=15a2, idProduct=1234
+[    7.279986] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    7.280001] usb 2-1: Product: OIP
+[    7.280017] usb 2-1: Manufacturer: Continental
+[    7.280031] usb 2-1: SerialNumber: A1B2C3D4
+[    7.393984] cdc_ncm 2-1:1.1: MAC-Address: 22:22:22:22:d1:70
+[    7.417422] cdc_ncm 2-1:1.1 usb0: register 'cdc_ncm' at usb-ci_hdrc.1-1, CDC NCM, 22:22:22:22:d1:70
+[    7.428474] usbcore: registered new interface driver cdc_ncm
+[    7.680933] cdc_ncm 2-1:1.1 usb0: cdc_ncm_check_connect  dev->status: 82578f40
+[    7.687203] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+[    7.709822] cdc_ncm 2-1:1.1 usb0: 425 mbit/s downlink 425 mbit/s uplink
+[    7.741828] cdc_ncm 2-1:1.1 usb0: 425 mbit/s downlink 425 mbit/s uplink
+[    7.773823] cdc_ncm 2-1:1.1 usb0: network connection: connected
+[    7.773985] IPv6: ADDRCONF(NETDEV_CHANGE): usb0: link becomes ready
+[    8.737985] Bluetooth: h5_open
+[    8.738005] Bluetooth: hci_uart_register_dev
+[    8.757905] rtk_btcoex: Open BTCOEX
+[    8.773169] rtk_btcoex: BTCOEX hci_rev 0xaa7b
+[    8.773185] rtk_btcoex: BTCOEX lmp_subver 0x9a3a
+[   11.057764] Bluetooth: __hci_uart_flush: hdev 83725000 tty 8255b200
+[   11.057781] Bluetooth: hci flush sync
+[   11.062752] Bluetooth: hci flush sync status 0
+[   11.062819] Bluetooth: hci_uart_close: hdev 83725000
+[   11.062835] Bluetooth: __hci_uart_flush: hdev 83725000 tty 8255b200
+[   11.062847] rtk_btcoex: Close BTCOEX
+[   11.062864] rtk_btcoex: -x
+[   15.994529] rtk_btcoex: Open BTCOEX
+[   16.005587] rtk_btcoex: BTCOEX hci_rev 0xaa7b
+[   16.005603] rtk_btcoex: BTCOEX lmp_subver 0x9a3a
+[   16.323138] rtk_btcoex: BTCOEX hci_rev 0xaa7b
+[   16.323155] rtk_btcoex: BTCOEX lmp_subver 0x9a3a
+[   17.231239] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   19.263917] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   22.563796] rtk_btcoex: hci create connection, start paging
+[   22.899542] rtk_btcoex: connected, handle 0001, status 0x00
+[   22.899558] rtk_btcoex: Page success
+[   23.224015] rtk_btcoex: l2cap op 2, len 16, out 1
+[   23.224119] rtk_btcoex: TX l2cap conn req, hndl 0x0001, PSM 0x0001, scid 0x0040
+[   23.224129] rtk_btcoex: PSM(0x0001) do not need parse
+[   23.283326] rtk_btcoex: l2cap op 3, len 20, out 0
+[   23.283533] rtk_btcoex: RX l2cap conn rsp, hndl 0x0001, dcid 0x4210, scid 0x0040, result 0x0000
+[   23.522029] rtk_btcoex: l2cap op 6, len 16, out 1
+[   23.522140] rtk_btcoex: TX l2cap disconn req, hndl 0x0001, dcid 0x4210, scid 0x0040
+[   23.522157] rtk_btcoex: handle_l2cap_discon_req: handle 0x0001, dcid 0x4210, scid 0x0040, dir 1
+[   23.627769] rtk_btcoex: l2cap op 2, len 16, out 1
+[   23.627976] rtk_btcoex: TX l2cap conn req, hndl 0x0001, PSM 0x0003, scid 0x0041
+[   23.803601] rtk_btcoex: l2cap op 3, len 20, out 0
+[   23.803818] rtk_btcoex: RX l2cap conn rsp, hndl 0x0001, dcid 0x4310, scid 0x0041, result 0x0000
+[   23.803831] rtk_btcoex: l2cap connection success, update connection
+[   23.803846] rtk_btcoex: update_profile_connection: is_add 1, profile_index 3
+[   23.803861] rtk_btcoex: update_profile_connection: btrtl_coex.profile_bitmap 0x08
+[   23.803872] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[0] = 0
+[   23.803884] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[1] = 0
+[   23.803894] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[2] = 0
+[   23.803905] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[3] = 1
+[   23.803916] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[4] = 0
+[   23.803926] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[5] = 0
+[   23.803937] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[6] = 0
+[   23.803947] rtk_btcoex: update_profile_connection: btrtl_coex.profile_refcount[7] = 0
+[   23.803960] rtk_btcoex: rtk_notify_profileinfo_to_fw: BufferSize 5
+[   23.803970] rtk_btcoex: rtk_notify_profileinfo_to_fw: NumberOfHandles 1
+[   23.803982] rtk_btcoex: rtk_notify_profileinfo_to_fw: handle 0x0001
+[   23.803991] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_bitmap 0x08
+[   23.804000] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_status 0x00
+[   23.804015] rtk_btcoex: rtk_vendor_cmd_to_fw: opcode 0xfc19
+[   24.797704] rtk_btcoex: count_pan_packet_timeout: pan_packet_count 14
+[   24.797721] rtk_btcoex: timeout_handler: pan idle->busy!
+[   24.797734] rtk_btcoex: update_profile_state: btrtl_coex.profie_bitmap = 8
+[   24.797743] rtk_btcoex: update_profile_state: btrtl_coex.profile_status = 8
+[   24.797756] rtk_btcoex: rtk_notify_profileinfo_to_fw: BufferSize 5
+[   24.797765] rtk_btcoex: rtk_notify_profileinfo_to_fw: NumberOfHandles 1
+[   24.797776] rtk_btcoex: rtk_notify_profileinfo_to_fw: handle 0x0001
+[   24.797785] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_bitmap 0x08
+[   24.797795] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_status 0x08
+[   24.797818] rtk_btcoex: rtk_vendor_cmd_to_fw: opcode 0xfc19
+[   25.797731] rtk_btcoex: count_pan_packet_timeout: pan busy->idle!
+[   25.797754] rtk_btcoex: update_profile_state: btrtl_coex.profie_bitmap = 8
+[   25.797765] rtk_btcoex: update_profile_state: btrtl_coex.profile_status = 0
+[   25.797781] rtk_btcoex: rtk_notify_profileinfo_to_fw: BufferSize 5
+[   25.797790] rtk_btcoex: rtk_notify_profileinfo_to_fw: NumberOfHandles 1
+[   25.797800] rtk_btcoex: rtk_notify_profileinfo_to_fw: handle 0x0001
+[   25.797810] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_bitmap 0x08
+[   25.797819] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_status 0x00
+[   25.797844] rtk_btcoex: rtk_vendor_cmd_to_fw: opcode 0xfc19
+[   26.797699] rtk_btcoex: count_pan_packet_timeout: pan_packet_count 9
+[   26.797715] rtk_btcoex: timeout_handler: pan idle->busy!
+[   26.797728] rtk_btcoex: update_profile_state: btrtl_coex.profie_bitmap = 8
+[   26.797737] rtk_btcoex: update_profile_state: btrtl_coex.profile_status = 8
+[   26.797751] rtk_btcoex: rtk_notify_profileinfo_to_fw: BufferSize 5
+[   26.797761] rtk_btcoex: rtk_notify_profileinfo_to_fw: NumberOfHandles 1
+[   26.797771] rtk_btcoex: rtk_notify_profileinfo_to_fw: handle 0x0001
+[   26.797781] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_bitmap 0x08
+[   26.797790] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_status 0x08
+[   26.797808] rtk_btcoex: rtk_vendor_cmd_to_fw: opcode 0xfc19
+[   27.797707] rtk_btcoex: count_pan_packet_timeout: pan_packet_count 22
+[   28.797692] rtk_btcoex: count_pan_packet_timeout: pan busy->idle!
+[   28.797716] rtk_btcoex: update_profile_state: btrtl_coex.profie_bitmap = 8
+[   28.797728] rtk_btcoex: update_profile_state: btrtl_coex.profile_status = 0
+[   28.797742] rtk_btcoex: rtk_notify_profileinfo_to_fw: BufferSize 5
+[   28.797751] rtk_btcoex: rtk_notify_profileinfo_to_fw: NumberOfHandles 1
+[   28.797762] rtk_btcoex: rtk_notify_profileinfo_to_fw: handle 0x0001
+[   28.797771] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_bitmap 0x08
+[   28.797782] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_status 0x00
+[   28.797801] rtk_btcoex: rtk_vendor_cmd_to_fw: opcode 0xfc19
+[   34.560666] rtk_btcoex: HCI Disconnect, handle 0001, reason 0x13
+[   34.621881] rtk_btcoex: disconn cmpl evt: status 0x00, handle 0001, reason 0x16
+[   34.621897] rtk_btcoex: process disconn complete event.
+[   34.621913] rtk_btcoex: hci disconn, hndl 1, psm 3, dcid 4310, scid 41, profile 3
+[   34.621926] rtk_btcoex: disconn_profile: profile_ref[3] 0
+[   34.621943] rtk_btcoex: Delete profile: hndl 0x0001, psm 0x0003, dcid 0x4310, scid 0x0041
+[   34.621963] rtk_btcoex: rtk_notify_profileinfo_to_fw: BufferSize 2
+[   34.621974] rtk_btcoex: rtk_notify_profileinfo_to_fw: NumberOfHandles 0
+[   34.621985] rtk_btcoex: rtk_notify_profileinfo_to_fw: profile_status 0x00
+[   34.621998] rtk_btcoex: rtk_vendor_cmd_to_fw: opcode 0xfc19
+[  198.877788] Bluetooth: hu 838be100 retransmitting 1 pkts
+[  210.833045] imx_usb 2184000.usb: at imx_controller_resume
+[  210.833084] wakeup int at ci_hdrc.0
+[  210.833114] ci_hdrc ci_hdrc.0: at ci_controller_resume
+[  210.836313] [otg_set_state]  Set state: a_host
+[  210.836346] [otg_statemachine]  quit statemachine, changed = 1
+[  211.057937] usb 1-1: new high-speed USB device number 2 using ci_hdrc
+[  211.110104] usb 1-1: is_b_host:0, config:813b0a00, parent:8228dc00, root_hub=8228dc00
+[  211.110137] usb 1-1: New USB device found, idVendor=05dc, idProduct=a838
+[  211.110155] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  211.110170] usb 1-1: Product: USB Flash Drive
+[  211.110183] usb 1-1: Manufacturer: Lexar
+[  211.110197] usb 1-1: SerialNumber: AAIWBO8J6OZ60J1T
+[  211.143110] usb-storage 1-1:1.0: USB Mass Storage device detected
+[  211.187830] scsi0 : usb-storage 1-1:1.0
+[  211.847687] Bluetooth: hu 838be100 retransmitting 1 pkts
+[  212.442213] scsi 0:0:0:0: Direct-Access     Lexar    USB Flash Drive  1100 PQ: 0 ANSI: 6
+[  212.460562] sd 0:0:0:0: [sda] 31285248 512-byte logical blocks: (16.0 GB/14.9 GiB)
+[  212.461793] sd 0:0:0:0: [sda] Write Protect is off
+[  212.461822] sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00
+[  212.463038] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[  212.486840]  sda: sda1
+[  212.511658] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[  212.557219] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[  216.462791] sh (755): /proc/77/oom_adj is deprecated, please use /proc/77/oom_score_adj instead.
+[  242.119222] [otg_set_state]  Set state: b_peripheral
+[  242.119249] [otg_set_protocol]  Changing role fsm->protocol= 1; new protocol= 2
+[  242.119272] ci_hdrc ci_hdrc.1: ci_otg_start_host 0
+[  242.119320] ci_hdrc ci_hdrc.1: remove, state 1
+[  242.119387] usb usb2: USB disconnect, device number 1
+[  242.119404] usb 2-1: USB disconnect, device number 2
+[  242.161617] cdc_ncm 2-1:1.1 usb0: unregister 'cdc_ncm' usb-ci_hdrc.1-1, CDC NCM
+[  242.256829] ci_hdrc ci_hdrc.1: USB bus 2 deregistered
+[  242.256880] imx_usb 2184200.usb: unknown event
+[  242.256905] ci_hdrc ci_hdrc.1: ci_otg_start_gadget 1
+[  242.256971] imx_usb 2184200.usb: unknown event
+[  242.257017] [otg_statemachine]  quit statemachine, changed = 1
+[  242.281134] [otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 0 0 1
+[  242.281153] [otg_statemachine]  quit statemachine, changed = 0
+            "type" : "none"
+        },
+        {
+            "id" : 11
+            "friendlyName" : "DisconnectReson"
+            "type" : "none"
+        }
+    ]
+}
+
+01-02 12:00:33.157102 AM [iAP2Server] _diff_sequence = 1 (sentSeq:8-recvAck:7)!!!
+01-02 12:00:33.158596 AM [CiAP2Session_FileTransfer] iPhoneToBox ##### sign=Sign_Setup, fileTransferIdentifer=128, size=0
+01-02 12:00:33.171517 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+2020-01-02 12:00:33.175230 AM [AirPlay] Is  Wifi 
+01-02 12:00:33.177547 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:33.182222 AM [iAP2Server] _diff_sequence = 1 (sentSeq:8-recvAck:7)!!!
+01-02 12:00:33.183602 AM [iAP2Server] _diff_sequence = 1 (sentSeq:8-recvAck:7)!!!
+01-02 12:00:33.185875 AM [iAP2Server] pop
+01-02 12:00:33.187073 AM [iAP2Engine] Enable iAP2 iAP2CallStateEngine Capability
+01-02 12:00:33.189668 AM [iAP2CallStateEngine] callStateUsablityItemsArray from HUD: {
+    "id" : 0
+    "friendlyName" : "CallStateItems_Usablity"
+    "type" : "array"
+    "value" : 
+    [
+        {
+            "id" : 0
+            "friendlyName" : "RemoteID"
+            "type" : "none"
+        },
+        {
+            "id" : 1
+            "friendlyName" : "DisplayName"
+            "type" : "none"
+        },
+        {
+            "id" : 2
+            "friendlyName" : "Status"
+            "type" : "none"
+        },
+        {
+            "id" : 3
+            "friendlyName" : "Direction"
+            "type" : "none"
+        },
+        {
+            "id" : 4
+            "friendlyName" : "CallUUID"
+            "type" : "none"
+        },
+        {
+            "id" : 6
+            "friendlyName" : "AddressBookID"
+            "type" : "none"
+        },
+        {
+            "id" : 7
+            "friendlyName" : "Label"
+            "type" : "none"
+        },
+        {
+            "id" : 8
+            "friendlyName" : "Service"
+            "type" : "none"
+        },
+        {
+            "id" : 9
+            "friendlyName" : "IsConferenced"
+            "type" : "none"
+        },
+        {
+            "id" : 10
+            "friendlyName" : "ConferenceGroup"
+            "type" : "none"
+        },
+        {
+            "id" : 11
+            "friendlyName" : "DisconnectReson"
+            "type" : "none"
+        }
+    ]
+}
+
+01-02 12:00:33.190932 AM [iAP2Server] _diff_sequence = 1 (sentSeq:9-recvAck:8)!!!
+01-02 12:00:33.192732 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:33.199154 AM [iAP2MediaPlayerEngine] #### Transfer /tmp/iAPTransFile/Recv_128.data to 133, Send to HUD
+01-02 12:00:33.199392 AM [iAP2Server] _diff_sequence = 1 (sentSeq:9-recvAck:8)!!!
+01-02 12:00:33.201824 AM [iAP2Server] pop
+01-02 12:00:33.205270 AM [iAP2Engine] Enable iAP2 iAP2CallStateEngine Capability
+01-02 12:00:33.211886 AM [iAP2CallStateEngine] callStateUsablityItemsArray from HUD: {
+    "id" : 0
+    "friendlyName" : "CallStateItems_Usablity"
+    "type" : "array"
+    "value" : 
+    [
+        {
+            "id" : 0
+            "friendlyName" : "RemoteID"
+            "type" : "none"
+        },
+        {
+            "id" : 1
+            "friendlyName" : "DisplayName"
+            "type" : "none"
+        },
+        {
+            "id" : 2
+            "friendlyName" : "Status"
+            "type" : "none"
+        },
+        {
+            "id" : 3
+            "friendlyName" : "Direction"
+            "type" : "none"
+        },
+        {
+            "id" : 4
+            "friendlyName" : "CallUUID"
+            "type" : "none"
+        },
+        {
+            "id" : 6
+            "friendlyName" : "AddressBookID"
+            "type" : "none"
+        },
+        {
+            "id" : 7
+            "friendlyName" : "Label"
+            "type" : "none"
+        },
+        {
+            "id" : 8
+            "friendlyName" : "Service"
+            "type" : "none"
+        },
+        {
+            "id" : 9
+            "friendlyName" : "IsConferenced"
+            "type" : "none"
+        },
+        {
+            "id" : 10
+            "friendlyName" : "ConferenceGroup"
+            "type" : "none"
+        },
+        {
+            "id" : 11
+            "friendlyName" : "DisconnectReson"
+            "type" : "none"
+        }
+    ]
+}
+
+01-02 12:00:33.213129 AM [iAP2Server] _diff_sequence = 1 (sentSeq:10-recvAck:9)!!!
+01-02 12:00:33.219858 AM [iAP2Server] pop
+01-02 12:00:33.221203 AM [iAP2Engine] Enable iAP2 iAP2CallStateEngine Capability
+01-02 12:00:33.247544 AM [iAP2CallStateEngine] callStateUsablityItemsArray from HUD: {
+    "id" : 0
+    "friendlyName" : "CallStateItems_Usablity"
+    "type" : "array"
+    "value" : 
+    [
+        {
+            "id" : 0
+            "friendlyName" : "RemoteID"
+            "type" : "none"
+        },
+        {
+            "id" : 1
+            "friendlyName" : "DisplayName"
+            "type" : "none"
+        },
+        {
+            "id" : 2
+            "friendlyName" : "Status"
+            "type" : "none"
+        },
+        {
+            "id" : 3
+            "friendlyName" : "Direction"
+            "type" : "none"
+        },
+        {
+            "id" : 4
+            "friendlyName" : "CallUUID"
+            "type" : "none"
+        },
+        {
+            "id" : 6
+            "friendlyName" : "AddressBookID"
+            "type" : "none"
+        },
+        {
+            "id" : 7
+            "friendlyName" : "Label"
+            "type" : "none"
+        },
+        {
+            "id" : 8
+            "friendlyName" : "Service"
+            "type" : "none"
+        },
+        {
+            "id" : 9
+            "friendlyName" : "IsConferenced"
+            "type" : "none"
+        },
+        {
+            "id" : 10
+            "friendlyName" : "ConferenceGroup"
+            "type" : "none"
+        },
+        {
+            "id" : 11
+            "friendlyName" : "DisconnectReson"
+            "type" : "none"
+        }
+    ]
+}
+
+01-02 12:00:33.249989 AM [iAP2Server] _diff_sequence = 1 (sentSeq:11-recvAck:10)!!!
+01-02 12:00:33.259092 AM [CiAP2Session_FileTransfer] fileSizeToSend = 0 HEX: 00 00 00 00 00 00 00 00 00 02
+01-02 12:00:33.259296 AM [CiAP2Session_FileTransfer] SendToReceiver Sending Sign_Setup, 133
+01-02 12:00:33.259401 AM [iAP2Server] _diff_sequence = 1 (sentSeq:11-recvAck:10)!!!
+01-02 12:00:33.259507 AM [iAP2Server] pop
+01-02 12:00:33.280342 AM [iAP2Engine] Enable iAP2 iAP2CallStateEngine Capability
+01-02 12:00:33.298923 AM [iAP2CallStateEngine] callStateUsablityItemsArray from HUD: {
+    "id" : 0
+    "friendlyName" : "CallStateItems_Usablity"
+    "type" : "array"
+    "value" : 
+    [
+        {
+            "id" : 0
+            "friendlyName" : "RemoteID"
+            "type" : "none"
+        },
+        {
+            "id" : 1
+            "friendlyName" : "DisplayName"
+            "type" : "none"
+        },
+        {
+            "id" : 2
+            "friendlyName" : "Status"
+            "type" : "none"
+        },
+        {
+            "id" : 3
+            "friendlyName" : "Direction"
+            "type" : "none"
+        },
+        {
+            "id" : 4
+            "friendlyName" : "CallUUID"
+            "type" : "none"
+        },
+        {
+            "id" : 6
+            "friendlyName" : "AddressBookID"
+            "type" : "none"
+        },
+        {
+            "id" : 7
+            "friendlyName" : "Label"
+            "type" : "none"
+        },
+        {
+            "id" : 8
+            "friendlyName" : "Service"
+            "type" : "none"
+        },
+        {
+            "id" : 9
+            "friendlyName" : "IsConferenced"
+            "type" : "none"
+        },
+        {
+            "id" : 10
+            "friendlyName" : "ConferenceGroup"
+            "type" : "none"
+        },
+        {
+            "id" : 11
+            "friendlyName" : "DisconnectReson"
+            "type" : "none"
+        }
+    ]
+}
+
+01-02 12:00:33.302383 AM [iAP2Server] _diff_sequence = 1 (sentSeq:12-recvAck:11)!!!
+01-02 12:00:33.309441 AM [iAP2Server] pop
+01-02 12:00:33.320252 AM [CiAP2Session_FileTransfer] iPhoneToBox ##### sign=Sign_Setup, fileTransferIdentifer=129, size=76017
+01-02 12:00:33.321623 AM [iAP2Server] pop
+01-02 12:00:33.325633 AM [iAP2Server] pop
+01-02 12:00:33.329705 AM [iAP2Server] pop
+01-02 12:00:33.334531 AM [iAP2Server] pop
+01-02 12:00:33.338352 AM [iAP2Server] pop
+01-02 12:00:33.342342 AM [iAP2Server] pop
+01-02 12:00:33.366914 AM [iAP2Server] pop
+01-02 12:00:33.393762 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:00:33.395416 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:33.399887 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:00:33.577943 AM [iAP2MediaPlayerEngine] #### Transfer /tmp/iAPTransFile/Recv_129.data to 134, Send to HUD
+01-02 12:00:33.578782 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:00:33.618848 AM [CiAP2Session_FileTransfer] fileSizeToSend = 76017 HEX: 00 00 00 00 00 01 28 f1 00 02
+01-02 12:00:33.619134 AM [CiAP2Session_FileTransfer] SendToReceiver Sending Sign_Setup, 134
+01-02 12:00:33.619992 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:00:33.634401 AM [CiAP2Session_FileTransfer] #####Come: sign=Sign_Start, fileTransferIdentifer=134
+01-02 12:00:33.636155 AM [CiAP2Session_FileTransfer] TrySendToReceiver Sending Sign_FirstData
+01-02 12:00:33.692450 AM [CiAP2Session_FileTransfer] SendToReceiver Sending Sign_LastData, 134
+01-02 12:00:33.692750 AM [iAP2Server] _diff_sequence = 1 (sentSeq:24-recvAck:23)!!!
+01-02 12:00:33.692969 AM [iAP2Server] pop
+01-02 12:00:33.715697 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:00:33.716498 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:00:33.717371 AM [CiAP2Session_FileTransfer] #####Come: sign=Sign_Success, fileTransferIdentifer=134
+01-02 12:00:33.746163 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:34.196058 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:34.207191 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:00:34.566741 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:34.670701 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:35.139968 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:35.622379 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:35.849092 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:36.097865 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:36.574780 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:36.998206 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:37.056785 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:37.527218 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:37.996348 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:38.058222 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:38.466251 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:38.473120 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:00:38.933439 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:38.994631 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:39.400314 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:39.873043 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:39.923496 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:40.355145 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:40.757724 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:40.821022 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:41.289334 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:41.755857 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:41.876649 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:42.229888 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:42.649380 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:42.700432 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:43.177378 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:43.577337 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:43.656311 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:44.125037 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:44.513759 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:44.594013 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:45.064394 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:45.400882 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:45.531848 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:45.999806 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:46.333449 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:46.492120 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:46.969844 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:47.100300 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:00:47.178494 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:47.438521 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:47.920475 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:48.029530 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:48.400155 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:48.409533 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:00:48.855080 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:48.872829 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:49.346979 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:49.734903 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:49.818504 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:50.306331 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:50.533896 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:50.778809 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:51.246743 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:51.329501 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:51.725999 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:52.062103 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:52.194368 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:52.662622 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:52.854771 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:53.141151 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:53.547305 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:53.620316 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:54.089456 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:54.318815 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:54.561098 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:54.996908 AM [VideoSource] WTF? prepared(1) need(VideoSource_ARMadbdriver) -- input(VideoSource_myUI), drop H264 frame
+01-02 12:00:55.032365 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:55.499078 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:55.506047 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:00:55.970327 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:56.438421 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:56.906047 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:57.372419 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:57.837926 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:58.309155 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:58.778652 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:59.255824 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:00:59.721951 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:00.206935 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:00.780214 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:01.316188 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:01.840474 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+2020-01-02 12:01:02.179817 AM [AirPlayReceiverSessionScreen] Late frame (2296 byte, 142 ms, 1 total late frames): f8080000000000005052e0246e750c00 ... 5b18693770124612c36bc7115273fc6f
+01-02 12:01:02.360810 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:02.891192 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:02.896092 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:01:03.358176 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:03.365644 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:01:03.832516 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:04.297441 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:04.765881 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:05.231212 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:05.697639 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:06.160436 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:06.631058 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:07.097314 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:07.564743 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:08.115825 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:08.638300 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+2020-01-02 12:01:08.810082 AM [AirPlayReceiverSessionScreen] Late frame (2272 byte, 142 ms, 2 total late frames): e0080000000000001b5ffbc674750c00 ... 303c2c92093c648b308426f69be1ea0a
+01-02 12:01:09.187175 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+2020-01-02 12:01:09.511053 AM [AirPlayReceiverSessionScreen] Late frame (2321 byte, 143 ms, 3 total late frames): 11090000000000004963347a75750c00 ... e2294a58786ff1a62f2ec15ff6e83741
+01-02 12:01:09.697580 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:10.225557 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:10.694410 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:11.160291 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:11.633338 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:11.641144 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:01:12.111111 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:12.596166 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:13.067964 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:13.535865 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:13.997280 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:14.464321 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:14.939497 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:15.409745 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:15.876770 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:16.344356 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:16.817976 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:17.287825 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:17.293122 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:01:17.757867 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:18.231495 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:18.702330 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:19.177049 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:19.650746 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:19.659417 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:01:20.129279 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:20.595863 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:21.063607 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:21.532782 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:22.002407 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:22.469920 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:22.936185 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:23.403087 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:23.873188 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:24.342073 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:24.815921 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:25.286661 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:25.755949 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:26.223341 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:26.695269 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:27.161181 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:27.628703 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:28.097837 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:01:28.098659 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:28.579582 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:29.046809 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:29.520035 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:29.996973 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:30.462470 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+2020-01-02 12:01:30.653574 AM [AirPlayReceiverSessionScreen] Late frame (2293 byte, 153 ms, 4 total late frames): f50800000000000017ff519c8a750c00 ... 9cb5e68f4bb0d18ea8100762f93b4376
+2020-01-02 12:01:30.973875 AM [AirPlayReceiverSessionScreen] Late frame (2313 byte, 140 ms, 5 total late frames): 0909000000000000d6c2acf18a750c00 ... 1d75fe63c9cd83671245537ceeb16fdc
+01-02 12:01:30.987089 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:31.509684 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:31.517013 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:01:31.981841 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:32.488990 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:33.014498 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:33.484150 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:33.956517 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:34.422405 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:34.896163 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:35.361880 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:35.368364 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:01:35.831618 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:36.295223 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:36.767628 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:37.235120 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:37.700632 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:38.165383 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:38.636584 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:39.114594 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:39.593731 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:40.062090 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:40.536378 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:41.001649 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:41.468187 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:41.939066 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:42.402354 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:42.878839 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:43.348592 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:43.815717 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:44.100720 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:01:44.285846 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:44.756063 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:45.232769 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:45.702282 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:45.717027 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:01:46.188765 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:46.657266 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:47.133590 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:47.599959 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:48.067483 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:48.535033 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:49.000454 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:49.475395 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:49.949518 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:50.419392 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:50.886143 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:51.357464 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:51.832957 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:52.301611 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:52.319894 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:01:52.773725 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:53.243471 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:53.715009 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:54.187384 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:54.656530 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:54.838728 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:54.855098 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:54.859205 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:54.962547 AM [CiAP2Session_FileTransfer] iPhoneToBox ##### sign=Sign_Setup, fileTransferIdentifer=130, size=81456
+01-02 12:01:54.993605 AM [CiAP2Session_FileTransfer] ####SendFile_Async erase one!
+01-02 12:01:54.994942 AM [iAP2MediaPlayerEngine] #### Transfer /tmp/iAPTransFile/Recv_130.data to 135, Send to HUD
+01-02 12:01:55.035279 AM [CiAP2Session_FileTransfer] fileSizeToSend = 81456 HEX: 00 00 00 00 00 01 3e 30 00 02
+01-02 12:01:55.035470 AM [CiAP2Session_FileTransfer] SendToReceiver Sending Sign_Setup, 135
+01-02 12:01:55.052955 AM [CiAP2Session_FileTransfer] #####Come: sign=Sign_Start, fileTransferIdentifer=135
+01-02 12:01:55.054324 AM [CiAP2Session_FileTransfer] TrySendToReceiver Sending Sign_FirstData
+01-02 12:01:55.071917 AM [CiAP2Session_FileTransfer] SendToReceiver Sending Sign_LastData, 135
+01-02 12:01:55.072120 AM [iAP2Server] _diff_sequence = 1 (sentSeq:200-recvAck:199)!!!
+01-02 12:01:55.072304 AM [iAP2Server] pop
+01-02 12:01:55.079242 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:01:55.080057 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:01:55.081102 AM [CiAP2Session_FileTransfer] #####Come: sign=Sign_Success, fileTransferIdentifer=135
+01-02 12:01:55.129181 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:55.406711 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:55.416259 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:55.444255 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:55.530923 AM [CiAP2Session_FileTransfer] iPhoneToBox ##### sign=Sign_Setup, fileTransferIdentifer=131, size=74252
+01-02 12:01:55.575858 AM [CiAP2Session_FileTransfer] ####SendFile_Async erase one!
+01-02 12:01:55.579624 AM [iAP2MediaPlayerEngine] #### Transfer /tmp/iAPTransFile/Recv_131.data to 136, Send to HUD
+01-02 12:01:55.615040 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:55.620412 AM [CiAP2Session_FileTransfer] fileSizeToSend = 74252 HEX: 00 00 00 00 00 01 22 0c 00 02
+01-02 12:01:55.620700 AM [CiAP2Session_FileTransfer] SendToReceiver Sending Sign_Setup, 136
+01-02 12:01:55.627024 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:01:55.645197 AM [CiAP2Session_FileTransfer] #####Come: sign=Sign_Start, fileTransferIdentifer=136
+01-02 12:01:55.646345 AM [CiAP2Session_FileTransfer] TrySendToReceiver Sending Sign_FirstData
+01-02 12:01:55.658831 AM [CiAP2Session_FileTransfer] SendToReceiver Sending Sign_LastData, 136
+01-02 12:01:55.659513 AM [iAP2Server] _diff_sequence = 1 (sentSeq:208-recvAck:207)!!!
+01-02 12:01:55.659739 AM [iAP2Server] pop
+01-02 12:01:55.661547 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:01:55.662177 AM [CiAP2Session_CarPlay] HUD Message(0xFFFF) XXXX Not implement!
+01-02 12:01:55.670353 AM [CiAP2Session_FileTransfer] #####Come: sign=Sign_Success, fileTransferIdentifer=136
+01-02 12:01:56.089568 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:56.557324 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:57.025818 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:57.029748 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:01:57.493391 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:57.959881 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:58.432584 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:58.900350 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:58.919114 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:01:59.366476 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:01:59.832422 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:00.306543 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:00.778227 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:01.255667 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:01.730511 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:02.197884 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:02.687933 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:03.154590 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:03.622477 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:04.091874 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:04.558831 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:05.033019 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:05.502175 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:05.977836 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:06.454908 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:06.920688 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:07.386437 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:07.395095 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:02:07.883493 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:08.416777 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:08.885645 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:09.360411 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:09.831769 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:10.299812 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:10.789478 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:11.278000 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:11.283190 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:02:11.757751 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:12.230308 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:12.699755 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:13.167443 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:13.632745 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:14.105780 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:14.592355 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:15.058325 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:15.521910 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:15.992560 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:16.093386 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:02:16.458820 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:16.926422 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:17.391850 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:17.869639 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:18.337483 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:18.815309 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:19.279972 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:19.746925 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:20.218741 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:20.692972 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:21.157746 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:21.626890 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:22.095585 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:22.573138 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:23.047513 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:23.518890 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:23.993608 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:24.094291 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:02:24.457698 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:24.923829 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:25.391641 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:25.394160 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:02:25.864699 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:26.331342 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:26.797549 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:27.265680 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:27.731556 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:28.197485 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:28.676208 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:29.150709 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:29.619605 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:30.086500 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:30.552991 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:31.020890 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:31.498218 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:31.969963 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:32.449731 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:32.463630 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:02:32.916045 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:33.381054 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:33.853329 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:34.322500 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:34.793012 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:35.256328 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:35.722891 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:36.190381 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:36.662628 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:37.132803 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:37.597160 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:38.077768 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:38.546257 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:39.013386 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:39.480727 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:39.486256 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:02:39.955244 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:40.427466 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:40.440192 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:02:40.891115 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:41.356329 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:41.823607 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:42.291894 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:42.762546 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:43.238739 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:43.716646 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:44.185945 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:44.653728 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:45.120926 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:45.601166 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:46.076098 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:46.549668 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:47.013424 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:47.479213 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:47.947242 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:48.090867 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:02:48.415852 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:48.878587 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:49.355328 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:49.821431 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:50.284239 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:50.755416 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:51.222164 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:51.695046 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:52.155106 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:52.622433 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:53.098004 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:53.585500 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:53.589774 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:02:54.053734 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:54.522341 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:54.995267 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:55.463579 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:55.928128 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:56.396677 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:56.862303 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:57.088405 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:02:57.336248 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:57.810198 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:58.280727 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:58.749619 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:59.216896 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:02:59.681813 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:00.154767 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:00.619506 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:01.087258 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:01.564617 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:02.032734 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:02.502492 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:02.977505 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:03.447198 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:03.909383 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:04.379373 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:04.849115 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:05.380030 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:05.396929 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:03:05.910742 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:06.434383 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:06.966159 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:07.497933 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:07.974357 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:07.979180 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:03:08.450339 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:08.917702 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:09.385425 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:09.853317 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:10.320670 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:10.792731 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:11.259605 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:11.727437 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:12.193467 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:12.660057 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:13.132791 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:13.601612 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:13.620135 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:03:14.076964 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:14.546725 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:15.015960 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:15.484761 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:15.955655 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:16.420133 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:16.894088 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:17.359787 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:17.825837 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:18.293710 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:18.760303 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:19.229866 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:19.693510 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:20.156942 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:20.620199 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:21.094839 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:21.582451 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:22.053831 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:22.057667 AM [iAP2Engine] Send_changes:NowPlaying(0x5001)
+01-02 12:03:22.061644 AM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+01-02 12:03:22.519892 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:22.985771 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:23.456732 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:23.928424 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:24.393789 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:24.859813 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:25.457399 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+2020-01-02 12:03:25.803442 AM [AirPlayReceiverSessionScreen] Late frame (2096 byte, 144 ms, 6 total late frames): 30080000000000003b52fdc6fd750c00 ... febb10c01e2d96facfee2d26c88c9c36
+01-02 12:03:25.980574 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:26.520914 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+2020-01-02 12:03:27.032337 AM [AirPlayReceiverSessionScreen] Late frame (2127 byte, 140 ms, 7 total late frames): 4f080000000000004ab0b802ff750c00 ... 28edd13eb01ad32373b8f800cc91f6b6
+01-02 12:03:27.042120 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:27.564765 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:28.037447 AM [CiAP2Session_CarPlay] Message 0x5001 NowPlaying
+01-02 12:03:28.056716 AM [Adb_driver] LIBUSB_HOTPLUG_EVENT_DEVICE_ARRIVED iPhoneWorkMode(CarPlay)
+01-02 12:03:28.228574 AM [iAP2] ######### interrupt SIGTER(15)
+01-02 12:03:28.279521 AM [CAccessory_fd] OnCarPlayPhase 0
+01-02 12:03:28.279758 AM [ActionSessions] 无线 CarPlay 退出
+01-02 12:03:28.280883 AM [RiddleBluetoothService] RiddleBluetoothService::OnDbusMessage DisconnectRemoteDevice
+RiddleBluetoothService_Interface_Control::OnDbusMessage DisconnectRemoteDevice
+01-02 12:03:28.314332 AM [Adb_driver] Udisk Plug In!!!
+2020-01-02 12:03:28.333508 AM [AirPlay] Deregistered Bonjour _airplay._tcp. for stop
+2020-01-02 12:03:28.333756 AM [AirPlay] AirPlay servers stopped
+2020-01-02 12:03:28.339244 AM [CarPlayControl] BrowseCallback: event=Stop, info=<<NULL>>
+2020-01-02 12:03:28.341918 AM [CarPlayDemoApp] Exit Carplay code: 0
+conf_len = 2
+> stream info: channel = 2	sample_rate = 48000	frame_size = 1024	aot = 2	bitrate = 0
+######### CarPlay interrupt SIGTER(15)
+######### CarPlay interrupt SIGTER(15)
+01-02 12:03:28.343593 AM [CHudiAP2Server] dispatch_main Quit!!
+01-02 12:03:28.343792 AM [CHudiAP2Server] StopRecvBroadCastiAP!
+01-02 12:03:28.375413 AM [iAP2] ######### interrupt SIGTER(15)
+01-02 12:03:28.413799 AM [Theme_0_Brain] PlugOut(0004)
+01-02 12:03:28.415687 AM [ModePolicy] me->initModeChanges.turnByTurn: 0
+01-02 12:03:28.416062 AM [VideoSource] VideoSource_control: inCommand=stopLinkVideo
+01-02 12:03:28.416217 AM [ModePolicy] ModePolicy_ReleaseScreen Entity from: controller
+01-02 12:03:28.416337 AM [ModePolicy] ModePolicy_ReleaseScreenEntity now: controller
+01-02 12:03:28.416439 AM [AudioSource] kAudioSource_stop: 1!!!!
+01-02 12:03:28.417096 AM [AudioSource] kAudioSource_stop: 0!!!!
+01-02 12:03:28.417463 AM [CarPlayServer] Send:{
+    "type" : "requestUI"
+    "params" : 
+    {
+        "url" : ""
+    }
+}
+
+01-02 12:03:28.418837 AM [FakeAirPlay] ### Main: Buffering issues during session: Late=0 Missing=0 Gaps=0 Rebuffers=2
+01-02 12:03:28.420965 AM [CAccessory_fd] No phone conneted, not need reset!!!
+01-02 12:03:28.425027 AM [RiddleBluetoothService] RiddleBluetoothService::OnDbusMessage DisconnectRemoteDevice
+RiddleBluetoothService_Interface_Control::OnDbusMessage DisconnectRemoteDevice
+01-02 12:03:28.432404 AM [RiddleBluetoothService] RiddleBluetoothService::OnDbusMessage Listen
+RiddleBluetoothService_Interface_Control::OnDbusMessage Listen
+01-02 12:03:28.465049 AM [iAP2MediaPlayerEngine] CiAP2MediaPlayerEngine_Send_NowPlayingStatus: {
+    "id" : 0
+    "friendlyName" : "NowPlayingInfo"
+    "type" : "array"
+    "value" : 
+    [
+        {
+            "id" : 1
+            "friendlyName" : "playback"
+            "type" : "group"
+            "value" : 
+            [
+                {
+                    "id" : 0
+                    "friendlyName" : "playbackStatus"
+                    "type" : "uint8"
+                    "value" : 2
+                }
+            ]
+        }
+    ]
+}
+
+01-02 12:03:28.482705 AM [CarPlayEventHTTPClient] 车机发送: {
+    "type" : "changeModes"
+    "params" : 
+    {
+        "reasonStr" : "change mode req"
+        "appStates" : 
+        [
+            {
+                "appStateID" : 2
+                "state" : false
+            },
+            {
+                "speechMode" : -1
+                "appStateID" : 1
+            },
+            {
+                "appStateID" : 3
+                "state" : false
+            }
+        ]
+        "resources" : 
+        [
+            {
+                "transferPriority" : 500
+                "takeConstraint" : 500
+                "resourceID" : 1
+                "transferType" : 1
+                "borrowConstraint" : 100
+            }
+        ]
+    }
+}
+
+ 01-02 12:03:28.483537 AM [ModePolicy] userInitiated take mainScreen, if anytime You borrow, if userInitiated You take
+(Send_AirPlayModeChanges_Inner)+390: link now is RiddleLinktype_UNKOWN?
+01-02 12:03:28.484652 AM [CarPlayServer] Send:{
+    "type" : "modesChanged"
+    "params" : 
+    {
+        "appStates" : 
+        [
+            {
+                "entity" : 0
+                "appStateID" : 2
+            },
+            {
+                "entity" : 0
+                "speechMode" : -1
+                "appStateID" : 1
+            },
+            {
+                "entity" : 0
+                "appStateID" : 3
+            }
+        ]
+        "resources" : 
+        [
+            {
+                "entity" : 2
+                "resourceID" : 1
+            },
+            {
+                "entity" : 1
+                "resourceID" : 2
+            }
+        ]
+    }
+}
+
+01-02 12:03:28.492565 AM [CarPlayServer] Send modesChanged to HUD finish
+01-02 12:03:28.549917 AM [CarPlayServer] ----------- _processScreenStop: 1!
+01-02 12:03:28.600904 AM [VideoSource] VideoSource_control: inCommand=stopvideo
+01-02 12:03:28.912096 AM [CAccessory_fd] 	From HUD Get ########## CarPlayControl(8) UnKown PhoneComand_iPhone_CarPlay?(500)
+01-02 12:03:28.913004 AM [Theme_0_Brain] Bluetooth_Listen(0026)
+01-02 12:03:28.914429 AM [iAP2Engine] Send_changes:StopLocationInformation(0xFFFC)
+(_get_SeriallNumber)+611: set box serial number: 2019.07.24.11079f32
+
+(Process)+423: bWireLess_=1, bMediumTypeIsBT_=0
+01-02 12:03:31.325377 AM [Adb_driver] No Update File, is media UDisk!!!
+sig_term 15
+hcid[262]: Unregister path: /org/bluez/hci0
+hcid[262]: Stopping SDP server
+hcid[262]: Exit
+_OnDbusMessage! Release
+01-02 12:03:33.126365 AM [RiddleBluetoothService] _getDefaltAdapterPath err=Message did not receive a reply (timeout by message bus)
+01-02 12:03:34.071380 AM [CarPlayEventHTTPClient] {
+    "type" : "requestUI"
+    "params" : 
+    {
+        "url" : ""
+    }
+}
+
+ 01-02 12:03:34.072591 AM [VideoSource] VideoSource_control: inCommand=requestUI
+01-02 12:03:34.073051 AM [CAccessory_fd] 	From HUD Get ########## CarPlayControl(8) RequestHostUI(3)
+01-02 12:03:34.074363 AM [CarPlayServer] Send:{
+    "type" : "modesChanged"
+    "params" : 
+    {
+        "appStates" : 
+        [
+            {
+                "entity" : 0
+                "appStateID" : 2
+            },
+            {
+                "entity" : 0
+                "speechMode" : -1
+                "appStateID" : 1
+            },
+            {
+                "entity" : 0
+                "appStateID" : 3
+            }
+        ]
+        "resources" : 
+        [
+            {
+                "entity" : 1
+                "resourceID" : 1
+            },
+            {
+                "entity" : 1
+                "resourceID" : 2
+            }
+        ]
+    }
+}
+
+01-02 12:03:34.081189 AM [CarPlayServer] Send modesChanged to HUD finish
+01-02 12:03:34.206248 AM [ModePolicy] Screen Entity now: controller
+01-02 12:03:34.206527 AM [VideoSource] VideoSource_control: inCommand=startvideo
+01-02 12:03:34.226963 AM [CarPlayServer] ----------- _processScreenSetup Start: 0!
+01-02 12:03:34.247964 AM [CarPlayServer] respParams={
+    "streams" : 
+    [
+        {
+            "type" : 110
+            "dataPort" : 41728
+        }
+    ]
+    "timingPort" : 41706
+}
+ 
+01-02 12:03:35.476979 AM [VideoSource] Need Keyframe!
+01-02 12:03:35.477229 AM [VideoSource] myUI Refresh frame quickly!
+sps->vui.i_max_dec_frame_buffering: 1
+264_encoder pps sps: 
+01 64 00 1f ff e1 00 14 67 64 00 1f ac 13 14 50 
+12 c1 6e 9b 81 01 01 03 68 22 11 96 01 00 04 68 
+ee 3c b0 02 00 00 00 
+01-02 12:03:35.710569 AM [VideoSource] ###VideoConfig! w=1200 h=720
+[2020-01-02 00:03:52.993661]<ConfigFileUtils.c,633>: Set Box bluetooth name: PEUGEO-8535
+[2020-01-02 00:03:53.197570]<ConfigFileUtils.c,643>: Set Box WiFi name: PEUGEOT K9 AP31
+01-02 12:03:59.085873 AM ### [ASSERT] iAP2Server.cpp:430 "", "ret > 0" 
+01-02 12:03:59.086122 AM [iAP2Server] _iAP2readloop quit!!! err = -6738/0xFFFFE5AE kNotReadableErr

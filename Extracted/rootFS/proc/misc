@@ -1,0 +1,11 @@
+ 58 ipod_iap2
+ 59 android_iap2
+ 60 network_throughput
+ 61 network_latency
+ 62 cpu_dma_latency
+ 63 mxc_asrc
+  0 hwaes
+130 watchdog
+237 loop-control
+229 fuse
+235 autofs

@@ -1,0 +1,121 @@
+Timer List Version: v0.7
+HRTIMER_MAX_CLOCK_BASES: 4
+now at 638931480075 nsecs
+
+cpu: 0
+ clock 0:
+  .base:       87ed2308
+  .index:      0
+  .resolution: 1 nsecs
+  .get_time:   ktime_get
+  .offset:     0 nsecs
+active timers:
+ #0: <8228d9a0>, ehci_hrtimer_func, S:01
+ # expires at 638932757742-638933757742 nsecs [in 1277667 to 2277667 nsecs]
+ #1: <87ed29f8>, tick_sched_timer, S:01
+ # expires at 638940000000-638940000000 nsecs [in 8519925 to 8519925 nsecs]
+ #2: <836abae8>, hrtimer_wakeup, S:01
+ # expires at 638943941075-638944040871 nsecs [in 12461000 to 12560796 nsecs]
+ #3: <80800028>, sched_rt_period_timer, S:01
+ # expires at 639000000000-639000000000 nsecs [in 68519925 to 68519925 nsecs]
+ #4: <83609da0>, ehci_hrtimer_func, S:01
+ # expires at 639011329408-639012329408 nsecs [in 79849333 to 80849333 nsecs]
+ #5: <8378bb78>, hrtimer_wakeup, S:01
+ # expires at 639138350742-639139350739 nsecs [in 206870667 to 207870664 nsecs]
+ #6: <809dfb78>, hrtimer_wakeup, S:01
+ # expires at 639138943742-639139943736 nsecs [in 207463667 to 208463661 nsecs]
+ #7: <8164fb78>, hrtimer_wakeup, S:01
+ # expires at 639421327075-639422327071 nsecs [in 489847000 to 490846996 nsecs]
+ #8: <81555e50>, hrtimer_wakeup, S:01
+ # expires at 639511447742-639511497742 nsecs [in 579967667 to 580017667 nsecs]
+ #9: <809e5b78>, hrtimer_wakeup, S:01
+ # expires at 639642622075-639643622071 nsecs [in 711142000 to 712141996 nsecs]
+ #10: <86e3bae8>, hrtimer_wakeup, S:01
+ # expires at 639644113741-639654113711 nsecs [in 712633666 to 722633636 nsecs]
+ #11: <83693ae8>, hrtimer_wakeup, S:01
+ # expires at 676314039407-676360479828 nsecs [in 37382559332 to 37428999753 nsecs]
+ #12: <83825b78>, hrtimer_wakeup, S:01
+ # expires at 691536733407-691596733404 nsecs [in 52605253332 to 52665253329 nsecs]
+ #13: <81c1fb78>, hrtimer_wakeup, S:01
+ # expires at 741245818732-741345818732 nsecs [in 102314338657 to 102414338657 nsecs]
+ #14: <808419f8>, sched_clock_poll, S:01
+ # expires at 1252698794972-1252698794972 nsecs [in 613767314897 to 613767314897 nsecs]
+ #15: <871b7ae8>, hrtimer_wakeup, S:01
+ # expires at 7222512578004-7222612578004 nsecs [in 6583581097929 to 6583681097929 nsecs]
+ clock 1:
+  .base:       87ed2340
+  .index:      1
+  .resolution: 1 nsecs
+  .get_time:   ktime_get_real
+  .offset:     1577923196968161667 nsecs
+active timers:
+ #0: <839dfe50>, hrtimer_wakeup, S:01
+ # expires at 1577923837438775000-1577923837438825000 nsecs [in 1577923198507294925 to 1577923198507344925 nsecs]
+ #1: <839dbe50>, hrtimer_wakeup, S:01
+ # expires at 1577923837439066000-1577923837439116000 nsecs [in 1577923198507585925 to 1577923198507635925 nsecs]
+ #2: <83829e50>, hrtimer_wakeup, S:01
+ # expires at 1577923837512398000-1577923837512448000 nsecs [in 1577923198580917925 to 1577923198580967925 nsecs]
+ #3: <837f1e50>, hrtimer_wakeup, S:01
+ # expires at 1577923837612416000-1577923837612466000 nsecs [in 1577923198680935925 to 1577923198680985925 nsecs]
+ #4: <83873e50>, hrtimer_wakeup, S:01
+ # expires at 1577923837712383000-1577923837712433000 nsecs [in 1577923198780902925 to 1577923198780952925 nsecs]
+ #5: <83791e50>, hrtimer_wakeup, S:01
+ # expires at 1577923837769404000-1577923837769454000 nsecs [in 1577923198837923925 to 1577923198837973925 nsecs]
+ #6: <87ab9e50>, hrtimer_wakeup, S:01
+ # expires at 1577923837812372000-1577923837812422000 nsecs [in 1577923198880891925 to 1577923198880941925 nsecs]
+ clock 2:
+  .base:       87ed2378
+  .index:      2
+  .resolution: 1 nsecs
+  .get_time:   ktime_get_boottime
+  .offset:     0 nsecs
+active timers:
+ clock 3:
+  .base:       87ed23b0
+  .index:      3
+  .resolution: 1 nsecs
+  .get_time:   ktime_get_clocktai
+  .offset:     1577923196968161667 nsecs
+active timers:
+  .expires_next   : 638933757742 nsecs
+  .hres_active    : 1
+  .nr_events      : 393186
+  .nr_retries     : 1398
+  .nr_hangs       : 0
+  .max_hang_time  : 0 nsecs
+  .nohz_mode      : 2
+  .last_tick      : 638940000000 nsecs
+  .tick_stopped   : 0
+  .idle_jiffies   : 33893
+  .idle_calls     : 320105
+  .idle_sleeps    : 16668
+  .idle_entrytime : 638930157742 nsecs
+  .idle_waketime  : 638930157742 nsecs
+  .idle_exittime  : 638930186075 nsecs
+  .idle_sleeptime : 374550994575 nsecs
+  .iowait_sleeptime: 4482728314 nsecs
+  .last_jiffies   : 33893
+  .next_jiffies   : 33900
+  .idle_expires   : 639000000000 nsecs
+jiffies: 33893
+
+Tick Device: mode:     1
+Broadcast device
+Clock Event Device: <NULL>
+tick_broadcast_mask: 00000000
+tick_broadcast_oneshot_mask: 00000000
+
+Tick Device: mode:     1
+Per CPU device: 0
+Clock Event Device: mxc_timer1
+ max_delta_ns:   1431655752223
+ min_delta_ns:   85000
+ mult:           6442451
+ shift:          31
+ mode:           3
+ next_event:     638933757742 nsecs
+ set_next_event: v2_set_next_event
+ set_mode:       mxc_set_mode
+ event_handler:  hrtimer_interrupt
+ retries:        0
+

@@ -1,0 +1,30 @@
+           CPU0       
+ 34:        664       GIC  34  sdma
+ 36:          0       GIC  36  20cc000.snvs-pwrkey
+ 51:          0       GIC  51  rtc alarm
+ 54:     378981       GIC  54  mmc0
+ 55:         52       GIC  55  mmc1
+ 58:          0       GIC  58  2020000.serial
+ 59:          0       GIC  59  21e8000.serial
+ 60:        115       GIC  60  21ec000.serial
+ 68:          1       GIC  68  21a0000.i2c
+ 69:       4594       GIC  69  21a4000.i2c
+ 74:     122626       GIC  74  2184200.usb
+ 75:       7071       GIC  75  2184000.usb
+ 78:          0       GIC  78  dcp-vmi-irq
+ 79:         10       GIC  79  dcp-irq
+ 81:          0       GIC  81  imx_thermal
+ 82:          0       GIC  82  asrc
+ 87:     392585       GIC  87  i.MX Timer Tick
+112:          0       GIC 112  20bc000.wdog
+130:          0       GIC 130  sai
+139:      34063       GIC 139  21e0000.qspi
+IPI0:          0  CPU wakeup interrupts
+IPI1:          0  Timer broadcast interrupts
+IPI2:          0  Rescheduling interrupts
+IPI3:          0  Function call interrupts
+IPI4:          0  Single function call interrupts
+IPI5:          0  CPU stop interrupts
+IPI6:          0  IRQ work interrupts
+IPI7:          0  completion interrupts
+Err:          0

@@ -1,0 +1,5 @@
+# Aliases extracted from modules themselves.
+alias fs-configfs configfs
+alias usbfunc:acm usb_f_acm
+alias usbfunc:gser usb_f_serial
+alias usbfunc:obex usb_f_obex
