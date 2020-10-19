@@ -1,0 +1,1 @@
+[Documentation - Burning eFuses on i.MX6 and i.MX7](https://imxdev.gitlab.io/tutorial/Burning_eFuses_on_i.MX/)
