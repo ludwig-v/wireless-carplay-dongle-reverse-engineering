@@ -1,0 +1,408 @@
+<6>Booting Linux on physical CPU 0x0
+<5>Linux version 3.14.52+g94d07bb (skyx64@skyx64-1204) (gcc version 4.9.2 (GCC) ) #0 SMP PREEMPT Fri Dec 6 22:08:47 CST 2019
+<6>CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+<6>CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+<6>Machine model: Freescale i.MX6 UltraLite 14x14 EVK Board
+<6>cma: CMA: reserved 32 MiB at 86000000
+<6>Memory policy: Data cache writealloc
+<7>On node 0 totalpages: 32768
+<7>free_area_init_node: node 0, pgdat 80923100, node_mem_map 85ee7000
+<7>  Normal zone: 256 pages used for memmap
+<7>  Normal zone: 0 pages reserved
+<7>  Normal zone: 32768 pages, LIFO batch:7
+<6>PERCPU: Embedded 8 pages/cpu @85ed2000 s8256 r8192 d16320 u32768
+<7>pcpu-alloc: s8256 r8192 d16320 u32768 alloc=8*4096
+<7>pcpu-alloc: [0] 0 
+<4>Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 32512
+<5>Kernel command line: root=/dev/mtdblock3 rootfstype=jffs2 mtdparts=21e0000.qspi:1M(uboot),5056K(kernel),64K(dtb),10M(rootfs) rootwait rw
+<6>PID hash table entries: 512 (order: -1, 2048 bytes)
+<6>Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+<6>Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+<4>Memory: 87204K/131072K available (6420K kernel code, 776K rwdata, 1900K rodata, 224K init, 418K bss, 43868K reserved, 0K highmem)
+<5>Virtual kernel memory layout:
+<5>    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+<5>    vmalloc : 0x88800000 - 0xff000000   (1896 MB)
+<5>    lowmem  : 0x80000000 - 0x88000000   ( 128 MB)
+<5>    pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+<5>    modules : 0x7f000000 - 0x7fe00000   (  14 MB)
+<5>      .text : 0x80008000 - 0x8082828c   (8321 kB)
+<5>      .init : 0x80829000 - 0x80861040   ( 225 kB)
+<5>      .data : 0x80862000 - 0x80924100   ( 777 kB)
+<5>       .bss : 0x8092410c - 0x8098cb88   ( 419 kB)
+<6>SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+<6>Preemptible hierarchical RCU implementation.
+<6>	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+<6>RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+<6>NR_IRQS:16 nr_irqs:16 16
+<6>Switching to timer-based delay loop
+<6>sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956969942ns
+<2>clocksource_of_init: no matching clocksources found
+<6>Console: colour dummy device 80x30
+<6>console [tty0] enabled
+<6>Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+<6>pid_max: default: 32768 minimum: 301
+<6>Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+<6>Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+<6>CPU: Testing write buffer coherency: ok
+<3>/cpus/cpu@0 missing clock-frequency property
+<6>CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+<6>Setting up static identity map for 0x8061d140 - 0x8061d198
+<6>Brought up 1 CPUs
+<6>SMP: Total of 1 processors activated (48.00 BogoMIPS).
+<6>CPU: All CPU(s) started in SVC mode.
+<6>devtmpfs: initialized
+<6>VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+<6>pinctrl core: initialized pinctrl subsystem
+<6>regulator-dummy: no parameters
+<6>NET: Registered protocol family 16
+<6>DMA: preallocated 256 KiB pool for atomic coherent allocations
+<6>cpuidle: using governor ladder
+<6>cpuidle: using governor menu
+<6>Use WDOG1 as reset source
+<6>syscon 20c8000.anatop: regmap [mem 0x020c8000-0x020c8fff] registered
+<6>vdd3p0: 2625 <--> 3400 mV at 3000 mV 
+<6>cpu: 725 <--> 1450 mV at 1150 mV 
+<6>vddsoc: 725 <--> 1450 mV at 1175 mV 
+<6>syscon 20e4000.iomuxc-gpr: regmap [mem 0x020e4000-0x020e7fff] registered
+<6>syscon 21ac000.romcp: regmap [mem 0x021ac000-0x021affff] registered
+<6>syscon 21bc000.ocotp-ctrl: regmap [mem 0x021bc000-0x021bffff] registered
+<6>hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+<6>hw-breakpoint: maximum watchpoint size is 8 bytes.
+<6>imx6ul-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+<4>20dc000.gpc supply pu not found, using dummy regulator
+<6>bio: create slab <bio-0> at 0
+<6>mxs-dma 1804000.dma-apbh: initialized
+<6>can-3v3: 3300 mV 
+<6>wlreg_on: 3300 mV 
+<6>2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58, base_baud = 5000000) is a IMX
+<6>21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 59, base_baud = 5000000) is a IMX
+<6>21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 60, base_baud = 5000000) is a IMX
+<5>SCSI subsystem initialized
+<7>libata version 3.00 loaded.
+<6>usbcore: registered new interface driver usbfs
+<6>usbcore: registered new interface driver hub
+<6>usbcore: registered new device driver usb
+<6>i2c i2c-0: IMX I2C adapter registered
+<6>i2c i2c-1: IMX I2C adapter registered
+<6>MIPI CSI2 driver module loaded
+<6>Advanced Linux Sound Architecture Driver Initialized.
+<6>Bluetooth: Core ver 2.18
+<6>NET: Registered protocol family 31
+<6>Bluetooth: HCI device and connection manager initialized
+<6>Bluetooth: HCI socket layer initialized
+<6>Bluetooth: L2CAP socket layer initialized
+<6>Bluetooth: SCO socket layer initialized
+<6>Switched to clocksource mxc_timer1
+<6>cfg80211: Calling CRDA to update world regulatory domain
+<6>NET: Registered protocol family 2
+<6>TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+<6>TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+<6>TCP: Hash tables configured (established 1024 bind 1024)
+<6>TCP: reno registered
+<6>UDP hash table entries: 256 (order: 1, 8192 bytes)
+<6>UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+<6>NET: Registered protocol family 1
+<3>failed to find imx6q-mmdc device tree data!
+<3>imx_busfreq busfreq.1: Busfreq init of ddr controller failed
+<4>imx_busfreq: probe of busfreq.1 failed with error -22
+<6>Bus freq driver module loaded
+<6>futex hash table entries: 256 (order: 2, 16384 bytes)
+<6>jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+<6>fuse init (API version 7.22)
+<6>msgmni has been set to 234
+<6>io scheduler noop registered
+<6>io scheduler deadline registered
+<6>io scheduler cfq registered (default)
+<6>imx-weim 21b8000.weim: Driver registered.
+<4>imx-sdma 20ec000.sdma: no event needs to be remapped
+<6>imx-sdma 20ec000.sdma: loaded firmware 3.2
+<6>imx-sdma 20ec000.sdma: initialized
+<6>serial: Freescale lpuart driver
+<6>brd: module loaded
+<6>loop: module loaded
+<6>fsl-quadspi 21e0000.qspi: mx25l12805d (16384 Kbytes)
+<5>4 cmdlinepart partitions found on MTD device 21e0000.qspi
+<5>Creating 4 MTD partitions on "21e0000.qspi":
+<5>0x000000000000-0x000000100000 : "uboot"
+<5>0x000000100000-0x0000005f0000 : "kernel"
+<5>0x0000005f0000-0x000000600000 : "dtb"
+<5>0x000000600000-0x000001000000 : "rootfs"
+<6>fsl-quadspi 21e0000.qspi: QuadSPI SPI NOR flash driver
+<6>spi_gpio spi4.14: gpio-miso property not found, switching to no-rx mode
+<6>usbcore: registered new interface driver cdc_ether
+<6>usbcore: registered new interface driver cdc_subset
+<6>usbcore: registered new interface driver zaurus
+<6>ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>ehci-mxc: Freescale On-Chip EHCI Host driver
+<6>usbcore: registered new interface driver usb-storage
+<6>usbcore: registered new interface driver usb_ehset_test
+<4>2184800.usbmisc supply vbus-wakeup not found, using dummy regulator
+<6>setup_reset_gpios:-2, flags 0
+<7>imx_usb 2184000.usb: pinctrl_hsic_idle lookup failed, err=-19
+<7>imx_usb 2184000.usb: pinctrl_hsic_active lookup failed, err=-19
+<4>2184000.usb supply vbus not found, using dummy regulator
+<7>ci_hdrc ci_hdrc.0: ChipIdea HDRC found, revision: 25, lpm: 0; cap: 8881e100 op: 8881e140
+<3>mxs_phy 20c9000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+<7>ci_hdrc ci_hdrc.0: It is OTG capable controller
+<3>ci_hdrc ci_hdrc.0: Init set fsm->a_vbus_vld = 1
+<7>ci_hdrc ci_hdrc.0: at ci_runtime_suspend
+<7>ci_hdrc ci_hdrc.0: at ci_controller_resume
+<6>setup_reset_gpios:-2, flags 0
+<7>imx_usb 2184200.usb: pinctrl_hsic_idle lookup failed, err=-19
+<7>imx_usb 2184200.usb: pinctrl_hsic_active lookup failed, err=-19
+<4>2184200.usb supply vbus not found, using dummy regulator
+<7>ci_hdrc ci_hdrc.1: ChipIdea HDRC found, revision: 25, lpm: 0; cap: 88846300 op: 88846340
+<3>mxs_phy 20ca000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+<6>[otg_statemachine]  fsm->id = 0
+<6>[otg_set_state]  Set state: a_idle
+<6>[otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 1
+<3>ci_hdrc ci_hdrc.0: ci_otg_start_host 1
+<6>ci_hdrc ci_hdrc.0: EHCI Host Controller
+<6>ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+<7>ci_hdrc ci_hdrc.1: It is OTG capable controller
+<3>snvs_pwrkey 20cc000.snvs-pwrkey: can't get snvs clock
+<6>input: 20cc000.snvs-pwrkey as /devices/soc0/soc.0/2000000.aips-bus/20cc000.snvs-pwrkey/input/input0
+<6>snvs_pwrkey 20cc000.snvs-pwrkey: i.MX snvs powerkey probed
+<3>snvs_rtc 20cc034.snvs-rtc-lp: can't get snvs-rtc clock
+<6>check_alarm_past: alarm in the past
+<6>snvs_rtc 20cc034.snvs-rtc-lp: rtc core: registered 20cc034.snvs-rtc-lp as rtc0
+<6>i2c /dev entries driver
+<6>imx2-wdt 20bc000.wdog: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=0)
+<6>Bluetooth: HCI UART driver ver 2.2
+<6>Bluetooth: HCI H4 protocol initialized
+<6>Bluetooth: HCI Realtek H5 protocol initialized
+<6>sdhci: Secure Digital Host Controller Interface driver
+<6>sdhci: Copyright(c) Pierre Ossman
+<6>sdhci-pltfm: SDHCI platform and OF driver helper
+<6>ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+<6>usb usb1: is_b_host:0, config:84215200, parent:  (null), root_hub=841f2800
+<6>usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+<6>usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>usb usb1: Product: EHCI Host Controller
+<6>usb usb1: Manufacturer: Linux 3.14.52+g94d07bb ehci_hcd
+<6>usb usb1: SerialNumber: ci_hdrc.0
+<6>hub 1-0:1.0: USB hub found
+<6>mmc0: no vqmmc regulator found
+<6>hub 1-0:1.0: 1 port detected
+<6>[otg_statemachine]  quit statemachine, changed = 1
+<6>[otg_set_state]  Set state: a_wait_vrise
+<6>[otg_statemachine]  quit statemachine, changed = 1
+<6>mmc0: SDHCI controller on 2190000.usdhc [2190000.usdhc] using ADMA
+<6>mmc1: no vqmmc regulator found
+<6>mmc1: no vmmc regulator found
+<4>sdhci-esdhc-imx 2190000.usdhc: card claims to support voltages below defined range
+<6>mmc0: new high speed SDIO card at address 0001
+<6>mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+<3>wm8960 0-001a: Failed to issue reset
+<4>wm8960: probe of 0-001a failed with error -5
+<6>[otg_set_state]  Set state: a_wait_bcon
+<6>[otg_statemachine]  quit statemachine, changed = 1
+<6>fsl-asrc 2034000.asrc: driver registered
+<6>TCP: cubic registered
+<6>NET: Registered protocol family 10
+<6>sit: IPv6 over IPv4 tunneling driver
+<6>NET: Registered protocol family 17
+<6>Bluetooth: RFCOMM TTY layer initialized
+<6>Bluetooth: RFCOMM socket layer initialized
+<6>Bluetooth: RFCOMM ver 1.11
+<6>lib80211: common routines for IEEE802.11 drivers
+<7>lib80211_crypt: registered algorithm 'NULL'
+<7>lib80211_crypt: registered algorithm 'WEP'
+<7>lib80211_crypt: registered algorithm 'CCMP'
+<7>lib80211_crypt: registered algorithm 'TKIP'
+<3>cpu cpu0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+<6>can-3v3: disabling
+<6>regulator-dummy: disabling
+<6>file system registered
+<6>android_usb gadget: android_usb ready
+<6>snvs_rtc 20cc034.snvs-rtc-lp: setting system clock to 1970-01-01 00:01:59 UTC (119)
+<6>ALSA device list:
+<6>  No soundcards found.
+<6>VFS: Mounted root (jffs2 filesystem) on device 31:3.
+<6>devtmpfs: mounted
+<6>Freeing unused kernel memory: 224K (80829000 - 80861000)
+<5>random: nonblocking pool is initialized
+<3>android_usb: already disabled
+<3>android_enable_function: iap2
+<3>android_enable_function: ncmandroid_usb gadget: _iap2_bind_config
+<6>ncm_function_bind_config MAC: 00:00:00:00:00:00
+<6>ncm0: MAC c2:8e:30:52:e9:a3
+<6>ncm0: HOST MAC 26:98:d9:34:fd:a1
+<4>ncm0: eth_open
+<4>ncm0: eth_start
+<7>ci_hdrc ci_hdrc.0: at ci_runtime_suspend
+<7>imx_usb 2184000.usb: at imx_controller_suspend
+<6>IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+<6>zero gadget: audio_buf_size 48000, req_buf_size 192, req_count 256
+<6>zero gadget: iPhone, version: Cinco de Mayo 2008
+<6>zero gadget: zero ready
+<6>[otg_statemachine]  fsm->id = 1
+<6>[otg_set_state]  Set state: b_idle
+<6>[otg_statemachine]  quit statemachine, changed = 1
+<6>[otg_set_state]  Set state: b_peripheral
+<6>[otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 2
+<3>ci_hdrc ci_hdrc.1: ci_otg_start_gadget 1
+<7>imx_usb 2184200.usb: unknown event
+<6>[otg_statemachine]  quit statemachine, changed = 1
+<6>[otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 0 0 1
+<6>[otg_statemachine]  quit statemachine, changed = 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<6>zero gadget: high-speed config #2: ipod
+<3>zero gadget: Set iPod Hid Interface Alt
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: non-core control req22.01 v0100 i0081 l3
+<3>zero gadget: f_audio_setup req22.01 v0100 i0081 l3
+<3>zero gadget: control return value: 0
+<3>zero gadget: non-core control reqa2.81 v0100 i0081 l3
+<3>zero gadget: f_audio_setup reqa2.81 v0100 i0081 l3
+<3>zero gadget: control return value: -95
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: non-core control req21.0a v0000 i0002 l0
+<3>zero gadget: f_audio_setup req21.0a v0000 i0002 l0
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control req81.06 v2200 i0002 l208
+<3>zero gadget: f_audio_setup req81.06 v2200 i0002 l208
+<3>zero gadget: control return value: 0
+<6>ipod_iap2_open
+<3>zero gadget: non-core control reqa1.01 v0101 i0002 l6
+<3>zero gadget: f_audio_setup reqa1.01 v0101 i0002 l6
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v0102 i0002 l10
+<3>zero gadget: f_audio_setup reqa1.01 v0102 i0002 l10
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v0103 i0002 l14
+<3>zero gadget: f_audio_setup reqa1.01 v0103 i0002 l14
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v0104 i0002 l18
+<3>zero gadget: f_audio_setup reqa1.01 v0104 i0002 l18
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v0105 i0002 l26
+<3>zero gadget: f_audio_setup reqa1.01 v0105 i0002 l26
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v0106 i0002 l50
+<3>zero gadget: f_audio_setup reqa1.01 v0106 i0002 l50
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v0107 i0002 l96
+<3>zero gadget: f_audio_setup reqa1.01 v0107 i0002 l96
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v0108 i0002 l194
+<3>zero gadget: f_audio_setup reqa1.01 v0108 i0002 l194
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v0109 i0002 l258
+<3>zero gadget: f_audio_setup reqa1.01 v0109 i0002 l258
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v010a i0002 l386
+<3>zero gadget: f_audio_setup reqa1.01 v010a i0002 l386
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v010b i0002 l514
+<3>zero gadget: f_audio_setup reqa1.01 v010b i0002 l514
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqa1.01 v010c i0002 l768
+<3>zero gadget: f_audio_setup reqa1.01 v010c i0002 l768
+<3>zero gadget: control return value: -95
+<3>zero gadget: non-core control reqc0.33 v0000 i0000 l4
+<3>zero gadget: iph_ctrlrequest c0.33 v0000 i0000 l4
+<3>zero gadget: unknown class-specific control req c0.33 v0000 i0000 l4
+<3>zero gadget: iph_ctrlrequest value: -95
+<3>zero gadget: control return value: -95
+<3>zero gadget: control return value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: non-core control reqc0.53 v0000 i0000 l4
+<3>zero gadget: iph_ctrlrequest c0.53 v0000 i0000 l4
+<3>zero gadget: iph_ctrlrequest value: 0
+<3>zero gadget: control return value: 0
+<3>zero gadget: non-core control req40.51 v0001 i0000 l0
+<3>zero gadget: iph_ctrlrequest 40.51 v0001 i0000 l0
+<3>zero gadget: iph_ctrlrequest value: 0
+<3>zero gadget: control return value: 0
+<6>f_iphone: do_hnp
+<6>[otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 1 0 0
+<6>[otg_set_state]  Set state: b_wait_acon
+<6>[otg_set_protocol]  Changing role fsm->protocol= 2; new protocol= 1
+<3>ci_hdrc ci_hdrc.1: ci_otg_start_gadget 0
+<3>zero gadget: iPod Function Disabled!!!
+<7>imx_usb 2184200.usb: unknown event
+<3>ci_hdrc ci_hdrc.1: ci_otg_start_host 1
+<6>ci_hdrc ci_hdrc.1: EHCI Host Controller
+<6>ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 2
+<6>ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+<6>usb usb2: is_b_host:1, config:8594f800, parent:  (null), root_hub=84feec00
+<6>usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+<6>usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+<6>usb usb2: Product: EHCI Host Controller
+<6>usb usb2: Manufacturer: Linux 3.14.52+g94d07bb ehci_hcd
+<6>usb usb2: SerialNumber: ci_hdrc.1
+<6>hub 2-0:1.0: USB hub found
+<6>hub 2-0:1.0: 1 port detected
+<6>[otg_statemachine]  quit statemachine, changed = 1
+<6>ipod_iap2_flush
+<6>ipod_iap2_release
+<6>[otg_statemachine]  OTG_STATE_B_WAIT_ACON:, 1 1 0 0
+<6>[otg_set_state]  Set state: b_host
+<6>[otg_statemachine]  quit statemachine, changed = 1
+<6>usb 2-1: new high-speed USB device number 2 using ci_hdrc
+<6>usb 2-1: is_b_host:1, config:85012a00, parent:84feec00, root_hub=84feec00
+<6>usb 2-1: New USB device found, idVendor=15a2, idProduct=1234
+<6>usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+<6>usb 2-1: Product: OIP
+<6>usb 2-1: Manufacturer: Continental
+<6>usb 2-1: SerialNumber: A1B2C3D4
+<7>cdc_ncm 2-1:1.1: ################## cdc_ncm_bind_common
+<7>cdc_ncm 2-1:1.1: dwNtbInMaxSize=16384 dwNtbOutMaxSize=16384 wNdpOutPayloadRemainder=0 wNdpOutDivisor=4 wNdpOutAlignment=4 wNtbOutMaxDatagrams=0 flags=0x11
+<6>cdc_ncm 2-1:1.1: MAC-Address: 22:22:22:22:d1:70
+<6>cdc_ncm 2-1:1.1 usb0: register 'cdc_ncm' at usb-ci_hdrc.1-1, CDC NCM, 22:22:22:22:d1:70
+<6>usbcore: registered new interface driver cdc_ncm
+<6>cdc_ncm 2-1:1.1 usb0: cdc_ncm_check_connect  dev->status: 85001700
+<6>cdc_ncm 2-1:1.1 usb0: 425 mbit/s downlink 425 mbit/s uplink
+<6>IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+<6>cdc_ncm 2-1:1.1 usb0: 425 mbit/s downlink 425 mbit/s uplink
+<6>cdc_ncm 2-1:1.1 usb0: network connection: connected
+<6>IPv6: ADDRCONF(NETDEV_CHANGE): usb0: link becomes ready
+<6>Bluetooth: h5_open
+<6>Bluetooth: hci_uart_register_dev
+<4>ncm0: stop stats: rx/tx 0/0, errs 0/0
+<6>IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+<6>IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+<7>imx_usb 2184000.usb: at imx_controller_resume
+<7>wakeup int at ci_hdrc.0
+<7>ci_hdrc ci_hdrc.0: at ci_controller_resume
+<6>[otg_set_state]  Set state: a_host
+<6>[otg_statemachine]  quit statemachine, changed = 1
+<6>usb 1-1: new high-speed USB device number 2 using ci_hdrc
+<6>usb 1-1: is_b_host:0, config:8124e600, parent:841f2800, root_hub=841f2800
+<6>usb 1-1: New USB device found, idVendor=05dc, idProduct=a838
+<6>usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+<6>usb 1-1: Product: USB Flash Drive
+<6>usb 1-1: Manufacturer: Lexar
+<6>usb 1-1: SerialNumber: AAIWBO8J6OZ60J1T
+<6>usb-storage 1-1:1.0: USB Mass Storage device detected
+<6>scsi0 : usb-storage 1-1:1.0
+<5>scsi 0:0:0:0: Direct-Access     Lexar    USB Flash Drive  1100 PQ: 0 ANSI: 6
+<5>sd 0:0:0:0: [sda] 31285248 512-byte logical blocks: (16.0 GB/14.9 GiB)
+<5>sd 0:0:0:0: [sda] Write Protect is off
+<7>sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00
+<5>sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+<6> sda: sda1
+<5>sd 0:0:0:0: [sda] Attached SCSI removable disk
+<3>of_dma_request_slave_channel: dma-names property of node '/soc/aips-bus@02000000/spba-bus@02000000/serial@02020000' missing or empty
+<3>of_dma_request_slave_channel: dma-names property of node '/soc/aips-bus@02000000/spba-bus@02000000/serial@02020000' missing or empty
+<4>FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
