@@ -1,0 +1,2 @@
+Sometimes the update is not launched due to missing space on the rootFS, here is a script to delete CarPlay big binaries (they are restored after the update so no worries)
+- Use it at last resort (for a custom firmware only)
