@@ -11,3 +11,4 @@ mkdir -p /mnt/UPAN/Dump/sbin && cp -R /sbin/* /mnt/UPAN/Dump/sbin
 mkdir -p /mnt/UPAN/Dump/script && cp -R /script/* /mnt/UPAN/Dump/script
 mkdir -p /mnt/UPAN/Dump/usr && cp -R /usr/* /mnt/UPAN/Dump/usr
 mkdir -p /mnt/UPAN/Dump/var && cp -R /var/* /mnt/UPAN/Dump/var
+mkdir -p /mnt/UPAN/Dump/tmp && cp -R /tmp/* /mnt/UPAN/Dump/tmp
