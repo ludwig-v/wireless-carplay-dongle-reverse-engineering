@@ -3,5 +3,3 @@
 All custom firmwares restore "performance" scaling governor of the CPU, disable logging to save RAM and allow custom script execution from the USB Key :
 
     U2W.sh
-
-Latest Custom Firmware is at the root of this directory, you can flash it using the usual procedure.
