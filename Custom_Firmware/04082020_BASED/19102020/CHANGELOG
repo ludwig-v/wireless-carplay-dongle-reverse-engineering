@@ -1,5 +1,0 @@
-Cleanfully unmount USB Key
-Fix update archive files permissions
-Remove Windows style carriage return for U2W.sh
-Save U2W.sh execution result in U2W.txt
-Disable logs by default (unnecessary RAM used)

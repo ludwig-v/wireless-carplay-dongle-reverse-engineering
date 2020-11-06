@@ -1,6 +1,0 @@
-Based on 04.08.2020 original firmware
-
-Modifications:
-- Restoring performance CPU scaling governor
-- Copy logs automatically to USB Key
-- Possibility to execute custom script U2W.sh from USB Key (allowing serial changing and many more)
