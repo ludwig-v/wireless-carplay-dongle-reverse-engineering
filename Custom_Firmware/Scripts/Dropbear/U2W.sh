@@ -9,8 +9,6 @@ echo 1 >/sys/class/gpio/gpio2/value;
 cp /mnt/UPAN/dropbear /tmp
 chmod 775 /tmp/dropbear
 
-ln -s /lib/ld-linux.so.3 /lib/ld-linux-armhf.so.3
-
 # copy public key
 
 mkdir /root
