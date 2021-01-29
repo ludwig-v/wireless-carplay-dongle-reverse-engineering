@@ -17,7 +17,7 @@ if (isset($argv[1])) {
 	if (isset($argv[4])) {
 		$endingID = $argv[4];
 	} else {
-		$endingID = 9999;
+		$endingID = 2400; // Probably HOURMINUTES so 2400 maximum default
 	}
 	
 	$explodeDate = explode('-', $date);
@@ -72,7 +72,7 @@ if (isset($argv[1])) {
 	echo "Usage: firmwareFinder.php YYYY-MM-DD DAYS_RANGE STARTING_ID\n\n";
 	echo "DAYS_RANGE = Look inside following days folders\n";
 	echo "STARTING_ID = Last 4 digits of firmware image\n\n";
-	echo "Example: firmwareFinder.php 2021-01-21 0 1000 3000\nTo search for firmware image from 2021.01.21.1000 up to 2021.01.21.3000 inside 2021-01-21 folder only";
+	echo "Example: firmwareFinder.php 2021-01-21 0 1000 2400\nTo search for firmware image from 2021.01.20.1000 up to 2021.01.21.2400 inside 2021-01-20 folder only";
 }
 
 ?>
