@@ -1,24 +1,32 @@
+
 ![Carlinkit V2](https://i.imgur.com/ZL3dq41.png)
 
 ## Carlinkit / Carplay2Air Reverse Engineering
 
-CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+## Hardware
 
-Machine model: Freescale i.MX6 UltraLite 14x14 EVK Board
+**CPU:** ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+**Machine model:** Freescale i.MX6 UltraLite 14x14 EVK Board
 
-Kernel command line: root=/dev/mtdblock3 rootfstype=jffs2 mtdparts=21e0000.qspi:1M(uboot),5056K(kernel),64K(dtb),10M(rootfs) rootwait rw
+**ORIGINAL**
+| Hardware | Part |
+|--|--|
+| Flash | Macronix 25L12835F (16MB) |
+| CPU | Microchip AT91SAM9260 |
+| WIFI chip | Realtek RTL8822BS |
 
---
+**AUTOKIT**
+| Hardware | Part |
+|--|--|
+| Flash | ? (32MB) |
+| CPU | Microchip AT91SAM9260 |
+| WIFI chip | Realtek RTL8822BS |
 
-Flash type: Macronix 25L12835F
+# Software
 
-CPU: AT91SAM9260
+**Kernel command line (Carplay2Air):** root=/dev/mtdblock3 rootfstype=jffs2 mtdparts=21e0000.qspi:1M(uboot),5056K(kernel),64K(dtb),10M(rootfs) rootwait rw
 
-WIFI chip: RTL8822BS
-
---
-
-# u-boot compilation
+## u-boot compilation
 
 	apt-get install device-tree-compiler gcc-arm-linux-gnueabihf
 	export ARCH=arm
