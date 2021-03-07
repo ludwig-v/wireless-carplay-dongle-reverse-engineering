@@ -9,17 +9,10 @@
 
 **Machine model:** Freescale i.MX6 UltraLite 14x14 EVK Board
 
-**ORIGINAL**
+**ORIGINAL / AUTOKIT**
 | Hardware | Part |
 |--|--|
 | Flash | Macronix 25L12835F (16MB) |
-| CPU | Microchip AT91SAM9260 |
-| WIFI chip | Realtek RTL8822BS |
-
-**AUTOKIT**
-| Hardware | Part |
-|--|--|
-| Flash | ? (32MB) |
 | CPU | Microchip AT91SAM9260 |
 | WIFI chip | Realtek RTL8822BS |
 
