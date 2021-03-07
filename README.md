@@ -6,6 +6,7 @@
 ## Hardware
 
 **CPU:** ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+
 **Machine model:** Freescale i.MX6 UltraLite 14x14 EVK Board
 
 **ORIGINAL**
