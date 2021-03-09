@@ -1,0 +1,1 @@
+## Some devices have a 10MB rootFS instead of 12.5MB, this update is hardly fitting 10MB device, this file is a workaround to flash 2021.03.06 on those devices, install at least 2020.02.02 first
