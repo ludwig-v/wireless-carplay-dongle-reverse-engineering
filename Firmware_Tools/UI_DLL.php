@@ -33,12 +33,12 @@ if ($pointer === false) {
 }
 
 $pointer_ = fopen($currentPath."/rc.dll", 'rb');
-if ($pointer === false) {
+if ($pointer_ === false) {
     exit("Error: Can't open rc.dll in current directory (".$currentPath.")");
 }
 
 if ($packImages) {
-    $offset = 0;
+    $packOffset = 0;
 
     recursive_mkdir($currentPath."/new");
 
@@ -66,7 +66,7 @@ while (!feof($pointer)) {
 
     $extra_data = "";
     $read = fread($pointer, 1);
-    while (!feof($pointer) AND (int)ord($read) > 0) {
+    while (!feof($pointer) AND ord($read) > 0) {
         $extra_data .= $read;
         $read = fread($pointer, 1);
     }
@@ -94,6 +94,7 @@ while (!feof($pointer)) {
         imagesavealpha($img, true);
 
         $pixels = "";
+
         for ($y = 0; $y < $height; $y++) {
             for ($x = 0; $x < $width; $x++) {
                 $rgb_alpha = imagecolorat($img, $x, $y);
@@ -108,6 +109,9 @@ while (!feof($pointer)) {
         }
 
         $img_encoded = zlib_encode($pixels, ZLIB_ENCODING_DEFLATE);
+
+        unset($pixels);
+
         $img_encoded_size = strlen($img_encoded);
 
         fwrite($pointer_rc_w, $img_encoded);
@@ -115,11 +119,12 @@ while (!feof($pointer)) {
         $header[2]  = $img_encoded_size; // Rewrite size
         $header[10] = $width;  // Rewrite width
         $header[11] = $height; // Rewrite height
-        $header[17] = $offset; // Rewrite offset
+        $header[17] = $packOffset; // Rewrite offset
 
-        $offset += $img_encoded_size;
+        $packOffset += $img_encoded_size;
 
-        fwrite($pointer_rcvec_w, array_pack("I*", $header).$extra_data);
+        fwrite($pointer_rcvec_w, array_pack("I*", $header));
+        fwrite($pointer_rcvec_w, $extra_data);
 
         echo "- Packed \"".basename($details['path'])."\" (".$img_encoded_size." B) in new/rc.dll\r\n";
     } else {
