@@ -15,3 +15,9 @@ Pack "U2W_Update" folder to .tar.gz:
 Convert a tar.gz firmware archive to .img:
 
     php U2W_Crypt.php U2W_Update.tar.gz
+Unpack images from rc.dll and rcvec.dll files (from ui.tar.gz):
+
+    php UI_DLL.php
+Repack edited images to new/rc.dll and new/rcvec.dll files (adding new images is not supported yet):
+
+    php UI_DLL.php pack
