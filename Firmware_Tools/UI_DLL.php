@@ -19,6 +19,8 @@
 
 # php-gd must be installed
 
+ini_set('memory_limit', '256M');
+
 if (!function_exists('imagecreatetruecolor')) {
 	echo "Please ensure that gd extension is installed and added inside php.ini\r\n\r\n";
 	echo "Windows php.ini example:\r\n";
@@ -88,7 +90,7 @@ while (!feof($pointer)) {
                      "width" => $header[10],
                      "height" => $header[11],
                      "offset" => $header[17],
-                     "path" => str_replace('\\', $d, $extra_data));
+                     "path" => str_replace(array('\\', '/'), $d, $extra_data));
 
     $extra_data .= $read;
     $padding = (4 - (strlen($details['path']) + 1) % 4) % 4;
@@ -101,6 +103,10 @@ while (!feof($pointer)) {
     }
 
     if ($packImages) {
+        if (!is_file($currentPath.$d."ui".$details['path'])) {
+            exit("Error: ".$currentPath.$d."ui".$details['path']." does not exist, did you delete a file ?");
+        }
+
         list($width, $height) = getimagesize($currentPath.$d."ui".$details['path']);
         $img = imagecreatefrompng($currentPath.$d."ui".$details['path']);
         imagealphablending($img, false);
@@ -151,7 +157,7 @@ while (!feof($pointer)) {
             break;
         }
 
-        $rgb_alpha_bytes = unpack('C*', $image_data_decoded);
+        $rgb_alpha_bytes = unpack('C*', $image_data_decoded); // Memory consuming due to PHP arrays overhead
 
         unset($image_data, $image_data_decoded);
 
