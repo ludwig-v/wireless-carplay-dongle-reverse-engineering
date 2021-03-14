@@ -19,6 +19,14 @@
 
 # php-gd must be installed
 
+if (!function_exists('imagecreatetruecolor')) {
+	echo "Please ensure that gd extension is installed and added inside php.ini\r\n\r\n";
+	echo "Windows php.ini example:\r\n";
+	echo "extension_dir=\"ext\"\r\nextension=php_gd.dll\r\n\r\n";
+	
+	exit;
+}
+
 if (isset($argv) AND isset($argv[1]) AND $argv[1] == 'pack') {
     $packImages = true;
 } else {
@@ -27,12 +35,17 @@ if (isset($argv) AND isset($argv[1]) AND $argv[1] == 'pack') {
 
 $currentPath = getcwd();
 
-$pointer = fopen($currentPath."/rcvec.dll", 'rb');
+$d = '/';
+if (strpos($currentPath, ":\\") !== false) { // Windows path
+	$d = '\\';
+}
+
+$pointer = fopen($currentPath.$d."rcvec.dll", 'rb');
 if ($pointer === false) {
     exit("Error: Can't open rcvec.dll in current directory (".$currentPath.")");
 }
 
-$pointer_ = fopen($currentPath."/rc.dll", 'rb');
+$pointer_ = fopen($currentPath.$d."rc.dll", 'rb');
 if ($pointer_ === false) {
     exit("Error: Can't open rc.dll in current directory (".$currentPath.")");
 }
@@ -40,16 +53,16 @@ if ($pointer_ === false) {
 if ($packImages) {
     $packOffset = 0;
 
-    recursive_mkdir($currentPath."/new");
+    recursive_mkdir($currentPath.$d."new", $d);
 
-    $pointer_rc_w = fopen($currentPath."/new/rc.dll", 'w+');
+    $pointer_rc_w = fopen($currentPath.$d."new/rc.dll", 'w+');
     if ($pointer_rc_w === false) {
-        exit("Error: Can't create rc.dll in current directory (".$currentPath."/new)");
+        exit("Error: Can't create rc.dll in current directory (".$currentPath.$d."new)");
     }
 
-    $pointer_rcvec_w = fopen($currentPath."/new/rcvec.dll", 'w+');
+    $pointer_rcvec_w = fopen($currentPath.$d."new/rcvec.dll", 'w+');
     if ($pointer_rcvec_w === false) {
-        exit("Error: Can't create rcvec.dll in current directory (".$currentPath."/new)");
+        exit("Error: Can't create rcvec.dll in current directory (".$currentPath.$d."new)");
     }
 }
 
@@ -75,7 +88,7 @@ while (!feof($pointer)) {
                      "width" => $header[10],
                      "height" => $header[11],
                      "offset" => $header[17],
-                     "path" => str_replace('\\', '/', $extra_data));
+                     "path" => str_replace('\\', $d, $extra_data));
 
     $extra_data .= $read;
     $padding = (4 - (strlen($details['path']) + 1) % 4) % 4;
@@ -83,13 +96,13 @@ while (!feof($pointer)) {
         $extra_data .= fread($pointer, $padding);
     }
 
-    if (substr($details['path'], 0, 1) != '/') {
-        $details['path'] = '/'.$details['path'];
+    if (substr($details['path'], 0, 1) != $d) {
+        $details['path'] = $d.$details['path'];
     }
 
     if ($packImages) {
-        list($width, $height) = getimagesize($currentPath."/ui".$details['path']);
-        $img = imagecreatefrompng($currentPath."/ui".$details['path']);
+        list($width, $height) = getimagesize($currentPath.$d."ui".$details['path']);
+        $img = imagecreatefrompng($currentPath.$d."ui".$details['path']);
         imagealphablending($img, false);
         imagesavealpha($img, true);
 
@@ -162,9 +175,9 @@ while (!feof($pointer)) {
 
         imagedestroy($img);
 
-        $filePathInfo = pathinfo($currentPath."/ui".$details['path']);
-        recursive_mkdir($filePathInfo['dirname']);
-        file_put_contents($filePathInfo['dirname'].'/'.$filePathInfo['basename'], $png);
+        $filePathInfo = pathinfo($currentPath.$d."ui".$details['path']);
+        recursive_mkdir($filePathInfo['dirname'], $d);
+        file_put_contents($filePathInfo['dirname'].$d.$filePathInfo['basename'], $png);
 
         echo "- Unpacked \"".basename($details['path'])."\" (".$details["size"]." B) from rc.dll\r\n";
     }
@@ -181,12 +194,16 @@ if ($packImages) {
 
 fclose($pointer);
 
-function recursive_mkdir($path, $mode = 0777) {
-    $dirs = explode('/', $path);
+function recursive_mkdir($path, $delimiter = '/', $mode = 0777) {
+    $dirs = explode($delimiter, $path);
     $count = count($dirs);
     $path = '';
     for ($i = 0; $i < $count; ++$i) {
-        $path .= '/' . $dirs[$i];
+		if ($i == 0 AND $delimiter != '/') {
+			$path .= $dirs[$i];
+		} else {
+			$path .= $delimiter . $dirs[$i];
+		}
         if (!is_dir($path)) {
             if (!mkdir($path, $mode)) {
                 exit("Error: Can't create \"".$path."\" directory, check your rights\r\n");
