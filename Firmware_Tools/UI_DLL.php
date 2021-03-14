@@ -19,8 +19,6 @@
 
 # php-gd must be installed
 
-ini_set('memory_limit', '256M');
-
 if (!function_exists('imagecreatetruecolor')) {
 	echo "Please ensure that gd extension is installed and added inside php.ini\r\n\r\n";
 	echo "Windows php.ini example:\r\n";
@@ -157,18 +155,16 @@ while (!feof($pointer)) {
             break;
         }
 
-        $rgb_alpha_bytes = unpack('C*', $image_data_decoded); // Memory consuming due to PHP arrays overhead
-
-        unset($image_data, $image_data_decoded);
+        unset($image_data);
 
         $img = imagecreatetruecolor($details['width'], $details['height']);
         imagealphablending($img, false);
         imagesavealpha($img, true);
 
-        $n = 1;
+        $n = 0;
         for ($y = 0; $y < $details['height']; $y++) {
             for ($x = 0; $x < $details['width']; $x++) {
-                $color = imagecolorallocatealpha($img, $rgb_alpha_bytes[$n + 2], $rgb_alpha_bytes[$n + 1], $rgb_alpha_bytes[$n + 0], (127 - ($rgb_alpha_bytes[$n + 3] >> 1))); // Alpha has to be converted to 0-127
+                $color = imagecolorallocatealpha($img, ord($image_data_decoded[$n + 2]), ord($image_data_decoded[$n + 1]), ord($image_data_decoded[$n + 0]), (127 - (ord($image_data_decoded[$n + 3]) >> 1))); // Alpha has to be converted to 0-127
                 imagesetpixel($img, $x, $y, $color);
                 $n = $n + 4;
             }
