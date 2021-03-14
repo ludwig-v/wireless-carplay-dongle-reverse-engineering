@@ -19,6 +19,8 @@ chmod 700 ~/.ssh/cplay2air.pub
 ```
 U2W.sh
 dropbear
+sftp-server
+libz.so.1.2.11
 cplay2air.pub
 ```
 
@@ -51,4 +53,27 @@ Warning: Permanently added '192.168.50.2' (RSA) to the list of known hosts.
 ```
 [(\t)\u@\w]#uname -a
 Linux sk_mainboard 3.14.52+g94d07bb #39 SMP PREEMPT Tue Oct 27 01:47:06 CST 2020 armv7l GNU/Linux
+```
+
+- `SFTP` into the dongle
+```
+sftp  -i ~/.ssh/cplay2air root@192.168.50.2
+Connected to 192.168.50.2.
+sftp>
+```
+
+- To verify list the `/usr/lib` folder
+```
+sftp> ls /usr/lib
+/usr/lib/libARMtool.so             /usr/lib/libavcodec.so             /usr/lib/libavcodec.so.56
+/usr/lib/libavcodec.so.56.26.100   /usr/lib/libavformat.so            /usr/lib/libavformat.so.56
+/usr/lib/libavformat.so.56.25.101  /usr/lib/libavutil.so              /usr/lib/libavutil.so.54
+/usr/lib/libavutil.so.54.20.100    /usr/lib/libbluetooth.so           /usr/lib/libbluetooth.so.2
+/usr/lib/libbluetooth.so.2.11.2    /usr/lib/libcrypto.so              /usr/lib/libcrypto.so.1.0.0
+/usr/lib/libdbus-1.so              /usr/lib/libdbus-1.so.3            /usr/lib/libdbus-1.so.3.2.0
+/usr/lib/libdns_sd.so              /usr/lib/libfdk-aac.so             /usr/lib/libfdk-aac.so.1
+/usr/lib/libfdk-aac.so.1.0.0       /usr/lib/libswresample.so          /usr/lib/libswresample.so.1
+/usr/lib/libswresample.so.1.1.100  /usr/lib/libtinyalsa.so            /usr/lib/libusb-1.0.so
+/usr/lib/libusb-1.0.so.0           /usr/lib/libusb-1.0.so.0.1.0       /usr/lib/libxml2.so
+/usr/lib/libxml2.so.2              /usr/lib/libxml2.so.2.9.2          /usr/lib/libz.so
 ```

@@ -9,6 +9,17 @@ echo 1 >/sys/class/gpio/gpio2/value;
 cp /mnt/UPAN/dropbear /tmp
 chmod 775 /tmp/dropbear
 
+# setup stp-server
+
+cp /mnt/UPAN/sftp-server /tmp
+chmod 775 /tmp/sftp-server
+
+mkdir /usr/libexec
+ln -s /tmp/sftp-server /usr/libexec/sftp-server 
+
+cp /mnt/UPAN/libz.so.1.2.11 /tmp
+ln -s /tmp/libz.so.1.2.11 /usr/lib/libz.so 
+
 # copy public key
 
 mkdir /root
