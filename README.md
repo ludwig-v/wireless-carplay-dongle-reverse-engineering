@@ -15,7 +15,25 @@
 
 # Software
 
-**Kernel command line (Carplay2Air):** root=/dev/mtdblock3 rootfstype=jffs2 mtdparts=21e0000.qspi:1M(uboot),5056K(kernel),64K(dtb),10M(rootfs) rootwait rw
+`2021.03.09.0001` on CPLAY2Air:
+
+```bash
+$ cat /proc/cmdline
+console=ttyLogFile0 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=21e0000.qspi:256k(uboot),3328K(kernel),12800K(rootfs) rootwait quiet rw
+
+$ cat /proc/mtd
+dev:    size   erasesize  name
+mtd0: 00040000 00010000 "uboot"
+mtd1: 00340000 00010000 "kernel"
+mtd2: 00c80000 00010000 "rootfs"
+
+$ df -T
+Filesystem           Type       1K-blocks      Used Available Use% Mounted on
+/dev/root            jffs2          12800     10940      1860  85% /
+devtmpfs             devtmpfs       61632         0     61632   0% /dev
+tmpfs                tmpfs          61732      6324     55408  10% /tmp
+/dev/sda1            vfat        62498880     42304  62456576   0% /mnt/UPAN
+```
 
 ## u-boot compilation
 

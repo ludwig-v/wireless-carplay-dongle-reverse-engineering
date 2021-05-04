@@ -2,14 +2,6 @@
 
 These are some notes about the web app hosted at 192.168.50.2 by the dongle.
 
-## Running on a Mac
-
-Plug the dongle into your Mac. Also connect an iPhone using USB and connect to its Personal Hotspot.
-
-Go to the Mac's System Preferences > Network > iPhone USB and uncheck 'Disable unless needed'.
-
-Connect to the dongle's WiFi and open 192.168.50.2; not everything will work but its a decent start.
-
 ## Findings
 
 JavaScript is compiled using Webpack (no surprise). From `2020.10.28` to `2021.03.06`, it seems like the developers have added a few modern ES features like `let` and `fetch`.
@@ -17,6 +9,10 @@ JavaScript is compiled using Webpack (no surprise). From `2020.10.28` to `2021.0
 Bundle seems to include CSS and some loading code at the very end. Weird since the CSS is also available as a separate file. No frameworks or libraries that seem obvious to me.
 
 There is a server component to this in the `cgi-bin/` folder, but those files are compiled binaries and I don't know what to make of them. That said, a lot of the data seems to map to various scripts and binaries found in the firmware, so it might not be too hard to replicate it.
+
+Dongle settings are saved as files under `/etc`, such as `BackgroundMode`, `MediaQuality`
+
+Check the QuickDiff link for diffs: https://quickdiff.net/?unique_id=DA549395-6EC9-4B7D-1A26-94CFA732C7FA
 
 ### Internationalization
 
