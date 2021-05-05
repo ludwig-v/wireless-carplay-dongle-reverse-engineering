@@ -13,3 +13,10 @@ Extract kernel image with `dd if=/dev/mtdblock1 of=/tmp/mtd1.bin`
 ## Build binaries
 
 Checkout the QEMU instructions [here](https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/blob/master/Custom_Firmware/Scripts/Dropbear/NOTES.md)
+
+## Other related work
+
+- https://docs.google.com/document/d/13djB4hcYPSqWtYX6pC6erC3m3CR-QAWVGmP-5J-H6VI/pub
+- https://github.com/electric-monk/pycarplay
+- https://github.com/harrylepotter/carplay-receiver
+- https://github.com/45clouds/WirelessCarPlay
