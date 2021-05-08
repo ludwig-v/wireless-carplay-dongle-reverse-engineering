@@ -1,1 +1,1 @@
-## Instal at least 2020.01.28 version before this one
+## Install at least 2020.01.28 version before this one

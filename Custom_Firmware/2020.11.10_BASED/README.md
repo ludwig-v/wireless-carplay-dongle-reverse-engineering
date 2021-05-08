@@ -1,1 +1,1 @@
-## Instal 2020.08.04 version before this one
+## Install 2020.08.04 version before this one
