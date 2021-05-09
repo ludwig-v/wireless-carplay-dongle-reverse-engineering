@@ -18,3 +18,11 @@ Extract kernel image with `dd if=/dev/mtdblock1 of=/tmp/mtd1.bin`
 ### Carplay configuration
 
 - https://pastebin.com/iN5jUrfJ
+
+## `set_wifi_mac`
+
+```bash
+$ ./set_wifi_mac
+sh: ifconfig: not found
+Setting Wi-Fi MAC address: 00:E0:4C:6B:57:4A
+```

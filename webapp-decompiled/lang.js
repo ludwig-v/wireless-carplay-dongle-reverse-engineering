@@ -562,7 +562,7 @@
             hide: function() {
                 this.dialog.style.setProperty("display", "none"), document.getElementById("view").setAttribute("content", "user-scalable=yes")
             },
-            f24: function() {
+            getActivationDetails: function() {
                 var account = this.accountElement.value.trim(),
                     n = /^[a-zA-Z][a-zA-Z0-9\.]{2,20}$/;
                 n.test(account) || (CookieUtils.expireCookie(account), account = "", this.accountElement.value = "");
@@ -737,7 +737,7 @@
     }
 
     function startActivationRequest() {
-        var e = ActivateDialog.f24(),
+        var e = ActivateDialog.getActivationDetails(),
             n = e[2],
             t = e[3],
             i = e[4];
