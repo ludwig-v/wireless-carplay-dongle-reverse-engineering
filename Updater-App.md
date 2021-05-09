@@ -4,7 +4,7 @@ These are some notes about the web app hosted at 192.168.50.2 by the dongle.
 
 ## Findings
 
-JavaScript is compiled using Webpack (no surprise). From `2020.10.28` to `2021.03.06`, it seems like the developers have added a few modern ES features like `let` and `fetch`.
+JavaScript is compiled using Webpack (no surprise).
 
 Bundle seems to include CSS and some loading code at the very end. Weird since the CSS is also available as a separate file. No frameworks or libraries that seem obvious to me.
 
@@ -12,7 +12,11 @@ There is a server component to this in the `cgi-bin/` folder, but those files ar
 
 Dongle settings are saved as files under `/etc`, such as `BackgroundMode`, `MediaQuality`
 
-Check the QuickDiff link for diffs: https://quickdiff.net/?unique_id=DA549395-6EC9-4B7D-1A26-94CFA732C7FA
+### Version History
+
+- From `2020.10.28` to `2021.03.06`, it seems like the developers have added a few modern ES features like `let` and `fetch`. Check the QuickDiff link for diffs: https://quickdiff.net/?unique_id=DA549395-6EC9-4B7D-1A26-94CFA732C7FA
+
+- No changes from `2021.03.06` to `2021.04.26`.
 
 ### Available Settings
 
