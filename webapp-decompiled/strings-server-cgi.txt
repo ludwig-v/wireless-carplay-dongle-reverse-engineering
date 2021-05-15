@@ -1,0 +1,356 @@
+/lib/ld-linux.so.3
+libc.so.6
+strcpy
+sprintf
+_IO_putc
+srand
+fopen
+strncpy
+unlink
+realloc
+clock
+abort
+stdin
+strspn
+chmod
+mkstemp
+strtod
+gmtime
+strtol
+mmap
+feof
+calloc
+strlen
+memset
+strstr
+memcmp
+stdout
+fputc
+memcpy
+fclose
+malloc
+__ctype_b_loc
+getenv
+stderr
+system
+munmap
+usleep
+fwrite
+fread
+strchr
+fprintf
+__ctype_tolower_loc
+access
+strcmp
+__libc_start_main
+snprintf
+free
+__gmon_start__
+GLIBC_2.4
+F:FE
+F:FE
+F:FE
+F:FE
+F:F"`
+F:FE
+F:FE
+F:FE
+F:F*`
+F:FE
+F:FE
+F:FE
+F:FE
+F:FE
+XF;!
+F:FE
+F:FE
+F:FE
+F(F#`
+d4I#
+U#cpD
+"3F(F,
+d4J#
+d4B#
+d4Y#
+C#cp
+A#cp
+d4T#
+d4H#
+d4P#
+"#FH
+P!F
+$P!F
+4P!F
+DP!F
+TP!F
+3#`pjE
+Fkb F
+F(`-
+b,clc
+5F$h
+TP09
+r FE
+*F+F
+  9F
+! "#F
+"F0F
+!?"+FKH
+!?"+F?H
+!?"4H
+##`3`
+"[F F
+3h H
+!!"0F
+! "#F
+0F "
+Q(h
+,Q(h
+@"+F
+ "+F
+ " F
+,A F
+! "#F
+pD(p
+ pGp
+(`(F
+,F9F
+0F+F"F
+8=F<F
+"*!F
+6#x;+*
+ x;(
+""+
+!"*
+48F;D
+ x1F
+"xzU
+xU]F
+#8F{Ui
+B,5!F
+!F"F#F
+T(F4
+8'F&F(F
+BFQF
+QBF1
+9FBF
+ta F
+@F3F1
+-4-+
+F```
+)F2F@h
+Ei+x+
+,A(F
+ &`p
+)F2F@h
+Dh#x
+Dh#x+
+FiFO
+ F.`@
+hF!F
+(` F@
+JFCF
+*F#F
+lS F
+pS F
+xS F
+|S F
+ Fqh
+ F1i
+,A F
+lQ(F
+pQ(F
+xQ(F
+|Q(F
+(F1F
+h,F(
+"3FC
+`h)FJF
+RFYF
+";+
+.h<F
+0F!h
+.h<F
+0F!h
+F>F
+& 9h
+g 1h
+t 1h
+; 1h
+& 9h
+l 1h
+a 1h
+m 1h
+p 1h
+F7F
+& 1h
+SaveActiveResult: %s
+echo "%s" > /tmp/active_result
+/tmp/box_custom_type
+/etc/box_version
+/usr/sbin/fakeiOSDevice
+/usr/sbin/fakeCarLifeDevice
+/etc/box_product_type
+echo -n U2W > /etc/box_product_type
+/etc/%s
+iAP2TransMode
+MediaQuality
+MediaLatency
+UdiskMode
+LogMode
+NeedKeyFrame
+EchoLatency
+BoxConfig_DelayStart
+CustomFrameRate
+NeedAutoConnect
+BackgroundMode
+HudGPSSwitch
+/dev/mem
+open(/dev/mem) failed.
+%08x%08x%08x%08x
+rm -f /etc/log_file
+touch /etc/log_file
+text/html
+getversion
+/etc/software_version
+/sys/class/net/wlan0/address
+%s_Update.img
+{"version":"%s","type":"%s","boxMac":"%s","fileName":"%s"}
+getupgradestate
+/tmp/update_status
+{"state":%d,"errCode":%d}
+reset
+rm -f /etc/bluetooth/mybluetooth.tar.gz
+rm -f /etc/hichain/*
+echo `head /dev/urandom  |md5sum |awk '{print $1}'` > /etc/device_serial
+(sync;sleep 1;reboot)&
+get_settings
+DisplaySize
+{"SyncMode":%d, "SoundQuality":%d, "MediaDelay":%d, "UMode":%d, "SaveLog":%d, "ImageMode":%d, "EchoDelay":%d, "StartDelay":%d, "FrameRate":%d, "AutoConn":%d, "BgMode":%d, "GPS":%d, "DisplaySize":%d}
+set_display_size
+value
+set_start_delay
+set_frame_rate
+set_auto_conn
+set_bg_mode
+set_gps
+set_sync_mode
+set_image_mode
+set_sound_quality
+set_media_delay
+set_echo_delay
+set_u_mode
+set_save_log
+upload_log
+echo "%s" > %s
+###### System Info ######
+/tmp/box.log
+df -h >> %s;cat /proc/meminfo >> %s;ps -l >> %s
+echo "%s" >> %s
+###### Kernel Log ######
+echo y > /sys/module/printk/parameters/time;dmesg >> %s
+###### UserSpace Log ######
+cat %s >> %s
+/tmp/userspace.log
+/var/log/box_last_reboot.log
+###### Last Reboot Log ######
+rm -f %s
+hwSecret %s > %s
+/tmp/box_encrypt.log
+is_box_activated
+/etc/old_uuid
+/sys/class/bluetooth/hci0/address
+cat %s %s | md5sum - | awk '{print $1}' > %s
+/tmp/box_uuid
+/etc/factory_name
+Test
+echo -n "%s" >  %s
+/tmp/boa_sign_data
+md5sum %s | awk '{print $1}' >  %s
+/tmp/car_manufacturer
+Unknown
+/tmp/car_model
+/tmp/car_oem_label
+/tmp/screen_resolution
+%dx%d
+{"uuid":"%s","old_uuid":"%s", "manufacturer":"%s","isActivated":%d,"code":"%s","boxType":"%s","carManufacturer":"%s","carModel":"%s","carOemName":"%s","carResolution":"%s","productType":"%s"}
+box_activated
+code
+CheckSign:%s %s
+Base64 len: %d, content: 
+/etc/uuid_sign
+SaveUUIDSign len: %d, content: 
+%02X 
+/etc/uuid
+Active Success!!!
+echo -n "%s" > /etc/support_car_brands
+cp /etc/support_car_brands /etc/support_car_type
+Failed, 501
+box_not_activated
+boa server recv cmd: %s, response: 
+Failed, 502
+02:00:00:00:00:00
+/tmp/boa_sign
+Y4HH7BRvY*7!NSGaoMF@sIZ9bz#yNkBT
+/tmp/cgicXXXXXX
+--%s
+filename
+Content-Type
+Content-Disposition
+form-data
+boundary=
+SERVER_SOFTWARE
+SERVER_NAME
+GATEWAY_INTERFACE
+SERVER_PROTOCOL
+SERVER_PORT
+REQUEST_METHOD
+PATH_INFO
+PATH_TRANSLATED
+SCRIPT_NAME
+QUERY_STRING
+REMOTE_HOST
+REMOTE_ADDR
+AUTH_TYPE
+REMOTE_USER
+REMOTE_IDENT
+CONTENT_TYPE
+CONTENT_LENGTH
+HTTP_ACCEPT
+HTTP_USER_AGENT
+HTTP_REFERER
+HTTP_COOKIE
+post
+application/x-www-form-urlencoded
+multipart/form-data
+Set-Cookie: %s=%s; domain=%s; expires=%s, %02d-%s-%04d %02d:%02d:%02d GMT; path=%s
+Location: %s
+Status: %d %s
+Content-type: %s
+CGIC2.0
+GCC: (GNU) 4.9.2
+aeabi
+.shstrtab
+.interp
+.note.ABI-tag
+.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rel.dyn
+.rel.plt
+.init
+.text
+.fini
+.rodata
+.ARM.exidx
+.eh_frame
+.init_array
+.fini_array
+.jcr
+.dynamic
+.got
+.data
+.bss
+.comment
+.ARM.attributes
