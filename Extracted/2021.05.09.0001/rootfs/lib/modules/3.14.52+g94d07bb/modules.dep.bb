@@ -1,0 +1,24 @@
+kernel/drivers/usb/gadget/usb_f_serial.ko usbfunc:gser
+libcomposite u_serial configfs
+
+kernel/drivers/usb/gadget/g_serial.ko
+libcomposite
+
+kernel/drivers/usb/gadget/usb_f_obex.ko usbfunc:obex
+libcomposite u_serial configfs
+
+kernel/drivers/usb/gadget/g_dbgp.ko
+u_serial libcomposite
+
+kernel/drivers/usb/gadget/usb_f_acm.ko usbfunc:acm
+libcomposite u_serial configfs
+
+kernel/drivers/usb/gadget/libcomposite.ko symbol:usb_function_unregister symbol:usb_get_function symbol:usb_copy_descriptors symbol:usb_ep_autoconfig symbol:usb_ep_autoconfig_reset symbol:usb_add_config symbol:usb_assign_descriptors symbol:usb_composite_overwrite_options symbol:usb_otg_descriptor_init symbol:usb_composite_probe symbol:usb_free_all_descriptors symbol:unregister_gadget_item symbol:usb_gadget_get_string symbol:usb_string_ids_tab symbol:usb_function_register symbol:usb_function_deactivate symbol:usb_otg_descriptor_alloc symbol:config_ep_by_speed symbol:usb_composite_unregister symbol:usb_add_function symbol:usb_gstrings_attach symbol:usb_put_function_instance symbol:usb_composite_setup_continue symbol:usb_add_config_only symbol:alloc_ep_req symbol:usb_function_activate symbol:usb_remove_function symbol:usb_put_function symbol:usb_interface_id symbol:usb_string_ids_n symbol:usb_ep_autoconfig_ss symbol:usb_descriptor_fillbuf symbol:usb_string_id symbol:usb_gadget_config_buf symbol:usb_get_function_instance
+configfs
+
+kernel/drivers/usb/gadget/u_serial.ko symbol:gserial_disconnect symbol:gs_alloc_req symbol:gs_free_req symbol:gserial_connect symbol:gserial_alloc_line symbol:gserial_free_line
+
+kernel/drivers/media/usb/gspca/gspca_main.ko symbol:gspca_expo_autogain symbol:gspca_dev_probe symbol:gspca_disconnect symbol:gspca_suspend symbol:gspca_debug symbol:gspca_frame_add symbol:gspca_coarse_grained_expo_autogain symbol:gspca_dev_probe2 symbol:gspca_resume
+
+kernel/fs/configfs/configfs.ko fs_configfs symbol:configfs_depend_item symbol:config_group_find_item symbol:config_item_set_name symbol:config_group_init_type_name symbol:config_item_init_type_name symbol:configfs_register_subsystem symbol:config_item_get symbol:config_group_init symbol:configfs_unregister_subsystem symbol:config_item_put symbol:config_item_init symbol:configfs_undepend_item
+

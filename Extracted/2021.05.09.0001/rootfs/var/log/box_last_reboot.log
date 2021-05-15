@@ -1,0 +1,733 @@
+Save last log when reboot
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                12.5M      9.7M      2.8M  77% /
+devtmpfs                 60.2M         0     60.2M   0% /dev
+tmpfs                    60.3M      5.7M     54.6M   9% /tmp
+MemTotal:         123468 kB
+MemFree:           91036 kB
+MemAvailable:      96584 kB
+Buffers:               0 kB
+Cached:            14228 kB
+SwapCached:            0 kB
+Active:            10060 kB
+Inactive:          12188 kB
+Active(anon):       8060 kB
+Inactive(anon):     5832 kB
+Active(file):       2000 kB
+Inactive(file):     6356 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:          8036 kB
+Mapped:             2368 kB
+Shmem:              5868 kB
+Slab:               4624 kB
+SReclaimable:       1392 kB
+SUnreclaim:         3232 kB
+KernelStack:         472 kB
+PageTables:          204 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:       61732 kB
+Committed_AS:      25076 kB
+VmallocTotal:    1941504 kB
+VmallocUsed:        8660 kB
+VmallocChunk:    1710856 kB
+S   UID   PID  PPID   VSZ   RSS TTY   STIME TIME     CMD
+S     0     1     0  2168   392 0:0   23:59 00:00:01 init
+S     0     2     0     0     0 0:0   23:59 00:00:00 [kthreadd]
+S     0     3     2     0     0 0:0   23:59 00:00:00 [ksoftirqd/0]
+S     0     5     2     0     0 0:0   23:59 00:00:00 [kworker/0:0H]
+S     0     6     2     0     0 0:0   23:59 00:00:00 [kworker/u2:0]
+S     0     7     2     0     0 0:0   23:59 00:00:02 [rcu_preempt]
+S     0     8     2     0     0 0:0   23:59 00:00:00 [rcu_sched]
+S     0     9     2     0     0 0:0   23:59 00:00:00 [rcu_bh]
+S     0    10     2     0     0 0:0   23:59 00:00:00 [migration/0]
+S     0    11     2     0     0 0:0   23:59 00:00:00 [khelper]
+S     0    12     2     0     0 0:0   23:59 00:00:00 [kdevtmpfs]
+S     0    13     2     0     0 0:0   23:59 00:00:00 [writeback]
+S     0    14     2     0     0 0:0   23:59 00:00:00 [bioset]
+S     0    15     2     0     0 0:0   23:59 00:00:00 [crypto]
+S     0    16     2     0     0 0:0   23:59 00:00:00 [kblockd]
+S     0    17     2     0     0 0:0   23:59 00:00:00 [ata_sff]
+D     0    18     2     0     0 0:0   23:59 00:00:00 [khubd]
+S     0    19     2     0     0 0:0   23:59 00:00:00 [kworker/u2:1]
+S     0    26     2     0     0 0:0   23:59 00:00:00 [kworker/0:1]
+S     0    27     2     0     0 0:0   23:59 00:00:00 [cfg80211]
+S     0    28     2     0     0 0:0   23:59 00:00:00 [cfinteractive]
+S     0    29     2     0     0 0:0   23:59 00:00:00 [kswapd0]
+S     0    30     2     0     0 0:0   23:59 00:00:00 [fsnotify_mark]
+D     0    38     2     0     0 0:0   23:59 00:00:00 [ttyLogFileThrea]
+S     0    39     2     0     0 0:0   23:59 00:00:00 [spi32766]
+S     0    42     2     0     0 0:0   23:59 00:00:00 [ci_otg]
+S     0    43     2     0     0 0:0   23:59 00:00:00 [ci_otg]
+S     0    45     2     0     0 0:0   23:59 00:00:00 [ipv6_addrconf]
+S     0    46     2     0     0 0:0   23:59 00:00:00 [krfcommd]
+S     0    47     2     0     0 0:0   23:59 00:00:00 [deferwq]
+S     0    48     2     0     0 0:0   23:59 00:00:00 [irq/81-imx_ther]
+S     0    49     2     0     0 0:0   23:59 00:00:07 [jffs2_gcd_mtd2]
+S     0    59     1  2168    40 0:0   23:59 00:00:00 init
+S     0    82     2     0     0 0:0   00:00 00:00:00 [btfwwork]
+S     0    95     2     0     0 0:0   00:00 00:00:00 [ksdioirqd/mmc0]
+D     0    98     2     0     0 0:0   00:00 00:00:00 [RTW_XMIT_THREAD]
+D     0    99     2     0     0 0:0   00:00 00:00:00 [RTW_RECV_THREAD]
+D     0   100     2     0     0 0:0   00:00 00:00:03 [RTW_CMD_THREAD]
+D     0   101     2     0     0 0:0   00:00 00:00:00 [RTWHALXT]
+S     0   111     1 19964  7312 0:0   00:00 00:01:08 ./fakeiOSDevice
+S     0   123     1  2240   764 0:0   00:00 00:00:00 boa
+S     0   134     2     0     0 0:0   00:00 00:00:00 [kworker/u3:0]
+S     0   135     2     0     0 0:0   00:00 00:00:00 [hci0]
+S     0   136     2     0     0 0:0   00:00 00:00:00 [hci0]
+S     0   139     2     0     0 0:0   00:00 00:00:00 [kworker/u3:1]
+S     0   142     1  1900   192 0:0   00:00 00:00:00 rtk_hciattach -s 115200 t
+S     0   143     2     0     0 0:0   00:00 00:00:00 [kworker/0:2]
+S     0   165     2     0     0 0:0   00:00 00:00:00 [kworker/0:1H]
+S     0   516     1  2352   764 0:0   00:00 00:00:00 hostapd /etc/hostapd.conf
+S     0   526     1  2168   252 0:0   00:00 00:00:00 udhcpd
+S     0   543     1  2916  1508 0:0   00:00 00:00:00 mdnsd
+S     0   548     1  4176  1372 0:0   00:00 00:00:00 hwSecret
+S     0  1247     1  2168   260 0:0   00:09 00:00:00 /bin/sh /script/after_shu
+R     0  1251  1247  2172   260 0:0   00:09 00:00:00 ps -l
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 3.14.52+g94d07bb (sky@sky-vmware-1604) (gcc version 4.9.2 (GCC) ) #106 SMP PREEMPT Thu Mar 4 17:35:42 CST 2021
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: Freescale i.MX6 UltraLite 14x14 EVK Board
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 32768
+[    0.000000] free_area_init_node: node 0, pgdat 805ee780, node_mem_map 87ef8000
+[    0.000000]   Normal zone: 256 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 32768 pages, LIFO batch:7
+[    0.000000] PERCPU: Embedded 8 pages/cpu @87ee3000 s8256 r8192 d16320 u32768
+[    0.000000] pcpu-alloc: s8256 r8192 d16320 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 32512
+[    0.000000] Kernel command line: console=ttyLogFile0 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=21e0000.qspi:256k(uboot),3328K(kernel),12800K(rootfs) rootwait quiet rw
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 123264K/131072K available (4264K kernel code, 196K rwdata, 1372K rodata, 204K init, 478K bss, 7808K reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0x88800000 - 0xff000000   (1896 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0x88000000   ( 128 MB)
+[    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+[    0.000000]       .text : 0x80008000 - 0x805893ac   (5637 kB)
+[    0.000000]       .init : 0x8058a000 - 0x805bd040   ( 205 kB)
+[    0.000000]       .data : 0x805be000 - 0x805ef2e0   ( 197 kB)
+[    0.000000]        .bss : 0x805ef2ec - 0x80666cc8   ( 479 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] Switching to timer-based delay loop
+[    0.000022] sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 1431655765682ns
+[    0.001564] clocksource_of_init: no matching clocksources found
+[    0.001845] log file data init success
+[    0.001953] console [ttyLogFile0] enabled
+[    0.001967] tty-log-file: registered console driver for tty log file 0
+[    0.002165] Console: colour dummy device 80x30
+[    0.002205] Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=30000)
+[    0.002233] pid_max: default: 32768 minimum: 301
+[    0.002611] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.002635] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.004290] CPU: Testing write buffer coherency: ok
+[    0.004822] CPU0: update cpu_power 1024
+[    0.004847] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.004901] Setting up static identity map for 0x8040c2c0 - 0x8040c318
+[    0.040855] Brought up 1 CPUs
+[    0.040882] SMP: Total of 1 processors activated (6.00 BogoMIPS).
+[    0.040894] CPU: All CPU(s) started in SVC mode.
+[    0.042291] devtmpfs: initialized
+[    0.053690] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.054464] pinctrl core: initialized pinctrl subsystem
+[    0.055321] regulator-dummy: no parameters
+[    0.055967] NET: Registered protocol family 16
+[    0.056647] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.057990] cpuidle: using governor ladder
+[    0.058010] cpuidle: using governor menu
+[    0.058265] Use WDOG1 as reset source
+[    0.078193] syscon 20c8000.anatop: regmap [mem 0x020c8000-0x020c8fff] registered
+[    0.078924] vdd3p0: 2625 <--> 3400 mV at 3000 mV 
+[    0.079866] cpu: 725 <--> 1450 mV at 1150 mV 
+[    0.080969] vddsoc: 725 <--> 1450 mV at 1175 mV 
+[    0.086396] syscon 20e4000.iomuxc-gpr: regmap [mem 0x020e4000-0x020e7fff] registered
+[    0.093171] syscon 21ac000.romcp: regmap [mem 0x021ac000-0x021affff] registered
+[    0.095053] syscon 21bc000.ocotp-ctrl: regmap [mem 0x021bc000-0x021bffff] registered
+[    0.102100] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.102123] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.103248] imx6ul-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+[    0.105272] 20dc000.gpc supply pu not found, using dummy regulator
+[    0.120468] bio: create slab <bio-0> at 0
+[    0.127688] mxs-dma 1804000.dma-apbh: initialized
+[    0.128707] can-3v3: 3300 mV 
+[    0.129402] wlreg_on: 3300 mV 
+[    0.130334] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58, base_baud = 5000000) is a IMX
+[    0.132314] 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 59, base_baud = 5000000) is a IMX
+[    0.133643] 21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 60, base_baud = 5000000) is a IMX
+[    0.135359] SCSI subsystem initialized
+[    0.135876] libata version 3.00 loaded.
+[    0.136297] usbcore: registered new interface driver usbfs
+[    0.136468] usbcore: registered new interface driver hub
+[    0.136783] usbcore: registered new device driver usb
+[    0.141417] i2c i2c-0: IMX I2C adapter registered
+[    0.142170] i2c i2c-1: IMX I2C adapter registered
+[    0.143125] Advanced Linux Sound Architecture Driver Initialized.
+[    0.145228] Bluetooth: Core ver 2.18
+[    0.145342] NET: Registered protocol family 31
+[    0.145357] Bluetooth: HCI device and connection manager initialized
+[    0.145393] Bluetooth: HCI socket layer initialized
+[    0.145420] Bluetooth: L2CAP socket layer initialized
+[    0.145538] Bluetooth: SCO socket layer initialized
+[    0.146471] cfg80211: Calling CRDA to update world regulatory domain
+[    0.147160] Switched to clocksource mxc_timer1
+[    0.173660] NET: Registered protocol family 2
+[    0.175696] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.175754] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.175805] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.175912] TCP: reno registered
+[    0.175943] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.175996] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.176605] NET: Registered protocol family 1
+[    0.179367] ldo2p5-dummy: no parameters
+[    0.181639] Bus freq driver module loaded
+[    0.183560] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.200615] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.202424] fuse init (API version 7.22)
+[    0.203581] msgmni has been set to 240
+[    0.205547] io scheduler noop registered
+[    0.205567] io scheduler deadline registered
+[    0.205652] io scheduler cfq registered (default)
+[    0.206833] imx-weim 21b8000.weim: Driver registered.
+[    0.208551] imx-sdma 20ec000.sdma: no event needs to be remapped
+[    0.208760] imx-sdma 20ec000.sdma: loaded firmware 3.2
+[    0.217852] imx-sdma 20ec000.sdma: initialized
+[    0.219786] serial: Freescale lpuart driver
+[    0.245808] brd: module loaded
+[    0.258054] loop: module loaded
+[    0.264217] fsl-quadspi 21e0000.qspi: mx25l12805d (16384 Kbytes)
+[    0.264290] 3 cmdlinepart partitions found on MTD device 21e0000.qspi
+[    0.264307] Creating 3 MTD partitions on "21e0000.qspi":
+[    0.264332] 0x000000000000-0x000000040000 : "uboot"
+[    0.267463] 0x000000040000-0x000000380000 : "kernel"
+[    0.270344] 0x000000380000-0x000001000000 : "rootfs"
+[    0.273092] fsl-quadspi 21e0000.qspi: QuadSPI SPI NOR flash driver
+[    0.274064] spi_gpio spi4.15: gpio-miso property not found, switching to no-rx mode
+[    0.277065] usbcore: registered new interface driver cdc_ether
+[    0.277341] usbcore: registered new interface driver cdc_subset
+[    0.277500] usbcore: registered new interface driver zaurus
+[    0.277569] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.277583] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    0.278004] usbcore: registered new interface driver usb-storage
+[    0.282174] setup_reset_gpios:-2, flags 0
+[    0.282407] 2184000.usb supply vbus not found, using dummy regulator
+[    0.283588] mxs_phy 20c9000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.287408] ci_hdrc ci_hdrc.0: Init set fsm->a_vbus_vld = 1
+[    0.288123] setup_reset_gpios:-2, flags 0
+[    0.288494] 2184200.usb supply vbus not found, using dummy regulator
+[    0.289709] mxs_phy 20ca000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.290810] [otg_statemachine]  fsm->id = 0
+[    0.290827] [otg_set_state]  Set state: a_idle
+[    0.290846] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 1
+[    0.290870] ci_hdrc ci_hdrc.0: ci_otg_start_host 1
+[    0.290912] ci_hdrc ci_hdrc.0: EHCI Host Controller
+[    0.290964] ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+[    0.295606] snvs_pwrkey 20cc000.snvs-pwrkey: can't get snvs clock
+[    0.296402] input: 20cc000.snvs-pwrkey as /devices/soc0/soc.1/2000000.aips-bus/20cc000.snvs-pwrkey/input/input0
+[    0.296607] snvs_pwrkey 20cc000.snvs-pwrkey: i.MX snvs powerkey probed
+[    0.297658] snvs_rtc 20cc034.snvs-rtc-lp: can't get snvs-rtc clock
+[    0.298032] check_alarm_past: alarm in the past
+[    0.298629] snvs_rtc 20cc034.snvs-rtc-lp: rtc core: registered 20cc034.snvs-rtc-lp as rtc0
+[    0.298954] i2c /dev entries driver
+[    0.300852] imx2-wdt 20bc000.wdog: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=0)
+[    0.301869] sdhci: Secure Digital Host Controller Interface driver
+[    0.301883] sdhci: Copyright(c) Pierre Ossman
+[    0.301894] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.303798] sdhci-esdhc-imx 2190000.usdhc: assigned as wifi host
+[    0.305070] mmc0: no vqmmc regulator found
+[    0.307350] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+[    0.308093] usb usb1: is_b_host:0, config:842e8400, parent:  (null), root_hub=842bf800
+[    0.308128] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.308153] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.308176] usb usb1: Product: EHCI Host Controller
+[    0.308198] usb usb1: Manufacturer: Linux 3.14.52+g94d07bb ehci_hcd
+[    0.308217] usb usb1: SerialNumber: ci_hdrc.0
+[    0.310008] hub 1-0:1.0: USB hub found
+[    0.310116] hub 1-0:1.0: 1 port detected
+[    0.311048] [otg_statemachine]  quit statemachine, changed = 1
+[    0.311145] [otg_set_state]  Set state: a_wait_vrise
+[    0.311184] [otg_statemachine]  quit statemachine, changed = 1
+[    0.347235] mmc0: SDHCI controller on 2190000.usdhc [2190000.usdhc] using ADMA
+[    0.359954] mmc1: no vqmmc regulator found
+[    0.359981] mmc1: no vmmc regulator found
+[    0.361919] sdhci-esdhc-imx 2190000.usdhc: card claims to support voltages below defined range 90ffffff
+[    0.381964] mmc0: new high speed SDIO card at address 0001
+[    0.397276] mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+[    0.405473] wm8960 0-001a: Failed to issue reset
+[    0.405728] wm8960: probe of 0-001a failed with error -5
+[    0.408712] fsl-asrc 2034000.asrc: driver registered
+[    0.413362] [otg_set_state]  Set state: a_wait_bcon
+[    0.413402] [otg_statemachine]  quit statemachine, changed = 1
+[    0.424519] TCP: cubic registered
+[    0.426070] NET: Registered protocol family 10
+[    0.435023] sit: IPv6 over IPv4 tunneling driver
+[    0.452976] NET: Registered protocol family 17
+[    0.453268] Bluetooth: RFCOMM TTY layer initialized
+[    0.453314] Bluetooth: RFCOMM socket layer initialized
+[    0.453370] Bluetooth: RFCOMM ver 1.11
+[    0.453398] lib80211: common routines for IEEE802.11 drivers
+[    0.453413] lib80211_crypt: registered algorithm 'NULL'
+[    0.453426] lib80211_crypt: registered algorithm 'WEP'
+[    0.453439] lib80211_crypt: registered algorithm 'CCMP'
+[    0.453452] lib80211_crypt: registered algorithm 'TKIP'
+[    0.454143] check cpu speed flag: 03
+[    0.468934] can-3v3: disabling
+[    0.468958] regulator-dummy: disabling
+[    0.469760] driver->driver.name = android_usb ret=0
+[    0.469783] counting ret = 0 : 2184000.usb
+[    0.470029] file system registered
+[    0.470890] android_usb gadget: android_usb ready
+[    0.471030] snvs_rtc 20cc034.snvs-rtc-lp: setting system clock to 1970-01-01 00:00:00 UTC (0)
+[    0.505847] ALSA device list:
+[    0.509024]   No soundcards found.
+[    1.640471] VFS: Mounted root (jffs2 filesystem) on device 31:2.
+[    1.648517] devtmpfs: mounted
+[    1.648968] Freeing unused kernel memory: 204K (8058a000 - 805bd000)
+[    2.652076] random: nonblocking pool is initialized
+[    3.533389] Bluetooth: HCI UART driver ver 2.2.3b3fa69.20191024-161739
+[    3.533404] Bluetooth: HCI H4 protocol initialized
+[    3.533410] Bluetooth: HCI Realtek H5 protocol initialized
+[    3.533417] rtk_btcoex: rtk_btcoex_init: version: 1.2
+[    3.533423] rtk_btcoex: create workqueue
+[    3.537324] rtk_btcoex: alloc buffers 1408, 2240 for ev and l2
+[    4.982310] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[    6.063244] android_usb: already disabled
+[    6.064368] android_enable_function: iap2
+[    6.064381] android_enable_function: ncmandroid_usb gadget: _iap2_bind_config
+[    6.064565] ncm_function_bind_config MAC: 00:00:00:00:00:00
+[    6.092162] ncm0: MAC c2:8e:30:52:e9:a3
+[    6.092175] ncm0: HOST MAC 26:98:d9:34:fd:a1
+[    6.126526] ncm0: eth_open
+[    6.126548] ncm0: eth_start
+[    6.988731] driver->driver.name = zero ret=1
+[    6.988746] counting ret = 1 : 2184000.usb
+[    6.988754] counting ret = 0 : 2184200.usb
+[    6.993425] zero gadget: audio_buf_size 48000, req_buf_size 192, req_count 256
+[    6.993464] zero gadget: iPhone, version: Kevin Shi 2020
+[    6.993472] zero gadget: iPhone, serial: 41de1cfe2e099bec5932187411378387653dbc63 
+[    6.993480] zero gadget: zero ready
+[    6.993528] [otg_statemachine]  fsm->id = 1
+[    6.993536] [otg_set_state]  Set state: b_idle
+[    6.993556] [otg_statemachine]  quit statemachine, changed = 1
+[    6.993583] [otg_set_state]  Set state: b_peripheral
+[    6.993596] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 2
+[    6.993608] ci_hdrc ci_hdrc.1: ci_otg_start_gadget 1
+[    6.993640] USBMODE_CI_SDIS disabled!!!
+[    6.993660] [otg_statemachine]  quit statemachine, changed = 1
+[    7.017290] [otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 0 0 1
+[    7.017305] [otg_statemachine]  quit statemachine, changed = 0
+[    7.273828] zero gadget: high-speed config #1: ptp
+[    7.296893] zero gadget: high-speed config #0: unconfigured
+[    7.297082] zero gadget: high-speed config #1: ptp
+[    7.297531] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[    7.297549] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[    7.297558] zero gadget: iph_ctrlrequest value: -95
+[    7.313231] zero gadget: set fake iphone charage power 500 mA
+[    8.317458] Bluetooth: h5_open
+[    8.317473] Bluetooth: hci_uart_register_dev
+[    8.327347] rtk_btcoex: Open BTCOEX
+[    8.342457] rtk_btcoex: BTCOEX hci_rev 0xaa7b
+[    8.342470] rtk_btcoex: BTCOEX lmp_subver 0x9a3a
+[   10.627288] Bluetooth: __hci_uart_flush: hdev 85930000 tty 856d5a00
+[   10.627301] Bluetooth: hci flush sync
+[   10.632027] Bluetooth: hci flush sync status 0
+[   10.632068] Bluetooth: hci_uart_close: hdev 85930000
+[   10.632076] Bluetooth: __hci_uart_flush: hdev 85930000 tty 856d5a00
+[   10.632085] rtk_btcoex: Close BTCOEX
+[   10.632097] rtk_btcoex: -x
+[   12.311114] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   12.311137] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   12.311146] zero gadget: iph_ctrlrequest value: -95
+[   13.404169] [otg_set_state]  Set state: a_host
+[   13.404195] [otg_statemachine]  quit statemachine, changed = 1
+[   13.627347] usb 1-1: new high-speed USB device number 2 using ci_hdrc
+[   13.658868] usb 1-1: is_b_host:0, config:85117000, parent:842bf800, root_hub=842bf800
+[   13.658890] usb 1-1: New USB device found, idVendor=0781, idProduct=5571
+[   13.658902] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   13.658911] usb 1-1: Product: Cruzer Fit
+[   13.658921] usb 1-1: Manufacturer: SanDisk
+[   13.658931] usb 1-1: SerialNumber: 4C530101171211112172
+[   13.667799] usb-storage 1-1:1.0: USB Mass Storage device detected
+[   13.675321] scsi0 : usb-storage 1-1:1.0
+[   14.678843] scsi 0:0:0:0: Direct-Access     SanDisk  Cruzer Fit       1.27 PQ: 0 ANSI: 6
+[   14.693954] sd 0:0:0:0: [sda] 125031680 512-byte logical blocks: (64.0 GB/59.6 GiB)
+[   14.695574] sd 0:0:0:0: [sda] Write Protect is off
+[   14.695596] sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00
+[   14.697943] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[   14.726614]  sda: sda1
+[   14.740063] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[   14.784820] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   17.312841] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   17.312864] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   17.312873] zero gadget: iph_ctrlrequest value: -95
+[   19.607482] sh (283): /proc/111/oom_adj is deprecated, please use /proc/111/oom_score_adj instead.
+[   21.496843] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   21.507683] ncm0: stop stats: rx/tx 0/0, errs 0/0
+[   22.317088] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   22.317110] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   22.317119] zero gadget: iph_ctrlrequest value: -95
+[   23.740448] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   27.321614] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   27.321638] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   27.321647] zero gadget: iph_ctrlrequest value: -95
+[   32.324762] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   32.324783] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   32.324791] zero gadget: iph_ctrlrequest value: -95
+[   37.327618] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   37.327641] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   37.327650] zero gadget: iph_ctrlrequest value: -95
+[   42.332084] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   42.332106] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   42.332114] zero gadget: iph_ctrlrequest value: -95
+[   47.332838] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   47.332859] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   47.332868] zero gadget: iph_ctrlrequest value: -95
+[   52.338121] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   52.338143] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   52.338152] zero gadget: iph_ctrlrequest value: -95
+[   57.341704] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   57.341724] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   57.341733] zero gadget: iph_ctrlrequest value: -95
+[   62.342475] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   62.342496] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   62.342505] zero gadget: iph_ctrlrequest value: -95
+[   67.346744] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   67.346766] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   67.346774] zero gadget: iph_ctrlrequest value: -95
+[   72.348340] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   72.348362] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   72.348371] zero gadget: iph_ctrlrequest value: -95
+[   77.350764] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   77.350784] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   77.350794] zero gadget: iph_ctrlrequest value: -95
+[   82.355308] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   82.355330] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   82.355339] zero gadget: iph_ctrlrequest value: -95
+[   87.360158] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   87.360177] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   87.360186] zero gadget: iph_ctrlrequest value: -95
+[   92.366402] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   92.366424] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   92.366432] zero gadget: iph_ctrlrequest value: -95
+[   97.371070] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[   97.371092] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[   97.371101] zero gadget: iph_ctrlrequest value: -95
+[  102.375473] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  102.375495] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  102.375504] zero gadget: iph_ctrlrequest value: -95
+[  107.379738] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  107.379759] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  107.379768] zero gadget: iph_ctrlrequest value: -95
+[  112.384811] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  112.384833] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  112.384842] zero gadget: iph_ctrlrequest value: -95
+[  117.385883] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  117.385905] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  117.385914] zero gadget: iph_ctrlrequest value: -95
+[  122.387784] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  122.387807] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  122.387817] zero gadget: iph_ctrlrequest value: -95
+[  127.391813] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  127.391835] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  127.391843] zero gadget: iph_ctrlrequest value: -95
+[  127.392472] zero gadget: high-speed config #0: unconfigured
+[  132.395836] zero gadget: high-speed config #1: ptp
+[  132.395917] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  132.395933] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  132.395941] zero gadget: iph_ctrlrequest value: -95
+[  137.400632] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  137.400654] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  137.400663] zero gadget: iph_ctrlrequest value: -95
+[  142.405865] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  142.405888] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  142.405897] zero gadget: iph_ctrlrequest value: -95
+[  147.410184] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  147.410205] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  147.410214] zero gadget: iph_ctrlrequest value: -95
+[  152.414802] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  152.414824] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  152.414834] zero gadget: iph_ctrlrequest value: -95
+[  157.419687] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  157.419709] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  157.419718] zero gadget: iph_ctrlrequest value: -95
+[  162.424892] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  162.424913] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  162.424922] zero gadget: iph_ctrlrequest value: -95
+[  167.425738] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  167.425761] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  167.425769] zero gadget: iph_ctrlrequest value: -95
+[  172.431091] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  172.431116] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  172.431124] zero gadget: iph_ctrlrequest value: -95
+[  177.434659] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  177.434681] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  177.434690] zero gadget: iph_ctrlrequest value: -95
+[  182.437878] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  182.437901] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  182.437910] zero gadget: iph_ctrlrequest value: -95
+[  187.439752] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  187.439773] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  187.439781] zero gadget: iph_ctrlrequest value: -95
+[  192.444912] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  192.444935] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  192.444943] zero gadget: iph_ctrlrequest value: -95
+[  197.447049] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  197.447071] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  197.447080] zero gadget: iph_ctrlrequest value: -95
+[  202.452413] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  202.452435] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  202.452444] zero gadget: iph_ctrlrequest value: -95
+[  207.454771] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  207.454794] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  207.454802] zero gadget: iph_ctrlrequest value: -95
+[  212.459878] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  212.459901] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  212.459910] zero gadget: iph_ctrlrequest value: -95
+[  217.464787] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  217.464810] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  217.464818] zero gadget: iph_ctrlrequest value: -95
+[  222.469226] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  222.469249] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  222.469257] zero gadget: iph_ctrlrequest value: -95
+[  227.474636] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  227.474658] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  227.474667] zero gadget: iph_ctrlrequest value: -95
+[  232.479062] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  232.479086] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  232.479094] zero gadget: iph_ctrlrequest value: -95
+[  237.482809] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  237.482831] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  237.482840] zero gadget: iph_ctrlrequest value: -95
+[  242.483727] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  242.483750] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  242.483759] zero gadget: iph_ctrlrequest value: -95
+[  247.487594] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  247.487616] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  247.487625] zero gadget: iph_ctrlrequest value: -95
+[  252.491807] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  252.491830] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  252.491839] zero gadget: iph_ctrlrequest value: -95
+[  257.492120] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  257.492142] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  257.492151] zero gadget: iph_ctrlrequest value: -95
+[  262.497242] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  262.497263] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  262.497272] zero gadget: iph_ctrlrequest value: -95
+[  267.499351] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  267.499373] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  267.499382] zero gadget: iph_ctrlrequest value: -95
+[  272.504630] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  272.504652] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  272.504660] zero gadget: iph_ctrlrequest value: -95
+[  277.508172] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  277.508194] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  277.508204] zero gadget: iph_ctrlrequest value: -95
+[  282.512853] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  282.512875] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  282.512885] zero gadget: iph_ctrlrequest value: -95
+[  287.513836] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  287.513858] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  287.513866] zero gadget: iph_ctrlrequest value: -95
+[  292.517870] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  292.517894] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  292.517903] zero gadget: iph_ctrlrequest value: -95
+[  297.520951] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  297.520972] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  297.520980] zero gadget: iph_ctrlrequest value: -95
+[  302.525559] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  302.525581] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  302.525591] zero gadget: iph_ctrlrequest value: -95
+[  307.527601] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  307.527624] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  307.527633] zero gadget: iph_ctrlrequest value: -95
+[  312.528585] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  312.528608] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  312.528617] zero gadget: iph_ctrlrequest value: -95
+[  317.534026] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  317.534049] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  317.534058] zero gadget: iph_ctrlrequest value: -95
+[  322.536434] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  322.536457] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  322.536466] zero gadget: iph_ctrlrequest value: -95
+[  327.539867] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  327.539889] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  327.539898] zero gadget: iph_ctrlrequest value: -95
+[  332.545237] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  332.545261] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  332.545269] zero gadget: iph_ctrlrequest value: -95
+[  337.550803] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  337.550825] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  337.550834] zero gadget: iph_ctrlrequest value: -95
+[  342.554925] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  342.554947] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  342.554956] zero gadget: iph_ctrlrequest value: -95
+[  347.560077] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  347.560100] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  347.560108] zero gadget: iph_ctrlrequest value: -95
+[  352.564805] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  352.564830] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  352.564838] zero gadget: iph_ctrlrequest value: -95
+[  357.567655] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  357.567678] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  357.567686] zero gadget: iph_ctrlrequest value: -95
+[  362.572243] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  362.572266] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  362.572275] zero gadget: iph_ctrlrequest value: -95
+[  367.577366] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  367.577389] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  367.577398] zero gadget: iph_ctrlrequest value: -95
+[  372.579781] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  372.579804] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  372.579812] zero gadget: iph_ctrlrequest value: -95
+[  377.584966] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  377.584989] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  377.584997] zero gadget: iph_ctrlrequest value: -95
+[  382.588491] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  382.588513] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  382.588522] zero gadget: iph_ctrlrequest value: -95
+[  387.591134] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  387.591157] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  387.591166] zero gadget: iph_ctrlrequest value: -95
+[  392.594788] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  392.594811] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  392.594821] zero gadget: iph_ctrlrequest value: -95
+[  397.600391] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  397.600414] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  397.600423] zero gadget: iph_ctrlrequest value: -95
+[  402.605335] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  402.605357] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  402.605367] zero gadget: iph_ctrlrequest value: -95
+[  407.610185] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  407.610208] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  407.610217] zero gadget: iph_ctrlrequest value: -95
+[  412.612313] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  412.612337] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  412.612345] zero gadget: iph_ctrlrequest value: -95
+[  417.617605] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  417.617626] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  417.617635] zero gadget: iph_ctrlrequest value: -95
+[  422.622578] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  422.622600] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  422.622609] zero gadget: iph_ctrlrequest value: -95
+[  427.625540] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  427.625562] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  427.625570] zero gadget: iph_ctrlrequest value: -95
+[  432.628192] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  432.628215] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  432.628225] zero gadget: iph_ctrlrequest value: -95
+[  437.633078] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  437.633099] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  437.633108] zero gadget: iph_ctrlrequest value: -95
+[  442.636363] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  442.636384] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  442.636393] zero gadget: iph_ctrlrequest value: -95
+[  447.640140] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  447.640163] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  447.640172] zero gadget: iph_ctrlrequest value: -95
+[  452.644631] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  452.644654] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  452.644662] zero gadget: iph_ctrlrequest value: -95
+[  457.647637] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  457.647660] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  457.647669] zero gadget: iph_ctrlrequest value: -95
+[  462.651350] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  462.651372] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  462.651381] zero gadget: iph_ctrlrequest value: -95
+[  467.655143] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  467.655167] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  467.655176] zero gadget: iph_ctrlrequest value: -95
+[  472.659720] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  472.659742] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  472.659751] zero gadget: iph_ctrlrequest value: -95
+[  477.662588] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  477.662610] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  477.662619] zero gadget: iph_ctrlrequest value: -95
+[  482.667942] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  482.667965] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  482.667974] zero gadget: iph_ctrlrequest value: -95
+[  487.670309] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  487.670331] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  487.670341] zero gadget: iph_ctrlrequest value: -95
+[  492.675567] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  492.675589] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  492.675598] zero gadget: iph_ctrlrequest value: -95
+[  497.678097] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  497.678119] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  497.678128] zero gadget: iph_ctrlrequest value: -95
+[  502.682194] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  502.682217] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  502.682227] zero gadget: iph_ctrlrequest value: -95
+[  507.685916] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  507.685938] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  507.685946] zero gadget: iph_ctrlrequest value: -95
+[  512.690163] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  512.690185] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  512.690194] zero gadget: iph_ctrlrequest value: -95
+[  517.695012] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  517.695035] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  517.695044] zero gadget: iph_ctrlrequest value: -95
+[  522.699591] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  522.699613] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  522.699622] zero gadget: iph_ctrlrequest value: -95
+[  527.700146] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  527.700170] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  527.700178] zero gadget: iph_ctrlrequest value: -95
+[  532.705515] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  532.705538] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  532.705547] zero gadget: iph_ctrlrequest value: -95
+[  537.707632] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  537.707652] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  537.707662] zero gadget: iph_ctrlrequest value: -95
+[  542.711982] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  542.712003] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  542.712012] zero gadget: iph_ctrlrequest value: -95
+[  547.715048] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  547.715072] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  547.715081] zero gadget: iph_ctrlrequest value: -95
+[  552.716772] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  552.716794] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  552.716803] zero gadget: iph_ctrlrequest value: -95
+[  557.719615] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  557.719637] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  557.719646] zero gadget: iph_ctrlrequest value: -95
+[  562.722275] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  562.722298] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  562.722307] zero gadget: iph_ctrlrequest value: -95
+[  567.725575] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  567.725598] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  567.725607] zero gadget: iph_ctrlrequest value: -95
+[  572.731379] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  572.731402] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  572.731411] zero gadget: iph_ctrlrequest value: -95
+[  577.736593] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  577.736615] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  577.736624] zero gadget: iph_ctrlrequest value: -95
+[  582.741334] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  582.741354] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  582.741365] zero gadget: iph_ctrlrequest value: -95
+[  587.745700] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  587.745722] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  587.745730] zero gadget: iph_ctrlrequest value: -95
+[  592.749691] zero gadget: iph_ctrlrequest c0.45 v0000 i0000 l3
+[  592.749715] zero gadget: unknown class-specific control req c0.45 v0000 i0000 l3
+[  592.749724] zero gadget: iph_ctrlrequest value: -95
+[  592.837402] [otg_set_state]  Set state: a_wait_bcon
+[  592.837430] [otg_statemachine]  quit statemachine, changed = 1
+[  592.837607] usb 1-1: USB disconnect, device number 2
