@@ -4,4 +4,4 @@ Put the firmware you want to flash inside the root directory of a USB drive form
 
 Power the dongle (not from the car) and wait till the red light is solid before inserting the USB drive.
 
-#### Warning: Official 2021.03.06 can only be downgraded using U2W_Update_2020.11.10.2138_ROLLBACK.img
+#### Warning: Official firmware 2021.03.06 or later can only be downgraded using U2W_Update_2020.11.10.2138_ROLLBACK.img
