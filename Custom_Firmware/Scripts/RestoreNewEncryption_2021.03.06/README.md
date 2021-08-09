@@ -1,0 +1,1 @@
+## Use this script to replace the old firmware obfuscation binary with the new one allowing to upgrade to 2021.03.06 (and higher)
