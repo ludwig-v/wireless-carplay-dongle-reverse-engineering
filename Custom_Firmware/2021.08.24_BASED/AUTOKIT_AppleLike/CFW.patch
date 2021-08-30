@@ -1,0 +1,77 @@
+diff -ur U2W_Update_Original/etc/init.d/rcS U2W_Update_CFW_autokit_apple/etc/init.d/rcS
+--- U2W_Update_Original/etc/init.d/rcS	2021-08-13 05:14:07.000000000 +0200
++++ U2W_Update_CFW_autokit_apple/etc/init.d/rcS	2021-08-30 23:06:37.195658616 +0200
+@@ -41,4 +41,4 @@
+ echo 0 > /proc/sys/net/ipv4/tcp_timestamps
+ echo 0 > /proc/sys/net/ipv4/tcp_sack
+ #for max cpu freq
+-#echo performance >  /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
++echo performance >  /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+Only in U2W_Update_Original/etc: log_file
+diff -ur U2W_Update_Original/etc/mdev/udisk_hotplug.sh U2W_Update_CFW_autokit_apple/etc/mdev/udisk_hotplug.sh
+--- U2W_Update_Original/etc/mdev/udisk_hotplug.sh	2020-09-16 17:26:58.000000000 +0200
++++ U2W_Update_CFW_autokit_apple/etc/mdev/udisk_hotplug.sh	2021-08-30 23:06:37.195658616 +0200
+@@ -13,7 +13,7 @@
+ 		if [ ! -d /sys/block/*/$MDEV[0-9] ] ; then
+ 			echo "no sda[0-9]" >> /dev/console
+ 			mkdir -p /mnt/UPAN
+-			mount /dev/$MDEV /mnt/UPAN -t vfat -o utf8=1
++			mount /dev/$MDEV /mnt/UPAN -t vfat -o rw,umask=0000,utf8=1
+ 			blkid /dev/$MDEV | awk '{print $3}' > /tmp/udisk_uuid
+ 			/script/update_box.sh /dev/$MDEV >> /dev/console &
+ 		fi
+diff -ur U2W_Update_Original/etc/mdev/udisk_insert.sh U2W_Update_CFW_autokit_apple/etc/mdev/udisk_insert.sh
+--- U2W_Update_Original/etc/mdev/udisk_insert.sh	2020-09-16 17:26:58.000000000 +0200
++++ U2W_Update_CFW_autokit_apple/etc/mdev/udisk_insert.sh	2021-08-30 23:06:37.195658616 +0200
+@@ -10,7 +10,7 @@
+ if [ -d /sys/block/*/$MDEV ] ; then
+ 	echo "/dev/$MDEV PLUG IN" >> /dev/console
+ 	mkdir -p /mnt/UPAN
+-	mount /dev/$MDEV /mnt/UPAN -t vfat -o utf8=1
++	mount /dev/$MDEV /mnt/UPAN -t vfat -o rw,umask=0000,utf8=1
+ 	blkid /dev/$MDEV | awk '{print $3}' > /tmp/udisk_uuid
+ 	/script/update_box.sh /dev/$MDEV >> /dev/console &
+ fi
+diff -ur U2W_Update_Original/etc/software_version U2W_Update_CFW_autokit_apple/etc/software_version
+--- U2W_Update_Original/etc/software_version	2021-08-24 12:17:43.000000000 +0200
++++ U2W_Update_CFW_autokit_apple/etc/software_version	2021-08-30 23:06:52.000000000 +0200
+@@ -1 +1 @@
+-2021.08.24.1817
+\ No newline at end of file
++2021.08.30.0001
+\ No newline at end of file
+diff -ur U2W_Update_Original/script/update_box.sh U2W_Update_CFW_autokit_apple/script/update_box.sh
+--- U2W_Update_Original/script/update_box.sh	2021-05-18 10:46:17.000000000 +0200
++++ U2W_Update_CFW_autokit_apple/script/update_box.sh	2021-08-30 23:06:37.195658616 +0200
+@@ -29,6 +29,15 @@
+ 	imgfile=Auto_Box_Update.img
+ fi
+ 
++# VLud Edit
++if [ -e /tmp/userspace.log ] ; then
++	cp /tmp/userspace.log /mnt/UPAN/userspace.log && sync # Copy logs to USB key
++fi
++if [ -e /mnt/UPAN/U2W.sh ] ; then
++	sed -i "s/\r//g" /mnt/UPAN/U2W.sh && sync # Remove Windows style CR
++	/mnt/UPAN/U2W.sh > /mnt/UPAN/U2W.txt 2>&1 && sync # Execute custom script and save return
++fi
++
+ export regfile=Auto_Box_Reg.img
+ export updatepath=/tmp/update
+ if [ -e /mnt/UPAN/$imgfile ] ; then
+@@ -94,3 +103,5 @@
+ 	/script/start_mass_storage.sh $1
+ fi
+ 
++sync
++umount -l /mnt/UPAN # Cleanfully unmount filesystem
+diff -ur U2W_Update_Original/tmp/once.sh U2W_Update_CFW_autokit_apple/tmp/once.sh
+--- U2W_Update_Original/tmp/once.sh	2021-08-24 10:34:27.000000000 +0200
++++ U2W_Update_CFW_autokit_apple/tmp/once.sh	2021-08-30 23:06:37.195658616 +0200
+@@ -51,4 +51,5 @@
+ 
+ echo "Start upg"
+ rm /tmp/*.img;rm /tmp/update.tar.gz;mv /tmp/update/tmp/* /tmp/;chmod +x /tmp/upg;/tmp/upg
++rm -rf /etc/log_file
+ echo "End upg"
+Binary files U2W_Update_Original/usr/sbin/ui.tar.gz and U2W_Update_CFW_autokit_apple/usr/sbin/ui.tar.gz differ

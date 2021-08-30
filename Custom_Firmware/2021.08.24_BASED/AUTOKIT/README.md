@@ -1,0 +1,1 @@
+## This version is for Carlinkit V2 devices only (12MB rootFS), keeping AUTOKIT new UI, if you installed U2W standard update don't forget to rename the file to U2W_Update.img to install it
