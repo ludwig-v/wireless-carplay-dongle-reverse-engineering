@@ -1,0 +1,1 @@
+Use only on Broadcom Wifi devices.
