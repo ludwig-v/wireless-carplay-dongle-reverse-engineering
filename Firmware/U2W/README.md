@@ -23,6 +23,11 @@ Wait for the blue and red LEDs to stop flashing, you can unplug the USB key when
 | 2021.02.05.2216 | AUTOKIT | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_AUTOKIT/2021.02.05.2216/U2W_AUTOKIT_Update.img |
 | 2020.12.25.1732_ROLLBACK | AUTOKIT | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_AUTOKIT/2020.12.25.1732_ROLLBACK/U2W_AUTOKIT_Update.img |
 | 2020.12.25.1731 | AUTOKIT | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_AUTOKIT/2020.12.25.1731/U2W_AUTOKIT_Update.img |
+| 2022.12.14.1100 |  | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_/2022.12.14.1100/U2W_Update.img |
+| 2022.07.29.1714 |  | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_/2022.07.29.1714/U2W_Update.img |
+| 2022.06.17.1710 |  | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_/2022.06.17.1710/U2W_Update.img |
+| 2022.01.24.1526 |  | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_/2022.01.24.1526/U2W_Update.img |
+| 2021.12.22.1643 |  | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_/2021.12.22.1643/U2W_Update.img |
 | 2021.08.30.0022 |  | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_/2021.08.30.0022/U2W_Update.img |
 | 2021.07.05.2308 |  | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_/2021.07.05.2308/U2W_Update.img |
 | 2021.07.04.2222 |  | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2W/_/2021.07.04.2222/U2W_Update.img |
