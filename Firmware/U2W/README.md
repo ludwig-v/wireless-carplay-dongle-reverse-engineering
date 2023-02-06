@@ -1,4 +1,4 @@
-### Official Firmwares (stock)
+### Official Firmwares (stock) for V1 / V2 / V3
 
 Put the firmware you want to flash inside the root directory of a USB drive formated in FAT32 and rename it U2W_Update.img (or U2W_ZYD_Update.img if you are on 2020.08.27/2021.03.10 or U2W_AUTOKIT_Update.img if you have a Red UI/Custom theme or U2W_CP2AIR_Update.img if you have CPlay2Air FW).
 
