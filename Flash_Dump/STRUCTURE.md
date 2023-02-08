@@ -13,7 +13,8 @@
 | 0x040000 | 0x340000 | Kernel (zImage) |
 | 0x380000 | 0xC80000 | rootFS (JFFS2) |
 
-AutoBox.img inside /tmp/ folder of all updates is a perfect copy of Flash memory from 0x0 to 0x380000 (uBoot + Kernel)
+AutoBox.img inside /tmp/ folder of all updates is a almost copy of Flash memory from 0x0 to 0x380000 (uBoot + Kernel)
+When flashing another dump the zone from 0x030000 to 0x070000 is updated by the device
 
 ---
 
