@@ -11,7 +11,20 @@
 | SoC | Freescale i.MX6 UltraLite |
 | CPU | ARM Cortex-A7 (ARMv7) |
 | RAM | Micron/SK hynix 1Gb (64x16)
-| Wi-Fi/BT | Realtek RTL8822BS |
+| Wi-Fi/BT | Realtek RTL8822BS or Fn-Link L287B-SR or Broadcom BCM4354 |
+
+## Hardware differences
+
+Hardware base remains almost exactly the same since the beginning, only device case / design changed (Thermal pads on V4 / Holes for air flow on V5)
+
+Wifi chip only seems to be changed depending on the stock of the manufacturer. Whatever Wifi chip is being used, is connected over SDIO Protocol (High Speed 4-Bit SD) at 50Mhz, for a maximum speed of 25MB/s (200 Mbps)
+
+Carlinkit created its own segmentation mainly for marketing using different softwares:
+- V1 / V2 / V3 : Only Carplay Wired OEM for Wireless Carplay
+- V4 : Only Carplay Wired OEM for Wireless Carplay + Wireless Android Auto
+- V5: Carplay Wired OEM or Android Auto Wired OEM for both Wireless Carplay and Wireless Android Auto
+
+Fun fact: It is possible to switch from one to another by rewriting the flash chip (V5 > V3, V3 > V4, and so on). Please note that Carlinkit controls devices activation so it may not work in the future so please save your original flash
 
 # Software
 
