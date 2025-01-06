@@ -19,3 +19,4 @@ Wait for the blue and red LEDs to stop flashing, you can unplug the USB key when
 | 2022.07.29.1635 | AUTOKIT | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2AW/_AUTOKIT/2022.07.29.1635/U2AW_AUTOKIT_Update.img |
 | 2022.06.17.1439 | AUTOKIT | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2AW/_AUTOKIT/2022.06.17.1439/U2AW_AUTOKIT_Update.img |
 | 2022.06.09.1652 | AUTOKIT | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2AW/_AUTOKIT/2022.06.09.1652/U2AW_AUTOKIT_Update.img |
+| 2022.05.16.1659 | AUTOKIT | https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/raw/master/Firmware/U2AW/_AUTOKIT/2022.05.16.1659/U2AW_AUTOKIT_Update.img |
