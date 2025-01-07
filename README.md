@@ -79,3 +79,11 @@ Compression algorithm could be implemented in jefferson (when known) like this: 
 	make all
 	
 The device can be seen as "SP Blank 6ULL" when powered by USB-OTG but it is not possible to flash a custom u-boot using imx_usb because it is signed
+
+## Links to interesting repos
+
+https://github.com/segfly/carlinkit-modding
+
+https://github.com/Henkru/cplay2air-wifi-passphrase-patch
+
+https://github.com/Quikeramos1/Unbrik-Carlinkit-V3
