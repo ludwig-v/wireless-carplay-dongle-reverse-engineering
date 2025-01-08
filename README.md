@@ -28,8 +28,6 @@ Carlinkit created its own segmentation mainly for marketing using different soft
 
 ## Software
 
-## Software
-
 This repository started when I gained root access by flashing a custom image back in 2020.
 Firmware images were just obfuscated tarball archives, building a dictionary was enough to unpack and repack firmware images.
 
@@ -38,7 +36,7 @@ Unfortunately, it didn't last long. Carlinkit has been made aware of this repo, 
 ### Rooting the device via software
 
 It is possible to gain root access from Carlinkit 1.0 / 2.0 / 3.0 without any hardware method by flashing any "ROLLBACK" firmware (packed with the new method and restoring old method) then flash any Custom Firmware available.
-It is not possible to gain root access from Carlinkit 4.0 or 5.0 withoyut any hardware method.
+It is not possible to gain root access from Carlinkit 4.0 or 5.0 without any hardware method.
 
 Please note that packing method is different between 1.0 / 2.0 / 3.0 (U2W) and 4.0 (U2AW) and 5.0 (U2AC), this way Carlinkit ensures you stick with your original device functionalities.
 
@@ -74,11 +72,12 @@ Please note that **Carlinkit controls devices activation** (via /etc/uuid_sign),
 
 ### Rooting the device via hardware
 
-[WIP]
+Check https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/tree/master/Flash_Dump/Tools
+
+Once you restored Custom Firmware behavior you can install Dropbear (SSH) and gain root access to Carlinkit device
 
 ## Filesystem
 
-Custom JFFS2 implementation has been made by Carlinkit, they use custom compression algorithm 0x1**6** which seems to be based on Zlib (JFFS2_COMPR_ZLIB = 0x0**6**)
 
 ```bash
 $ cat /proc/cmdline
@@ -97,11 +96,6 @@ devtmpfs             devtmpfs       61632         0     61632   0% /dev
 tmpfs                tmpfs          61732      6324     55408  10% /tmp
 /dev/sda1            vfat        62498880     42304  62456576   0% /mnt/UPAN
 ```
-
-No reverse engineering has been done on this yet because JFFS2 is a compiled build-in module of Carlinkit kernel.
-Due to this we can't extract files from flash dumps nor editing them.
-
-Compression algorithm could be implemented in jefferson (when known) like this: https://github.com/onekey-sec/jefferson/pull/19/commits/c817964c9d6484c3c7c8c3a167cda98816d342b2
 
 ## u-boot compilation
 
