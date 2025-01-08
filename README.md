@@ -72,7 +72,9 @@ Please note that **Carlinkit controls devices activation** (via /etc/uuid_sign),
 
 ### Rooting the device via hardware
 
-Check https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/tree/master/Flash_Dump/Tools
+Check https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/tree/master/Flash_Dump to dump the flash using a Raspberry Pi (you can also use any other programmer with a clip)
+
+Check https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/tree/master/Flash_Dump/Tools for rootFS extraction
 
 Once you restored Custom Firmware behavior you can install Dropbear (SSH) and gain root access to Carlinkit device
 
