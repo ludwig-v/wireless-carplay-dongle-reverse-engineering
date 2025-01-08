@@ -1,0 +1,9 @@
+kernel/fs/configfs/configfs.ko:
+kernel/drivers/usb/gadget/libcomposite.ko: kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/usb_f_acm.ko: kernel/drivers/usb/gadget/u_serial.ko kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/u_serial.ko:
+kernel/drivers/usb/gadget/usb_f_serial.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/drivers/usb/gadget/u_serial.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/usb_f_obex.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/drivers/usb/gadget/u_serial.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/g_serial.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/g_dbgp.ko: kernel/drivers/usb/gadget/u_serial.ko kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/media/usb/gspca/gspca_main.ko:
