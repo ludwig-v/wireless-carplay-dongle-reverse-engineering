@@ -26,20 +26,55 @@ Carlinkit created its own segmentation mainly for marketing using different soft
 
 ![Box Types](https://github.com/ludwig-v/wireless-carplay-dongle-reverse-engineering/blob/master/Pictures/BoxTypes.png?raw=true)
 
-# Software
+## Software
+
+## Software
+
+This repository started when I gained root access by flashing a custom image back in 2020.
+Firmware images were just obfuscated tarball archives, building a dictionary was enough to unpack and repack firmware images.
+
+Unfortunately, it didn't last long. Carlinkit has been made aware of this repo, they changed the firmware images packing in firmware 2021.03.06 with a new binary, they also hardened the kernel in next firmwares to block any usage of "strace" to reverse the new binary.
+
+### Rooting the device via software
+
+It is possible to gain root access from Carlinkit 1.0 / 2.0 / 3.0 without any hardware method by flashing any "ROLLBACK" firmware (packed with the new method and restoring old method) then flash any Custom Firmware available.
+It is not possible to gain root access from Carlinkit 4.0 or 5.0 withoyut any hardware method.
+
+Please note that packing method is different between 1.0 / 2.0 / 3.0 (U2W) and 4.0 (U2AW) and 5.0 (U2AC), this way Carlinkit ensures you stick with your original device functionalities.
+
+### Switch device firmware via hardware
 
 It is possible to switch from one to another by rewriting the flash chip using a programmer (ASProgrammer, XGEcu devices, Raspberry Pi) 
 Tested so far:
- - 2.0 to U2AW ☑️ *(Only with 2022.06.09.1652 for Realtek Wifi)*
- - 3.0 to U2AW ✅
+ - 1.0 to U2AW ☑️
+   - *Up to 2022.07.29.1635 for Realtek RTL8822BS Wifi chip*
+ - 2.0 to U2AW ☑️
+   - *Up to 2022.07.29.1635 for Realtek RTL8822BS Wifi chip*
+   - *Up to 2022.06.17.1439 for Broadcom LGX8354S Wifi chip*
+   - *Any firmware for Fn-Link L287B-SR (Marvell) Wifi chip*
+ - 3.0 to U2AW ☑️ 
+   - *From 2023.10.16.0952 for Realtek RTL8822CS Wifi chip*
+   - *Any firmware for Fn-Link L287B-SR (Marvell) Wifi chip*
  - 2.0 to U2AC ❌ *(Not booting)*
- - 3.0 to U2AC ❓ *(Might work)*
- - 4.0 to U2W ✅
+ - 3.0 to U2AC ❓ *(Might work with 2023.10.14.1711)*
+ - 4.0 to U2W ☑️ 
+   - *From 2023.10.31.1425 for Realtek RTL8822CS Wifi chip*
+   - *From 2022.07.29.1625 for Broadcom LGX4358 Wifi chip*
+   - *Any firmware for Realtek RTL8822BS Wifi chip* *
  - 4.0 to U2AW ❌ *(Not booting)*
- - 5.0 to U2W ✅
+ - 5.0 to U2W ☑️ 
+   - *From 2023.10.31.1425 for Realtek RTL8822CS Wifi chip*
+   - *From 2022.07.29.1625 for Broadcom LGX4358 Wifi chip*
+   - *❌ Not possible for Realtek RTL8733BS Wifi chip*
  - 5.0 to U2AW ❌ *(Not booting)*
 
-Please note that **Carlinkit controls devices activation** (via /etc/uuid_sign) so it may not work in the future, **save your original flash**.
+Please note that **Carlinkit controls devices activation** (via /etc/uuid_sign), your device will work but will be blocked in activation mode, new activations now require a login / password that nobody has, **save your original flash in a safe place** before trying this.
+
+*Successfully switched 2 Carlinkit 2.0 units to U2AW with new activation in 2021 / 2022.*
+
+### Rooting the device via hardware
+
+[WIP]
 
 ## Filesystem
 
