@@ -1,5 +1,7 @@
 ### Firmware Tools
 
+### ⚠️ Please note that this packing / unpacking method is not working anymore since firmware 2021.03.06 (U2W - Carlinkit 1.0 / 2.0 / 3.0) and new binary have yet to be reverse engineered.
+
 Convert a stock firmware .img to .tar.gz:
 
     php U2W_Decrypt.php U2W_Update.img
