@@ -1,0 +1,2372 @@
+Save last log when reboot
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 3.14.52+g94d07bb (sky@sky-vmware-1604) (gcc version 4.9.2 (GCC) ) #479 SMP PREEMPT Tue Dec 20 14:13:11 CST 2022
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: Freescale i.MX6 UltraLite 14x14 EVK Board
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 32768
+[    0.000000] free_area_init_node: node 0, pgdat 805f6a80, node_mem_map 87ef8000
+[    0.000000]   Normal zone: 256 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 32768 pages, LIFO batch:7
+[    0.000000] PERCPU: Embedded 8 pages/cpu @87ee3000 s8256 r8192 d16320 u32768
+[    0.000000] pcpu-alloc: s8256 r8192 d16320 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 32512
+[    0.000000] Kernel command line: console=ttyLogFile0 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=21e0000.qspi:256k(uboot),3328K(kernel),12800K(rootfs) rootwait quiet rw
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 123232K/131072K available (4268K kernel code, 197K rwdata, 1400K rodata, 204K init, 478K bss, 7840K reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0x88800000 - 0xff000000   (1896 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0x88000000   ( 128 MB)
+[    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+[    0.000000]       .text : 0x80008000 - 0x805913dc   (5669 kB)
+[    0.000000]       .init : 0x80592000 - 0x805c5040   ( 205 kB)
+[    0.000000]       .data : 0x805c6000 - 0x805f75e0   ( 198 kB)
+[    0.000000]        .bss : 0x805f75ec - 0x8066efc8   ( 479 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] Switching to timer-based delay loop
+[    0.000022] sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 1431655765682ns
+[    0.001551] clocksource_of_init: no matching clocksources found
+[    0.001832] log file data init success
+[    0.001938] console [ttyLogFile0] enabled
+[    0.001951] tty-log-file: registered console driver for tty log file 0
+[    0.002147] Console: colour dummy device 80x30
+[    0.002185] Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=30000)
+[    0.002214] pid_max: default: 32768 minimum: 301
+[    0.002592] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.002617] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.004254] CPU: Testing write buffer coherency: ok
+[    0.004789] CPU0: update cpu_power 1024
+[    0.004814] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.004867] Setting up static identity map for 0x8040c928 - 0x8040c980
+[    0.040850] Brought up 1 CPUs
+[    0.040876] SMP: Total of 1 processors activated (6.00 BogoMIPS).
+[    0.040888] CPU: All CPU(s) started in SVC mode.
+[    0.042275] devtmpfs: initialized
+[    0.053825] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.054591] pinctrl core: initialized pinctrl subsystem
+[    0.055456] regulator-dummy: no parameters
+[    0.056094] NET: Registered protocol family 16
+[    0.056775] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.058123] cpuidle: using governor ladder
+[    0.058143] cpuidle: using governor menu
+[    0.058401] Use WDOG1 as reset source
+[    0.078467] syscon 20c8000.anatop: regmap [mem 0x020c8000-0x020c8fff] registered
+[    0.079213] vdd3p0: 2625 <--> 3400 mV at 3000 mV 
+[    0.080134] cpu: 725 <--> 1450 mV at 1150 mV 
+[    0.081225] vddsoc: 725 <--> 1450 mV at 1175 mV 
+[    0.086602] syscon 20e4000.iomuxc-gpr: regmap [mem 0x020e4000-0x020e7fff] registered
+[    0.093323] syscon 21ac000.romcp: regmap [mem 0x021ac000-0x021affff] registered
+[    0.095224] syscon 21bc000.ocotp-ctrl: regmap [mem 0x021bc000-0x021bffff] registered
+[    0.102206] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.102229] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.103365] imx6ul-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+[    0.105400] 20dc000.gpc supply pu not found, using dummy regulator
+[    0.120393] bio: create slab <bio-0> at 0
+[    0.127588] mxs-dma 1804000.dma-apbh: initialized
+[    0.128587] can-3v3: 3300 mV 
+[    0.129294] wlreg_on: 3300 mV 
+[    0.130209] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58, base_baud = 5000000) is a IMX
+[    0.132187] 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 59, base_baud = 5000000) is a IMX
+[    0.133507] 21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 60, base_baud = 5000000) is a IMX
+[    0.135204] SCSI subsystem initialized
+[    0.135695] libata version 3.00 loaded.
+[    0.136110] usbcore: registered new interface driver usbfs
+[    0.136268] usbcore: registered new interface driver hub
+[    0.136581] usbcore: registered new device driver usb
+[    0.141163] i2c i2c-0: IMX I2C adapter registered
+[    0.141945] i2c i2c-1: IMX I2C adapter registered
+[    0.142878] Advanced Linux Sound Architecture Driver Initialized.
+[    0.144976] Bluetooth: Core ver 2.18
+[    0.145089] NET: Registered protocol family 31
+[    0.145103] Bluetooth: HCI device and connection manager initialized
+[    0.145139] Bluetooth: HCI socket layer initialized
+[    0.145168] Bluetooth: L2CAP socket layer initialized
+[    0.145280] Bluetooth: SCO socket layer initialized
+[    0.146231] cfg80211: Calling CRDA to update world regulatory domain
+[    0.146315] cfg80211: World regulatory domain updated:
+[    0.146328] cfg80211:  DFS Master region: unset
+[    0.146341] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[    0.146362] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (2000 mBi, 0 mBm)
+[    0.146379] cfg80211:   (2457000 KHz - 2482000 KHz @ 20000 KHz), (2000 mBi, 0 mBm)
+[    0.146398] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (2000 mBi, 0 mBm)
+[    0.146415] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (2000 mBi, 0 mBm)
+[    0.146433] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz), (2000 mBi, 0 mBm)
+[    0.146450] cfg80211:   (5490000 KHz - 5730000 KHz @ 160000 KHz), (2000 mBi, 0 mBm)
+[    0.146467] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (2000 mBi, 0 mBm)
+[    0.146485] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm)
+[    0.147155] Switched to clocksource mxc_timer1
+[    0.173488] NET: Registered protocol family 2
+[    0.175534] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.175592] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.175642] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.175747] TCP: reno registered
+[    0.175777] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.175832] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.176437] NET: Registered protocol family 1
+[    0.179238] ldo2p5-dummy: no parameters
+[    0.181494] Bus freq driver module loaded
+[    0.183387] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.200428] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.202243] fuse init (API version 7.22)
+[    0.203414] msgmni has been set to 240
+[    0.205392] io scheduler noop registered
+[    0.205413] io scheduler deadline registered
+[    0.205498] io scheduler cfq registered (default)
+[    0.206644] imx-weim 21b8000.weim: Driver registered.
+[    0.208355] imx-sdma 20ec000.sdma: no event needs to be remapped
+[    0.208566] imx-sdma 20ec000.sdma: loaded firmware 3.2
+[    0.217613] imx-sdma 20ec000.sdma: initialized
+[    0.219550] serial: Freescale lpuart driver
+[    0.245537] brd: module loaded
+[    0.257907] loop: module loaded
+[    0.264088] fsl-quadspi 21e0000.qspi: mx25l12805d (16384 Kbytes)
+[    0.264142] 3 cmdlinepart partitions found on MTD device 21e0000.qspi
+[    0.264158] Creating 3 MTD partitions on "21e0000.qspi":
+[    0.264184] 0x000000000000-0x000000040000 : "uboot"
+[    0.267285] 0x000000040000-0x000000380000 : "kernel"
+[    0.270183] 0x000000380000-0x000001000000 : "rootfs"
+[    0.272877] fsl-quadspi 21e0000.qspi: QuadSPI SPI NOR flash driver
+[    0.273835] spi_gpio spi4.16: gpio-miso property not found, switching to no-rx mode
+[    0.276863] usbcore: registered new interface driver cdc_ether
+[    0.277006] usbcore: registered new interface driver cdc_subset
+[    0.277122] usbcore: registered new interface driver zaurus
+[    0.277308] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.277323] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    0.277760] usbcore: registered new interface driver usb-storage
+[    0.281890] setup_reset_gpios:-2, flags 0
+[    0.282126] 2184000.usb supply vbus not found, using dummy regulator
+[    0.283324] mxs_phy 20c9000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.286993] ci_hdrc ci_hdrc.0: Init set fsm->a_vbus_vld = 1
+[    0.287871] setup_reset_gpios:-2, flags 0
+[    0.288246] 2184200.usb supply vbus not found, using dummy regulator
+[    0.289439] mxs_phy 20ca000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.290587] [otg_statemachine]  fsm->id = 0
+[    0.290605] [otg_set_state]  Set state: a_idle
+[    0.290622] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 1
+[    0.290663] ci_hdrc ci_hdrc.0: EHCI Host Controller
+[    0.295325] snvs_pwrkey 20cc000.snvs-pwrkey: can't get snvs clock
+[    0.296118] input: 20cc000.snvs-pwrkey as /devices/soc0/soc.1/2000000.aips-bus/20cc000.snvs-pwrkey/input/input0
+[    0.296303] snvs_pwrkey 20cc000.snvs-pwrkey: i.MX snvs powerkey probed
+[    0.296983] snvs_rtc 20cc034.snvs-rtc-lp: can't get snvs-rtc clock
+[    0.297697] check_alarm_past: alarm in the past
+[    0.298305] snvs_rtc 20cc034.snvs-rtc-lp: rtc core: registered 20cc034.snvs-rtc-lp as rtc0
+[    0.298631] i2c /dev entries driver
+[    0.300528] imx2-wdt 20bc000.wdog: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=0)
+[    0.301567] sdhci: Secure Digital Host Controller Interface driver
+[    0.301581] sdhci: Copyright(c) Pierre Ossman
+[    0.301593] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.303521] sdhci-esdhc-imx 2190000.usdhc: assigned as wifi host
+[    0.304770] mmc0: no vqmmc regulator found
+[    0.307345] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+[    0.308066] usb usb1: is_b_host:0, config:842e7600, parent:  (null), root_hub=842bf800
+[    0.308101] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.308125] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.308147] usb usb1: Product: EHCI Host Controller
+[    0.308170] usb usb1: Manufacturer: Linux 3.14.52+g94d07bb ehci_hcd
+[    0.308190] usb usb1: SerialNumber: ci_hdrc.0
+[    0.309967] hub 1-0:1.0: USB hub found
+[    0.310076] hub 1-0:1.0: 1 port detected
+[    0.311013] [otg_statemachine]  quit statemachine, changed = 1
+[    0.311113] [otg_set_state]  Set state: a_wait_vrise
+[    0.311153] [otg_statemachine]  quit statemachine, changed = 1
+[    0.347233] mmc0: SDHCI controller on 2190000.usdhc [2190000.usdhc] using ADMA
+[    0.359945] mmc1: no vqmmc regulator found
+[    0.359972] mmc1: no vmmc regulator found
+[    0.396099] mmc0: new high speed SDIO card at address 0001
+[    0.397260] mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+[    0.405705] wm8960 0-001a: Failed to issue reset
+[    0.405954] wm8960: probe of 0-001a failed with error -5
+[    0.412762] [otg_set_state]  Set state: a_wait_bcon
+[    0.412800] [otg_statemachine]  quit statemachine, changed = 1
+[    0.415205] fsl-asrc 2034000.asrc: driver registered
+[    0.435323] TCP: cubic registered
+[    0.448684] NET: Registered protocol family 10
+[    0.451031] sit: IPv6 over IPv4 tunneling driver
+[    0.453048] NET: Registered protocol family 17
+[    0.453387] Bluetooth: RFCOMM TTY layer initialized
+[    0.453436] Bluetooth: RFCOMM socket layer initialized
+[    0.453493] Bluetooth: RFCOMM ver 1.11
+[    0.453523] lib80211: common routines for IEEE802.11 drivers
+[    0.453538] lib80211_crypt: registered algorithm 'NULL'
+[    0.453655] lib80211_crypt: registered algorithm 'WEP'
+[    0.453670] lib80211_crypt: registered algorithm 'CCMP'
+[    0.453683] lib80211_crypt: registered algorithm 'TKIP'
+[    0.454377] check cpu speed flag: 03
+[    0.471019] can-3v3: disabling
+[    0.471044] regulator-dummy: disabling
+[    0.471807] driver->driver.name = android_usb ret=0
+[    0.471832] counting ret = 0 : 2184000.usb
+[    0.472079] file system registered
+[    0.472949] android_usb gadget: android_usb ready
+[    0.473093] snvs_rtc 20cc034.snvs-rtc-lp: setting system clock to 1970-01-01 00:00:00 UTC (0)
+[    0.523830] ALSA device list:
+[    0.523843]   No soundcards found.
+[    1.621645] VFS: Mounted root (jffs2 filesystem) on device 31:2.
+[    1.629740] devtmpfs: mounted
+[    1.630192] Freeing unused kernel memory: 204K (80592000 - 805c5000)
+[    2.571926] random: nonblocking pool is initialized
+[    3.529570] wlan: Loading MWLAN driver
+[    3.545299] vendor=0x02DF device=0x9149 class=0 function=1
+[    3.545450] Attach moal handle ops, card interface type: 0x105
+[    3.546194] SD8987: init module param from usr cfg
+[    3.546219] card_type: SD8987, config block: 0
+[    3.546234] fw_name=nxp/sdiouart8987_combo_v0.bin
+[    3.546247] mfg_mode = 0
+[    3.546258] drv_mode = 2
+[    3.546274] cal_data_cfg=none
+[    3.546286] uap_name=wlan
+[    3.546301] cfg80211_wext=0xf
+[    3.546311] ps_mode = 2
+[    3.546324] auto_ds = 2
+[    3.546361] SDIO: max_segs=128 max_seg_size=65535
+[    3.546372] rx_work=0 cpu_num=1
+[    3.546424] Attach mlan adapter operations.card_type is 0x105.
+[    3.547042] wlan: Enable TX SG mode
+[    3.547063] wlan: Enable RX SG mode
+[    3.558427] Request firmware: nxp/sdiouart8987_combo_v0.bin
+[    4.610826] Wlan: FW download over, firmwarelen=590548 downloaded 590548
+[    5.597595] WLAN FW is active
+[    5.597685] on_time is 0
+[    5.620227] fw_cap_info=0x181cbf03, dev_cap_mask=0xffffffff
+[    5.620340] max_p2p_conn = 8, max_sta_conn = 8
+[    5.717005] wlan: version = SD8987---16.87.10.p134-MXM4X16234-GPL-(FP92) 
+[    5.726783] wlan: Driver loaded successfully
+[    6.018996] HCI UART driver ver 2.2-M2614100
+[    6.027574] HCI H4 protocol initialized
+[    6.112995] ps_init_work...
+[    6.113020] ps_init_timer...
+[    6.127662] ps_init...
+[    6.503901] ps_init...
+[    8.529014] android_usb: already disabled
+[    8.530386] android_enable_function: iap2
+[    8.530407] android_enable_function: ncmandroid_usb gadget: _iap2_bind_config
+[    8.530602] ncm_function_bind_config MAC: 00:00:00:00:00:00
+[    8.558026] ncm0: MAC c2:8e:30:52:e9:a3
+[    8.558046] ncm0: HOST MAC 26:98:d9:34:fd:a1
+[    8.602565] ncm0: eth_open
+[    8.602596] ncm0: eth_start
+[    8.879673] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[    8.883216] cfg80211: Calling CRDA for country: US
+[    8.889055] cfg80211: Regulatory domain changed to country: US
+[    8.889077] cfg80211:  DFS Master region: FCC
+[    8.889085] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[    8.889097] cfg80211:   (2400000 KHz - 2472000 KHz @ 40000 KHz), (3000 mBi, 0 mBm)
+[    8.889108] cfg80211:   (5150000 KHz - 5250000 KHz @ 80000 KHz), (2300 mBi, 0 mBm)
+[    8.889121] cfg80211:   (5250000 KHz - 5350000 KHz @ 80000 KHz), (2300 mBi, 0 mBm)
+[    8.889132] cfg80211:   (5470000 KHz - 5730000 KHz @ 160000 KHz), (2300 mBi, 0 mBm)
+[    8.889144] cfg80211:   (5730000 KHz - 5850000 KHz @ 80000 KHz), (3000 mBi, 0 mBm)
+[    8.889155] cfg80211:   (5850000 KHz - 5895000 KHz @ 40000 KHz), (2700 mBi, 0 mBm)
+[    8.889167] cfg80211:   (57240000 KHz - 71000000 KHz @ 2160000 KHz), (4000 mBi, 0 mBm)
+[    9.019569] wlan: SCAN COMPLETED: scanned AP count=3
+[    9.506702] wlan: Starting AP
+[    9.517332] Get ht_cap from beacon ies: 0x6e
+[    9.517798] Get vht_cap from beacon ies: 0x0
+[    9.518168] fw doesn't support 11ax
+[    9.530353] wlan: AP started
+[    9.548698] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[    9.551603] Set AC=3, txop=47 cwmin=3, cwmax=7 aifs=1
+[    9.554509] Set AC=2, txop=94 cwmin=7, cwmax=15 aifs=1
+[    9.556923] Set AC=0, txop=0 cwmin=15, cwmax=63 aifs=3
+[    9.559492] Set AC=1, txop=0 cwmin=15, cwmax=1023 aifs=7
+[    9.776980] driver->driver.name = zero ret=1
+[    9.777002] counting ret = 1 : 2184000.usb
+[    9.777012] counting ret = 0 : 2184200.usb
+[    9.783091] zero gadget: audio_buf_size 48000, req_buf_size 192, req_count 256
+[    9.783137] zero gadget: iPhone, version: Kevin Shi 2020
+[    9.783149] zero gadget: iPhone, serial: d7c08a5cd6e0980feb0fe240962e3c66 
+[    9.783160] zero gadget: iPhone, hnp_interval_ms: 10 
+[    9.783170] zero gadget: zero ready
+[    9.783374] [otg_statemachine]  fsm->id = 1
+[    9.783386] [otg_set_state]  Set state: b_idle
+[    9.783409] [otg_statemachine]  quit statemachine, changed = 1
+[    9.783527] [otg_set_state]  Set state: b_peripheral
+[    9.783547] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 2
+[    9.783582] USBMODE_CI_SDIS disabled!!!
+[    9.783608] [otg_statemachine]  quit statemachine, changed = 1
+[    9.813044] [otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 0 0 1
+[    9.813063] [otg_statemachine]  quit statemachine, changed = 0
+[   10.164483] zero gadget: high-speed config #2: ipod
+[   10.164530] zero gadget: Set iPod Hid Interface Alt
+[   10.175416] ipod_iap2_open
+[   10.183604] zero gadget: iph_ctrlrequest c0.53 v0000 i0000 l4, value: 0
+[   10.199730] zero gadget: iph_ctrlrequest c0.53 v0000 i0000 l4, value: 0
+[   10.243009] zero gadget: iph_ctrlrequest 40.51 v0001 i0000 l0, value: 0
+[   10.247196] f_iphone: do_hnp
+[   10.247429] [otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 1 0 0
+[   10.247443] [otg_set_state]  Set state: b_wait_acon
+[   10.247457] [otg_set_protocol]  Changing role fsm->protocol= 2; new protocol= 1
+[   10.247472] zero gadget: iPod Function Disabled!!!
+[   10.247545] ci_hdrc ci_hdrc.1: EHCI Host Controller
+[   10.267211] ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+[   10.267588] usb usb2: is_b_host:1, config:811c6400, parent:  (null), root_hub=807bb800
+[   10.267607] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[   10.267620] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   10.267633] usb usb2: Product: EHCI Host Controller
+[   10.267647] usb usb2: Manufacturer: Linux 3.14.52+g94d07bb ehci_hcd
+[   10.267660] usb usb2: SerialNumber: ci_hdrc.1
+[   10.277740] hub 2-0:1.0: USB hub found
+[   10.277840] hub 2-0:1.0: 1 port detected
+[   10.278398] [otg_statemachine]  quit statemachine, changed = 1
+[   10.377187] ipod_iap2_ioctl 26881
+[   10.377280] ipod_iap2_flush
+[   10.377651] ipod_iap2_read failed: 0, iap2_audio: 84f12540, iap2_closed: 1
+[   10.377669] ipod_iap2_release
+[   10.435213] [otg_statemachine]  OTG_STATE_B_WAIT_ACON:, 1 1 0 0
+[   10.435232] [otg_set_state]  Set state: b_host
+[   10.435250] [otg_statemachine]  quit statemachine, changed = 1
+[   10.455628] wlan: SCAN COMPLETED: scanned AP count=5
+[   10.517421] wlan: Stoping AP
+[   10.517949] wlan: AP stopped
+[   10.657288] usb 2-1: new high-speed USB device number 2 using ci_hdrc
+[   10.689472] usb 2-1: is_b_host:1, config:807d4800, parent:807bb800, root_hub=807bb800
+[   10.689496] usb 2-1: New USB device found, idVendor=2996, idProduct=0000
+[   10.689509] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[   10.689523] usb 2-1: Product: carplay_desay
+[   10.689536] usb 2-1: Manufacturer: desay_sv_automotive
+[   10.799116] cdc_ncm 2-1:1.1: MAC-Address: aa:5d:5c:bf:9d:b9
+[   10.799368] cdc_ncm 2-1:1.1: dwNtbInMaxSize=16384 dwNtbOutMaxSize=16384 wNdpOutPayloadRemainder=0 wNdpOutDivisor=4 wNdpOutAlignment=4 wNtbOutMaxDatagrams=0 flags=0x11
+[   10.799386] cdc_ncm 2-1:1.1: Using iphone maximum receive length=12288
+[   10.799399] cdc_ncm 2-1:1.1: Using iphone maximum send length=15224
+[   10.799412] cdc_ncm 2-1:1.1: Using iphone tx_max_datagrams =10
+[   10.799430] cdc_ncm 2-1:1.1: Set min_tx_pkt length=15032
+[   10.799445] cdc_ncm 2-1:1.1: before tx_remainder=0 tx_modulus=4 eth_hlen=14
+[   10.799458] cdc_ncm 2-1:1.1: tx_remainder=2 tx_modulus=4 eth_hlen=14
+[   10.826650] cdc_ncm 2-1:1.1 usb0: register 'cdc_ncm' at usb-ci_hdrc.1-1, CDC NCM, aa:5d:5c:bf:9d:b9
+[   10.837933] usbcore: registered new interface driver cdc_ncm
+[   10.878089] cdc_ncm 2-1:1.1 usb0: cdc_ncm_check_connect  dev->status: 807da5c0
+[   10.878455] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+[   10.935365] cdc_ncm 2-1:1.1 usb0: 425 mbit/s downlink 425 mbit/s uplink
+[   10.999349] cdc_ncm 2-1:1.1 usb0: network connection: connected
+[   10.999456] IPv6: ADDRCONF(NETDEV_CHANGE): usb0: link becomes ready
+[   11.019811] cdc_ncm 2-1:1.1: Delay load NCM
+[   11.063372] cdc_ncm 2-1:1.1 usb0: 425 mbit/s downlink 425 mbit/s uplink
+[   11.127349] cdc_ncm 2-1:1.1 usb0: 425 mbit/s downlink 425 mbit/s uplink
+[   11.191343] cdc_ncm 2-1:1.1 usb0: network connection: connected
+[   14.677525] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   14.785000] wlan: SCAN COMPLETED: scanned AP count=2
+[   15.808706] wlan: Starting AP
+[   15.817980] Get ht_cap from beacon ies: 0x6e
+[   15.818463] Get vht_cap from beacon ies: 0x0
+[   15.818831] fw doesn't support 11ax
+[   15.831618] wlan: AP started
+[   15.831687] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   15.868658] Set AC=3, txop=47 cwmin=3, cwmax=7 aifs=1
+[   15.872970] Set AC=2, txop=94 cwmin=7, cwmax=15 aifs=1
+[   15.875961] Set AC=0, txop=0 cwmin=15, cwmax=63 aifs=3
+[   15.878502] Set AC=1, txop=0 cwmin=15, cwmax=1023 aifs=7
+[   21.476146] CMD_RESP: cmd 0x10d error, result=0x1
+[   21.476171] IOCTL failed: 8549cd00 id=0x30000, sub_id=0x30004 action=1, status_code=0x1
+[   70.575771] wlan0: wlan: EVENT: MICRO_AP_STA_ASSOC 4c:XX:XX:XX:3f:01
+[   70.614028] wlan0: wlan: Send EAPOL pkt to 4c:XX:XX:XX:3f:01
+[   70.616802] wlan0: wlan: Send EAPOL pkt to 4c:XX:XX:XX:3f:01
+    "hidVendorID" : 1452
+    "name" : "My Telephony"
+}
+
+01-02 12:00:09.455125 AM [HIDManager] uuid:cad3daa5-f1cc-4822-b6f5-c40dfdb74b5f describelen:27
+ITEM_COLLECTION: 1
+GlobalUPage: 11
+GlobalUsage: 1
+Phone
+
+
+found: 0
+Value: 0
+Index: 0, Usage Page: 0b, Usage: 0021, Flash
+ReportID: 0
+Offset: 0
+Size: 1
+Count: 1
+Type: 128
+Attribute: 2
+Unit: 0
+UnitExp: 0
+UsageMin: 0
+UsageMax: 0
+LogMin: 0
+LogMax: 1
+PhyMin: 0
+PhyMax: 0
+
+
+found: 1
+Value: 0
+ReportID: 0
+Offset: 1
+Size: 7
+Count: 1
+Type: 128
+Attribute: 1
+Unit: 0
+UnitExp: 0
+UsageMin: 0
+UsageMax: 0
+LogMin: 0
+LogMax: 1
+PhyMin: 0
+PhyMax: 0
+
+
+nReportSize: 8
+Hid devices Register: cad3daa5-f1cc-4822-b6f5-c40dfdb74b5f 
+
+
+01-02 12:00:09.455943 AM [HIDManager] oneHIDinfo {
+    "hidProductID" : 4776
+    "hidCountryCode" : 33
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "hidDescriptor" : 
+        +0000: 050d0904 a101050d 0922a102 050d0933 |^^^^^^^^^"^^^^^3| (62 bytes)
+        +0010: 15002501 75019501 81027507 95018101 |^^%^u^^^^^u^^^^^|
+        +0020: 05010930 15002620 03751095 01810209 |^^^0^^& ^u^^^^^^|
+        +0030: 31150026 e0017510 95018102 c0c0     |1^^&^^u^^^^^^^  |
+    "displayUUID" : "e5f7a68d-7b0f-4305-984b-974f677a150b"
+    "hidVendorID" : 1452
+    "name" : "Virtual Touch Screen"
+}
+
+01-02 12:00:09.456213 AM [HIDManager] uuid:841507b5-1d0e-4468-9368-304e58fc7242 describelen:62
+ITEM_COLLECTION: 1
+ITEM_COLLECTION: 2
+GlobalUPage: 13
+GlobalUsage: 4
+Touch Screen
+
+
+found: 0
+Value: 0
+Index: 0, Usage Page: 0d, Usage: 0033, Touch
+ReportID: 0
+Offset: 0
+Size: 1
+Count: 1
+Type: 128
+Attribute: 2
+Unit: 0
+UnitExp: 0
+UsageMin: 0
+UsageMax: 0
+LogMin: 0
+LogMax: 1
+PhyMin: 0
+PhyMax: 0
+
+
+found: 1
+Value: 0
+ReportID: 0
+Offset: 1
+Size: 7
+Count: 1
+Type: 128
+Attribute: 1
+Unit: 0
+UnitExp: 0
+UsageMin: 0
+UsageMax: 0
+LogMin: 0
+LogMax: 1
+PhyMin: 0
+PhyMax: 0
+
+
+found: 2
+Value: 0
+Index: 0, Usage Page: 01, Usage: 0030, X
+ReportID: 0
+Offset: 8
+Size: 16
+Count: 1
+Type: 128
+Attribute: 2
+Unit: 0
+UnitExp: 0
+UsageMin: 0
+UsageMax: 0
+LogMin: 0
+LogMax: 800
+PhyMin: 0
+PhyMax: 0
+
+
+found: 3
+Value: 0
+Index: 0, Usage Page: 01, Usage: 0031, Y
+ReportID: 0
+Offset: 24
+Size: 16
+Count: 1
+Type: 128
+Attribute: 2
+Unit: 0
+UnitExp: 0
+UsageMin: 0
+UsageMax: 0
+LogMin: 0
+LogMax: 480
+PhyMin: 0
+PhyMax: 0
+
+
+nReportSize: 40
+Hid devices Register: 841507b5-1d0e-4468-9368-304e58fc7242 
+
+
+01-02 12:00:09.464915 AM [CarPlayServer] BonjourBrowser success!!!
+01-02 12:00:09.500006 AM [CarPlayServer] Send:{
+    "type" : "modesChanged"
+    "params" : 
+    {
+        "appStates" : 
+        [
+            {
+                "entity" : 0
+                "appStateID" : 2
+            },
+            {
+                "entity" : 0
+                "speechMode" : -1
+                "appStateID" : 1
+            },
+            {
+                "entity" : 0
+                "appStateID" : 3
+            }
+        ]
+        "resources" : 
+        [
+            {
+                "entity" : 2
+                "resourceID" : 1
+            },
+            {
+                "entity" : 2
+                "resourceID" : 2
+            }
+        ]
+    }
+}
+
+01-02 12:00:09.505394 AM [CarPlayServer] Send Finished
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on ncm0
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on lo
+01-02 12:00:09.557918 AM [ModePolicy] ModePolicy_AutoGetScreen priority: userInitiated
+01-02 12:00:09.558455 AM [CarPlayServer] Send:{
+    "type" : "modesChanged"
+    "params" : 
+    {
+        "appStates" : 
+        [
+            {
+                "entity" : 0
+                "appStateID" : 2
+            },
+            {
+                "entity" : 0
+                "speechMode" : -1
+                "appStateID" : 1
+            },
+            {
+                "entity" : 0
+                "appStateID" : 3
+            }
+        ]
+        "resources" : 
+        [
+            {
+                "entity" : 1
+                "resourceID" : 1
+            },
+            {
+                "entity" : 2
+                "resourceID" : 2
+            }
+        ]
+    }
+}
+
+01-02 12:00:09.565019 AM [CarPlayServer] Send Finished
+01-02 12:00:09.565278 AM [ModePolicy] Screen Entity now: controller
+mDNSResponder: Skip SendQueries service:_airplay._tcp.local. on ncm0
+mDNSResponder: Skip SendQueries service:_airplay._tcp.local. on lo
+sps->vui.i_max_dec_frame_buffering: 1
+x264_sps_copy_from_x264param_sps
+x264_pps_copy_from_x264param_pps
+[D]2020-01-02 00:00:09.893 177-735ff450/fakeiOSDevice[RiddlePlatform]: wifiMac: 00:E0:4C:C9:C3:9C
+[D]2020-01-02 00:00:09.893 177-735ff450/fakeiOSDevice[RiddlePlatform]: btMac: 68:4E:05:6C:FA:BE
+[D]2020-01-02 00:00:09.941 177-735ff450/fakeiOSDevice[RiddlePlatform]: GetCurrentBoxUUID: 11671f73e896bb8922cf7f9e8a01bc02
+01-02 12:00:09.941690 AM [AutoPlayBoxUI] _EncryptVersion: 2023.07.15.1119 12d0db0470fb
+01-02 12:00:09.969501 AM [ModePolicy] ModePlicy_SecondTime
+01-02 12:00:10.034599 AM [AutoPlayBoxUI] OnInitApp
+01-02 12:00:10.062484 AM [VideoSource] VideoSource_control: inCommand=stopvideo
+01-02 12:00:10.062659 AM [VideoSource] VideoSource_control: inCommand=startvideo
+01-02 12:00:10.082905 AM [CarPlayServer] ----------- _processScreenSetup Start: 0!
+01-02 12:00:10.093294 AM [CarPlayServer] respParams={
+    "streams" : 
+    [
+        {
+            "type" : 110
+            "dataPort" : 39890
+        }
+    ]
+}
+ 
+01-02 12:00:10.095730 AM [VideoSource] ### nettype_socket send bufSize: 65536
+01-02 12:00:10.132518 AM [ArmadbdriverClient] wait myUI inited use time: 700
+01-02 12:00:10.133206 AM [BoxProtocol] Box Init!!!!!!!!!!!!!
+01-02 12:00:10.133363 AM [ArmadbdriverClient] _restartBox: _restartBox
+[D]2020-01-02 00:00:10.135 177-714d3450/fakeiOSDevice[RiddleDataExchangeUtils]: _create_unix_socket /var/run/phonemirror SUC
+264_encoder pps sps: 
+01 64 00 1f ff e1 00 14 67 64 00 1f ac 13 14 50 
+32 0f 69 b8 08 08 30 36 82 21 19 60 01 00 04 68 
+ee 3c b0 02 00 00 00 
+01-02 12:00:10.371551 AM [VideoSource] spspps diffByte: 30
+01-02 12:00:10.371743 AM [VideoSource] ###VideoConfig! w=800 h=480
+01-02 12:00:10.383383 AM [BoxProtocol] Send Open Fail!!
+[D]2020-01-02 00:00:10.383 177-714d3450/fakeiOSDevice[MiddleManInterface]: pid:177 RiddleLinktype_UNKOWN?(31) connected, fd=29
+01-02 12:00:10.383967 AM [BoxProtocol] Send Open OK!!
+[D]2020-01-02 00:00:10.384 122-76fb4000/ARMadb-driver[Accessory_fd]: Open : w(800) h(480) frameRate(60) iBoxversion(02) iPhoneWorkMode(CarPlay) VideoType(H264)
+[D]2020-01-02 00:00:10.385 122-76fb4000/ARMadb-driver[Accessory_fd]: HUScreenInfo is changed!
+[D]2020-01-02 00:00:10.395 122-76fb4000/ARMadb-driver[Accessory_fd]: OniPhoneWorkModeChanged: 0 2
+[D]2020-01-02 00:00:10.404 122-76fb4000/ARMadb-driver[Accessory_fd]: OnAndroidWorkModeChanged: 0 1
+[D]2020-01-02 00:00:10.430 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: SupportWifi(1000)
+[D]2020-01-02 00:00:10.431 122-76fb4000/ARMadb-driver[RiddlePlatform]: BoxUUID: 5d6d99b20a2c09d7eb31806e6d30b6bd
+[D]2020-01-02 00:00:10.432 122-76fb4000/ARMadb-driver[RiddlePlatform]: GetCacheBoxUUID: 5d6d99b20a2c09d7eb31806e6d30b6bd
+Start Link Deamon: CarPlay
+Start Link Deamon: AndroidAuto
+Web Server Service!!!
+config wifi channel: 36, freq: 5180
+5G wifi
+channel=36
+wpa_passphrase=12345678
+	UP RUNNING PSCAN ISCAN 
+[D]2020-01-02 00:00:11.362 122-76fb4000/ARMadb-driver[RiddlePlatform]: Set Box bluetooth name: VOLKSWAGEN-10D4
+hostapd start process.....
+01-02 12:00:11.439628 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:NameChanged
+  232 root      5556 S    hfpd -y -E -f
+  245 root      5556 S    hfpd -y -E -f
+moal 553757 0 - Live 0x7f075000 (O)
+mlan 419138 1 moal, Live 0x7f000000 (O)
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on ncm0
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on lo
+Configuration file: /etc/hostapd.conf
+rfkill: Cannot open RFKILL control device
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: usb0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+01-02 12:00:11.901561 AM [CarPlayServer] BrowseCallback: event=Remove, info={
+    "txt" : 
+        +0000: 1a646576 69636569 643d3745 3a31313a |^deviceid=7E:11:| (137 bytes)
+        +0010: 35393a43 393a4233 3a374518 66656174 |59:C9:B3:7E^feat|
+        +0020: 75726573 3d307834 34353430 3338302c |ures=0x44540380,|
+        +0030: 30783631 09666c61 67733d30 7834106d |0x61^flags=0x4^m|
+        +0040: 6f64656c 3d354747 30333532 38304427 |odel=5GG035280D'|
+        +0050: 70693d31 61356133 3964642d 35383339 |pi=1a5a39dd-5839|
+        +0060: 2d343832 392d6163 64642d66 65656238 |-4829-acdd-feeb8|
+        +0070: 32363032 37663111 73726376 6572733d |26027f1^srcvers=|
+        +0080: 3238302e 33332e31 32                |280.33.12       |
+    "dnsName" : "CarPlay._airplay._tcp.local.%5"
+    "deviceID" : "7E:11:59:C9:B3:7E"
+    "removedServices" : 
+    [
+        {
+            "ifindex" : 5
+            "ifname" : "usb0"
+            "dnsName" : "CarPlay._airplay._tcp.local.%5"
+            "domain" : "local."
+            "transportType" : 1
+            "rawName" : "CarPlay"
+        }
+    ]
+    "serviceType" : "_airplay._tcp."
+    "name" : "CarPlay"
+}
+
+wlan0: interface state UNINITIALIZED->COUNTRY_UPDATE
+wlan0: interface state COUNTRY_UPDATE->HT_SCAN
+wlan0     Link encap:Ethernet  HWaddr 00:E0:4C:C9:C3:9C  
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: usb0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+[D]2020-01-02 00:00:12.43 122-76fb4000/ARMadb-driver[RiddlePlatform]: Set Box WiFi name: VOLKSWAGENA2
+01-02 12:00:12.044651 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:ListRemoteDevices
+01-02 12:00:12.044840 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage ListRemoteDevices
+01-02 12:00:12.048027 AM [RiddleBluetoothService_Interface_Control] $$$ 0 bluetoothAddr=28:EA:2D:AC:06:84 devName = iPhone (6)
+[D]2020-01-02 00:00:12.50 122-76fb4000/ARMadb-driver[BluetoothDaemonControler_fd]: DeviceList(1): 
+28:EA:2D:AC:06:84iPhone (6)
+
+[D]2020-01-02 00:00:12.50 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: SupportAutoConnect(1001)
+[D]2020-01-02 00:00:12.50 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: UseCarMic(7)
+[D]2020-01-02 00:00:12.51 122-76fb4000/ARMadb-driver[Accessory_fd]: Software Version: 2023.07.15.1119CAY
+[D]2020-01-02 00:00:12.172 122-76fb4000/ARMadb-driver[ConfigFileUtils]: GetOEMName: Volkswagen
+[D]2020-01-02 00:00:12.172 122-76fb4000/ARMadb-driver[RiddlePlatform]: GetBoxWiFiChipType: 0x9149
+ -- 3
+[D]2020-01-02 00:00:12.173 122-76fb4000/ARMadb-driver[Accessory_fd]: boxInfo: {"uuid":"5d6d99b20a2c09d7eb31806e6d30b6bd","MFD":"20220516","boxType":"YU","OemName":"Volkswagen","productType":"U2AW_AUTOKIT","HiCar":0,"hwVersion":"YMYE-WN87-0000","WiFiChannel":36,"CusCode":""}
+[D]2020-01-02 00:00:12.173 122-76fb4000/ARMadb-driver[Accessory_fd]: Accessory_fd::BroadCastRemoteCxCy : 800  480
+[D]2020-01-02 00:00:12.174 122-76fb4000/ARMadb-driver[main]: Control-InternalUse Get: cx=800 cy=480 frameRate=60. USB 插拔检测打开
+[W]2020-01-02 00:00:12.174 122-76fb4000/ARMadb-driver[main]: Ignore Linux Hub device hotplug message!
+[W]2020-01-02 00:00:12.178 122-76fb4000/ARMadb-driver[Accessory_fd]: OnRead: Open(1), use time: 1794 ms
+[D]2020-01-02 00:00:12.201 122-76fb4000/ARMadb-driver[Accessory_fd]: UPLOAD FILE: /etc/android_work_mode, 4 byte
+run_bluetooth_wifi_lock, exit!
+01-02 12:00:12.216639 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) SupportWifi(1000)
+01-02 12:00:12.216870 AM [BoxProtocol] CarPlayControl SupportWifi(1000)
+01-02 12:00:12.216966 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on wlan0
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on ncm0
+udhcpd runing.....
+/tmp/uploadFileTmp and /etc/android_work_mode is same, not need copy!!!
+[D]2020-01-02 00:00:12.391 122-76fb4000/ARMadb-driver[Accessory_fd]: OnAndroidWorkModeChanged: 1 1
+01-02 12:00:12.392148 AM [Theme_AndroidAuto_Brain] HUDComand_D_BluetoothName(000d)
+[D]2020-01-02 00:00:12.489 177-735ff450/fakeiOSDevice[RiddlePlatform]: wifiMac: 00:E0:4C:C9:C3:9C
+[D]2020-01-02 00:00:12.489 177-735ff450/fakeiOSDevice[RiddlePlatform]: btMac: 68:4E:05:6C:FA:BE
+01-02 12:00:12.599499 AM [HIDManager] HID:{
+    "hidReport" : 01fa02bc 01                         |^^^^^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:12.600435 AM [CarPlayEventHTTPClient] A:0 B:0 C:0 1 fps
+ [02/Jan/2020:00:00:12 +0000] boa: server version Boa/0.94.101wk
+[02/Jan/2020:00:00:12 +0000] boa: server built Apr 11 2023 at 10:11:57.
+[02/Jan/2020:00:00:12 +0000] boa: starting server pid=388, port 80
+01-02 12:00:12.635246 AM [HIDManager] Ignore Touch: 0.95, 0.93, 1
+01-02 12:00:12.651003 AM [HIDManager] Ignore Touch: 0.95, 0.93, 1
+01-02 12:00:12.684946 AM [HIDManager] Ignore Touch: 0.95, 0.93, 1
+01-02 12:00:12.702430 AM [HIDManager] HID:{
+    "hidReport" : 01f502bc 01                         |^^^^^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:12.714875 AM [BoxProtocol] process cmd HUDComand_D_BluetoothName(13) use time 323 ms
+01-02 12:00:12.715225 AM [Theme_AndroidAuto_Brain] Bluetooth_Listen(0026)
+01-02 12:00:12.719870 AM [Theme_AndroidAuto_Brain] kRiddleHUDComand_D_Bluetooth_BondList(0012)
+01-02 12:00:12.720573 AM [Theme_AndroidAuto_Brain] _ParseBluetoothDeviceBondList 1: addr:28:EA:2D:AC:06:84 name:iPhone (6)
+  225 root      3204 S    udhcpd
+Save Log to UPAN
+[D]2020-01-02 00:00:12.872 177-74f04450/fakeiOSDevice[RiddlePlatform]: wifiMac: 00:E0:4C:C9:C3:9C
+[D]2020-01-02 00:00:12.872 177-74f04450/fakeiOSDevice[RiddlePlatform]: btMac: 68:4E:05:6C:FA:BE
+01-02 12:00:12.978138 AM [BoxProtocol] process cmd kRiddleHUDComand_D_Bluetooth_BondList(18) use time 258 ms
+01-02 12:00:12.978766 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) SupportAutoConnect(1001)
+01-02 12:00:12.978915 AM [BoxProtocol] CarPlayControl SupportAutoConnect(1001)
+01-02 12:00:12.978987 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+01-02 12:00:12.979453 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) UseCarMic(7)
+01-02 12:00:12.979590 AM [BoxProtocol] CarPlayControl UseCarMic(7)
+01-02 12:00:12.979654 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+[   15.808706] wlan: Starting AP
+[   15.817980] Get ht_cap from beacon ies: 0x6e
+[   15.818463] Get vht_cap from beacon ies: 0x0
+[   15.818831] fw doesn't support 11ax
+[   15.831618] wlan: AP started
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: usb0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+[   15.868658] Set AC=3, txop=47 cwmin=3, cwmax=7 aifs=1
+[   15.872970] Set AC=2, txop=94 cwmin=7, cwmax=15 aifs=1
+[   15.875961] Set AC=0, txop=0 cwmin=15, cwmax=63 aifs=3
+[   15.878502] Set AC=1, txop=0 cwmin=15, cwmax=1023 aifs=7
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on wlan0
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on ncm0
+01-02 12:00:13.281143 AM [iAP2] wait link start msg
+[D]2020-01-02 00:00:13.316 122-76fb4000/ARMadb-driver[MiddleManInterface]: pid:142 CarPlay(3) connected, fd=9
+check_log_size: 62250 byte
+[D]2020-01-02 00:00:13.511 177-74f04450/fakeiOSDevice[RiddlePlatform]: GetCurrentBoxUUID: 11671f73e896bb8922cf7f9e8a01bc02
+01-02 12:00:13.512494 AM [Theme_AndroidAuto_Brain_CarKit] Theme_AndroidAuto_CMDIQRCode_Carlinkit ReSize :90x90
+01-02 12:00:13.524202 AM [Theme_AndroidAuto_Brain] Send AutoConnnect failed! Try again!!
+[OpenAuto] [OpenAuto] main start, thread id:1995330064
+[OpenAuto] [Configuration] /tmp setScreenDPI = 143
+[OpenAuto] [Configuration] getCarName = Volkswagen
+[OpenAuto] [Configuration] bNoScreenFileExist = 0
+[OpenAuto] [OpenAuto] read configuration end
+[OpenAuto] [OpenAuto] startIOServiceWorkers
+New_MiddleManClient client=0xff8fd0, type=5
+[D]2020-01-02 00:00:13.600 122-76fb4000/ARMadb-driver[MiddleManInterface]: pid:142 AndroidAuto(5) connected, fd=10
+[OpenAuto] [OpenAuto] startTransferWorkers
+[OpenAuto] [OpenAuto] Need Wait Start Link
+[OpenAuto] [OpenAuto] transferWorker start!!!
+01-02 12:00:13.612128 AM [AutoPlayBoxUI] _EncryptVersion: 2023.07.15.1119 12d0db0470fb
+01-02 12:00:13.612987 AM [BoxProtocol] HUDComand_B_BoxSoftwareVersion: 2023.07.15.1119CAY
+01-02 12:00:13.613187 AM [BoxProtocol] process cmd HUDComand_B_BoxSoftwareVersion(204) use time 633 ms
+01-02 12:00:13.614114 AM [AutoPlayBoxUI] _EncryptVersion: 2023.07.15.1119 12d0db0470fb
+01-02 12:00:13.614472 AM [BoxProtocol] Open!!! size=28 w:800 h:480 fps:60 c:5 p:49152
+[D]2020-01-02 00:00:13.615 122-76fb4000/ARMadb-driver[Accessory_fd]: 	From HUD Get ########## CarPlayControl(8) UseCarMic(7)
+01-02 12:00:13.624214 AM [Theme_AndroidAuto_Brain] Bluetooth_Listen(0026)
+01-02 12:00:13.625287 AM [CheckCarType] CheckByName ALFA ROMEO
+01-02 12:00:13.625998 AM [CheckCarType] CheckByName BMW
+01-02 12:00:13.626558 AM [CheckCarType] CheckByName AUDI
+01-02 12:00:13.627089 AM [CheckCarType] CheckByName MERCEDES
+01-02 12:00:13.628191 AM [CheckCarType] CheckByName CADILLAC
+01-02 12:00:13.628802 AM [CheckCarType] CheckByName PORSCHE
+01-02 12:00:13.629338 AM [CheckCarType] CheckByName JAGUAR
+01-02 12:00:13.629852 AM [CheckCarType] CheckByName LINCOLN
+01-02 12:00:13.630368 AM [CheckCarType] CheckByName LAND ROVER
+01-02 12:00:13.630873 AM [CheckCarType] CheckByName MASERATI
+01-02 12:00:13.631942 AM [CheckCarType] CheckByName VOLVO
+01-02 12:00:13.632613 AM [CheckCarType] CheckByName ALL_CAR
+01-02 12:00:13.690360 AM [HIDManager] HID:{
+    "hidReport" : 01f602b7 01                         |^^^^^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:13.690696 AM [CarPlayEventHTTPClient] A:1 B:0 C:0 8 fps
+ 01-02 12:00:13.725389 AM [HIDManager] Ignore Touch: 0.95, 0.91, 1
+01-02 12:00:13.759318 AM [HIDManager] Ignore Touch: 0.95, 0.91, 1
+01-02 12:00:13.794074 AM [HIDManager] HID:{
+    "hidReport" : 01f602b7 01                         |^^^^^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:13.794353 AM [HIDManager] Ignore Touch: 0.95, 0.91, 1
+01-02 12:00:13.828684 AM [HIDManager] Ignore Touch: 0.95, 0.91, 1
+01-02 12:00:13.863074 AM [HIDManager] Ignore Touch: 0.94, 0.91, 1
+[D]2020-01-02 00:00:14.29 122-76fb4000/ARMadb-driver[Accessory_fd]: 	From HUD Get ########## CarPlayControl(8) StartAutoConnect(1002)
+01-02 12:00:14.030220 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:AutoConnect
+01-02 12:00:14.030408 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage AutoConnect
+01-02 12:00:14.030565 AM [RiddleBluetoothService_Interface_Control] $$$ AutoConnect! after 1ms. 中途可能被Cancle
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: usb0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+[D]2020-01-02 00:00:14.58 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: ScaningDevices(1003)
+01-02 12:00:14.059355 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) ScaningDevices(1003)
+01-02 12:00:14.059693 AM [BoxProtocol] CarPlayControl ScaningDevices(1003)
+01-02 12:00:14.059809 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on wlan0
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on ncm0
+01-02 12:00:14.124050 AM [RiddleBluetoothService_Interface_Control] auto connecting 28:EA:2D:AC:06:84
+Get service from cache: 28:EA:2D:AC:06:84 IAP2 
+01-02 12:00:14.149805 AM [RiddleBluetoothService_Interface_Control] _process_Connect IAP2
+01-02 12:00:14.150226 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal <<NULL>>:<<NULL>>
+[D]2020-01-02 00:00:14.151 122-76fb4000/ARMadb-driver[BluetoothDaemonControler_fd]: OnConnectDeviceCallback_Start 28:EA:2D:AC:06:84
+01-02 12:00:14.151459 AM [Theme_AndroidAuto_Brain] Bluetooth_ConnectStart(0023)
+2020-01-02 00:00:14.177634: HCI Command status: 0x00 0x01 0x0405
+01-02 12:00:14.720221 AM [HIDManager] HID:{
+    "hidReport" : 0161007b 00                         |^a^{^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:14.720566 AM [CarPlayEventHTTPClient] A:2 B:0 C:0 12 fps
+ 01-02 12:00:14.755057 AM [HIDManager] Ignore Touch: 0.12, 0.26, 1
+01-02 12:00:14.789952 AM [HIDManager] Ignore Touch: 0.12, 0.26, 1
+01-02 12:00:14.930063 AM [HIDManager] HID:{
+    "hidReport" : 016d0083 00                         |^m^^^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:14.964848 AM [HIDManager] Ignore Touch: 0.14, 0.27, 1
+01-02 12:00:14.999832 AM [HIDManager] Ignore Touch: 0.14, 0.27, 1
+01-02 12:00:15.035049 AM [HIDManager] HID:{
+    "hidReport" : 016d0083 00                         |^m^^^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:15.035296 AM [HIDManager] Ignore Touch: 0.14, 0.27, 1
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on wlan0
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on ncm0
+01-02 12:00:15.142943 AM [HIDManager] HID:{
+    "hidReport" : 017c008a 00                         |^|^^^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:15.177765 AM [HIDManager] Ignore Touch: 0.16, 0.29, 1
+01-02 12:00:15.212380 AM [HIDManager] Ignore Touch: 0.16, 0.29, 1
+01-02 12:00:15.246582 AM [HIDManager] HID:{
+    "hidReport" : 007c008a 00                         |^|^^^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:15.459054 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:ForgetBluetoothAddr
+01-02 12:00:15.459247 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage ForgetBluetoothAddr
+01-02 12:00:15.460635 AM [RiddleBluetoothService_Interface_Control] FindDevice reply=0x01C862C8
+01-02 12:00:15.460851 AM [RiddleBluetoothService_Interface_Control] FindDevice devicePath=/hci0/dev_28_EA_2D_AC_06_84
+01-02 12:00:15.469809 AM [RiddleBluetoothService_Interface_Control] RemoveDevice reply=0x01C81FF8
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on wlan0
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on ncm0
+--- /tmp/tempDiffDir/bluetooth/68:4E:05:6C:FA:BE/linkkeys
++++ /tmp/bluetooth/68:4E:05:6C:FA:BE/linkkeys
+@@ -1 +0,0 @@
+-28:EA:2D:AC:06:84 C4A836171326716731EE28649F6E33A5 4 -1
+bluetooth/
+bluetooth/services
+bluetooth/68:4E:05:6C:FA:BE/
+bluetooth/68:4E:05:6C:FA:BE/config
+bluetooth/68:4E:05:6C:FA:BE/classes
+bluetooth/68:4E:05:6C:FA:BE/lastused
+bluetooth/68:4E:05:6C:FA:BE/names
+bluetooth/68:4E:05:6C:FA:BE/features
+bluetooth/68:4E:05:6C:FA:BE/manufacturers
+bluetooth/68:4E:05:6C:FA:BE/linkkeys
+01-02 12:00:15.609191 AM [HIDManager] HID:{
+    "hidReport" : 01360021 00                         |^6^!^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:15.628893 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:BondingRemoved
+01-02 12:00:15.629103 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:DeviceRemoved
+01-02 12:00:15.631041 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:ListRemoteDevices
+01-02 12:00:15.631231 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage ListRemoteDevices
+[D]2020-01-02 00:00:15.633 122-76fb4000/ARMadb-driver[BluetoothDaemonControler_fd]: DeviceList(0): 
+
+01-02 12:00:15.633503 AM [Theme_AndroidAuto_Brain] kRiddleHUDComand_D_Bluetooth_BondList(0012)
+01-02 12:00:15.644034 AM [HIDManager] Ignore Touch: 0.07, 0.07, 1
+01-02 12:00:15.678741 AM [HIDManager] Ignore Touch: 0.07, 0.07, 1
+[D]2020-01-02 00:00:15.685 122-76fb4000/ARMadb-driver[Accessory_fd]: 	From HUD Get ########## CarPlayControl(8) StartAutoConnect(1002)
+01-02 12:00:15.686340 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:AutoConnect
+01-02 12:00:15.686592 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage AutoConnect
+01-02 12:00:15.717863 AM [HIDManager] HID:{
+    "hidReport" : 01360021 00                         |^6^!^           | (5 bytes)
+    "uuid" : "841507b5-1d0e-4468-9368-304e58fc7242"
+    "type" : "hidSendReport"
+}
+
+01-02 12:00:15.718118 AM [HIDManager] Ignore Touch: 0.07, 0.07, 1
+01-02 12:00:15.730686 AM [CarPlayEventHTTPClient] A:5 B:0 C:0 28 fps
+ 01-02 12:00:15.747973 AM [HIDManager] Ignore Touch: 0.06, 0.07, 1
+[D]2020-01-02 00:00:15.782 122-76fb4000/ARMadb-driver[Accessory_fd]: $$$ CMD_MANUAL_DISCONNECT_PHONE
+[E]2020-01-02 00:00:15.783 122-76fb4000/ARMadb-driver[Accessory_fd]: DisconnectPhoneConnection
+[E]2020-01-02 00:00:15.783 122-76fb4000/ARMadb-driver[Accessory_fd]: No phone conneted, not need reset!!!
+01-02 12:00:15.784300 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:CancelAutoConnect
+01-02 12:00:15.784488 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage CancelAutoConnect
+01-02 12:00:15.785847 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:DisconnectRemoteDevice
+01-02 12:00:15.786038 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage DisconnectRemoteDevice
+01-02 12:00:15.789894 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:Listen
+01-02 12:00:15.790087 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage Listen
+01-02 12:00:15.884327 AM [BoxProtocol] process cmd kRiddleHUDComand_D_Bluetooth_BondList(18) use time 251 ms
+01-02 12:00:15.996574 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal <<NULL>>:<<NULL>>
+[W]2020-01-02 00:00:15.997 122-76fb4000/ARMadb-driver[Accessory_fd]: OnRead: Bluetooth_Listen(38), use time: 208 ms
+01-02 12:00:15.998162 AM [Theme_AndroidAuto_Brain] Bluetooth_Listen(0026)
+hcid[215]: Can't set link policy on hci0: Operation not supported (95)
+01-02 12:00:16.220596 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:NameChanged
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on wlan0
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on ncm0
+[   21.476171] IOCTL failed: 8549cd00 id=0x30000, sub_id=0x30004 action=1, status_code=0x1
+Failed to connect to SDP server on 28:EA:2D:AC:06:84: Host is down
+01-02 12:00:19.350388 AM [RiddleBluetoothService_Interface_Control] err=EHOSTDOWN
+delete link service IAP2
+[D]2020-01-02 00:00:19.368 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: DeviceBluetoothNotConnected(1008)
+[D]2020-01-02 00:00:19.368 122-76fb4000/ARMadb-driver[BluetoothDaemonControler_fd]: OnConnectDeviceCallback_End
+01-02 12:00:19.369277 AM [Theme_AndroidAuto_Brain] Bluetooth_DisConnect(0025)
+01-02 12:00:19.369658 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) DeviceBluetoothNotConnected(1008)
+01-02 12:00:19.369791 AM [BoxProtocol] CarPlayControl DeviceBluetoothNotConnected(1008)
+01-02 12:00:19.369864 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+01-02 12:00:19.594399 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal <<NULL>>:<<NULL>>
+[D]2020-01-02 00:00:19.595 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: DeviceNotFound(1005)
+01-02 12:00:19.595546 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) DeviceNotFound(1005)
+01-02 12:00:19.595690 AM [Theme_AndroidAuto_Brain] 自动连接设置为 5 秒
+01-02 12:00:19.596322 AM [BoxProtocol] CarPlayControl DeviceNotFound(1005)
+01-02 12:00:19.596465 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+[D]2020-01-02 00:00:19.596 122-76fb4000/ARMadb-driver[Accessory_fd]: $$$ CMD_MANUAL_DISCONNECT_PHONE
+[E]2020-01-02 00:00:19.597 122-76fb4000/ARMadb-driver[Accessory_fd]: DisconnectPhoneConnection
+[E]2020-01-02 00:00:19.597 122-76fb4000/ARMadb-driver[Accessory_fd]: No phone conneted, not need reset!!!
+01-02 12:00:19.598216 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:CancelAutoConnect
+01-02 12:00:19.598407 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage CancelAutoConnect
+01-02 12:00:19.599522 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:DisconnectRemoteDevice
+01-02 12:00:19.599691 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage DisconnectRemoteDevice
+01-02 12:00:19.603548 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:Listen
+01-02 12:00:19.603741 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage Listen
+01-02 12:00:19.810460 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal <<NULL>>:<<NULL>>
+[D]2020-01-02 00:00:19.810 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! -1 - 8
+[D]2020-01-02 00:00:19.810 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! 10 - 9
+[D]2020-01-02 00:00:19.810 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! 9 - 10
+[W]2020-01-02 00:00:19.811 122-76fb4000/ARMadb-driver[Accessory_fd]: OnRead: Bluetooth_Listen(38), use time: 209 ms
+01-02 12:00:19.811962 AM [Theme_AndroidAuto_Brain] Bluetooth_Listen(0026)
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on wlan0
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on ncm0
+[D]2020-01-02 00:00:24.647 122-76fb4000/ARMadb-driver[Accessory_fd]: 	From HUD Get ########## CarPlayControl(8) StartAutoConnect(1002)
+01-02 12:00:24.648669 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:AutoConnect
+01-02 12:00:24.648858 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage AutoConnect
+01-02 12:00:24.648947 AM [RiddleBluetoothService_Interface_Control] $$$ AutoConnect! after 1ms. 中途可能被Cancle
+[D]2020-01-02 00:00:24.677 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: ScaningDevices(1003)
+01-02 12:00:24.678035 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) ScaningDevices(1003)
+01-02 12:00:24.679100 AM [BoxProtocol] CarPlayControl ScaningDevices(1003)
+01-02 12:00:24.679250 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+[D]2020-01-02 00:00:24.712 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: DeviceNotFound(1005)
+01-02 12:00:24.712762 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) DeviceNotFound(1005)
+01-02 12:00:24.712906 AM [Theme_AndroidAuto_Brain] 自动连接设置为 10 秒
+01-02 12:00:24.713543 AM [BoxProtocol] CarPlayControl DeviceNotFound(1005)
+01-02 12:00:24.713683 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+[D]2020-01-02 00:00:24.713 122-76fb4000/ARMadb-driver[Accessory_fd]: $$$ CMD_MANUAL_DISCONNECT_PHONE
+[E]2020-01-02 00:00:24.714 122-76fb4000/ARMadb-driver[Accessory_fd]: DisconnectPhoneConnection
+[E]2020-01-02 00:00:24.714 122-76fb4000/ARMadb-driver[Accessory_fd]: No phone conneted, not need reset!!!
+01-02 12:00:24.727678 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:CancelAutoConnect
+01-02 12:00:24.727876 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage CancelAutoConnect
+01-02 12:00:24.729042 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:DisconnectRemoteDevice
+01-02 12:00:24.729224 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage DisconnectRemoteDevice
+01-02 12:00:24.732829 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:Listen
+01-02 12:00:24.733015 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage Listen
+01-02 12:00:24.939834 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal <<NULL>>:<<NULL>>
+[D]2020-01-02 00:00:24.940 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! 10 - 8
+[D]2020-01-02 00:00:24.940 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! 8 - 10
+[W]2020-01-02 00:00:24.940 122-76fb4000/ARMadb-driver[Accessory_fd]: OnRead: Bluetooth_Listen(38), use time: 209 ms
+01-02 12:00:24.941251 AM [Theme_AndroidAuto_Brain] Bluetooth_Listen(0026)
+[D]2020-01-02 00:00:34.763 122-76fb4000/ARMadb-driver[Accessory_fd]: 	From HUD Get ########## CarPlayControl(8) StartAutoConnect(1002)
+01-02 12:00:34.764773 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:AutoConnect
+01-02 12:00:34.764960 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage AutoConnect
+01-02 12:00:34.765044 AM [RiddleBluetoothService_Interface_Control] $$$ AutoConnect! after 1ms. 中途可能被Cancle
+[D]2020-01-02 00:00:34.792 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: ScaningDevices(1003)
+01-02 12:00:34.792530 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) ScaningDevices(1003)
+01-02 12:00:34.792854 AM [BoxProtocol] CarPlayControl ScaningDevices(1003)
+01-02 12:00:34.792973 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+[D]2020-01-02 00:00:34.835 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: DeviceNotFound(1005)
+01-02 12:00:34.836313 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) DeviceNotFound(1005)
+01-02 12:00:34.836460 AM [Theme_AndroidAuto_Brain] 自动连接设置为 15 秒
+[D]2020-01-02 00:00:34.852 122-76fb4000/ARMadb-driver[Accessory_fd]: $$$ CMD_MANUAL_DISCONNECT_PHONE
+[E]2020-01-02 00:00:34.853 122-76fb4000/ARMadb-driver[Accessory_fd]: DisconnectPhoneConnection
+[E]2020-01-02 00:00:34.853 122-76fb4000/ARMadb-driver[Accessory_fd]: No phone conneted, not need reset!!!
+01-02 12:00:34.854663 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:CancelAutoConnect
+01-02 12:00:34.854855 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage CancelAutoConnect
+01-02 12:00:34.856031 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:DisconnectRemoteDevice
+01-02 12:00:34.856217 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage DisconnectRemoteDevice
+01-02 12:00:34.860455 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:Listen
+01-02 12:00:34.860717 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage Listen
+01-02 12:00:34.864827 AM [BoxProtocol] CarPlayControl DeviceNotFound(1005)
+01-02 12:00:34.864998 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+01-02 12:00:35.067258 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal <<NULL>>:<<NULL>>
+[D]2020-01-02 00:00:35.67 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! 10 - 8
+[D]2020-01-02 00:00:35.67 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! 8 - 10
+[W]2020-01-02 00:00:35.68 122-76fb4000/ARMadb-driver[Accessory_fd]: OnRead: Bluetooth_Listen(38), use time: 209 ms
+01-02 12:00:35.068815 AM [Theme_AndroidAuto_Brain] Bluetooth_Listen(0026)
+check_log_size: 85194 byte
+[D]2020-01-02 00:00:49.915 122-76fb4000/ARMadb-driver[Accessory_fd]: 	From HUD Get ########## CarPlayControl(8) StartAutoConnect(1002)
+01-02 12:00:49.916980 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:AutoConnect
+01-02 12:00:49.917173 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage AutoConnect
+01-02 12:00:49.917259 AM [RiddleBluetoothService_Interface_Control] $$$ AutoConnect! after 1ms. 中途可能被Cancle
+[D]2020-01-02 00:00:49.945 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: ScaningDevices(1003)
+01-02 12:00:49.945525 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) ScaningDevices(1003)
+01-02 12:00:49.945849 AM [BoxProtocol] CarPlayControl ScaningDevices(1003)
+01-02 12:00:49.945967 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+[D]2020-01-02 00:00:49.978 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: DeviceNotFound(1005)
+01-02 12:00:49.978480 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) DeviceNotFound(1005)
+01-02 12:00:49.978626 AM [Theme_AndroidAuto_Brain] 自动连接设置为 20 秒
+01-02 12:00:49.979249 AM [BoxProtocol] CarPlayControl DeviceNotFound(1005)
+01-02 12:00:49.979392 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+[D]2020-01-02 00:00:49.979 122-76fb4000/ARMadb-driver[Accessory_fd]: $$$ CMD_MANUAL_DISCONNECT_PHONE
+[E]2020-01-02 00:00:49.980 122-76fb4000/ARMadb-driver[Accessory_fd]: DisconnectPhoneConnection
+[E]2020-01-02 00:00:49.980 122-76fb4000/ARMadb-driver[Accessory_fd]: No phone conneted, not need reset!!!
+01-02 12:00:49.981058 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:CancelAutoConnect
+01-02 12:00:49.981241 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage CancelAutoConnect
+01-02 12:00:49.982436 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:DisconnectRemoteDevice
+01-02 12:00:49.982617 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage DisconnectRemoteDevice
+01-02 12:00:49.986221 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:Listen
+01-02 12:00:49.986411 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage Listen
+01-02 12:00:50.193189 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal <<NULL>>:<<NULL>>
+[D]2020-01-02 00:00:50.193 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! 10 - 8
+[D]2020-01-02 00:00:50.193 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! 8 - 10
+[W]2020-01-02 00:00:50.194 122-76fb4000/ARMadb-driver[Accessory_fd]: OnRead: Bluetooth_Listen(38), use time: 208 ms
+01-02 12:00:50.194642 AM [Theme_AndroidAuto_Brain] Bluetooth_Listen(0026)
+2020-01-02 00:01:03.68570: HCI Command status: 0x00 0x01 0x0409
+01-02 12:01:03.074211 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:RemoteClassUpdated
+01-02 12:01:03.089256 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:RemoteDeviceConnected
+2020-01-02 00:01:03.95083: HCI Command status: 0x00 0x01 0x041b
+2020-01-02 00:01:03.109066: HCI Command status: 0x00 0x01 0x041c
+2020-01-02 00:01:03.119318: HCI Command status: 0x00 0x01 0x0419
+2020-01-02 00:01:03.128840: HCI Command status: 0x00 0x01 0x0419
+2020-01-02 00:01:03.138250: HCI Name request complete (0): "4C:74:BF:21:3F:0D" -> "测试2"
+01-02 12:01:03.139532 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:RemoteNameUpdated
+2020-01-02 00:01:03.140476: HCI Name request complete (0): "4C:74:BF:21:3F:0D" -> "测试2"
+01-02 12:01:03.148542 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:RemoteNameUpdated
+2020-01-02 00:01:03.149328: HCI Command status: 0x00 0x01 0x041d
+hcid[209]: io_capa_response (sba=68:4E:05:6C:FA:BE, dba=4C:74:BF:21:3F:0D)
+hcid[209]: io_capa_request (sba=68:4E:05:6C:FA:BE, dba=4C:74:BF:21:3F:0D)
+hcid[209]: *cap=1 *auth=4
+hcid[209]: device->auth=4 type=4
+01-02 12:01:03.457420 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Agent:RequestConfirmation
+_OnDbusMessage! RequestConfirmation
+passkey=686388
+hcid[209]: link_key_notify (sba=68:4E:05:6C:FA:BE, dba=4C:74:BF:21:3F:0D)
+01-02 12:01:03.954460 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:BondingCreated
+01-02 12:01:03.954648 AM [RiddleBluetoothService_Interface_Control] BondingCreated 4C:74:BF:21:3F:0D
+--- /tmp/tempDiffDir/bluetooth/68:4E:05:6C:FA:BE/classes
++++ /tmp/bluetooth/68:4E:05:6C:FA:BE/classes
+@@ -1 +1,2 @@
+ 28:EA:2D:AC:06:84 0x7a020c
++4C:74:BF:21:3F:0D 0x7a020c
+--- /tmp/tempDiffDir/bluetooth/68:4E:05:6C:FA:BE/config
++++ /tmp/bluetooth/68:4E:05:6C:FA:BE/config
+@@ -1,3 +1,3 @@
+-class 0x200408
++class 0x000408
+ onmode discoverable
+ mode discoverable
+--- /tmp/tempDiffDir/bluetooth/68:4E:05:6C:FA:BE/features
++++ /tmp/bluetooth/68:4E:05:6C:FA:BE/features
+@@ -1 +1,2 @@
+ 28:EA:2D:AC:06:84 BFFECFFEDBFF7B87
++4C:74:BF:21:3F:0D BFFECFFEDBFF7B87
+--- /tmp/tempDiffDir/bluetooth/68:4E:05:6C:FA:BE/lastused
++++ /tmp/bluetooth/68:4E:05:6C:FA:BE/lastused
+@@ -1 +1,2 @@
+ 28:EA:2D:AC:06:84 2020-01-02 01:01:05 GMT
++4C:74:BF:21:3F:0D 2020-01-02 01:01:06 GMT
+--- /tmp/tempDiffDir/bluetooth/68:4E:05:6C:FA:BE/linkkeys
++++ /tmp/bluetooth/68:4E:05:6C:FA:BE/linkkeys
+@@ -0,0 +1 @@
++4C:74:BF:21:3F:0D C33D75C73227969FF40B4C037AE0D65C 4 -1
+--- /tmp/tempDiffDir/bluetooth/68:4E:05:6C:FA:BE/manufacturers
++++ /tmp/bluetooth/68:4E:05:6C:FA:BE/manufacturers
+@@ -1 +1,2 @@
+ 28:EA:2D:AC:06:84 15 12 527
++4C:74:BF:21:3F:0D 15 8 24835
+--- /tmp/tempDiffDir/bluetooth/68:4E:05:6C:FA:BE/names
++++ /tmp/bluetooth/68:4E:05:6C:FA:BE/names
+@@ -1 +1,2 @@
+ 28:EA:2D:AC:06:84 iPhone (6)
++4C:74:BF:21:3F:0D 测试2
+bluetooth/
+bluetooth/services
+bluetooth/68:4E:05:6C:FA:BE/
+bluetooth/68:4E:05:6C:FA:BE/config
+bluetooth/68:4E:05:6C:FA:BE/classes
+bluetooth/68:4E:05:6C:FA:BE/lastused
+bluetooth/68:4E:05:6C:FA:BE/names
+bluetooth/68:4E:05:6C:FA:BE/features
+bluetooth/68:4E:05:6C:FA:BE/manufacturers
+bluetooth/68:4E:05:6C:FA:BE/linkkeys
+01-02 12:01:04.041939 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:DeviceCreated
+2020-01-02 00:01:04.49698: Creating record for BDADDR 4C:74:BF:21:3F:0D
+2020-01-02 00:01:04.50161: D-Bus: Exported "/net/sf/nohands/hfpd/4C_74_BF_21_3F_0D"
+2020-01-02 00:01:04.50353: NotifyAudioConnection: m_voice_autoconnect-1, AudioState-1
+2020-01-02 00:01:04.50622: AG 4C:74:BF:21:3F:0D: Disconnected
+2020-01-02 00:01:04.51023: << AT+BRSF=63
+2020-01-02 00:01:04.53979: HCI Command status: 0x00 0x01 0x080b
+[D]2020-01-02 00:01:04.60 122-76fb4000/ARMadb-driver[BluetoothDaemonControler_fd]: OnConnectDeviceCallback_Start 4C:74:BF:21:3F:0D
+01-02 12:01:04.061154 AM [Theme_AndroidAuto_Brain] Bluetooth_ConnectStart(0023)
+01-02 12:01:04.061422 AM [Theme_AndroidAuto_Brain] param=0x023775F8
+01-02 12:01:04.061550 AM [Theme_AndroidAuto_Brain] thisDev=0x00000000
+01-02 12:01:04.061621 AM [Theme_AndroidAuto_Brain] pDispacher_=0x71896928
+01-02 12:01:04.061734 AM [Theme_AndroidAuto_Brain] kThemeMessage_UI_LinkDeivceName
+01-02 12:01:04.061819 AM [Theme_AndroidAuto_Brain] kThemeMessage_UI_LinkDeivceName B
+link service IAP2 to bluetooth rfcomm dev: /dev/rfcomm0 
+[D]2020-01-02 00:01:04.177 122-76fb4000/ARMadb-driver[ActionSessions]: 无线 CarPlay 进入
+01-02 12:01:04.178472 AM [iAP2] Recv start linkParam: 800, 480, 60, 2
+[D]2020-01-02 00:01:04.179 122-76fb4000/ARMadb-driver[Accessory_fd]: StartPhoneLink linkType: 3, transportType: 2
+01-02 12:01:04.301238 AM [CHudiAP2Server] StartRecvBroadCastiAP!
+2020-01-02 00:01:04.388965: >> +BRSF:495
+2020-01-02 00:01:04.390413: >> OK
+2020-01-02 00:01:04.390637: << AT+CIND=?
+2020-01-02 00:01:04.403619: >> +CIND: ("service",(0-1)),("call",(0-1)),("callsetup",(0-3)),("battchg",(0-5)),("signal",(0-5)),("roam",(0-1)),("callheld",(0-2))
+2020-01-02 00:01:04.405364: >> OK
+2020-01-02 00:01:04.405597: << AT+CMER=3,0,0,1
+2020-01-02 00:01:04.412283: >> OK
+2020-01-02 00:01:04.412518: << AT+CLIP=1
+2020-01-02 00:01:04.422286: >> ERROR
+2020-01-02 00:01:04.422573: << AT+CCWA=1
+2020-01-02 00:01:04.432306: >> ERROR
+2020-01-02 00:01:04.432557: << AT+CHLD=?
+2020-01-02 00:01:04.442415: >> +CHLD: (0,1,1x,2,2x,3)
+2020-01-02 00:01:04.442728: Hold modes: 0 1 1x 2 2x 3
+2020-01-02 00:01:04.443505: >> OK
+2020-01-02 00:01:04.443728: << AT+CIND?
+2020-01-02 00:01:04.444381: AG 4C:74:BF:21:3F:0D: Connected
+2020-01-02 00:01:04.444579: HCI Submit 0x0419
+2020-01-02 00:01:04.449278: HCI Command status: 0x00 0x01 0x0419
+2020-01-02 00:01:04.453031: >> +CIND: 0,0,0,5,1,0,0
+2020-01-02 00:01:04.456806: HCI Name request complete (0): "4C:74:BF:21:3F:0D" -> "测试2"
+2020-01-02 00:01:04.463283: >> OK
+--- /tmp/tempDiffDir/bluetooth/services
++++ /tmp/bluetooth/services
+@@ -1 +1,2 @@
+ 28:EA:2D:AC:06:84 IAP2
++4C:74:BF:21:3F:0D IAP2
+[D]2020-01-02 00:01:04.489 122-7592a450/ARMadb-driver[Accessory_fd]: box video frame rate: 0, 0.00 KB/s, audio frame rate: 0, 0.00 KB/s
+hfpd remove device: 4C:74:BF:21:3F:0D
+[hfpclient] add watch 0x1bdf3a0
+[hfpclient] add watch 0x1bdf3c8
+2020-01-02 00:01:04.514675: AddDevice called
+
+2020-01-02 00:01:04.514978: AddDevice : 4C:74:BF:21:3F:0D. 1
+
+2020-01-02 00:01:04.515679: AG 4C:74:BF:21:3F:0D: claimed by D-Bus peer :1.4
+Get device path: /net/sf/nohands/hfpd/4C_74_BF_21_3F_0D
+2020-01-02 00:01:04.520218: __DisconnectSco 0 1 1 -1!!!
+2020-01-02 00:01:04.521081: NotifyAudioConnection: m_voice_autoconnect-1, AudioState-1
+2020-01-02 00:01:04.521303: AG 4C:74:BF:21:3F:0D: Disconnected
+device /net/sf/nohands/hfpd/4C_74_BF_21_3F_0D: Disconnected
+hfpd remove device ret: 0
+bluetooth/
+bluetooth/services
+bluetooth/68:4E:05:6C:FA:BE/
+bluetooth/68:4E:05:6C:FA:BE/linkkeys
+bluetooth/68:4E:05:6C:FA:BE/config
+bluetooth/68:4E:05:6C:FA:BE/classes
+bluetooth/68:4E:05:6C:FA:BE/lastused
+bluetooth/68:4E:05:6C:FA:BE/names
+bluetooth/68:4E:05:6C:FA:BE/features
+bluetooth/68:4E:05:6C:FA:BE/manufacturers
+config wifi channel: 36, freq: 5180
+5G wifi
+[D]2020-01-02 00:01:04.583 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! -1 - 9
+[D]2020-01-02 00:01:04.583 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! -1 - 10
+01-02 12:01:04.584108 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:RemoteNameUpdated
+01-02 12:01:04.590258 AM [CiAP2Session_CarPlay] Message from iPhone: 0x1D00 StartIdentify
+(_get_SeriallNumber)+789: set box serial number: 2022.05.16.1659eefe
+
+01-02 12:01:04.595414 AM [iAP2IdentifyEngine] bWireLess_=1, bMediumTypeIsBT_=1
+01-02 12:01:04.596649 AM [iAP2IdentifyEngine] identifyItemsArray send to iPhone: {
+    "id" : 65535
+    "friendlyName" : "IdentifyInfo"
+    "type" : "array"
+    "value" : 
+    [
+        {
+            "id" : 0
+            "friendlyName" : "name"
+            "type" : "utf8_string"
+            "value" : "VOLKSWAGEN-10D4"
+        },
+        {
+            "id" : 1
+            "friendlyName" : "modelIdentifier"
+            "type" : "utf8_string"
+            "value" : "Magic-Car-Link-1.00"
+        },
+        {
+            "id" : 2
+            "friendlyName" : "manufacturer"
+            "type" : "utf8_string"
+            "value" : "Magic Tec."
+        },
+        {
+            "id" : 3
+            "friendlyName" : "serialNumber"
+            "type" : "utf8_string"
+            "value" : "2022.05.16.1659eefe
+"
+        },
+        {
+            "id" : 4
+            "friendlyName" : "firmwareVersion"
+            "type" : "utf8_string"
+            "value" : "1.0.0"
+        },
+        {
+            "id" : 5
+            "friendlyName" : "hardwareVersion"
+            "type" : "utf8_string"
+            "value" : "1.0.0"
+        },
+        {
+            "id" : 6
+            "friendlyName" : "messagesSentByAccessory"
+            "type" : "blob"
+            "explain" : 
+       channel=36
+     [
+                "5703: WifiConfigInfo",
+                "4154: StartCallStateUpdate",
+                "4156: StopCallStateUpdate",
+                "4157: StartCommunicationUpdate",
+                "4159: StopCommunicationUpdate"
+            ]
+            "value" : 57034154 41564157 4159              |W^ATAVAWAY      | (10 bytes)
+        },
+        {
+            "id" : 7
+            "friendlyName" : "messagesReceivedFromDevice"
+            "type" : "blob"
+            "explain" : 
+            [
+                "4E0A: DeviceLanguageUpdate",
+                "4E0B: DeviceTimeUpdateMsgID",
+                "5702: ReqWifiConfig",
+                "4E0D: WirelessCarPlayUpdateMsg",
+                "4E0E: TransportNotify",
+                "4155: CallStateUpdate",
+                "4158: CommunicationUpdate"
+            ]
+            "value" : 4e0a4e0b 57024e0d 4e0e4155 4158     |N^N^W^N^N^AUAX  | (14 bytes)
+        },
+        {
+            "id" : 8
+            "friendlyName" : "powerProvidingCapability"
+            "type" : "uint8"
+            "value" : 2
+        },
+        {
+            "id" : 9
+            "friendlyName" : "maximumCurrentDrawnFromDevice"
+            "type" : "uint16"
+            "value" : 0
+        },
+        {
+            "id" : 12
+            "friendlyName" : "currentLanguage"
+            "type" : "utf8_string"
+            "value" : "en"
+        },
+        {
+            "id" : 13
+            "friendlyName" : "supportedLanguage"
+            "type" : "utf8_string"
+            "value" : "en"
+        },
+        {
+            "id" : 17
+            "friendlyName" : "bluetoothTransportComponent"
+            "type" : "group"
+            "value" : 
+            [
+                {
+                    "id" : 0
+                    "friendlyName" : "transportComponentIdentifier"
+                    "type" : "uint16"
+                    "value" : 1
+                },
+                {
+                    "id" : 1
+                    "friendlyName" : "transportComponentName"
+                    "type" : "utf8_string"
+                    "value" : "IAP2-Bluetooth"
+                },
+                {
+                    "id" : 2
+                    "friendlyName" : "transportSupportsiAP2Connection"
+                    "type" : "none"
+                },
+                {
+                    "id" : 3
+                    "friendlyName" : "bluetoothTransportMediaAccessControlAddress"
+                    "type" : "blob"
+                    "value" : 684e056c fabe                       |hN^l^^          | (6 bytes)
+                }
+            ]
+        },
+        {
+            "id" : 20
+            "friendlyName" : "vehicleInformationComponent"
+            "type" : "group"
+            "value" : 
+            [
+                {
+                    "id" : 0
+                    "friendlyName" : "identifier"
+                    "type" : "uint16"
+                    "value" : 1
+                },
+                {
+                    "id" : 1
+                    "friendlyName" : "name"
+                    "type" : "utf8_string"
+                    "value" : "Auto Box"
+                },
+                {
+                    "id" : 2
+                    "friendlyName" : "engineType"
+                    "type" : "uint8"
+                    "value" : 0
+                },
+                {
+                    "id" : 6
+                    "friendlyName" : "displayName"
+                    "type" : "utf8_string"
+                    "value" : "VOLKSWAGEN-10D4"
+                }
+            ]
+        },
+        {
+            "id" : 24
+            "friendlyName" : "wirelessCarPlayTransportComponent"
+            "type" : "group"
+            "value" : 
+            [
+                {
+                    "id" : 0
+                    "friendlyName" : "transportComponentIdentifier"
+                    "type" : "uint16"
+                    "value" : 2
+                },
+                {
+                    "id" : 1
+                    "friendlyName" : "transportComponentName"
+                    "type" : "utf8_string"
+                    "value" : "IAP2-Wireless"
+                },
+                {
+                    "id" : 2
+                    "friendlyName" : "transportSupportsiAP2Connection"
+                    "type" : "none"
+                },
+                {
+                    "id" : 4
+                    "friendlyName" : "transportSupportsCarPlay"
+                    "type" : "none"
+                }
+            ]
+        }
+    ]
+}
+
+01-02 12:01:04.605999 AM [iAP2Engine] Send_changes:IdentifyInfo(0x1D01)
+wpa_passphrase=12345678
+hostapd runing.....
+udhcpd runing.....
+01-02 12:01:04.881417 AM [CiAP2Session_CarPlay] Message from iPhone: 0x1D02 IdentifyAccept
+01-02 12:01:04.882781 AM [CiAP2Session_CarPlay] Message from iPhone: 0xAA00 ReqAuthCert
+01-02 12:01:05.429058 AM [mfi_auth] mfi get version failed, mfi ic is not from APPLE, use other addr
+01-02 12:01:05.430266 AM [mfi_auth] MFI_AUTH_COP_REG_ADDR_ACC_CERT_LEN: 945
+2020-01-02 00:01:05.526947: AG 4C:74:BF:21:3F:0D: D-Bus owner disconnected
+01-02 12:01:05.528958 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:ListRemoteDevices
+01-02 12:01:05.529153 AM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage ListRemoteDevices
+01-02 12:01:05.532016 AM [RiddleBluetoothService_Interface_Control] $$$ 0 bluetoothAddr=4C:74:BF:21:3F:0D devName = 测试2
+01-02 12:01:05.533647 AM [RiddleBluetoothService_Interface_Control] SaveDevList to config file, addr:4C:74:BF:21:3F:0D name:测试2 index:1
+[D]2020-01-02 00:01:05.544 122-76fb4000/ARMadb-driver[BluetoothDaemonControler_fd]: DeviceList(1): 
+4C:74:BF:21:3F:0D测试2
+
+[D]2020-01-02 00:01:05.545 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: SupportAutoConnect(1001)
+[D]2020-01-02 00:01:05.545 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: DeviceBluetoothConnected(1007)
+[D]2020-01-02 00:01:05.545 122-76fb4000/ARMadb-driver[BluetoothDaemonControler_fd]: OnConnectDeviceCallback_Connected 4C:74:BF:21:3F:0D, NoDevice, IAP2
+ClosedByPeer 1! 9
+[W]2020-01-02 00:01:05.545 122-76fb4000/ARMadb-driver[RiddleDataExchangeUtils]: ReadOne fail!!! err=9 cmd=Unkown RiddleHUDComand?(241) size=0 pid=142 _fd=-1
+ClosedByPeer 2! -1
+[D]2020-01-02 00:01:05.545 122-76fb4000/ARMadb-driver[MiddleManInterface]: pid:142 RiddleLinktype_UNKOWN?(32) connected, fd=11
+[D]2020-01-02 00:01:05.546 122-76fb4000/ARMadb-driver[MiddleManInterface]: pid:142 RiddleLinktype_UNKOWN?(34) connected, fd=9
+01-02 12:01:05.546312 AM [Theme_AndroidAuto_Brain] Unkown RiddleHUDComand?(0024)
+01-02 12:01:05.546998 AM [Theme_AndroidAuto_Brain] kRiddleHUDComand_D_Bluetooth_BondList(0012)
+01-02 12:01:05.547257 AM [Theme_AndroidAuto_Brain] _ParseBluetoothDeviceBondList 1: addr:4C:74:BF:21:3F:0D name:测试2
+01-02 12:01:05.798289 AM [BoxProtocol] process cmd kRiddleHUDComand_D_Bluetooth_BondList(18) use time 251 ms
+01-02 12:01:05.798533 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) SupportAutoConnect(1001)
+01-02 12:01:05.798641 AM [BoxProtocol] CarPlayControl SupportAutoConnect(1001)
+01-02 12:01:05.798707 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+01-02 12:01:05.798940 AM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) DeviceBluetoothConnected(1007)
+01-02 12:01:05.799049 AM [BoxProtocol] CarPlayControl DeviceBluetoothConnected(1007)
+01-02 12:01:05.799115 AM [CarPlayServer] _OnPhoneCommand me=0x02336918
+01-02 12:01:05.807780 AM [CiAP2Session_CarPlay] Message from iPhone: 0xAA02 ReqChallenge
+01-02 12:01:05.808203 AM [mfi_auth] mfi_auth_processchallenge start
+01-02 12:01:05.811507 AM [mfi_auth] mfi_auth_processchallenge MFI_AUTH_COP_REG_ADDR_AUTH_CTRL_AND_STATUS
+01-02 12:01:07.245665 AM [mfi_auth] MFI_AUTH_COP_REG_ADDR_AUTH_CTRL_AND_STATUS get status 16
+01-02 12:01:07.246756 AM [mfi_auth] MFI_AUTH_COP_REG_ADDR_SIGNATURE_LEN 128
+01-02 12:01:07.262494 AM [mfi_auth] MFI_AUTH_COP_REG_ADDR_SIGNATURE_DATA 0
+01-02 12:01:07.335886 AM [CHudiAP2Server] _iAP2read over size: 55 > 16
+01-02 12:01:07.336247 AM [CiAP2Session_CarPlay] Message from iPhone: 0xAA05 AuthSuccess
+01-02 12:01:07.336404 AM [CHudiAP2Server] ###### IAP2 SchedulDone stat: AuthSuccess
+[D]2020-01-02 00:01:07.336 122-76fb4000/ARMadb-driver[Accessory_fd]: OnCarPlayPhase 100
+01-02 12:01:07.338424 AM [CHudiAP2Server] _iAP2read over size: 39 > 16
+01-02 12:01:07.338830 AM [CiAP2Session_CarPlay] Message from iPhone: 0x5702 ReqWifiConfig
+01-02 12:01:07.339230 AM [iAP2WiFiConfigEngine] set wifi ssid name: VOLKSWAGENA2
+01-02 12:01:07.339997 AM [iAP2WiFiConfigEngine] set wifi pwd: 12345678
+01-02 12:01:07.340144 AM [iAP2Engine] Send_changes:WifiConfigInfo(0x5703)
+01-02 12:01:07.340529 AM [CiAP2Session_CarPlay] Message from iPhone: 0x4E0A DeviceLanguageUpdate
+01-02 12:01:07.340651 AM [CiAP2Session_CarPlay] kIAP2DeviceLanguageUpdateMsgID from iPhone: zh
+01-02 12:01:07.340719 AM [CHudiAP2Server] ###### IAP2 SchedulDone stat: DeviceLanguageUpdate
+killall: AppleCarPlay: no process killed
+01-02 12:01:07.404232 AM [CiAP2Session_CarPlay] Message from iPhone: 0x4E0B DeviceTimeUpdateMsgID
+07-29 06:37:33.001821 PM [CiAP2Session_CarPlay] Message from iPhone: 0x4E0D WirelessCarPlayUpdateMsg
+07-29 06:37:33.002032 PM [CiAP2Session_CarPlay] Message:WirelessCarPlayUpdateMsg, status: 1
+07-29 06:37:33.002673 PM [CiAP2Session_CarPlay] Message from iPhone: 0x4E0E TransportNotify
+07-29 06:37:33.028970 PM [CiAP2Session_CarPlay] Message:TransportNotify! id=0 size=22
+07-29 06:37:33.029531 PM [CHudiAP2Server] _iAP2read over size: 25 > 16
+07-29 06:37:33.029937 PM [CiAP2Session_CarPlay] Message from iPhone: 0x5702 ReqWifiConfig
+07-29 06:37:33.030265 PM [iAP2WiFiConfigEngine] set wifi ssid name: VOLKSWAGENA2
+07-29 06:37:33.031129 PM [iAP2WiFiConfigEngine] set wifi pwd: 12345678
+07-29 06:37:33.031284 PM [iAP2Engine] Send_changes:WifiConfigInfo(0x5703)
+2023-07-29 06:37:33.317195 PM [CarPlayDemoApp] AirPlay starting version 320.17
+2023-07-29 06:37:33.318467 PM [CarPlayDemoApp] Carplay Init Screen Mode: 0, Audio Mode: 0
+2023-07-29 06:37:33.319485 PM [CarPlayDemoApp] _getHUDinfo_InputFeatures 10 1
+2023-07-29 06:37:33.319644 PM [CarPlayDemoApp] kScreenProperty_MaxFPS :60
+2023-07-29 06:37:33.319730 PM [Screen] Registered screen e5f7a68d-7b0f-4305-984b-974f677a150b 800 x 480, 60 FPS
+2023-07-29 06:37:33.320663 PM [HID] Registered HID "MultiTouchScreen", ba8399a3-a00f-4e05-9868-54de85dd775a
+2023-07-29 06:37:33.320877 PM [HID] Registered HID "My Knob", 2b09a17a-853d-4cc7-9d44-943439f5d733
+2023-07-29 06:37:33.321025 PM [HID] Registered HID "Music Control", f65d28c0-78fd-4923-be7f-93201e8fb564
+2023-07-29 06:37:33.321159 PM [HID] Registered HID "PhoneControl", f847bf7e-3e47-4cf9-a15c-b789cb313c30
+[D]2023-07-29 18:37:33.333 122-76fb4000/ARMadb-driver[MiddleManInterface]: pid:142 CarPlay(3) connected, fd=12
+[D]2023-07-29 18:37:33.333 122-76fb4000/ARMadb-driver[Accessory_fd]: OnCarPlayPhase 1
+07-29 06:37:33.334326 PM [Theme_AndroidAuto_Brain] PlugIn(0002)
+2023-07-29 06:37:33.334754 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:33.334975 PM [CarPlayDemoApp] wireless carplay timeout: 29, wifi not connected
+mDNSResponder: mDNS_DeregisterInterface: mDNSPlatformRawTime went backwards by 525901633 ticks; setting correction factor to 720108013
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: usb0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on wlan0
+mDNSResponder: Skip SendResponses service:Phone._carplay-ctrl._tcp.local. on ncm0
+[D]2023-07-29 18:37:34.87 122-7592a450/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: DeviceWifiConnected(1009)
+2023-07-29 06:37:34.335703 PM MFi auth copy certificate
+2023-07-29 06:37:34.336016 PM MFi get addr: 22 from cache file
+2023-07-29 06:37:34.336273 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:34.336548 PM [CarPlayDemoApp] wireless carplay timeout: 28, wifi  connected
+07-29 06:37:34.353168 PM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) DeviceWifiConnected(1009)
+07-29 06:37:34.353337 PM [BoxProtocol] CarPlayControl DeviceWifiConnected(1009)
+07-29 06:37:34.353416 PM [CarPlayServer] _OnPhoneCommand me=0x02336918
+2023-07-29 06:37:34.441762 PM MFi auth copy certificate done: 945 bytes
+2023-07-29 06:37:34.445851 PM [AirPlay] Name changed '' -> 'Auto Box'
+2023-07-29 06:37:34.447049 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:34.447275 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:34.453877 PM [AirPlayPair] Created AirPlay Pairing Identity: ae5746da-8c3e-4506-bef1-023bf4a2ad4a
+mDNSResponder: Skip SendResponses service:Auto\032Box._airplay._tcp.local. on usb0
+2023-07-29 06:37:34.456633 PM [AirPlay] Registering Bonjour _airplay._tcp. port 5000
+2023-07-29 06:37:34.456817 PM [AirPlay] AirPlay servers started
+2023-07-29 06:37:34.458225 PM [CarPlayControl] CarPlayControlClientStart: 0/0x0 noErr
+mDNSResponder: Skip SendQueries service:_carplay-ctrl._tcp.local. on usb0
+mDNSResponder: Skip SendResponses service:Auto\032Box._airplay._tcp.local. on usb0
+2023-07-29 06:37:35.337765 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:35.338186 PM [CarPlayDemoApp] wireless carplay timeout: 27, wifi  connected
+mDNSResponder: Skip SendResponses service:Auto\032Box._airplay._tcp.local. on usb0
+mDNSResponder: Skip SendQueries service:_carplay-ctrl._tcp.local. on usb0
+mDNSResponder: Skip SendResponses service:Auto\032Box._airplay._tcp.local. on usb0
+2023-07-29 06:37:36.339366 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:36.339767 PM [CarPlayDemoApp] wireless carplay timeout: 26, wifi  connected
+2023-07-29 06:37:36.508014 PM [CarPlayControl] BrowseCallback: event=Add, info={
+    dnsName : "测试2._carplay-ctrl._tcp.local.%3"
+    serviceType : "_carplay-ctrl._tcp."
+    deviceID : "4C:74:BF:21:3F:0D"
+    name : "测试2"
+    txt : 
+        +0000: 1469643d 34633a37 343a6266 3a32313a |^id=4c:74:bf:21:| (39 bytes)
+        +0010: 33663a30 64117372 63766572 733d3534 |3f:0d^srcvers=54|
+        +0020: 352e3232 2e3231                     |5.22.21         |
+    services : 
+    [
+        {
+            dnsName : "测试2._carplay-ctrl._tcp.local.%3"
+            rawName : "测试2"
+            domain : "local."
+            wifi : true
+            ifindex : 3
+            transportType : 2
+            ifname : "wlan0"
+        }
+    ]
+}
+
+2023-07-29 06:37:36.508478 PM [CarPlayDemoApp] HeweiDecideBestDevice: '4c:74:bf:21:3f:0d'
+2023-07-29 06:37:36.508932 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:36.509696 PM [CarPlayControl] Controller [0x021E8098] Activated Service [0x74F00548]
+2023-07-29 06:37:36.511394 PM [CarPlayDemoApp] CarPlayControlClientEvent event received
+2023-07-29 06:37:36.511556 PM [CarPlayDemoApp] CarPlayControlClientEvent Add/Update event received, WifiConnectStatus: 0
+2023-07-29 06:37:36.511981 PM [CarPlayControl] CarPlayBonjourService [0x74F00548] resolved to: ceshi2.local. port: 49193 interfaceNdx: 3 (0/0x0 noErr)
+2023-07-29 06:37:36.513317 PM [CarPlayControl] CarPlayControl connecting to ceshi2.local.%3 on port 49193
+2023-07-29 06:37:36.646285 PM [CarPlayDemoApp] CarPlayControlClientConnect succeeded: 0/0x0 noErr
+mDNSResponder: Skip SendResponses service:Auto\032Box._airplay._tcp.local. on usb0
+2023-07-29 06:37:36.679459 PM [AirPlayPair] Control pair-setup HK, type 0
+07-29 06:37:36.845301 PM [VideoSource] video framerate: 2.776, video bitrate: 0.016 Mbps, encrypt bitrate: 116.912 Mbps, cpu freq: 900000
+, cpu temp: 49014
+
+2023-07-29 06:37:36.901874 PM [AirPlayPair] Control pair-setup HK, type 0
+Mem: 53564K used, 69872K free, 7780K shrd, 0K buff, 12352K cached
+8.3% usr  8.3% sys  0.0% nic 33.3% idle  0.0% io  0.0% irq  0.0% sirq
+verage: 0.69 0.27 0.10 1/116 636
+PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND[m
+    1 root     S    99.2m 82.1   0 49.9 AppleCarPlay --width 800 --height
+  165 root     S     104m 86.6   0  8.3 fakeiOSDevice
+  633 root     R     3204  2.5   0  8.3 top -n 1
+  304 root     S    65736 53.1   0  0.0 ARMAndroidAuto
+  122 root     S    43284 35.0   0  0.0 ARMadb-driver
+  302 root     S    25124 20.3   0  0.0 ARMiPhoneIAP2
+2023-07-29 06:37:37.029387 PM [AirPlayPair] Control pair-setup HK, type 0
+2023-07-29 06:37:37.052387 PM [AirPlayPair] Control pair-verify 1
+2023-07-29 06:37:37.070687 PM [AirPlayPair] Control pair-verify 2
+2023-07-29 06:37:37.073485 PM [AirPlayPair] ### Control pair-verify HK done: 1
+2023-07-29 06:37:37.074074 PM [AirPlayPair] ###  _HandlePairVerifyHomeKitCompletion ###
+2023-07-29 06:37:37.084145 PM MFi auth create signature
+2023-07-29 06:37:37.084538 PM MFi get addr: 22 from cache file
+2023-07-29 06:37:37.084765 PM MFi get addr: 22 from cache file
+2023-07-29 06:37:37.340115 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:37.340533 PM [CarPlayDemoApp] wireless carplay timeout: 25, wifi  connected
+2023-07-29 06:37:38.341395 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:38.341791 PM [CarPlayDemoApp] wireless carplay timeout: 24, wifi  connected
+2023-07-29 06:37:38.537747 PM MFi auth created signature:
+
++0000: 6389568a e28a858d cc4cb8c7 997ee832 |c^V^^^^^^L^^^~^2| (128 bytes)
++0010: 4e9773be 396e1e87 e5d07bc2 d08e61e1 |N^s^9n^^^^{^^^a^|
++0020: f4073329 94f1e772 7041f2ef 6bc6c23a |^^3)^^^rpA^^k^^:|
++0030: b0202ae8 0fbba941 2cbd5558 c7efa73c |^ *^^^^A,^UX^^^<|
++0040: 0bd79912 dadfc134 e54c1cc1 afaec344 |^^^^^^^4^L^^^^^D|
++0050: 6b3bfa6b 33e694b2 38fdef3c 1e98384d |k;^k3^^^8^^<^^8M|
++0060: dc4ed276 fadf2c48 6cbfb15f 8cbb8805 |^N^v^^,Hl^^_^^^^|
++0070: 715eda20 1f6c3f57 a4b50b7b 6af56e04 |q^^ ^l?W^^^{j^n^|
+
+2023-07-29 06:37:38.538027 PM MFi auth copy certificate
+mDNSResponder: Skip SendQueries service:_carplay-ctrl._tcp.local. on usb0
+2023-07-29 06:37:38.587424 PM [AirPlay] ### clientIfMACAddr: 4c:74:bf:21:3f:01
+2023-07-29 06:37:38.588311 PM [CarPlayDemoApp] AirPlay session started
+2023-07-29 06:37:38.588453 PM [CarPlayDemoApp] _AirPlayHandleSessionCreated
+2023-07-29 06:37:38.588536 PM [AirPlay] Setting up session 17716459285962507876 with 192.168.50.100:49194, {
+    features : 
+    [
+        "uiContext"
+        "viewAreas"
+        "cornerMasks"
+        "focusTransfer"
+    ]
+    model : "iPhone9,1"
+    deviceID : "4c:74:bf:21:3f:0d"
+    name : "测试2"
+    timingPort : 50044
+    sessionUUID : "F5DD81DA-D177-4664-B180-D01CF7014FD4"
+    keepAliveLowPower : true
+    macAddress : "4C:74:BF:21:3F:01"
+    osBuildVersion : "18F72"
+    sourceVersion : "545.22.21"
+}
+
+2023-07-29 06:37:38.598161 PM [AirPlay] ### Response session to iphone 17716459285962507876 with {
+    eventPort : 59232
+    timingPort : 59029
+}
+
+2023-07-29 06:37:38.611655 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:38.616047 PM [AirPlay] #### WifiAudioFormats = [
+    {
+        audioType : "compatibility"
+        audioInputFormats : 80
+        type : 100
+        audioOutputFormats : 32848
+    }
+    {
+        audioType : "compatibility"
+        type : 101
+        audioOutputFormats : 32768
+    }
+    {
+        audioType : "alert"
+        type : 100
+        audioOutputFormats : 33554432
+    }
+    {
+        audioType : "default"
+        audioInputFormats : 67108864
+        type : 100
+        audioOutputFormats : 67108864
+    }
+    {
+        audioType : "telephony"
+        audioInputFormats : 67108864
+        type : 100
+        audioOutputFormats : 67108864
+    }
+    {
+        audioType : "speechRecognition"
+        audioInputFormats : 134217728
+        type : 100
+        audioOutputFormats : 134217728
+    }
+    {
+        audioType : "default"
+        type : 101
+        audioOutputFormats : 33554432
+    }
+    {
+        audioType : "media"
+        type : 102
+        audioOutputFormats : 8388608
+    }
+]
+
+2023-07-29 06:37:38.617396 PM [AirPlay] HUDHardWare AudioLatencies = [
+    {
+        audioType : "media"
+        outputLatencyMicros : 30000
+        type : 100
+    }
+    {
+        audioType : "alert"
+        outputLatencyMicros : 54000
+        type : 100
+    }
+    {
+        audioType : "telephony"
+        inputLatencyMicros : 50000
+        outputLatencyMicros : 185000
+        type : 100
+    }
+    {
+        audioType : "speechRecognition"
+        inputLatencyMicros : 50000
+        outputLatencyMicros : 96000
+        type : 100
+    }
+    {
+        audioType : "default"
+        inputLatencyMicros : 50000
+        outputLatencyMicros : 47000
+        type : 100
+    }
+    {
+        audioType : "default"
+        outputLatencyMicros : 54000
+        type : 101
+    }
+]
+
+2023-07-29 06:37:38.619277 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:38.619756 PM [CarPlayDemoApp] Get FakeiPhone Carplay Init Mode : 2 100 0 0, 1 100 100 100, 0 0 0
+2023-07-29 06:37:38.619913 PM [CarPlayDemoApp] Get FakeiPhone Carplay Init Mode : {
+    reasonStr : "InitMode"
+    resources : 
+    [
+        {
+            transferPriority : 100
+            resourceID : 1
+            transferType : 2
+        }
+        {
+            transferPriority : 100
+            takeConstraint : 100
+            resourceID : 2
+            transferType : 1
+            borrowConstraint : 100
+        }
+    ]
+}
+
+2023-07-29 06:37:38.620211 PM [CarPlayDemoApp] gInitialModes = {
+    reasonStr : "InitMode"
+    resources : 
+    [
+        {
+            transferPriority : 100
+            resourceID : 1
+            transferType : 2
+        }
+        {
+            transferPriority : 100
+            takeConstraint : 100
+            resourceID : 2
+            transferType : 1
+            borrowConstraint : 100
+        }
+    ]
+}
+
+2023-07-29 06:37:38.620601 PM [CarPlayDemoApp] /tmp/night_mode: 1
+2023-07-29 06:37:38.622548 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:38.641926 PM [AirPlay] AirPlay session started: From=测试2 D=0x4c74bf213f0d A=192.168.50.100:49194 T=WiFi C=? Bonjour=0 ms Conn=0 ms Auth=0 ms Ann=0 ms Setup=0 ms Rec=7 ms: 0/0x0 noErr
+2023-07-29 06:37:38.830318 PM [AirPlay] Modes changed: screen accessory, mainAudio accessory, speech n/a (none), phone n/a, turns n/a
+07-29 06:37:38.830899 PM [ArmadbdriverClient] Send modesChanged to HUD start
+07-29 06:37:38.831691 PM [CarPlayServer] Send:{
+    "type" : "modesChanged"
+    "params" : 
+    {
+        "appStates" : 
+        [
+            {
+                "entity" : 0
+                "appStateID" : 2
+            },
+            {
+                "entity" : 0
+                "speechMode" : -1
+                "appStateID" : 1
+            },
+            {
+                "entity" : 0
+                "appStateID" : 3
+            }
+        ]
+        "resources" : 
+        [
+            {
+                "entity" : 2
+                "resourceID" : 1
+            },
+            {
+                "entity" : 2
+                "resourceID" : 2
+            }
+        ]
+    }
+}
+
+07-29 06:37:38.840900 PM [CarPlayServer] Send Finished
+07-29 06:37:38.841205 PM [ArmadbdriverClient] Send modesChanged to HUD finish
+2023-07-29 06:37:38.841820 PM [AirPlay] 0x00000000 Is  Wifi 
+2023-07-29 06:37:38.842265 PM [CarPlayDemoApp] wireless carplay timeout: 23, wifi  connected
+2023-07-29 06:37:38.845710 PM [CarPlayDemoApp] Wait HUD finish modesChanged use: 15ms
+2023-07-29 06:37:38.845898 PM [AirPlay] 0x021EB180 Is  Wifi 
+[D]2023-07-29 18:37:38.846 122-76fb4000/ARMadb-driver[Accessory_fd]: OnCarPlayPhase 103
+07-29 06:37:38.847545 PM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:DisconnectRemoteDevice
+07-29 06:37:38.847779 PM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage DisconnectRemoteDevice
+07-29 06:37:38.858476 PM [VideoSource] VideoSource_control: inCommand=prepareStartLinkVideo
+07-29 06:37:38.858673 PM [VideoSource] VideoSource_control: inCommand=stopvideo
+07-29 06:37:38.878937 PM [CarPlayServer] ----------- _processScreenStop: 1!
+2023-07-29 06:37:39.022396 PM [CarPlayDemoApp] kAirPlayCommand_DisableBluetooth
+2023-07-29 06:37:39.030407 PM [AirPlay] Modes changed: screen controller, mainAudio accessory, speech n/a (none), phone n/a, turns n/a
+check_log_size: 121971 byte
+07-29 06:37:39.065746 PM [iAP2] ######### interrupt SIGTER(15)
+07-29 06:37:39.069877 PM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) DisableBluetooth(4)
+07-29 06:37:39.070053 PM [BoxProtocol] CarPlayControl DisableBluetooth(4)
+07-29 06:37:39.070135 PM [CarPlayServer] _OnPhoneCommand me=0x02336918
+07-29 06:37:39.070371 PM [CarPlayServer] Send:{
+    "type" : "disableBluetooth"
+    "params" : 
+    {
+        "deviceID" : "4C:74:BF:21:3F:0D"
+    }
+}
+
+07-29 06:37:39.074392 PM [CarPlayServer] Send Finished
+07-29 06:37:39.074755 PM [ArmadbdriverClient] Send modesChanged to HUD start
+07-29 06:37:39.075732 PM [CarPlayServer] Send:{
+    "type" : "modesChanged"
+    "params" : 
+    {
+        "appStates" : 
+        [
+            {
+                "entity" : 0
+                "appStateID" : 2
+            },
+            {
+                "entity" : 0
+                "speechMode" : -1
+                "appStateID" : 1
+            },
+            {
+                "entity" : 0
+                "appStateID" : 3
+            }
+        ]
+        "resources" : 
+        [
+            {
+                "entity" : 1
+                "resourceID" : 1
+            },
+            {
+                "entity" : 2
+                "resourceID" : 2
+            }
+        ]
+    }
+}
+
+07-29 06:37:39.081719 PM [CarPlayServer] Send Finished
+07-29 06:37:39.084181 PM [ArmadbdriverClient] Send modesChanged to HUD finish
+07-29 06:37:39.085020 PM [VideoSource] VideoSource_control: inCommand=startvideo
+2023-07-29 06:37:39.091685 PM [CarPlayDemoApp] Wait HUD finish modesChanged use: 60ms
+07-29 06:37:39.105376 PM [CarPlayServer] ----------- _processScreenSetup Start: 0!
+07-29 06:37:39.116124 PM [CarPlayServer] respParams={
+    "streams" : 
+    [
+        {
+            "type" : 110
+            "dataPort" : 54924
+        }
+    ]
+    "timingPort" : 57087
+}
+ 
+07-29 06:37:39.118909 PM [VideoSource] ### nettype_socket send bufSize: 65536
+2023-07-29 06:37:39.140011 PM [AirPlay] Setting up session 17716459285962507876 with 192.168.50.100:49194, {
+    streams : 
+    [
+        {
+            timestampInfo : 
+            [
+                {
+                    name : "SubSu"
+                }
+                {
+                    name : "BePxT"
+                }
+                {
+                    name : "AfPxT"
+                }
+                {
+                    name : "BefEn"
+                }
+                {
+                    name : "EmEnc"
+                }
+            ]
+            uuid : "e5f7a68d-7b0f-4305-984b-974f677a150b"
+            type : 110
+            streamConnectionID : -8950532481248312265
+        }
+    ]
+}
+
+2023-07-29 06:37:39.140477 PM [AirPlay] ### Setup stream type: 110
+2023-07-29 06:37:39.140804 PM [AirPlayReceiverSessionScreen] Video Latency 70 ms
+2023-07-29 06:37:39.142033 PM [AirPlay] ### _SetUpStreams from iPhone:{
+    timestampInfo : 
+    [
+        {
+            name : "SubSu"
+        }
+        {
+            name : "BePxT"
+        }
+        {
+            name : "AfPxT"
+        }
+        {
+            name : "BefEn"
+        }
+        {
+            name : "EmEnc"
+        }
+    ]
+    uuid : "e5f7a68d-7b0f-4305-984b-974f677a150b"
+    type : 110
+    streamConnectionID : -8950532481248312265
+}
+
+2023-07-29 06:37:39.142417 PM [AirPlay] ### Response session to iphone 17716459285962507876 with {
+    streams : 
+    [
+        {
+            dataPort : 47308
+            type : 110
+        }
+    ]
+}
+
+2023-07-29 06:37:39.257132 PM [ScreenStream] Screen stream started
+2023-07-29 06:37:39.257382 PM [AirPlayReceiverSessionScreen] ### tcpSock recv bufSize: 32768, maxBitrate: 6 Mbps
+[D]2023-07-29 18:37:39.257 122-76fb4000/ARMadb-driver[Accessory_fd]: OnCarPlayPhase 3
+[D]2023-07-29 18:37:39.258 122-76fb4000/ARMadb-driver[RiddlePlatform]: GetBoxCpuTemp: 49615
+ -- 49
+[D]2023-07-29 18:37:39.258 122-76fb4000/ARMadb-driver[Accessory_fd]: PhoneLinkInfo: {"MDLinkType":"CarPlay","MDModel":"iPhone9,1","MDOSVersion":"18F72","MDLinkVersion":"545.22.21","cpuTemp":49}
+[D]2023-07-29 18:37:39.258 122-76fb4000/ARMadb-driver[ActionSessions]: 无线 CarPlay 连接成功
+[D]2023-07-29 18:37:39.258 122-76fb4000/ARMadb-driver[ActionSessions]: 关闭蓝牙扫描发现
+07-29 06:37:39.302516 PM [CHudiAP2Server] ###### Switch to Wi-Fi iAP2!
+07-29 06:37:39.308541 PM [CHudiAP2Server] StartRecvBroadCastiAP!
+2023-07-29 06:37:39.340825 PM [AirPlayReceiverSessionScreen] ### kAirPlayScreenOpCode_VideoConfig: 0x16!!!!
+2023-07-29 06:37:39.340998 PM [AirPlayReceiverSessionScreen] small params 00 16 01 
+2023-07-29 06:37:39.341075 PM [AirPlayReceiverSessionScreen] params 22 4c 51 4c 11 09 00 00 00 00 48 44 00 00 f0 43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 48 44 00 00 f0 43 00 00 00 00 00 00 00 00 00 00 48 44 00 00 f0 43 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+2023-07-29 06:37:39.341167 PM [AirPlayReceiverSessionScreen] inHeader->bodySize 39 
+2023-07-29 06:37:39.341218 PM [AirPlayReceiverSessionScreen] body 01 64 00 1f ff e1 00 14 27 64 00 1f ac 13 14 50 32 0f 69 b8 08 08 30 36 82 21 19 60 01 00 04 28 ee 3c b0 02 00 00 00 
+2023-07-29 06:37:39.341290 PM [ScreenStream] ### Screen set widthPixels: 800
+2023-07-29 06:37:39.341355 PM [ScreenStream] ### Screen set heightPixels: 480
+2023-07-29 06:37:39.341416 PM [ScreenStream] ### Screen set avcc data: 39, 1f006401
+2023-07-29 06:37:39.341539 PM [ScreenStream] 
+01 64 00 1f ff e1 00 14 27 64 00 1f ac 13 14 50 
+32 0f 69 b8 08 08 30 36 82 21 19 60 01 00 04 28 
+ee 3c b0 02 00 00 00 
+2023-07-29 06:37:39.344392 PM [ScreenStream] ### Send h264 I frame data 9744 byte!
+07-29 06:37:39.397209 PM [CHudiAP2Server] dispatch_main Quit!!
+07-29 06:37:39.397608 PM [CHudiAP2Server] StopRecvBroadCastiAP!
+2023-07-29 06:37:39.664911 PM [AirPlayReceiverSessionScreen] Late frame (10535 byte, 176 ms, 1 total late frames): 2729000000000000d0effb7611090000 ... 7a1f9973eb29e564903c743fc8734be6
+2023-07-29 06:37:39.684930 PM [AirPlayReceiverSessionScreen] Late frame (9900 byte, 179 ms, 2 total late frames): ac260000000000006133407b11090000 ... 7ffa706f45eb317135ac102bcc956dd4
+2023-07-29 06:37:39.704108 PM [AirPlayReceiverSessionScreen] Late frame (12567 byte, 182 ms, 3 total late frames): 1731000000000000f276847f11090000 ... ac0d24caed97e8017bd5157726d42fd1
+2023-07-29 06:37:39.726964 PM [AirPlayReceiverSessionScreen] Late frame (12536 byte, 188 ms, 4 total late frames): f83000000000000083bac88311090000 ... a0e7dd6aca58bdb57164188988dde85e
+[D]2023-07-29 18:37:39.760 122-76fb4000/ARMadb-driver[Accessory_fd]: recv CarPlay size info:800x480
+[D]2023-07-29 18:37:39.761 122-76fb4000/ARMadb-driver[MiddleManInterface]: pid:142 RiddleLinktype_UNKOWN?(32) connected, fd=13
+07-29 06:37:39.762404 PM [ArmadbdriverClient] CarPlay do nothing about startLinkVideo
+07-29 06:37:39.762597 PM [ArmadbdriverClient] _On_Message: 1
+07-29 06:37:39.762794 PM [ArmadbdriverClient] _On_Srceen_OnOff: 1
+07-29 06:37:39.763004 PM [ArmadbdriverClient] _On_Image_SizeChanged: 800x480
+07-29 06:37:39.763116 PM [ArmadbdriverClient] SPSPPS: 01 64 00 1f ff e1 00 14 27 64 00 1f ac 13 14 50 32 0f 69 b8 08 08 30 36 82 21 19 60 01 00 04 28
+07-29 06:37:39.763258 PM [VideoSource] VideoSource_control: inCommand=startLinkVideo
+07-29 06:37:39.763453 PM [VideoSource] spspps diffByte: 0
+07-29 06:37:39.764277 PM [VideoSource] ###VideoConfig! w=800 h=480
+07-29 06:37:39.765397 PM [ArmadbdriverClient] I frame frameCount=1
+[D]2023-07-29 18:37:39.765 122-76fb4000/ARMadb-driver[MiddleManInterface]: pid:142 RiddleLinktype_UNKOWN?(34) connected, fd=14
+[W]2023-07-29 18:37:39.771 177-714d3450/fakeiOSDevice[BoxVideoUtils]: no free frame buffer in cache, use malloc
+[W]2023-07-29 18:37:39.772 177-714d3450/fakeiOSDevice[BoxVideoUtils]: no free frame buffer in cache, use malloc
+[W]2023-07-29 18:37:39.772 177-714d3450/fakeiOSDevice[BoxVideoUtils]: no free frame buffer in cache, use malloc
+2023-07-29 06:37:39.782086 PM [AirPlayReceiverSessionScreen] Late frame (11781 byte, 193 ms, 5 total late frames): 052e0000000000003785959011090000 ... 33b9c61df8c2824af20837a4090854ff
+07-29 06:37:39.807524 PM [CiAP2Session_CarPlay] Message from iPhone: 0x1D00 StartIdentify
+(_get_SeriallNumber)+789: set box serial number: 2022.05.16.1659eefe
+
+07-29 06:37:39.822013 PM [iAP2IdentifyEngine] bWireLess_=1, bMediumTypeIsBT_=0
+07-29 06:37:39.823570 PM [iAP2IdentifyEngine] identifyItemsArray send to iPhone: {
+    "id" : 65535
+    "friendlyName" : "IdentifyInfo"
+    "type" : "array"
+    "value" : 
+    [
+        {
+            "id" : 0
+            "friendlyName" : "name"
+            "type" : "utf8_string"
+            "value" : "VOLKSWAGEN-10D4"
+        },
+        {
+            "id" : 1
+            "friendlyName" : "modelIdentifier"
+            "type" : "utf8_string"
+            "value" : "Magic-Car-Link-1.00"
+        },
+        {
+            "id" : 2
+            "friendlyName" : "manufacturer"
+            "type" : "utf8_string"
+            "value" : "Magic Tec."
+        },
+        {
+            "id" : 3
+            "friendlyName" : "serialNumber"
+            "type" : "utf8_string"
+            "value" : "2022.05.16.1659eefe
+"
+        },
+        {
+            "id" : 4
+            "friendlyName" : "firmwareVersion"
+            "type" : "utf8_string"
+            "value" : "1.0.0"
+        },
+        {
+            "id" : 5
+            "friendlyName" : "hardwareVersion"
+            "type" : "utf8_string"
+            "value" : "1.0.0"
+        },
+        {
+            "id" : 6
+            "friendlyName" : "messagesSentByAccessory"
+            "type" : "blob"
+            "explain" : 
+            [
+                "5703: WifiConfigInfo",
+                "4154: StartCallStateUpdate",
+                "4156: StopCallStateUpdate",
+                "4157: StartCommunicationUpdate",
+                "4159: StopCommunicationUpdate",
+                "FFFB: LocationInformation"
+            ]
+            "value" : 57034154 41564157 4159fffb          |W^ATAVAWAY^^    | (12 bytes)
+        },
+        {
+            "id" : 7
+            "friendlyName" : "messagesReceivedFromDevice"
+            "type" : "blob"
+            "explain" : 
+            [
+                "5702: ReqWifiConfig",
+                "4E0D: WirelessCarPlayUpdateMsg",
+                "4E0E: TransportNotify",
+                "4155: CallStateUpdate",
+                "4158: CommunicationUpdate",
+                "FFFA: StartLocationInformation",
+                "FFFC: StopLocationInformation"
+            ]
+            "value" : 57024e0d 4e0e4155 4158fffa fffc     |W^N^N^AUAX^^^^  | (14 bytes)
+        },
+        {
+            "id" : 8
+            "friendlyName" : "powerProvidingCapability"
+            "type" : "uint8"
+            "value" : 2
+        },
+        {
+            "id" : 9
+            "friendlyName" : "maximumCurrentDrawnFromDevice"
+            "type" : "uint16"
+            "value" : 0
+        },
+        {
+            "id" : 12
+            "friendlyName" : "currentLanguage"
+            "type" : "utf8_string"
+            "value" : "en"
+        },
+        {
+            "id" : 13
+            "friendlyName" : "supportedLanguage"
+            "type" : "utf8_string"
+            "value" : "en"
+        },
+        {
+            "id" : 17
+            "friendlyName" : "bluetoothTransportComponent"
+            "type" : "group"
+            "value" : 
+            [
+                {
+                    "id" : 0
+                    "friendlyName" : "transportComponentIdentifier"
+                    "type" : "uint16"
+                    "value" : 1
+                },
+                {
+                    "id" : 1
+                    "friendlyName" : "transportComponentName"
+                    "type" : "utf8_string"
+                    "value" : "IAP2-Bluetooth"
+                },
+                {
+                    "id" : 2
+                    "friendlyName" : "transportSupportsiAP2Connection"
+                    "type" : "none"
+                },
+                {
+                    "id" : 3
+                    "friendlyName" : "bluetoothTransportMediaAccessControlAddress"
+                    "type" : "blob"
+                    "value" : 684e056c fabe                       |hN^l^^          | (6 bytes)
+                }
+            ]
+        },
+        {
+            "id" : 20
+            "friendlyName" : "vehicleInformationComponent"
+            "type" : "group"
+            "value" : 
+            [
+                {
+                    "id" : 0
+                    "friendlyName" : "identifier"
+                    "type" : "uint16"
+                    "value" : 1
+                },
+                {
+                    "id" : 1
+                    "friendlyName" : "name"
+                    "type" : "utf8_string"
+                    "value" : "Auto Box"
+                },
+                {
+                    "id" : 2
+                    "friendlyName" : "engineType"
+                    "type" : "uint8"
+                    "value" : 0
+                },
+                {
+                    "id" : 6
+                    "friendlyName" : "displayName"
+                    "type" : "utf8_string"
+                    "value" : "VOLKSWAGEN-10D4"
+                }
+            ]
+        },
+        {
+            "id" : 22
+            "friendlyName" : "locationInformationComponent"
+            "type" : "group"
+            "value" : 
+            [
+                {
+                    "id" : 0
+                    "friendlyName" : "identifier"
+                    "type" : "uint16"
+                    "value" : 41
+                },
+                {
+                    "id" : 1
+                    "friendlyName" : "name"
+                    "type" : "utf8_string"
+                    "value" : "LOCATIONINFOCOMP"
+                },
+                {
+                    "id" : 20
+                    "friendlyName" : "vihicleSpeedData"
+                    "type" : "none"
+                }
+            ]
+        },
+        {
+            "id" : 24
+            "friendlyName" : "wirelessCarPlayTransportComponent"
+            "type" : "group"
+            "value" : 
+            [
+                {
+                    "id" : 0
+                    "friendlyName" : "transportComponentIdentifier"
+                    "type" : "uint16"
+                    "value" : 2
+                },
+                {
+                    "id" : 1
+                    "friendlyName" : "transportComponentName"
+                    "type" : "utf8_string"
+                    "value" : "IAP2-Wireless"
+                },
+                {
+                    "id" : 2
+                    "friendlyName" : "transportSupportsiAP2Connection"
+                    "type" : "none"
+                },
+                {
+                    "id" : 4
+                    "friendlyName" : "transportSupportsCarPlay"
+                    "type" : "none"
+                }
+            ]
+        }
+    ]
+}
+
+07-29 06:37:39.827717 PM [iAP2Engine] Send_changes:IdentifyInfo(0x1D01)
+2023-07-29 06:37:39.896316 PM [AirPlayReceiverSessionScreen] Late frame (29199 byte, 157 ms, 6 total late frames): 0f7200000000000053e5fbb611090000 ... 16b7a3542665a132c962fee136a1db80
+07-29 06:37:39.905966 PM [CiAP2Session_CarPlay] Message from iPhone: 0x1D02 IdentifyAccept
+07-29 06:37:39.914129 PM [CiAP2Session_CarPlay] Message from iPhone: 0xAA00 ReqAuthCert
+07-29 06:37:39.916762 PM [mfi_auth] MFI_AUTH_COP_REG_ADDR_ACC_CERT_LEN: 945
+ClosedByPeer 1! 9
+[W]2023-07-29 18:37:39.933 122-76fb4000/ARMadb-driver[RiddleDataExchangeUtils]: ReadOne fail!!! err=9 cmd=Unkown RiddleHUDComand?(241) size=0 pid=142 _fd=-1
+ClosedByPeer 2! -1
+ClosedByPeer 1! 11
+[W]2023-07-29 18:37:40.3 122-76fb4000/ARMadb-driver[RiddleDataExchangeUtils]: ReadOne fail!!! err=9 cmd=Command(5) size=4 pid=142 _fd=-1
+ClosedByPeer 2! -1
+2023-07-29 06:37:40.005247 PM [AirPlayReceiverSessionScreen] Late frame (30910 byte, 249 ms, 7 total late frames): be78000000000000e42840bb11090000 ... 30f32597cb8938182582e284b17556e6
+2023-07-29 06:37:40.053433 PM [AirPlayReceiverSessionScreen] Late frame (8055 byte, 281 ms, 8 total late frames): 771f000000000000766c84bf11090000 ... d1a60c8ed30f3ad1dd00b36d92a02edd
+[D]2023-07-29 18:37:40.91 122-7592a450/ARMadb-driver[Accessory_fd]: box video frame rate: 18, 241.81 KB/s, audio frame rate: 0, 0.00 KB/s
+2023-07-29 06:37:40.116654 PM [AirPlayReceiverSessionScreen] Late frame (12462 byte, 328 ms, 9 total late frames): ae3000000000000007b0c8c311090000 ... b59a31fd4e46b00dc32c6ab9fa6eeb99
+07-29 06:37:40.127115 PM [CiAP2Session_CarPlay] Message from iPhone: 0xAA02 ReqChallenge
+07-29 06:37:40.127558 PM [mfi_auth] mfi_auth_processchallenge start
+07-29 06:37:40.132680 PM [mfi_auth] mfi_auth_processchallenge MFI_AUTH_COP_REG_ADDR_AUTH_CTRL_AND_STATUS
+2023-07-29 06:37:40.143209 PM [AirPlayReceiverSessionScreen] Late frame (24410 byte, 321 ms, 10 total late frames): 5a5f0000000000002a3751cc11090000 ... aa26d538c523a6747cc5f3c3949d4584
+2023-07-29 06:37:40.182403 PM [AirPlayReceiverSessionScreen] Late frame (10158 byte, 343 ms, 11 total late frames): ae27000000000000bb7a95d011090000 ... 8dc898b632b4361117b546cbc80be18c
+2023-07-29 06:37:40.228725 PM [AirPlayReceiverSessionScreen] Late frame (10038 byte, 306 ms, 12 total late frames): 362700000000000092cceae511090000 ... abcb07e0dda78aea30d40e3f100aa2d4
+mDNSResponder: Skip SendResponses service:Auto\032Box._airplay._tcp.local. on usb0
+2023-07-29 18:37:40.855194: HCI Command status: 0x00 0x01 0x0406
+07-29 06:37:40.938753 PM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:RemoteDeviceDisconnectRequested
+07-29 06:37:40.938960 PM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.riddle.BluetoothControl:StopListen
+07-29 06:37:40.939062 PM [RiddleBluetoothService_Interface_Control] RiddleBluetoothService_Interface_Control::OnDbusMessage StopListen
+[D]2023-07-29 18:37:40.941 122-76fb4000/ARMadb-driver[Accessory_fd]: _SendPhoneCommandToCar: DeviceBluetoothNotConnected(1008)
+[D]2023-07-29 18:37:40.941 122-76fb4000/ARMadb-driver[BluetoothDaemonControler_fd]: OnConnectDeviceCallback_End
+07-29 06:37:40.941579 PM [Theme_AndroidAuto_Brain] Bluetooth_DisConnect(0025)
+07-29 06:37:40.941878 PM [Theme_AndroidAuto_Brain] 自动连接设置为 5 秒
+07-29 06:37:40.942087 PM [Theme_AndroidAuto_Brain] 	From AccessoryDaemon Get ########## CarPlayControl(8) DeviceBluetoothNotConnected(1008)
+07-29 06:37:40.942248 PM [BoxProtocol] CarPlayControl DeviceBluetoothNotConnected(1008)
+07-29 06:37:40.942317 PM [CarPlayServer] _OnPhoneCommand me=0x02336918
+07-29 06:37:41.024354 PM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:RemoteDeviceDisconnected
+[D]2023-07-29 18:37:41.24 146-76f06210/bluetoothDaemon[RiddleDataExchangeUtils]: what the fuck!!!! -1 - 12
+07-29 06:37:41.026716 PM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:ModeChanged
+07-29 06:37:41.026897 PM [RiddleBluetoothService_Interface_Control] ModeChanged connectable
+07-29 06:37:41.026990 PM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Adapter:PropertyChanged
+07-29 06:37:41.243274 PM [iAP2] wait link start msg
+[D]2023-07-29 18:37:41.244 122-76fb4000/ARMadb-driver[MiddleManInterface]: pid:142 CarPlay(3) connected, fd=9
+07-29 06:37:41.565558 PM [mfi_auth] MFI_AUTH_COP_REG_ADDR_AUTH_CTRL_AND_STATUS get status 16
+07-29 06:37:41.566541 PM [mfi_auth] MFI_AUTH_COP_REG_ADDR_SIGNATURE_LEN 128
+07-29 06:37:41.580870 PM [mfi_auth] MFI_AUTH_COP_REG_ADDR_SIGNATURE_DATA 0
+07-29 06:37:41.647894 PM [CiAP2Session_CarPlay] Message from iPhone: 0xAA05 AuthSuccess
+07-29 06:37:41.648069 PM [CHudiAP2Server] ###### IAP2 SchedulDone stat: AuthSuccess
+07-29 06:37:41.652928 PM [iAP2CallStateEngine] AskiPhone_StartCallStateUpdate to iPhone: {
+    "id" : 65535
+    "friendlyName" : "CallStateItems_Usablity"
+    "type" : "array"
+    "value" : 
+    [
+        {
+            "id" : 0
+            "friendlyName" : "RemoteID"
+            "type" : "none"
+        },
+        {
+            "id" : 1
+            "friendlyName" : "DisplayName"
+            "type" : "none"
+        },
+        {
+            "id" : 2
+            "friendlyName" : "Status"
+            "type" : "none"
+        },
+        {
+            "id" : 3
+            "friendlyName" : "Direction"
+            "type" : "none"
+        },
+        {
+            "id" : 4
+            "friendlyName" : "CallUUID"
+            "type" : "none"
+        },
+        {
+            "id" : 6
+            "friendlyName" : "AddressBookID"
+            "type" : "none"
+        },
+        {
+            "id" : 7
+            "friendlyName" : "Label"
+            "type" : "none"
+        },
+        {
+            "id" : 8
+            "friendlyName" : "Service"
+            "type" : "none"
+        },
+        {
+            "id" : 9
+            "friendlyName" : "IsConferenced"
+            "type" : "none"
+        },
+        {
+            "id" : 10
+            "friendlyName" : "ConferenceGroup"
+            "type" : "none"
+        },
+        {
+            "id" : 11
+            "friendlyName" : "DisconnectReson"
+            "type" : "none"
+        }
+    ]
+}
+
+07-29 06:37:41.653692 PM [iAP2Engine] Send_changes:StartCallStateUpdate(0x4154)
+07-29 06:37:41.655872 PM [iAP2Engine] Send_changes:StartCommunicationUpdate(0x4157)
+07-29 06:37:41.658366 PM [CiAP2Session_CarPlay] Message from iPhone: 0x5702 ReqWifiConfig
+07-29 06:37:41.658761 PM [iAP2WiFiConfigEngine] set wifi ssid name: VOLKSWAGENA2
+07-29 06:37:41.659586 PM [iAP2WiFiConfigEngine] set wifi pwd: 12345678
+07-29 06:37:41.659742 PM [iAP2Engine] Send_changes:WifiConfigInfo(0x5703)
+07-29 06:37:41.688421 PM [CiAP2Session_CarPlay] Message from iPhone: 0x4E0D WirelessCarPlayUpdateMsg
+07-29 06:37:41.690244 PM [CiAP2Session_CarPlay] Message:WirelessCarPlayUpdateMsg, status: 1
+07-29 06:37:41.694408 PM [CiAP2Session_CarPlay] Message from iPhone: 0x4E0E TransportNotify
+07-29 06:37:41.712978 PM [CiAP2Session_CarPlay] Message:TransportNotify! id=0 size=22
+07-29 06:37:41.713856 PM [CiAP2Session_CarPlay] Message from iPhone: 0xFFFA StartLocationInformation
+07-29 06:37:41.714003 PM [CiAP2Session_CarPlay] Message 0xFFFA StartLocationInformation Come!
+[D]2023-07-29 18:37:41.714 122-76fb4000/ARMadb-driver[MiddleManInterface]: pid:142 RiddleLinktype_UNKOWN?(33) connected, fd=11
+07-29 06:37:41.715926 PM [iAP2LocationEngine] OnPlistBinaryFromAccessoryDaemon - msg:StartLocationInformation :
+{
+    "id" : 65535
+    "friendlyName" : "LocationAskSart"
+    "type" : "array"
+    "value" : 
+    [
+        {
+            "id" : 4
+            "friendlyName" : "VehicleSpeedData"
+            "type" : "none"
+        }
+    ]
+}
+
+07-29 06:37:41.716242 PM [iAP2Engine] Send_changes:StartLocationInformation(0xFFFA)
+07-29 06:37:41.716686 PM [iAP2Server] OOOO Seq(250) Ack(73) Len(20): ff 5a 00 14 40 fa 49 01 0f 40 40 00 0a ff fa 00 04 00 04 75
+07-29 06:37:41.718131 PM [iAP2Server] IIII Seq(73) Ack(250):ff 5a 00 09 40 49 fa 00 1b
+07-29 06:37:41.720682 PM [CiAP2Session_CarPlay] Message from iPhone: 0x4155 CallStateUpdate
+07-29 06:37:41.720928 PM [iAP2CallStateEngine] callStateItemsArray: {
+    "id" : 65535
+    "friendlyName" : "CallStateItems"
+    "type" : "array"
+    "value" : 
+    [
+        {
+            "id" : 2
+            "friendlyName" : "Status"
+            "type" : "uint8"
+            "value" : 0
+        }
+    ]
+}
+
+07-29 06:37:41.723298 PM [iAP2Engine] Send_changes:CallStateUpdate(0x4155)
+07-29 06:37:41.723575 PM [iAP2Server] OOOO Seq(251) Ack(73) Len(21): ff 5a 00 15 40 fb 49 01 0d 40 40 00 0b 41 55 00 05 00 02 00 d8
+07-29 06:37:41.724830 PM [iAP2Server] IIII Seq(73) Ack(251):ff 5a 00 09 40 49 fb 00 1a
+07-29 06:37:41.727799 PM [CiAP2Session_CarPlay] Message from iPhone: 0x4158 CommunicationUpdate
+07-29 06:37:41.732395 PM [iAP2Engine] Send_changes:CommunicationUpdate(0x4158)
+07-29 06:37:41.732795 PM [iAP2Server] OOOO Seq(252) Ack(73) Len(110): ff 5a 00 6e 40 fc 49 01 b3 40 40 00 64 41 58 00 05 00 00 01 00 05 00 01 01 00 05 00 02 00 00 0e 00 04 e6 97 a0 53 49 4d e5 8d a1 00 00 05 00 05 01 00 05 00 06 01 00 05 00 07 00 00 05 00 08 00
+07-29 06:37:41.734796 PM [iAP2Server] IIII Seq(73) Ack(252):ff 5a 00 09 40 49 fc 00 19
+07-29 06:37:42.224943 PM [iAP2Server] IIII Seq(74) Ack(252):ff 5a 00 b3 40 4a fc 01 6d 40 40 00 a9 ff fb 00 a3 00 00 24 50 41 53 43 44 2c 36 36 38 30 39 2e 38 32 38 2c 43 2c 4e 2c 30 2c 31 30 2c 30 2e 30 30 2c 31 38 32 2e 30 34 32 2c 30 2e 30 35 2c 31
+07-29 06:37:42.226163 PM [iAP2Engine] Send_changes:LocationInformation(0xFFFB)
+07-29 06:37:42.228147 PM [iAP2Server] OOOO Seq(252) Ack(74) Len(9): ff 5a 00 09 40 fc 4a 00 18
+07-29 06:37:42.263723 PM [CiAP2Session_CarPlay] Message from iPhone: 0xFFFC StopLocationInformation
+07-29 06:37:42.263909 PM [CiAP2Session_CarPlay] Message 0xFFFC StopLocationInformation Come!
+07-29 06:37:42.264587 PM [iAP2Engine] Send_changes:StopLocationInformation(0xFFFC)
+07-29 06:37:42.265223 PM [iAP2Server] OOOO Seq(253) Ack(74) Len(16): ff 5a 00 10 40 fd 4a 01 0f 40 40 00 06 ff fc 7f
+07-29 06:37:42.270880 PM [iAP2Server] IIII Seq(74) Ack(253):ff 5a 00 09 40 4a fd 00 17
+[D]2023-07-29 18:37:44.895 683-0/server.cgi[server]: recv cmd :reset  ts :1690627065915  sign :683948eaf0106791a1e132fa1aef7cab

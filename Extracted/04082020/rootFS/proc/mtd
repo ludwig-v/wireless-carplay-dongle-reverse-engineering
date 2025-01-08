@@ -1,4 +1,0 @@
-dev:    size   erasesize  name
-mtd0: 00040000 00010000 "uboot"
-mtd1: 005c0000 00010000 "kernel"
-mtd2: 00a00000 00010000 "rootfs"

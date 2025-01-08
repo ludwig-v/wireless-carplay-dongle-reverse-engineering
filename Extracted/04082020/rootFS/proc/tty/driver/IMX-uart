@@ -1,4 +1,0 @@
-serinfo:1.0 driver revision:
-0: uart:IMX mmio:0x02020000 irq:58 tx:0 rx:0 DSR|CD
-1: uart:IMX mmio:0x021E8000 irq:59 tx:0 rx:0 DSR|CD
-2: uart:IMX mmio:0x021EC000 irq:60 tx:34633 rx:8957 RTS|DTR|DSR|CD

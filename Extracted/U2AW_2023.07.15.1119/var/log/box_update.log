@@ -1,0 +1,1449 @@
+Save update log
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                12.5M     11.1M      1.4M  89% /
+devtmpfs                 60.2M         0     60.2M   0% /dev
+tmpfs                    60.3M      4.6M     55.6M   8% /tmp
+/dev/sda                122.7M      6.5M    116.2M   5% /mnt/UPAN
+MemTotal:         123436 kB
+MemFree:           91616 kB
+MemAvailable:      99124 kB
+Buffers:             132 kB
+Cached:            14860 kB
+SwapCached:            0 kB
+Active:            10956 kB
+Inactive:          12196 kB
+Active(anon):       8788 kB
+Inactive(anon):     4104 kB
+Active(file):       2168 kB
+Inactive(file):     8092 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:          8176 kB
+Mapped:             2400 kB
+Shmem:              4744 kB
+Slab:               5024 kB
+SReclaimable:       1504 kB
+SUnreclaim:         3520 kB
+KernelStack:         592 kB
+PageTables:          392 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:       61716 kB
+Committed_AS:      33904 kB
+VmallocTotal:    1941504 kB
+VmallocUsed:        8416 kB
+VmallocChunk:    1719048 kB
+S   UID   PID  PPID   VSZ   RSS TTY   STIME TIME     CMD
+S     0     1     0  3204   692 0:0   23:59 00:00:02 init
+S     0     2     0     0     0 0:0   23:59 00:00:00 [kthreadd]
+S     0     3     2     0     0 0:0   23:59 00:00:00 [ksoftirqd/0]
+S     0     4     2     0     0 0:0   23:59 00:00:00 [kworker/0:0]
+S     0     5     2     0     0 0:0   23:59 00:00:00 [kworker/0:0H]
+S     0     6     2     0     0 0:0   23:59 00:00:00 [kworker/u2:0]
+S     0     7     2     0     0 0:0   23:59 00:00:00 [rcu_preempt]
+S     0     8     2     0     0 0:0   23:59 00:00:00 [rcu_sched]
+S     0     9     2     0     0 0:0   23:59 00:00:00 [rcu_bh]
+S     0    10     2     0     0 0:0   23:59 00:00:00 [migration/0]
+S     0    11     2     0     0 0:0   23:59 00:00:00 [khelper]
+S     0    12     2     0     0 0:0   23:59 00:00:00 [kdevtmpfs]
+S     0    13     2     0     0 0:0   23:59 00:00:00 [writeback]
+S     0    14     2     0     0 0:0   23:59 00:00:00 [bioset]
+S     0    15     2     0     0 0:0   23:59 00:00:00 [crypto]
+S     0    16     2     0     0 0:0   23:59 00:00:00 [kblockd]
+S     0    17     2     0     0 0:0   23:59 00:00:00 [ata_sff]
+S     0    18     2     0     0 0:0   23:59 00:00:00 [khubd]
+S     0    19     2     0     0 0:0   23:59 00:00:00 [kworker/u2:1]
+S     0    26     2     0     0 0:0   23:59 00:00:00 [kworker/0:1]
+S     0    27     2     0     0 0:0   23:59 00:00:00 [cfg80211]
+S     0    28     2     0     0 0:0   23:59 00:00:00 [cfinteractive]
+S     0    29     2     0     0 0:0   23:59 00:00:00 [kswapd0]
+S     0    30     2     0     0 0:0   23:59 00:00:00 [fsnotify_mark]
+D     0    38     2     0     0 0:0   23:59 00:00:00 [ttyLogFileThrea]
+S     0    39     2     0     0 0:0   23:59 00:00:00 [spi32766]
+S     0    42     2     0     0 0:0   23:59 00:00:00 [ci_otg]
+S     0    43     2     0     0 0:0   23:59 00:00:00 [ci_otg]
+S     0    44     2     0     0 0:0   23:59 00:00:00 [kworker/u2:2]
+S     0    45     2     0     0 0:0   23:59 00:00:00 [watchdog]
+S     0    46     2     0     0 0:0   23:59 00:00:00 [ipv6_addrconf]
+S     0    47     2     0     0 0:0   23:59 00:00:00 [krfcommd]
+S     0    48     2     0     0 0:0   23:59 00:00:00 [deferwq]
+S     0    49     2     0     0 0:0   23:59 00:00:00 [irq/81-imx_ther]
+S     0    50     2     0     0 0:0   23:59 00:00:06 [jffs2_gcd_mtd2]
+S     0    60     1  3204    84 0:0   23:59 00:00:00 init
+S     0    65     1  4120  1420 0:0   23:59 00:00:00 colorLightDaemon
+S     0    97     2     0     0 0:0   23:59 00:00:00 [kworker/u3:0]
+S     0    98     2     0     0 0:0   23:59 00:00:00 [MOAL_HANG_WORK_]
+S     0    99     2     0     0 0:0   23:59 00:00:00 [MOAL_WORK_QUEUE]
+S     0   100     2     0     0 0:0   23:59 00:00:00 [MOAL_EVT_WORK_Q]
+S     0   101     2     0     0 0:0   23:59 00:00:00 [MOAL_RX_WORK_QU]
+S     0   102     2     0     0 0:0   23:59 00:00:00 [woal_reassoc_se]
+S     0   103     2     0     0 0:0   23:59 00:00:00 [ksdioirqd/mmc0]
+S     0   104     2     0     0 0:0   00:00 00:00:00 [kworker/u3:1]
+S     0   106     2     0     0 0:0   00:00 00:00:00 [CSAwfd1]
+S     0   131     2     0     0 0:0   00:00 00:00:00 [hci0]
+S     0   132     2     0     0 0:0   00:00 00:00:00 [hci0]
+S     0   134     2     0     0 0:0   00:00 00:00:00 [kworker/u3:2]
+S     0   137     1  2024   324 0:0   00:00 00:00:00 hciattach /dev/ttymxc2 an
+S     0   139     1 19596  5188 0:0   00:00 00:00:15 ./fakeiOSDevice
+S     0   149     2     0     0 0:0   00:00 00:00:00 [kworker/0:2]
+S     0   154     1 16004  2696 0:0   00:00 00:00:00 bluetoothDaemon -n
+S     0   170     1  4348   884 0:0   00:00 00:00:00 dbus-daemon --system --pr
+S     0   202     1  2364   600 0:0   00:00 00:00:00 boa
+S     0   216     1  3796  1460 0:0   00:00 00:00:00 hostapd /etc/hostapd.conf
+S     0   225     1  3204   460 0:0   00:00 00:00:00 udhcpd
+S     0   233     1  4176  1380 0:0   00:00 00:00:00 hwSecret
+S     0   234     1  3204   612 0:0   00:00 00:00:00 {exe} ash /script/cpu_Usa
+S     0   235     1  3204   612 0:0   00:00 00:00:00 {exe} ash /script/check_l
+S     0   236   234  2204   752 0:0   00:00 00:00:00 riddle_top -m 3 -d 8
+S     0   367     2     0     0 0:0   00:01 00:00:00 [scsi_eh_0]
+S     0   368     2     0     0 0:0   00:01 00:00:00 [scsi_tmf_0]
+S     0   369     2     0     0 0:0   00:01 00:00:00 [usb-storage]
+S     0   393     2     0     0 0:0   00:01 00:00:00 [kworker/u2:3]
+S     0   400     2     0     0 0:0   00:01 00:00:00 [kworker/0:1H]
+S     0   403     1  3204   636 0:0   00:01 00:00:00 {exe} ash /script/update_
+S     0  1027   235  3072   412 0:0   00:01 00:00:00 sleep 30
+S     0  1131   234  3072   412 0:0   00:01 00:00:00 sleep 8
+S     0  1198   403  3204   608 0:0   00:01 00:00:00 {exe} ash /tmp/update/tmp
+R     0  1201  1198  3208   680 0:0   00:01 00:00:00 ps -l
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 3.14.52+g94d07bb (sky@sky-vmware-1604) (gcc version 4.9.2 (GCC) ) #479 SMP PREEMPT Tue Dec 20 14:13:11 CST 2022
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: Freescale i.MX6 UltraLite 14x14 EVK Board
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 32768
+[    0.000000] free_area_init_node: node 0, pgdat 805f6a80, node_mem_map 87ef8000
+[    0.000000]   Normal zone: 256 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 32768 pages, LIFO batch:7
+[    0.000000] PERCPU: Embedded 8 pages/cpu @87ee3000 s8256 r8192 d16320 u32768
+[    0.000000] pcpu-alloc: s8256 r8192 d16320 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 32512
+[    0.000000] Kernel command line: console=ttyLogFile0 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=21e0000.qspi:256k(uboot),3328K(kernel),12800K(rootfs) rootwait quiet rw
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 123232K/131072K available (4268K kernel code, 197K rwdata, 1400K rodata, 204K init, 478K bss, 7840K reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0x88800000 - 0xff000000   (1896 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0x88000000   ( 128 MB)
+[    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+[    0.000000]       .text : 0x80008000 - 0x805913dc   (5669 kB)
+[    0.000000]       .init : 0x80592000 - 0x805c5040   ( 205 kB)
+[    0.000000]       .data : 0x805c6000 - 0x805f75e0   ( 198 kB)
+[    0.000000]        .bss : 0x805f75ec - 0x8066efc8   ( 479 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] Switching to timer-based delay loop
+[    0.000022] sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 1431655765682ns
+[    0.001570] clocksource_of_init: no matching clocksources found
+[    0.001848] log file data init success
+[    0.001955] console [ttyLogFile0] enabled
+[    0.001969] tty-log-file: registered console driver for tty log file 0
+[    0.002164] Console: colour dummy device 80x30
+[    0.002202] Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=30000)
+[    0.002232] pid_max: default: 32768 minimum: 301
+[    0.002615] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.002636] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.004272] CPU: Testing write buffer coherency: ok
+[    0.004798] CPU0: update cpu_power 1024
+[    0.004823] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.004877] Setting up static identity map for 0x8040c928 - 0x8040c980
+[    0.040843] Brought up 1 CPUs
+[    0.040868] SMP: Total of 1 processors activated (6.00 BogoMIPS).
+[    0.040879] CPU: All CPU(s) started in SVC mode.
+[    0.042271] devtmpfs: initialized
+[    0.053790] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.054564] pinctrl core: initialized pinctrl subsystem
+[    0.055422] regulator-dummy: no parameters
+[    0.056055] NET: Registered protocol family 16
+[    0.056732] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.058090] cpuidle: using governor ladder
+[    0.058109] cpuidle: using governor menu
+[    0.058367] Use WDOG1 as reset source
+[    0.078358] syscon 20c8000.anatop: regmap [mem 0x020c8000-0x020c8fff] registered
+[    0.079121] vdd3p0: 2625 <--> 3400 mV at 3000 mV 
+[    0.080038] cpu: 725 <--> 1450 mV at 1150 mV 
+[    0.081117] vddsoc: 725 <--> 1450 mV at 1175 mV 
+[    0.086493] syscon 20e4000.iomuxc-gpr: regmap [mem 0x020e4000-0x020e7fff] registered
+[    0.093305] syscon 21ac000.romcp: regmap [mem 0x021ac000-0x021affff] registered
+[    0.095180] syscon 21bc000.ocotp-ctrl: regmap [mem 0x021bc000-0x021bffff] registered
+[    0.102216] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.102237] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.103367] imx6ul-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+[    0.105411] 20dc000.gpc supply pu not found, using dummy regulator
+[    0.120354] bio: create slab <bio-0> at 0
+[    0.127540] mxs-dma 1804000.dma-apbh: initialized
+[    0.128557] can-3v3: 3300 mV 
+[    0.129270] wlreg_on: 3300 mV 
+[    0.130196] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58, base_baud = 5000000) is a IMX
+[    0.132168] 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 59, base_baud = 5000000) is a IMX
+[    0.133489] 21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 60, base_baud = 5000000) is a IMX
+[    0.135200] SCSI subsystem initialized
+[    0.135699] libata version 3.00 loaded.
+[    0.136118] usbcore: registered new interface driver usbfs
+[    0.136287] usbcore: registered new interface driver hub
+[    0.136597] usbcore: registered new device driver usb
+[    0.141180] i2c i2c-0: IMX I2C adapter registered
+[    0.141956] i2c i2c-1: IMX I2C adapter registered
+[    0.142886] Advanced Linux Sound Architecture Driver Initialized.
+[    0.144982] Bluetooth: Core ver 2.18
+[    0.145096] NET: Registered protocol family 31
+[    0.145110] Bluetooth: HCI device and connection manager initialized
+[    0.145144] Bluetooth: HCI socket layer initialized
+[    0.145172] Bluetooth: L2CAP socket layer initialized
+[    0.145284] Bluetooth: SCO socket layer initialized
+[    0.146236] cfg80211: Calling CRDA to update world regulatory domain
+[    0.146318] cfg80211: World regulatory domain updated:
+[    0.146331] cfg80211:  DFS Master region: unset
+[    0.146342] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[    0.146365] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (2000 mBi, 0 mBm)
+[    0.146382] cfg80211:   (2457000 KHz - 2482000 KHz @ 20000 KHz), (2000 mBi, 0 mBm)
+[    0.146400] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (2000 mBi, 0 mBm)
+[    0.146418] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (2000 mBi, 0 mBm)
+[    0.146436] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz), (2000 mBi, 0 mBm)
+[    0.146453] cfg80211:   (5490000 KHz - 5730000 KHz @ 160000 KHz), (2000 mBi, 0 mBm)
+[    0.146470] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (2000 mBi, 0 mBm)
+[    0.146488] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm)
+[    0.147154] Switched to clocksource mxc_timer1
+[    0.173540] NET: Registered protocol family 2
+[    0.175593] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.175650] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.175703] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.175808] TCP: reno registered
+[    0.175836] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.175892] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.176495] NET: Registered protocol family 1
+[    0.179298] ldo2p5-dummy: no parameters
+[    0.181569] Bus freq driver module loaded
+[    0.183484] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.200586] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.202383] fuse init (API version 7.22)
+[    0.203568] msgmni has been set to 240
+[    0.205549] io scheduler noop registered
+[    0.205569] io scheduler deadline registered
+[    0.205655] io scheduler cfq registered (default)
+[    0.206819] imx-weim 21b8000.weim: Driver registered.
+[    0.208545] imx-sdma 20ec000.sdma: no event needs to be remapped
+[    0.208752] imx-sdma 20ec000.sdma: loaded firmware 3.2
+[    0.217827] imx-sdma 20ec000.sdma: initialized
+[    0.219768] serial: Freescale lpuart driver
+[    0.245705] brd: module loaded
+[    0.257928] loop: module loaded
+[    0.264142] fsl-quadspi 21e0000.qspi: mx25l12805d (16384 Kbytes)
+[    0.264197] 3 cmdlinepart partitions found on MTD device 21e0000.qspi
+[    0.264212] Creating 3 MTD partitions on "21e0000.qspi":
+[    0.264239] 0x000000000000-0x000000040000 : "uboot"
+[    0.267345] 0x000000040000-0x000000380000 : "kernel"
+[    0.270209] 0x000000380000-0x000001000000 : "rootfs"
+[    0.272933] fsl-quadspi 21e0000.qspi: QuadSPI SPI NOR flash driver
+[    0.273899] spi_gpio spi4.16: gpio-miso property not found, switching to no-rx mode
+[    0.276935] usbcore: registered new interface driver cdc_ether
+[    0.277079] usbcore: registered new interface driver cdc_subset
+[    0.277341] usbcore: registered new interface driver zaurus
+[    0.277412] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.277427] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    0.277854] usbcore: registered new interface driver usb-storage
+[    0.281993] setup_reset_gpios:-2, flags 0
+[    0.282227] 2184000.usb supply vbus not found, using dummy regulator
+[    0.283423] mxs_phy 20c9000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.287079] ci_hdrc ci_hdrc.0: Init set fsm->a_vbus_vld = 1
+[    0.287955] setup_reset_gpios:-2, flags 0
+[    0.288326] 2184200.usb supply vbus not found, using dummy regulator
+[    0.289522] mxs_phy 20ca000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.290670] [otg_statemachine]  fsm->id = 0
+[    0.290687] [otg_set_state]  Set state: a_idle
+[    0.290705] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 1
+[    0.290744] ci_hdrc ci_hdrc.0: EHCI Host Controller
+[    0.295389] snvs_pwrkey 20cc000.snvs-pwrkey: can't get snvs clock
+[    0.296195] input: 20cc000.snvs-pwrkey as /devices/soc0/soc.1/2000000.aips-bus/20cc000.snvs-pwrkey/input/input0
+[    0.296377] snvs_pwrkey 20cc000.snvs-pwrkey: i.MX snvs powerkey probed
+[    0.297068] snvs_rtc 20cc034.snvs-rtc-lp: can't get snvs-rtc clock
+[    0.297779] check_alarm_past: alarm in the past
+[    0.298390] snvs_rtc 20cc034.snvs-rtc-lp: rtc core: registered 20cc034.snvs-rtc-lp as rtc0
+[    0.298708] i2c /dev entries driver
+[    0.300575] imx2-wdt 20bc000.wdog: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=0)
+[    0.301603] sdhci: Secure Digital Host Controller Interface driver
+[    0.301618] sdhci: Copyright(c) Pierre Ossman
+[    0.301629] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.303544] sdhci-esdhc-imx 2190000.usdhc: assigned as wifi host
+[    0.304790] mmc0: no vqmmc regulator found
+[    0.307343] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+[    0.308062] usb usb1: is_b_host:0, config:842e7600, parent:  (null), root_hub=842bf800
+[    0.308096] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.308120] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.308142] usb usb1: Product: EHCI Host Controller
+[    0.308165] usb usb1: Manufacturer: Linux 3.14.52+g94d07bb ehci_hcd
+[    0.308185] usb usb1: SerialNumber: ci_hdrc.0
+[    0.309972] hub 1-0:1.0: USB hub found
+[    0.310080] hub 1-0:1.0: 1 port detected
+[    0.311017] [otg_statemachine]  quit statemachine, changed = 1
+[    0.311119] [otg_set_state]  Set state: a_wait_vrise
+[    0.311157] [otg_statemachine]  quit statemachine, changed = 1
+[    0.347228] mmc0: SDHCI controller on 2190000.usdhc [2190000.usdhc] using ADMA
+[    0.359938] mmc1: no vqmmc regulator found
+[    0.359966] mmc1: no vmmc regulator found
+[    0.396125] mmc0: new high speed SDIO card at address 0001
+[    0.397262] mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+[    0.405707] wm8960 0-001a: Failed to issue reset
+[    0.405958] wm8960: probe of 0-001a failed with error -5
+[    0.412814] [otg_set_state]  Set state: a_wait_bcon
+[    0.412852] [otg_statemachine]  quit statemachine, changed = 1
+[    0.415275] fsl-asrc 2034000.asrc: driver registered
+[    0.435390] TCP: cubic registered
+[    0.448764] NET: Registered protocol family 10
+[    0.451095] sit: IPv6 over IPv4 tunneling driver
+[    0.453103] NET: Registered protocol family 17
+[    0.453440] Bluetooth: RFCOMM TTY layer initialized
+[    0.453488] Bluetooth: RFCOMM socket layer initialized
+[    0.453544] Bluetooth: RFCOMM ver 1.11
+[    0.453574] lib80211: common routines for IEEE802.11 drivers
+[    0.453588] lib80211_crypt: registered algorithm 'NULL'
+[    0.453602] lib80211_crypt: registered algorithm 'WEP'
+[    0.453614] lib80211_crypt: registered algorithm 'CCMP'
+[    0.453724] lib80211_crypt: registered algorithm 'TKIP'
+[    0.454424] check cpu speed flag: 03
+[    0.471017] can-3v3: disabling
+[    0.471041] regulator-dummy: disabling
+[    0.471801] driver->driver.name = android_usb ret=0
+[    0.471826] counting ret = 0 : 2184000.usb
+[    0.472070] file system registered
+[    0.472939] android_usb gadget: android_usb ready
+[    0.473082] snvs_rtc 20cc034.snvs-rtc-lp: setting system clock to 1970-01-01 00:00:00 UTC (0)
+[    0.523826] ALSA device list:
+[    0.523839]   No soundcards found.
+[    1.581748] VFS: Mounted root (jffs2 filesystem) on device 31:2.
+[    1.589861] devtmpfs: mounted
+[    1.590313] Freeing unused kernel memory: 204K (80592000 - 805c5000)
+[    2.699120] random: nonblocking pool is initialized
+[    3.909889] wlan: Loading MWLAN driver
+[    3.925299] vendor=0x02DF device=0x9149 class=0 function=1
+[    3.925447] Attach moal handle ops, card interface type: 0x105
+[    3.928018] SD8987: init module param from usr cfg
+[    3.928046] card_type: SD8987, config block: 0
+[    3.928063] fw_name=nxp/sdiouart8987_combo_v0.bin
+[    3.928077] mfg_mode = 0
+[    3.928087] drv_mode = 2
+[    3.928104] cal_data_cfg=none
+[    3.928116] uap_name=wlan
+[    3.928130] cfg80211_wext=0xf
+[    3.928140] ps_mode = 2
+[    3.928152] auto_ds = 2
+[    3.928184] SDIO: max_segs=128 max_seg_size=65535
+[    3.928195] rx_work=0 cpu_num=1
+[    3.928245] Attach mlan adapter operations.card_type is 0x105.
+[    3.928879] wlan: Enable TX SG mode
+[    3.928900] wlan: Enable RX SG mode
+[    3.937486] Request firmware: nxp/sdiouart8987_combo_v0.bin
+[    4.677717] Wlan: FW download over, firmwarelen=590548 downloaded 590548
+[    5.667297] WLAN FW is active
+[    5.667320] on_time is 0
+[    5.698725] fw_cap_info=0x181cbf03, dev_cap_mask=0xffffffff
+[    5.698767] max_p2p_conn = 8, max_sta_conn = 8
+[    5.786743] wlan: version = SD8987---16.87.10.p134-MXM4X16234-GPL-(FP92) 
+[    5.796394] wlan: Driver loaded successfully
+[    5.897745] HCI UART driver ver 2.2-M2614100
+[    5.900181] HCI H4 protocol initialized
+[    6.174993] ps_init_work...
+[    6.175016] ps_init_timer...
+[    6.186069] ps_init...
+[    6.563810] ps_init...
+[    6.641938] android_usb: already disabled
+[    6.643302] android_enable_function: iap2
+[    6.643323] android_enable_function: ncmandroid_usb gadget: _iap2_bind_config
+[    6.643518] ncm_function_bind_config MAC: 00:00:00:00:00:00
+[    6.678377] ncm0: MAC c2:8e:30:52:e9:a3
+[    6.678398] ncm0: HOST MAC 26:98:d9:34:fd:a1
+[    6.721779] ncm0: eth_open
+[    6.721802] ncm0: eth_start
+[    7.741424] driver->driver.name = zero ret=1
+[    7.741447] counting ret = 1 : 2184000.usb
+[    7.741458] counting ret = 0 : 2184200.usb
+[    7.744119] zero gadget: audio_buf_size 48000, req_buf_size 192, req_count 256
+[    7.744162] zero gadget: iPhone, version: Kevin Shi 2020
+[    7.744173] zero gadget: iPhone, serial: d7c08a5cd6e0980feb0fe240962e3c66 
+[    7.744183] zero gadget: iPhone, hnp_interval_ms: 10 
+[    7.744193] zero gadget: zero ready
+[    7.744249] [otg_statemachine]  fsm->id = 1
+[    7.744258] [otg_set_state]  Set state: b_idle
+[    7.744280] [otg_statemachine]  quit statemachine, changed = 1
+[    7.744312] [otg_set_state]  Set state: b_peripheral
+[    7.744327] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 2
+[    7.744361] USBMODE_CI_SDIS disabled!!!
+[    7.744387] [otg_statemachine]  quit statemachine, changed = 1
+[    7.768478] [otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 0 0 1
+[    7.768498] [otg_statemachine]  quit statemachine, changed = 0
+[   10.114856] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   10.118654] cfg80211: Calling CRDA for country: US
+[   10.122643] cfg80211: Regulatory domain changed to country: US
+[   10.122665] cfg80211:  DFS Master region: FCC
+[   10.122674] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[   10.122687] cfg80211:   (2400000 KHz - 2472000 KHz @ 40000 KHz), (3000 mBi, 0 mBm)
+[   10.122698] cfg80211:   (5150000 KHz - 5250000 KHz @ 80000 KHz), (2300 mBi, 0 mBm)
+[   10.122709] cfg80211:   (5250000 KHz - 5350000 KHz @ 80000 KHz), (2300 mBi, 0 mBm)
+[   10.122720] cfg80211:   (5470000 KHz - 5730000 KHz @ 160000 KHz), (2300 mBi, 0 mBm)
+[   10.122733] cfg80211:   (5730000 KHz - 5850000 KHz @ 80000 KHz), (3000 mBi, 0 mBm)
+[   10.122744] cfg80211:   (5850000 KHz - 5895000 KHz @ 40000 KHz), (2700 mBi, 0 mBm)
+[   10.122755] cfg80211:   (57240000 KHz - 71000000 KHz @ 2160000 KHz), (4000 mBi, 0 mBm)
+[   10.233460] wlan: SCAN COMPLETED: scanned AP count=2
+[   10.452144] wlan: Starting AP
+[   10.453044] Get ht_cap from beacon ies: 0x6e
+[   10.453434] Get vht_cap from beacon ies: 0x0
+[   10.453788] fw doesn't support 11ax
+[   10.465854] wlan: AP started
+[   10.465921] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   10.476298] Set AC=3, txop=47 cwmin=3, cwmax=7 aifs=1
+[   10.478696] Set AC=2, txop=94 cwmin=7, cwmax=15 aifs=1
+[   10.482908] Set AC=0, txop=0 cwmin=15, cwmax=63 aifs=3
+[   10.485340] Set AC=1, txop=0 cwmin=15, cwmax=1023 aifs=7
+[   10.547949] wlan: Stoping AP
+[   10.548424] wlan: AP stopped
+[   11.909178] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   11.916813] ncm0: stop stats: rx/tx 0/0, errs 0/0
+[   12.216462] wlan: SCAN COMPLETED: scanned AP count=1
+[   12.822285] wlan: Starting AP
+[   12.832304] Get ht_cap from beacon ies: 0x6e
+[   12.832760] Get vht_cap from beacon ies: 0x0
+[   12.833298] fw doesn't support 11ax
+[   12.845059] wlan: AP started
+[   12.847256] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   12.858591] Set AC=3, txop=47 cwmin=3, cwmax=7 aifs=1
+[   12.866533] Set AC=2, txop=94 cwmin=7, cwmax=15 aifs=1
+[   12.868961] Set AC=0, txop=0 cwmin=15, cwmax=63 aifs=3
+[   12.871447] Set AC=1, txop=0 cwmin=15, cwmax=1023 aifs=7
+[   70.334987] [otg_set_state]  Set state: a_host
+[   70.335017] [otg_statemachine]  quit statemachine, changed = 1
+[   70.557345] usb 1-1: new high-speed USB device number 2 using ci_hdrc
+[   70.590439] usb 1-1: is_b_host:0, config:85dcde00, parent:842bf800, root_hub=842bf800
+[   70.590466] usb 1-1: New USB device found, idVendor=1221, idProduct=3234
+[   70.590480] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   70.590492] usb 1-1: Product: Flash Disk
+[   70.590504] usb 1-1: Manufacturer: USB2.0
+[   70.590516] usb 1-1: SerialNumber: 1980030207390671
+[   70.596790] usb-storage 1-1:1.0: USB Mass Storage device detected
+[   70.607319] scsi0 : usb-storage 1-1:1.0
+[   71.608503] scsi 0:0:0:0: Direct-Access     USB2.0   Flash Disk       2.60 PQ: 0 ANSI: 2
+[   71.629875] sd 0:0:0:0: [sda] 251904 512-byte logical blocks: (128 MB/123 MiB)
+[   71.630473] sd 0:0:0:0: [sda] Write Protect is off
+[   71.630495] sd 0:0:0:0: [sda] Mode Sense: 0b 00 00 08
+[   71.631086] sd 0:0:0:0: [sda] No Caching mode page found
+[   71.631109] sd 0:0:0:0: [sda] Assuming drive cache: write through
+[   71.654117] sd 0:0:0:0: [sda] No Caching mode page found
+[   71.654144] sd 0:0:0:0: [sda] Assuming drive cache: write through
+[   71.655149]  sda:
+[   71.662604] sd 0:0:0:0: [sda] No Caching mode page found
+[   71.662630] sd 0:0:0:0: [sda] Assuming drive cache: write through
+[   71.662650] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[   71.748234] FAT-fs (sda): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   78.388197] sh (537): /proc/139/oom_adj is deprecated, please use /proc/139/oom_score_adj instead.
+[    6.186069] ps_init...
+Start Carplay mdnsd!!!
+[    6.563810] ps_init...
+[D]2020-01-02 00:00:03.828 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:03.828 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:03.829 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+Start Carplay IAP2&NCM driver!!!
+mDNSResponder: mDNSResponder (Engineering Build) (Aug 20 2021 16:48:25) starting
+[    6.641938] android_usb: already disabled
+[    6.643302] android_enable_function: iap2
+[    6.643323] android_enable_function: ncmStart NCM network
+mDNSResponder: mDNS_AddDNSServer: Lock not held! mDNS_busy (0) mDNS_reentrancy (0)
+mDNSResponder: mDNSPlatformSourceAddrForDest: connect 1.1.1.1 failed errno 101 (Network is unreachable)
+mDNSResponder: WARNING: mdnsd continuing as root because user "nobody" does not exist
+mDNSResponder: SendResponses
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+< HCI Command: ogf 0x3f, ocf 0x001d, plen 1
+  00 
+> HCI Event: 0x0e plen 4
+  01 1D FC 00 
+End load Bluetooth!!!
+hci0:	Type: UART
+	BD Address: 68:4E:05:6C:FA:BE ACL MTU: 1021:5 SCO MTU: 240:32
+	UP RUNNING 
+	RX bytes:1166 acl:0 sco:0 events:61 errors:0
+	TX bytes:809 acl:0 sco:0 commands:61 errors:0
+
+Attach Bluetooth success!!!
+rm: can't remove '/var/run/dbus/pid': No such file or directory
+[D]2020-01-02 00:00:04.829 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:04.829 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:04.830 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+01-02 12:00:04.937182 AM [FakeCarPlayDevice] fakeiOSDevice On:
+[    7.741424] driver->driver.name = zero ret=1
+[    7.741447] counting ret = 1 : 2184000.usb
+[    7.741458] counting ret = 0 : 2184200.usb
+[    7.744361] USBMODE_CI_SDIS disabled!!!
+01-02 12:00:05.013109 AM [FakeCarPlayDevice] insmod cmd: insmod /tmp/f_ptp.ko;insmod /tmp/g_iphone.ko serial=d7c08a5cd6e0980feb0fe240962e3c66
+ hnp_interval_ms=10
+01-02 12:00:05.190851 AM [RiddleBluetoothService] Get BluetoothProtocolType: 1
+X check_hciattach_done_ms 0!
+01-02 12:00:05.555293 AM [RiddleBluetoothService] _getDefaltAdapterPath err=The name org.bluez was not provided by any .service files
+hcid[179]: Bluetooth HCI daemon
+hcid[179]: Enabling debug information
+hcid[179]: Starting SDP server
+hcid[179]: HCI dev 0 registered
+hcid[179]: HCI dev 0 already up
+hcid[179]: Device hci0 has been added
+hcid[179]: Starting security manager 0
+hcid[181]: Can't set link policy on hci0: Operation not supported (95)
+hcid[179]: Device hci0 has been activated
+[D]2020-01-02 00:00:05.831 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:05.831 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:05.831 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+01-02 12:00:05.964513 AM [RiddleBluetoothService] defaulAdaptorPath_=/org/bluez/hci0
+01-02 12:00:05.964672 AM [RiddleBluetoothService] do hciconfig hci0 up
+01-02 12:00:05.975960 AM [RiddleBluetoothService] do SDPTool_AddLocalService
+IAP2 service registered
+AAP service registered
+Serial Port service registered
+01-02 12:00:06.439850 AM [RiddleBluetoothService] do Init End
+[D]2020-01-02 00:00:06.444 154-76f34000/bluetoothDaemon[riddleCfg]: DeletedDevList : {}
+01-02 12:00:06.449727 AM [RiddleBluetoothService_Interface_Control] $$$ 0 bluetoothAddr=28:EA:2D:AC:06:84 devName = iPhone (6)
+01-02 12:00:06.451946 AM [RiddleBluetoothService_Interface_Control] SaveDevList to config file, addr:28:EA:2D:AC:06:84 name:iPhone (6) index:1
+[D]2020-01-02 00:00:06.831 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:06.832 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:06.832 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+Configuration file: /etc/hostapd.conf
+rfkill: Cannot open RFKILL control device
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+wlan0: interface state UNINITIALIZED->COUNTRY_UPDATE
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+[   10.452144] wlan: Starting AP
+[   10.453044] Get ht_cap from beacon ies: 0x6e
+[   10.453434] Get vht_cap from beacon ies: 0x0
+[   10.453788] fw doesn't support 11ax
+[   10.465854] wlan: AP started
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+[   10.476298] Set AC=3, txop=47 cwmin=3, cwmax=7 aifs=1
+[   10.478696] Set AC=2, txop=94 cwmin=7, cwmax=15 aifs=1
+[   10.482908] Set AC=0, txop=0 cwmin=15, cwmax=63 aifs=3
+[   10.485340] Set AC=1, txop=0 cwmin=15, cwmax=1023 aifs=7
+[   10.547949] wlan: Stoping AP
+[   10.548424] wlan: AP stopped
+[D]2020-01-02 00:00:07.833 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:07.833 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:07.833 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+[D]2020-01-02 00:00:08.834 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:08.834 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:08.834 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+Web Server Service!!!
+[02/Jan/2020:00:00:09 +0000] boa: server version Boa/0.94.101wk
+[02/Jan/2020:00:00:09 +0000] boa: server built Jun 16 2021 at 17:13:50.
+[02/Jan/2020:00:00:09 +0000] boa: starting server pid=202, port 80
+config wifi channel: 36
+5G wifi
+channel=36
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+hostapd start process.....
+Configuration file: /etc/hostapd.conf
+rfkill: Cannot open RFKILL control device
+wlan0: interface state UNINITIALIZED->COUNTRY_UPDATE
+wlan0: interface state COUNTRY_UPDATE->HT_SCAN
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+udhcpd start process.....
+mdnsd runing.....
+Save Log to UPAN
+[D]2020-01-02 00:00:09.835 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:09.835 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:09.835 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[   12.822285] wlan: Starting AP
+[   12.832304] Get ht_cap from beacon ies: 0x6e
+[   12.832760] Get vht_cap from beacon ies: 0x0
+[   12.833298] fw doesn't support 11ax
+[   12.845059] wlan: AP started
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+[   12.858591] Set AC=3, txop=47 cwmin=3, cwmax=7 aifs=1
+[   12.866533] Set AC=2, txop=94 cwmin=7, cwmax=15 aifs=1
+[   12.868961] Set AC=0, txop=0 cwmin=15, cwmax=63 aifs=3
+[   12.871447] Set AC=1, txop=0 cwmin=15, cwmax=1023 aifs=7
+check_log_size: 10008 byte
+config wifi channel: 36
+5G wifi
+channel=36
+[D]2020-01-02 00:00:10.837 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:10.837 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:10.837 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+hostapd runing.....
+udhcpd runing.....
+mdnsd runing.....
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: wlan0, DirectLink: 1
+[D]2020-01-02 00:00:11.838 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:11.838 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:11.838 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:12.839 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:12.839 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:12.840 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:13.841 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:13.841 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:13.841 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:14.842 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:14.842 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:14.842 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:15.843 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:15.843 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:15.843 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:16.844 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:16.844 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:16.844 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:17.845 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:17.845 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:17.845 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:18.846 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:18.846 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:18.846 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:19.847 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:19.847 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:19.847 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:20.848 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:20.848 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:20.849 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:21.849 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:21.850 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:21.850 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:22.851 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:22.851 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:22.851 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:23.852 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:23.852 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:23.852 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:24.853 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:24.853 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:24.853 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:25.854 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:25.854 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:25.854 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:26.855 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:26.855 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:26.855 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:27.856 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:27.856 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:27.856 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:28.857 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:28.857 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:28.858 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:29.858 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:29.859 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:29.859 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:30.860 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:30.860 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:30.860 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:31.861 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:31.861 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:31.861 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:32.862 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:32.862 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:32.862 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:33.863 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:33.863 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:33.863 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:34.864 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:34.864 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:34.864 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:35.865 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:35.865 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:35.865 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:36.866 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:36.866 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:36.867 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:37.867 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:37.868 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:37.868 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:38.869 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:38.869 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:38.869 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:39.870 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:39.870 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:39.870 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+check_log_size: 20183 byte
+[D]2020-01-02 00:00:40.871 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:40.871 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:40.871 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:41.872 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:41.872 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:41.872 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:42.873 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:42.873 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:42.873 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:43.874 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:43.874 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:43.874 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:44.875 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:44.875 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:44.876 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:45.876 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:45.877 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:45.877 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:46.878 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:46.878 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:46.878 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:47.879 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:47.879 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:47.879 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:48.880 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:48.880 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:48.880 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:49.881 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:49.881 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:49.881 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:50.882 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:50.882 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:50.882 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:51.883 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:51.883 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:51.883 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:52.884 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:52.884 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:52.884 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:53.885 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:53.885 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:53.886 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:54.886 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:54.887 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:54.887 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:55.888 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:55.888 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:55.888 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:56.889 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:56.889 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:56.889 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:57.890 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:57.890 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:57.890 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:58.891 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:58.891 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:58.891 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:00:59.892 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:00:59.892 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:00:59.892 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:01:00.893 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:00.893 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:01:00.893 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:01:01.894 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:01.894 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:01:01.895 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:01:02.895 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:02.896 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:01:02.896 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:01:03.897 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:03.897 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:01:03.897 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:01:04.898 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:04.898 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:01:04.898 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:01:05.899 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:05.899 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:01:05.899 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:01:06.900 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:06.900 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:01:06.900 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[D]2020-01-02 00:01:07.901 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:07.901 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:01:07.901 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[   71.631086] sd 0:0:0:0: [sda] No Caching mode page found
+[   71.631109] sd 0:0:0:0: [sda] Assuming drive cache: write through
+[D]2020-01-02 00:01:08.902 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:08.902 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 1!!
+[D]2020-01-02 00:01:08.902 65-76f12000/colorLightDaemon[getColor]: status=StartUp, err = 1!!
+[   71.654117] sd 0:0:0:0: [sda] No Caching mode page found
+[   71.654144] sd 0:0:0:0: [sda] Assuming drive cache: write through
+[   71.662604] sd 0:0:0:0: [sda] No Caching mode page found
+[   71.662630] sd 0:0:0:0: [sda] Assuming drive cache: write through
+/dev/sda add
+no sda[0-9]
+Update Start!!
+[D]2020-01-02 00:01:09.905 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:09.905 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:09.905 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+./
+./lib/
+./lib/.delete
+./lib/firmware/
+./script/
+./script/phone_link_deamon.sh
+./script/start_mass_storage.sh
+./script/cpu_UsageRate.sh
+./script/attach_bluetooth.sh
+./script/init_gpio.sh
+./script/check_update.sh
+./script/start_accessory.sh
+./script/init_bluetooth_wifi.sh
+./script/check_log_size.sh
+./script/start_mtp.sh
+./script/update_box.sh
+./script/start_aoa.sh
+./script/close_bluetooth_wifi.sh
+./script/copy_to_tmp.sh
+./script/start_main_service.sh
+./script/update_box_ota.sh
+./script/open_log.sh
+./script/after_shutdown.sh
+./script/sync_box_time.sh
+./script/start_iap2_ncm.sh
+./script/start_bluetooth_wifi.sh
+./script/quickly_update.sh
+./usr/
+./usr/lib/
+./usr/lib/libARMtool.so
+./usr/lib/libcrypto.so
+./usr/lib/libnl-genl-3.so.200
+./usr/lib/libnl-3.so.200
+./usr/lib/libssl.so.1.1
+check_log_size: 29428 byte
+./usr/lib/libBoxUI.so
+./usr/lib/.delete
+./usr/lib/libcrypto.so.1.1
+./usr/lib/libdns_sd.so
+./usr/lib/libssl.so
+./usr/sbin/
+./usr/sbin/set_wifi_mac
+./usr/sbin/riddle_top
+./usr/sbin/boxImgTools
+./usr/sbin/ui.tar.gz
+./usr/sbin/ARMimg_maker
+./usr/sbin/wpa_supplicant
+./usr/sbin/mtp-server
+./usr/sbin/hfpd
+./usr/sbin/hcitool
+./usr/sbin/boa
+./usr/sbin/colorLightDaemon
+./usr/sbin/ARMadb-driver
+./usr/sbin/dbus-daemon
+./usr/sbin/mdnsd
+./usr/sbin/hwSecret
+./usr/sbin/hostapd
+./usr/sbin/adbd
+./usr/sbin/bluetoothDaemon
+./usr/sbin/hcid
+./usr/sbin/am
+./usr/sbin/hwfsTools
+./usr/sbin/riddleBoxCfg
+./usr/sbin/AppleCarPlay
+./usr/sbin/echoDelayTest
+./usr/sbin/fakeiOSDevice
+./usr/sbin/.delete
+./usr/sbin/ARMAndroidAuto
+./usr/sbin/ARMiPhoneIAP2
+./tmp/
+./tmp/upg
+./tmp/once.sh
+./tmp/finish.sh
+./tmp/remove_unnecessary_file.sh
+./etc/
+./etc/udhcpd.conf
+./etc/mime.types
+./etc/dbus-1/
+./etc/dbus-1/system.conf
+./etc/dbus-1/system.d/
+./etc/dbus-1/system.d/bluetooth.conf
+./etc/dbus-1/system.d/hfpd.conf
+./etc/dbus-1/system.d/riddle.conf
+./etc/dbus-1/session.conf
+./etc/inittab
+./etc/riddle_default.conf
+./etc/boa/
+./etc/boa/www/
+./etc/boa/www/www.tar.gz
+./etc/boa/boa.conf
+./etc/boa/cgi-bin/
+./etc/boa/cgi-bin/server.cgi
+./etc/boa/cgi-bin/upload.cgi
+./etc/boa/images/
+./etc/rgbLight.conf
+./etc/box_product_type
+./etc/init.d/
+./etc/init.d/rcS
+./etc/hfpd.conf
+./etc/android_work_mode
+./etc/profile
+./etc/.delete
+./etc/car.png
+./etc/bluetooth/
+./etc/bluetooth/rfcomm.conf
+./etc/bluetooth/eir_info
+./etc/bluetooth/hcid.conf
+./etc/wpa_supplicant.conf
+./etc/mdev/
+./etc/mdev/udisk_insert.sh
+./etc/mdev/udisk_remove.sh
+./etc/mdev/udisk_hotplug.sh
+./etc/log_file
+./etc/box_version
+./etc/software_version
+U2AW
+remove /tmp/update//usr/sbin/wpa_supplicant
+remove /tmp/update//etc/wpa_supplicant.conf
+U2AW,A15W,O2W,UC2AW,
+remove /tmp/update//usr/sbin/fakeAADevice
+remove /tmp/update//usr/sbin/mtp-server
+remove /tmp/update//usr/sbin/adbd
+remove /tmp/update//usr/sbin/am
+remove /tmp/update//usr/sbin/echoDelayTest
+remove /tmp/update//usr/sbin/DVRServer
+[D]2020-01-02 00:01:11.907 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:11.907 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:11.908 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+favicon.png
+index.html.gz
+js/
+js/AutoKit.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-1d884dce.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-238cbd5f.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-238cbd5f.d6df02b52865d981a1d8.1689067109736.js.LICENSE.txt
+js/chunk-2d0a477e.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0aa1bb.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0af7f1.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0bd9f4.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0bdefc.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0be0cb.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0c2319.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0c4bf6.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0c96ea.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0cf6d0.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0d3720.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0d7ab6.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0ddfad.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0e148d.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0e2581.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0e5774.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d0e9001.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d2094f1.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d209741.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d20fa51.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d21a586.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d21a5f4.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d21a799.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d21ed26.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d221f39.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d222183.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d22fcc3.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d22fd4f.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d230e19.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-2d2371fc.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-55fc40a5.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-59713c86.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-5c4a42f9.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-69a1c3d3.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-76d3b0bf.d6df02b52865d981a1d8.1689067109736.js
+js/chunk-8df89f72.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-b629bb14.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-d1f401a2.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-vendors.d6df02b52865d981a1d8.1689067109736.js.gz
+js/chunk-vendors.d6df02b52865d981a1d8.1689067109736.js.LICENSE.txt
+lang/
+lang/en-a59d620b51c9fda81ff9dcb619d17417.js.gz
+[D]2020-01-02 00:01:13.909 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:13.909 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:13.909 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+lang/hu-796d542134491f0ab8259af5d8814d22.js.gz
+lang/ko-edd8da79a3238191a65d3aa2b94a981e.js.gz
+lang/tw-8115f9b8d080edc2d2363612b32b7de2.js.gz
+lang/zh-e2d63ced50e585862818c5174cab0347.js.gz
+static/
+static/css/
+static/css/AutoKit.c596f0de.css.gz
+static/css/chunk-1d884dce.9362ad41.css.gz
+static/css/chunk-238cbd5f.ee39a042.css.gz
+static/css/chunk-55fc40a5.99f69624.css.gz
+static/css/chunk-59713c86.8401ee0e.css.gz
+static/css/chunk-5c4a42f9.5d53a5d2.css.gz
+static/css/chunk-69a1c3d3.362bb1be.css.gz
+static/css/chunk-76d3b0bf.cfe94d51.css.gz
+static/css/chunk-8df89f72.7d42e1f8.css.gz
+static/css/chunk-b629bb14.92657c1a.css.gz
+static/css/chunk-d1f401a2.8951032b.css.gz
+static/css/chunk-vendors.db079ed3.css.gz
+static/img/
+static/img/advset-act.ae8ed00f.svg
+static/img/advset.809dab50.svg
+static/img/basicset-act.035b6bdf.svg
+static/img/basicset.e4adf3ae.svg
+static/img/bgBottom.34d0666e.svg
+static/img/bgTop.1e29c352.svg
+static/img/cellBg.e55dab8b.svg
+static/img/delete.f31686bc.svg
+static/img/equip-act.9c48d902.svg
+static/img/equip.df4e4802.svg
+static/img/helpBottomBg.5312b929.svg
+static/img/info-act.3b8c7742.svg
+static/img/info-bg.f8b96f25.svg
+static/img/info-cellBg.2c604975.svg
+static/img/info-CellBottom.be11f776.svg
+static/img/info-CellTop.d996e385.svg
+static/img/info.e7351e3a.svg
+static/img/loading-five.0112ae40.svg
+static/img/loading-four.b871bc76.svg
+static/img/loading-one.8f18ce03.svg
+static/img/loading-three.16475a81.svg
+static/img/loading-two.d79d4152.svg
+static/img/login-select-act.150352bd.svg
+static/img/login-select.e0ee71bc.svg
+static/img/login-top-act.65e8c0e6.svg
+static/img/login-top.7c8fe974.svg
+static/img/logo-add.0ad1f24f.svg
+static/img/popupLogo1.9a7bd83e.svg
+static/img/reback.ddf68643.svg
+static/img/renew.1a67a120.svg
+Start upg
+2020/01/02 00:01:15.001707 upg.go:377: main 
+2020/01/02 00:01:15.101876 upg.go:410: curRunningApps: 
+  PID USER       VSZ STAT COMMAND
+    1 root      3204 S    init
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    4 root         0 SW   [kworker/0:0]
+    5 root         0 SW<  [kworker/0:0H]
+    6 root         0 SW   [kworker/u2:0]
+    7 root         0 SW   [rcu_preempt]
+    8 root         0 SW   [rcu_sched]
+    9 root         0 SW   [rcu_bh]
+   10 root         0 SW   [migration/0]
+   11 root         0 SW<  [khelper]
+   12 root         0 SW   [kdevtmpfs]
+   13 root         0 SW<  [writeback]
+   14 root         0 SW<  [bioset]
+   15 root         0 SW<  [crypto]
+   16 root         0 SW<  [kblockd]
+   17 root         0 SW<  [ata_sff]
+   18 root         0 SW   [khubd]
+   19 root         0 SW   [kworker/u2:1]
+   26 root         0 SW   [kworker/0:1]
+   27 root         0 SW<  [cfg80211]
+   28 root         0 SW   [cfinteractive]
+   29 root         0 SW   [kswapd0]
+   30 root         0 SW   [fsnotify_mark]
+   38 root         0 DW   [ttyLogFileThrea]
+   39 root         0 SW   [spi32766]
+   42 root         0 SW<  [ci_otg]
+   43 root         0 SW<  [ci_otg]
+   44 root         0 SW   [kworker/u2:2]
+   45 root         0 SW   [watchdog]
+   46 root         0 SW<  [ipv6_addrconf]
+   47 root         0 SW<  [krfcommd]
+   48 root         0 SW<  [deferwq]
+   49 root         0 SW   [irq/81-imx_ther]
+   50 root         0 SWN  [jffs2_gcd_mtd2]
+   60 root      3204 S    init
+   65 root      4120 S    colorLightDaemon
+   97 root         0 SW<  [kworker/u3:0]
+   98 root         0 SW<  [MOAL_HANG_WORK_]
+   99 root         0 SW<  [MOAL_WORK_QUEUE]
+  100 root         0 SW<  [MOAL_EVT_WORK_Q]
+  101 root         0 SW<  [MOAL_RX_WORK_QU]
+  102 root         0 SW   [woal_reassoc_se]
+  103 root         0 SW   [ksdioirqd/mmc0]
+  104 root         0 SW<  [kworker/u3:1]
+  106 root         0 SW<  [CSAwfd1]
+  131 root         0 SW<  [hci0]
+  132 root         0 SW<  [hci0]
+  134 root         0 SW<  [kworker/u3:2]
+  137 root      2024 S    hciattach /dev/ttymxc2 any 3000000 flow
+  139 root     19596 S    ./fakeiOSDevice
+  142 root      3040 S    mdnsd
+  149 root         0 SW   [kworker/0:2]
+  154 root     16004 S    bluetoothDaemon -n
+  170 root      4348 S    dbus-daemon --system --print-pid --print-address
+  179 root      4556 S    hcid -x -n -m 8196
+  202 root      2364 S    boa
+  216 root      3796 S    hostapd /etc/hostapd.conf -B
+  225 root      3204 S    udhcpd
+  233 root      4176 S    hwSecret
+  234 root      3204 S    {exe} ash /script/cpu_UsageRate.sh
+  235 root      3204 S    {exe} ash /script/check_log_size.sh
+  236 root      2204 S    riddle_top -m 3 -d 8
+  367 root         0 SW   [scsi_eh_0]
+  368 root         0 SW<  [scsi_tmf_0]
+  369 root         0 SW   [usb-storage]
+  389 root      3072 S    sleep 8
+  393 root         0 SW   [kworker/u2:3]
+  400 root         0 SW<  [kworker/0:1H]
+  403 root      3204 S    {exe} ash /script/update_box.sh /dev/sda
+  417 root      3072 S    sleep 30
+  420 root      3204 S    {exe} ash /tmp/update/tmp/once.sh
+  503 root      819m S    /tmp/upg
+  510 root      3208 R    ps
+  511 root         0 RW   [mdev]
+
+2020/01/02 00:01:15.102430 upg.go:225: App: ARMiPhoneIAP2 没有运行， 无需退出
+2020/01/02 00:01:15.102539 upg.go:225: App: adb 没有运行， 无需退出
+2020/01/02 00:01:15.102624 upg.go:225: App: AppleCarPlay 没有运行， 无需退出
+2020/01/02 00:01:15.102703 upg.go:225: App: carlife 没有运行， 无需退出
+2020/01/02 00:01:15.102779 upg.go:225: App: usbmuxd 没有运行， 无需退出
+mDNSResponder: mDNSResponder (Engineering Build) (Aug 20 2021 16:48:25) stopping
+2020/01/02 00:01:15.211840 upgradeItemApps.go:445: AnalyseProcess(mdnsd):false true 142
+2020/01/02 00:01:15.212033 upg.go:225: App: ARMAndroidAuto 没有运行， 无需退出
+sig_term 15
+2020/01/02 00:01:15.285124 upgradeItemApps.go:445: AnalyseProcess(bluetoothDaemon):false false 
+hcid[179]: Unregister path: /org/bluez/hci0
+hcid[179]: Stopping SDP server
+hcid[179]: Exit
+01-02 12:01:15.314356 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.freedesktop.DBus:NameAcquired
+01-02 12:01:15.314584 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.freedesktop.DBus:NameAcquired
+01-02 12:01:15.314702 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Agent:Release
+_OnDbusMessage! Release
+01-02 12:01:15.402682 AM [RiddleBluetoothService] _getDefaltAdapterPath err=Message did not receive a reply (timeout by message bus)
+01-02 12:01:15.402882 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal org.bluez.Manager:DefaultAdapterChanged
+01-02 12:01:15.402993 AM [RiddleBluetoothService_Interface_Control] OnDbusSignal <<NULL>>:<<NULL>>
+2020/01/02 00:01:15.411656 upgradeItemApps.go:445: AnalyseProcess(hcid):false false 
+2020/01/02 00:01:15.580649 upgradeItemApps.go:445: AnalyseProcess(fakeiOSDevice):false true 139
+2020/01/02 00:01:15.640921 upgradeItemApps.go:445: AnalyseProcess(fakeiOSDevice):false true 139
+2020/01/02 00:01:15.687717 upgradeItem.go:116: memoryBytes: 89600-17788
+[D]2020-01-02 00:01:15.911 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:15.911 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:15.911 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:16.002984 upg.go:353: 已写入: 0 byte, 升级进度: 11
+2020/01/02 00:01:16.060682 upgradeItem.go:92: Current System: 
+ supportCpu?:true software_version:2022.12.26.1411  mfgDate:20220516  memory(use:17788k free:89600k)
+2020/01/02 00:01:16.060866 flashOperator.go:256: mtd /dev/mtd0: size(262144k) erasesize(65536k)
+2020/01/02 00:01:16.060950 flashOperator.go:256: mtd /dev/mtd1: size(3407872k) erasesize(65536k)
+2020/01/02 00:01:16.061029 flashOperator.go:256: mtd /dev/mtd2: size(13107200k) erasesize(65536k)
+2020/01/02 00:01:16.061155 upgradeItem.go:165: GenCryptEnv 成功 
+Analyse Start!
+2020/01/02 00:01:16.066683 upgradeItemApps.go:255: 升级文件 filePathToCover:/etc/.delete fileName:.delete thisFile:/tmp/update/etc/.delete
+2020/01/02 00:01:16.067175 upgradeItemApps.go:255: 升级文件 filePathToCover:/lib/.delete fileName:.delete thisFile:/tmp/update/lib/.delete
+2020/01/02 00:01:16.067754 upgradeItemApps.go:255: 升级文件 filePathToCover:/usr/lib/.delete fileName:.delete thisFile:/tmp/update/usr/lib/.delete
+2020/01/02 00:01:16.068147 upgradeItemApps.go:99: 升级包里有同名文件: libcrypto.so, 会进行替换，无需删除!!!
+2020/01/02 00:01:16.068339 upgradeItemApps.go:99: 升级包里有同名文件: libssl.so, 会进行替换，无需删除!!!
+2020/01/02 00:01:16.068607 upgradeItemApps.go:255: 升级文件 filePathToCover:/usr/sbin/.delete fileName:.delete thisFile:/tmp/update/usr/sbin/.delete
+2020/01/02 00:01:16.069042 upgradeItemApps.go:99: 升级包里有同名文件: AppleCarPlay, 会进行替换，无需删除!!!
+2020/01/02 00:01:16.074262 upgradeItemApps.go:99: 升级包里有同名文件: ARMiPhoneIAP2, 会进行替换，无需删除!!!
+2020/01/02 00:01:16.108481 upgradeItemApps.go:69: IsUsingFlash(eir_info):false 
+2020/01/02 00:01:16.108966 upgradeItemApps.go:335: /tmp/update/etc/bluetooth/eir_info to /etc/bluetooth/eir_info orgsize:108 newsize:95 
+2020/01/02 00:01:16.110257 upgradeItemApps.go:69: IsUsingFlash(hcid.conf):false 
+2020/01/02 00:01:16.110654 upgradeItemApps.go:335: /tmp/update/etc/bluetooth/hcid.conf to /etc/bluetooth/hcid.conf orgsize:1241 newsize:1234 
+2020/01/02 00:01:16.126727 upgradeItemApps.go:69: IsUsingFlash(boa.conf):false 
+2020/01/02 00:01:16.127015 upgradeItemApps.go:335: /tmp/update/etc/boa/boa.conf to /etc/boa/boa.conf orgsize:10029 newsize:10060 
+2020/01/02 00:01:16.183988 upgradeItemApps.go:69: IsUsingFlash(car.png):false 
+2020/01/02 00:01:16.184264 upgradeItemApps.go:335: /tmp/update/etc/car.png to /etc/car.png orgsize:0 newsize:3799 
+2020/01/02 00:01:16.365763 upgradeItemApps.go:445: AnalyseProcess(udisk_hotplug.sh):false false 
+2020/01/02 00:01:16.366049 upgradeItemApps.go:69: IsUsingFlash(udisk_hotplug.sh):false 
+2020/01/02 00:01:16.366346 upgradeItemApps.go:335: /tmp/update/etc/mdev/udisk_hotplug.sh to /etc/mdev/udisk_hotplug.sh orgsize:1522 newsize:926 
+2020/01/02 00:01:16.459984 upgradeItemApps.go:445: AnalyseProcess(udisk_remove.sh):false false 
+2020/01/02 00:01:16.460256 upgradeItemApps.go:69: IsUsingFlash(udisk_remove.sh):false 
+2020/01/02 00:01:16.460540 upgradeItemApps.go:335: /tmp/update/etc/mdev/udisk_remove.sh to /etc/mdev/udisk_remove.sh orgsize:1186 newsize:594 
+2020/01/02 00:01:16.495993 upgradeItemApps.go:69: IsUsingFlash(rgbLight.conf):false 
+2020/01/02 00:01:16.496257 upgradeItemApps.go:335: /tmp/update/etc/rgbLight.conf to /etc/rgbLight.conf orgsize:0 newsize:5131 
+2020/01/02 00:01:16.497349 upgradeItemApps.go:69: IsUsingFlash(riddle_default.conf):false 
+2020/01/02 00:01:16.497738 upgradeItemApps.go:335: /tmp/update/etc/riddle_default.conf to /etc/riddle_default.conf orgsize:904 newsize:64 
+2020/01/02 00:01:16.501130 upgradeItemApps.go:69: IsUsingFlash(software_version):false 
+2020/01/02 00:01:16.501526 upgradeItemApps.go:335: /tmp/update/etc/software_version to /etc/software_version orgsize:15 newsize:15 
+2020/01/02 00:01:16.584992 upgradeItemApps.go:445: AnalyseProcess(attach_bluetooth.sh):false false 
+2020/01/02 00:01:16.585167 upgradeItemApps.go:69: IsUsingFlash(attach_bluetooth.sh):false 
+2020/01/02 00:01:16.585406 upgradeItemApps.go:335: /tmp/update/script/attach_bluetooth.sh to /script/attach_bluetooth.sh orgsize:3448 newsize:3487 
+2020/01/02 00:01:16.662478 upgradeItemApps.go:445: AnalyseProcess(close_bluetooth_wifi.sh):false false 
+2020/01/02 00:01:16.662675 upgradeItemApps.go:69: IsUsingFlash(close_bluetooth_wifi.sh):false 
+2020/01/02 00:01:16.662917 upgradeItemApps.go:335: /tmp/update/script/close_bluetooth_wifi.sh to /script/close_bluetooth_wifi.sh orgsize:966 newsize:955 
+2020/01/02 00:01:16.715266 upgradeItemApps.go:445: AnalyseProcess(copy_to_tmp.sh):false false 
+2020/01/02 00:01:16.715442 upgradeItemApps.go:69: IsUsingFlash(copy_to_tmp.sh):false 
+2020/01/02 00:01:16.715771 upgradeItemApps.go:335: /tmp/update/script/copy_to_tmp.sh to /script/copy_to_tmp.sh orgsize:790 newsize:622 
+2020/01/02 00:01:16.841421 upgradeItemApps.go:445: AnalyseProcess(init_bluetooth_wifi.sh):false false 
+2020/01/02 00:01:16.841597 upgradeItemApps.go:69: IsUsingFlash(init_bluetooth_wifi.sh):false 
+2020/01/02 00:01:16.841952 upgradeItemApps.go:335: /tmp/update/script/init_bluetooth_wifi.sh to /script/init_bluetooth_wifi.sh orgsize:4332 newsize:4999 
+2020/01/02 00:01:16.968913 upgradeItemApps.go:445: AnalyseProcess(phone_link_deamon.sh):false false 
+2020/01/02 00:01:16.969091 upgradeItemApps.go:69: IsUsingFlash(phone_link_deamon.sh):false 
+2020/01/02 00:01:16.969317 upgradeItemApps.go:335: /tmp/update/script/phone_link_deamon.sh to /script/phone_link_deamon.sh orgsize:0 newsize:3094 
+2020/01/02 00:01:17.014674 upg.go:353: 已写入: 0 byte, 升级进度: 12
+2020/01/02 00:01:17.080966 upgradeItemApps.go:445: AnalyseProcess(start_bluetooth_wifi.sh):false false 
+2020/01/02 00:01:17.081144 upgradeItemApps.go:69: IsUsingFlash(start_bluetooth_wifi.sh):false 
+2020/01/02 00:01:17.081475 upgradeItemApps.go:335: /tmp/update/script/start_bluetooth_wifi.sh to /script/start_bluetooth_wifi.sh orgsize:2298 newsize:2981 
+2020/01/02 00:01:17.171399 upgradeItemApps.go:445: AnalyseProcess(start_main_service.sh):false false 
+2020/01/02 00:01:17.171577 upgradeItemApps.go:69: IsUsingFlash(start_main_service.sh):false 
+2020/01/02 00:01:17.171810 upgradeItemApps.go:335: /tmp/update/script/start_main_service.sh to /script/start_main_service.sh orgsize:3222 newsize:2893 
+2020/01/02 00:01:17.229954 upgradeItemApps.go:445: AnalyseProcess(start_mass_storage.sh):false false 
+2020/01/02 00:01:17.230225 upgradeItemApps.go:69: IsUsingFlash(start_mass_storage.sh):false 
+2020/01/02 00:01:17.230478 upgradeItemApps.go:335: /tmp/update/script/start_mass_storage.sh to /script/start_mass_storage.sh orgsize:2258 newsize:2835 
+2020/01/02 00:01:17.281009 upgradeItemApps.go:445: AnalyseProcess(start_mtp.sh):false false 
+2020/01/02 00:01:17.281187 upgradeItemApps.go:69: IsUsingFlash(start_mtp.sh):false 
+2020/01/02 00:01:17.281424 upgradeItemApps.go:335: /tmp/update/script/start_mtp.sh to /script/start_mtp.sh orgsize:0 newsize:777 
+2020/01/02 00:01:17.334745 upgradeItemApps.go:445: AnalyseProcess(sync_box_time.sh):false false 
+2020/01/02 00:01:17.334922 upgradeItemApps.go:69: IsUsingFlash(sync_box_time.sh):false 
+2020/01/02 00:01:17.335163 upgradeItemApps.go:335: /tmp/update/script/sync_box_time.sh to /script/sync_box_time.sh orgsize:0 newsize:2098 
+2020/01/02 00:01:17.386487 upgradeItemApps.go:445: AnalyseProcess(update_box.sh):false false 
+2020/01/02 00:01:17.386662 upgradeItemApps.go:69: IsUsingFlash(update_box.sh):false 
+2020/01/02 00:01:17.386925 upgradeItemApps.go:335: /tmp/update/script/update_box.sh to /script/update_box.sh orgsize:2503 newsize:3475 
+2020/01/02 00:01:17.440387 upgradeItemApps.go:445: AnalyseProcess(update_box_ota.sh):false false 
+2020/01/02 00:01:17.440564 upgradeItemApps.go:69: IsUsingFlash(update_box_ota.sh):false 
+2020/01/02 00:01:17.440802 upgradeItemApps.go:335: /tmp/update/script/update_box_ota.sh to /script/update_box_ota.sh orgsize:1672 newsize:2663 
+2020/01/02 00:01:17.458154 upgradeItemApps.go:69: IsUsingFlash(libBoxUI.so):true 
+2020/01/02 00:01:17.458484 upgradeItemApps.go:335: /tmp/update/usr/lib/libBoxUI.so to /usr/lib/libBoxUI.so orgsize:223084 newsize:257756 
+2020/01/02 00:01:17.601204 upgradeItemApps.go:60: 发现Lib文件: libcrypto.so 在 /tmp/lib/ 目录, 不占用Flash空间
+2020/01/02 00:01:17.601524 upgradeItemApps.go:69: IsUsingFlash(libcrypto.so):false 
+2020/01/02 00:01:17.601941 upgradeItemApps.go:335: /tmp/update/usr/lib/libcrypto.so to /usr/lib/libcrypto.so orgsize:0 newsize:0 (LinkFile)
+2020/01/02 00:01:17.602575 upgradeItemApps.go:60: 发现Lib文件: libcrypto.so.1.1 在 /tmp/lib/ 目录, 不占用Flash空间
+2020/01/02 00:01:17.602781 upgradeItemApps.go:69: IsUsingFlash(libcrypto.so.1.1):false 
+2020/01/02 00:01:17.603122 upgradeItemApps.go:335: /tmp/update/usr/lib/libcrypto.so.1.1 to /usr/lib/libcrypto.so.1.1 orgsize:1280052 newsize:647896 
+2020/01/02 00:01:17.698097 upgradeItemApps.go:69: IsUsingFlash(libssl.so):true 
+2020/01/02 00:01:17.698691 upgradeItemApps.go:335: /tmp/update/usr/lib/libssl.so to /usr/lib/libssl.so orgsize:0 newsize:0 (LinkFile)
+2020/01/02 00:01:17.701600 upgradeItemApps.go:69: IsUsingFlash(libssl.so.1.1):true 
+2020/01/02 00:01:17.702067 upgradeItemApps.go:335: /tmp/update/usr/lib/libssl.so.1.1 to /usr/lib/libssl.so.1.1 orgsize:327940 newsize:199892 
+2020/01/02 00:01:17.802975 upgradeItemApps.go:445: AnalyseProcess(ARMAndroidAuto):false false 
+2020/01/02 00:01:17.803152 upgradeItemApps.go:69: IsUsingFlash(ARMAndroidAuto):false 
+2020/01/02 00:01:17.803415 upgradeItemApps.go:335: /tmp/update/usr/sbin/ARMAndroidAuto to /usr/sbin/ARMAndroidAuto orgsize:538096 newsize:544928 
+2020/01/02 00:01:17.833316 upgradeItemApps.go:50: 发现Bin文件: ARMadb-driver 在 /tmp/bin/ 目录, 不占用Flash空间
+2020/01/02 00:01:17.835336 upgradeItemApps.go:69: IsUsingFlash(ARMadb-driver):false 
+2020/01/02 00:01:17.835963 upgradeItemApps.go:335: /tmp/update/usr/sbin/ARMadb-driver to /usr/sbin/ARMadb-driver orgsize:217140 newsize:220700 
+[D]2020-01-02 00:01:17.913 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:17.914 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:17.914 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:17.917492 upgradeItemApps.go:445: AnalyseProcess(ARMiPhoneIAP2):false false 
+2020/01/02 00:01:17.917668 upgradeItemApps.go:69: IsUsingFlash(ARMiPhoneIAP2):false 
+2020/01/02 00:01:17.918016 upgradeItemApps.go:335: /tmp/update/usr/sbin/ARMiPhoneIAP2 to /usr/sbin/ARMiPhoneIAP2 orgsize:164204 newsize:171804 
+2020/01/02 00:01:17.973889 upgradeItemApps.go:445: AnalyseProcess(ARMimg_maker):false false 
+2020/01/02 00:01:17.974067 upgradeItemApps.go:69: IsUsingFlash(ARMimg_maker):false 
+2020/01/02 00:01:17.974434 upgradeItemApps.go:335: /tmp/update/usr/sbin/ARMimg_maker to /usr/sbin/ARMimg_maker orgsize:21016 newsize:21056 
+2020/01/02 00:01:18.050828 upg.go:353: 已写入: 0 byte, 升级进度: 13
+2020/01/02 00:01:18.059588 upgradeItemApps.go:445: AnalyseProcess(AppleCarPlay):false false 
+2020/01/02 00:01:18.059873 upgradeItemApps.go:69: IsUsingFlash(AppleCarPlay):false 
+2020/01/02 00:01:18.060815 upgradeItemApps.go:335: /tmp/update/usr/sbin/AppleCarPlay to /usr/sbin/AppleCarPlay orgsize:306200 newsize:312336 
+2020/01/02 00:01:18.126886 upgradeItemApps.go:445: AnalyseProcess(bluetoothDaemon):false false 
+2020/01/02 00:01:18.127061 upgradeItemApps.go:69: IsUsingFlash(bluetoothDaemon):false 
+2020/01/02 00:01:18.127309 upgradeItemApps.go:335: /tmp/update/usr/sbin/bluetoothDaemon to /usr/sbin/bluetoothDaemon orgsize:150868 newsize:162836 
+2020/01/02 00:01:18.210531 upgradeItemApps.go:445: AnalyseProcess(boa):true true 202
+2020/01/02 00:01:18.210720 upgradeItemApps.go:69: IsUsingFlash(boa):true 
+2020/01/02 00:01:18.210986 upgradeItemApps.go:335: /tmp/update/usr/sbin/boa to /usr/sbin/boa orgsize:35504 newsize:44512 
+2020/01/02 00:01:18.270463 upgradeItemApps.go:445: AnalyseProcess(boxImgTools):false false 
+2020/01/02 00:01:18.270642 upgradeItemApps.go:69: IsUsingFlash(boxImgTools):false 
+2020/01/02 00:01:18.273109 upgradeItemApps.go:335: /tmp/update/usr/sbin/boxImgTools to /usr/sbin/boxImgTools orgsize:0 newsize:260524 
+2020/01/02 00:01:18.337812 upgradeItemApps.go:445: AnalyseProcess(colorLightDaemon):true true 65
+2020/01/02 00:01:18.337992 upgradeItemApps.go:69: IsUsingFlash(colorLightDaemon):true 
+2020/01/02 00:01:18.338250 upgradeItemApps.go:335: /tmp/update/usr/sbin/colorLightDaemon to /usr/sbin/colorLightDaemon orgsize:21804 newsize:27764 
+2020/01/02 00:01:18.461266 upgradeItemApps.go:445: AnalyseProcess(fakeiOSDevice):false true 139
+2020/01/02 00:01:18.461489 upgradeItemApps.go:69: IsUsingFlash(fakeiOSDevice):false 
+2020/01/02 00:01:18.461734 upgradeItemApps.go:335: /tmp/update/usr/sbin/fakeiOSDevice to /usr/sbin/fakeiOSDevice orgsize:1121712 newsize:1130504 
+2020/01/02 00:01:18.610581 upgradeItemApps.go:445: AnalyseProcess(hfpd):false false 
+2020/01/02 00:01:18.610767 upgradeItemApps.go:69: IsUsingFlash(hfpd):false 
+2020/01/02 00:01:18.611011 upgradeItemApps.go:335: /tmp/update/usr/sbin/hfpd to /usr/sbin/hfpd orgsize:117380 newsize:117416 
+2020/01/02 00:01:18.759996 upgradeItemApps.go:445: AnalyseProcess(hwfsTools):false false 
+2020/01/02 00:01:18.760284 upgradeItemApps.go:69: IsUsingFlash(hwfsTools):false 
+2020/01/02 00:01:18.760522 upgradeItemApps.go:335: /tmp/update/usr/sbin/hwfsTools to /usr/sbin/hwfsTools orgsize:0 newsize:21064 
+2020/01/02 00:01:18.817900 upgradeItemApps.go:445: AnalyseProcess(mdnsd):false false 
+2020/01/02 00:01:18.818081 upgradeItemApps.go:69: IsUsingFlash(mdnsd):false 
+2020/01/02 00:01:18.818326 upgradeItemApps.go:335: /tmp/update/usr/sbin/mdnsd to /usr/sbin/mdnsd orgsize:144440 newsize:144372 
+2020/01/02 00:01:18.878834 upgradeItemApps.go:445: AnalyseProcess(riddleBoxCfg):false false 
+2020/01/02 00:01:18.879004 upgradeItemApps.go:69: IsUsingFlash(riddleBoxCfg):false 
+2020/01/02 00:01:18.879258 upgradeItemApps.go:335: /tmp/update/usr/sbin/riddleBoxCfg to /usr/sbin/riddleBoxCfg orgsize:17512 newsize:24092 
+2020/01/02 00:01:19.008328 upgradeItemApps.go:445: AnalyseProcess(set_wifi_mac):false false 
+2020/01/02 00:01:19.008500 upgradeItemApps.go:69: IsUsingFlash(set_wifi_mac):false 
+2020/01/02 00:01:19.008747 upgradeItemApps.go:335: /tmp/update/usr/sbin/set_wifi_mac to /usr/sbin/set_wifi_mac orgsize:6236 newsize:6256 
+2020/01/02 00:01:19.093813 upg.go:353: 已写入: 0 byte, 升级进度: 14
+2020/01/02 00:01:19.239520 upgradeItemApps.go:445: AnalyseProcess(ui.tar.gz):false false 
+2020/01/02 00:01:19.239707 upgradeItemApps.go:69: IsUsingFlash(ui.tar.gz):false 
+2020/01/02 00:01:19.239957 upgradeItemApps.go:335: /tmp/update/usr/sbin/ui.tar.gz to /usr/sbin/ui.tar.gz orgsize:726245 newsize:726251 
+2020/01/02 00:01:19.269347 upgradeItemApps.go:204: eir_info need -13 more, neednow: -13 
+2020/01/02 00:01:19.269681 upgradeItemApps.go:204: hcid.conf need -7 more, neednow: -20 
+2020/01/02 00:01:19.269930 upgradeItemApps.go:204: boa.conf need 31 more, neednow: 11 
+2020/01/02 00:01:19.270724 upgradeItemApps.go:204: car.png need 3799 more, neednow: 3810 
+2020/01/02 00:01:19.271206 upgradeItemApps.go:204: udisk_hotplug.sh need -596 more, neednow: 3214 
+2020/01/02 00:01:19.271601 upgradeItemApps.go:204: udisk_remove.sh need -592 more, neednow: 2622 
+2020/01/02 00:01:19.272093 upgradeItemApps.go:204: rgbLight.conf need 5131 more, neednow: 7753 
+2020/01/02 00:01:19.272542 upgradeItemApps.go:204: riddle_default.conf need -840 more, neednow: 6913 
+2020/01/02 00:01:19.272920 upgradeItemApps.go:204: software_version need 0 more, neednow: 6913 
+2020/01/02 00:01:19.273407 upgradeItemApps.go:204: attach_bluetooth.sh need 39 more, neednow: 6952 
+2020/01/02 00:01:19.273780 upgradeItemApps.go:204: close_bluetooth_wifi.sh need -11 more, neednow: 6941 
+2020/01/02 00:01:19.274135 upgradeItemApps.go:204: copy_to_tmp.sh need -168 more, neednow: 6773 
+2020/01/02 00:01:19.274475 upgradeItemApps.go:204: init_bluetooth_wifi.sh need 667 more, neednow: 7440 
+2020/01/02 00:01:19.274808 upgradeItemApps.go:204: phone_link_deamon.sh need 3094 more, neednow: 10534 
+2020/01/02 00:01:19.275100 upgradeItemApps.go:204: start_bluetooth_wifi.sh need 683 more, neednow: 11217 
+2020/01/02 00:01:19.276603 upgradeItemApps.go:204: start_main_service.sh need -329 more, neednow: 10888 
+2020/01/02 00:01:19.281201 upgradeItemApps.go:204: start_mass_storage.sh need 577 more, neednow: 11465 
+2020/01/02 00:01:19.289448 upgradeItemApps.go:204: start_mtp.sh need 777 more, neednow: 12242 
+2020/01/02 00:01:19.294846 upgradeItemApps.go:204: sync_box_time.sh need 2098 more, neednow: 14340 
+2020/01/02 00:01:19.296268 upgradeItemApps.go:204: update_box.sh need 972 more, neednow: 15312 
+2020/01/02 00:01:19.297819 upgradeItemApps.go:204: update_box_ota.sh need 991 more, neednow: 16303 
+2020/01/02 00:01:19.301434 upgradeItemApps.go:204: libBoxUI.so need 257756 more, neednow: 274059 
+2020/01/02 00:01:19.309582 upgradeItemApps.go:204: libcrypto.so need 0 more, neednow: 274059 
+2020/01/02 00:01:19.313221 upgradeItemApps.go:204: libcrypto.so.1.1 need -632156 more, neednow: -358097 
+2020/01/02 00:01:19.315700 upgradeItemApps.go:204: libssl.so need 0 more, neednow: -358097 
+2020/01/02 00:01:19.316181 upgradeItemApps.go:204: libssl.so.1.1 need 199892 more, neednow: -158205 
+2020/01/02 00:01:19.316641 upgradeItemApps.go:204: ARMAndroidAuto need 6832 more, neednow: -151373 
+2020/01/02 00:01:19.317220 upgradeItemApps.go:204: ARMadb-driver need 3560 more, neednow: -147813 
+2020/01/02 00:01:19.318509 upgradeItemApps.go:204: ARMiPhoneIAP2 need 7600 more, neednow: -140213 
+2020/01/02 00:01:19.318933 upgradeItemApps.go:204: ARMimg_maker need 40 more, neednow: -140173 
+2020/01/02 00:01:19.319382 upgradeItemApps.go:204: AppleCarPlay need 6136 more, neednow: -134037 
+2020/01/02 00:01:19.319769 upgradeItemApps.go:204: bluetoothDaemon need 11968 more, neednow: -122069 
+2020/01/02 00:01:19.320277 upgradeItemApps.go:204: boa need 44512 more, neednow: -77557 
+2020/01/02 00:01:19.320891 upgradeItemApps.go:204: boxImgTools need 260524 more, neednow: 182967 
+2020/01/02 00:01:19.321209 upgradeItemApps.go:204: colorLightDaemon need 27764 more, neednow: 210731 
+2020/01/02 00:01:19.321509 upgradeItemApps.go:204: fakeiOSDevice need 8792 more, neednow: 219523 
+2020/01/02 00:01:19.321808 upgradeItemApps.go:204: hfpd need 36 more, neednow: 219559 
+2020/01/02 00:01:19.322037 upgradeItemApps.go:204: hwfsTools need 21064 more, neednow: 240623 
+2020/01/02 00:01:19.322268 upgradeItemApps.go:204: mdnsd need -68 more, neednow: 240555 
+2020/01/02 00:01:19.322646 upgradeItemApps.go:204: riddleBoxCfg need 6580 more, neednow: 247135 
+2020/01/02 00:01:19.322897 upgradeItemApps.go:204: set_wifi_mac need 20 more, neednow: 247155 
+2020/01/02 00:01:19.323128 upgradeItemApps.go:204: ui.tar.gz need 6 more, neednow: 247161 
+2020/01/02 00:01:19.323204 upgradeItemApps.go:208: .delete need 0 more, neednow: 247161 
+2020/01/02 00:01:19.323271 upgradeItemApps.go:208: .delete need 0 more, neednow: 247161 
+2020/01/02 00:01:19.323339 upgradeItemApps.go:208: .delete need 0 more, neednow: 247161 
+2020/01/02 00:01:19.323518 upgradeItemApps.go:208: .delete need 0 more, neednow: 247161 
+2020/01/02 00:01:19.323611 upgradeItemApps.go:211: mayNeedMoreFlashSpaceSize=247161 minFlashSizeReserve=204800 freeSpace=1782579
+2020/01/02 00:01:19.323682 upgradeItemApps.go:232: AppUpdate May need more flash space: 247161
+2020/01/02 00:01:19.324022 bootenvutils.go:414: Not open some file
+2020/01/02 00:01:19.380655 upg.go:470: 升级总共需要写入Flash: 5094756 byte
+2020/01/02 00:01:19.425238 upgradeItemApps.go:146: delete /etc/mirror.bgd
+2020/01/02 00:01:19.451804 upgradeItemApps.go:146: delete /lib/libasan.so.1.0.0
+2020/01/02 00:01:19.481767 upgradeItemApps.go:146: delete /lib/libubsan.so.0.0.0
+2020/01/02 00:01:19.508970 upgradeItemApps.go:146: delete /usr/lib/libssl.so.1.0.0
+2020/01/02 00:01:19.537149 upgradeItemApps.go:146: delete /usr/lib/libcrypto.so.1.0.0
+2020/01/02 00:01:19.566474 upgradeItemApps.go:146: delete /usr/sbin/adb
+2020/01/02 00:01:19.593944 upgradeItemApps.go:146: delete /usr/sbin/carlife
+[D]2020-01-02 00:01:19.915 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:19.915 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:19.915 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:20.117399 upg.go:353: 已写入: 1 byte, 升级进度: 14
+2020/01/02 00:01:21.140554 upg.go:353: 已写入: 1 byte, 升级进度: 15
+[D]2020-01-02 00:01:21.917 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:21.917 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:21.917 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:22.154308 upg.go:353: 已写入: 1 byte, 升级进度: 17
+2020/01/02 00:01:22.341652 upgradeItemApps.go:402: 创建 /usr/lib/ 文件夹 后 覆盖 /tmp/update/usr/lib/libcrypto.so.1.1 to /usr/lib/libcrypto.so.1.1 完成
+2020/01/02 00:01:22.580812 upgradeItemApps.go:402: 创建 /etc/ 文件夹 后 覆盖 /tmp/update/etc/riddle_default.conf to /etc/riddle_default.conf 完成
+2020/01/02 00:01:22.624938 upgradeItemApps.go:402: 创建 /etc/mdev/ 文件夹 后 覆盖 /tmp/update/etc/mdev/udisk_hotplug.sh to /etc/mdev/udisk_hotplug.sh 完成
+2020/01/02 00:01:22.666197 upgradeItemApps.go:402: 创建 /etc/mdev/ 文件夹 后 覆盖 /tmp/update/etc/mdev/udisk_remove.sh to /etc/mdev/udisk_remove.sh 完成
+2020/01/02 00:01:22.731377 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/start_main_service.sh to /script/start_main_service.sh 完成
+2020/01/02 00:01:22.965699 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/copy_to_tmp.sh to /script/copy_to_tmp.sh 完成
+2020/01/02 00:01:23.179490 upg.go:342: Flash 写入速度: 163249 Byte/s 
+2020/01/02 00:01:23.179680 upg.go:353: 已写入: 652996 byte, 升级进度: 24
+2020/01/02 00:01:23.746272 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/mdnsd to /usr/sbin/mdnsd 完成
+2020/01/02 00:01:23.788914 upgradeItemApps.go:402: 创建 /etc/bluetooth/ 文件夹 后 覆盖 /tmp/update/etc/bluetooth/eir_info to /etc/bluetooth/eir_info 完成
+2020/01/02 00:01:23.861969 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/close_bluetooth_wifi.sh to /script/close_bluetooth_wifi.sh 完成
+2020/01/02 00:01:23.903749 upgradeItemApps.go:402: 创建 /etc/bluetooth/ 文件夹 后 覆盖 /tmp/update/etc/bluetooth/hcid.conf to /etc/bluetooth/hcid.conf 完成
+[D]2020-01-02 00:01:23.919 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:23.919 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:23.920 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:24.145326 upgradeItemApps.go:402: 创建 /usr/lib/ 文件夹 后 覆盖 /tmp/update/usr/lib/libcrypto.so to /usr/lib/libcrypto.so 完成
+2020/01/02 00:01:24.205039 upg.go:342: Flash 写入速度: 159930 Byte/s 
+2020/01/02 00:01:24.205226 upg.go:353: 已写入: 799652 byte, 升级进度: 27
+2020/01/02 00:01:24.220145 upgradeItemApps.go:402: 创建 /etc/ 文件夹 后 覆盖 /tmp/update/etc/software_version to /etc/software_version 完成
+2020/01/02 00:01:24.273514 upgradeItemApps.go:402: 创建 /usr/lib/ 文件夹 后 覆盖 /tmp/update/usr/lib/libssl.so to /usr/lib/libssl.so 完成
+2020/01/02 00:01:25.248541 upg.go:342: Flash 写入速度: 133277 Byte/s 
+2020/01/02 00:01:25.248828 upg.go:353: 已写入: 799667 byte, 升级进度: 27
+[D]2020-01-02 00:01:25.921 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:25.921 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:25.922 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:26.278888 upg.go:353: 已写入: 799667 byte, 升级进度: 29
+2020/01/02 00:01:27.321693 upg.go:353: 已写入: 799667 byte, 升级进度: 31
+2020/01/02 00:01:27.628276 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/ui.tar.gz to /usr/sbin/ui.tar.gz 完成
+2020/01/02 00:01:27.712531 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/set_wifi_mac to /usr/sbin/set_wifi_mac 完成
+2020/01/02 00:01:27.769585 upgradeItemApps.go:402: 创建 /etc/boa/ 文件夹 后 覆盖 /tmp/update/etc/boa/boa.conf to /etc/boa/boa.conf 完成
+[D]2020-01-02 00:01:27.923 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:27.923 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:27.923 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:28.363272 upg.go:342: Flash 写入速度: 171359 Byte/s 
+2020/01/02 00:01:28.363452 upg.go:353: 已写入: 1542234 byte, 升级进度: 39
+2020/01/02 00:01:28.431148 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/hfpd to /usr/sbin/hfpd 完成
+2020/01/02 00:01:28.686084 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/attach_bluetooth.sh to /script/attach_bluetooth.sh 完成
+2020/01/02 00:01:28.821254 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/ARMimg_maker to /usr/sbin/ARMimg_maker 完成
+2020/01/02 00:01:28.864999 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/start_mass_storage.sh to /script/start_mass_storage.sh 完成
+2020/01/02 00:01:28.910160 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/init_bluetooth_wifi.sh to /script/init_bluetooth_wifi.sh 完成
+2020/01/02 00:01:29.162994 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/start_bluetooth_wifi.sh to /script/start_bluetooth_wifi.sh 完成
+2020/01/02 00:01:29.204451 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/start_mtp.sh to /script/start_mtp.sh 完成
+2020/01/02 00:01:29.250248 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/update_box.sh to /script/update_box.sh 完成
+2020/01/02 00:01:29.294733 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/update_box_ota.sh to /script/update_box_ota.sh 完成
+2020/01/02 00:01:29.393880 upg.go:342: Flash 写入速度: 170192 Byte/s 
+2020/01/02 00:01:29.394076 upg.go:353: 已写入: 1701923 byte, 升级进度: 42
+2020/01/02 00:01:29.561590 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/sync_box_time.sh to /script/sync_box_time.sh 完成
+2020/01/02 00:01:29.617541 upgradeItemApps.go:402: 创建 /script/ 文件夹 后 覆盖 /tmp/update/script/phone_link_deamon.sh to /script/phone_link_deamon.sh 完成
+[D]2020-01-02 00:01:29.926 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:29.926 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:29.926 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:30.441995 upg.go:342: Flash 写入速度: 155192 Byte/s 
+2020/01/02 00:01:30.442216 upg.go:353: 已写入: 1707115 byte, 升级进度: 42
+2020/01/02 00:01:30.967055 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/ARMadb-driver to /usr/sbin/ARMadb-driver 完成
+2020/01/02 00:01:31.017368 upgradeItemApps.go:402: 创建 /etc/ 文件夹 后 覆盖 /tmp/update/etc/car.png to /etc/car.png 完成
+2020/01/02 00:01:31.061546 upgradeItemApps.go:402: 创建 /etc/ 文件夹 后 覆盖 /tmp/update/etc/rgbLight.conf to /etc/rgbLight.conf 完成
+2020/01/02 00:01:31.485776 upg.go:342: Flash 写入速度: 161395 Byte/s 
+2020/01/02 00:01:31.486006 upg.go:353: 已写入: 1936745 byte, 升级进度: 46
+[D]2020-01-02 00:01:31.927 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:31.928 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:31.928 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:32.519938 upg.go:353: 已写入: 1936745 byte, 升级进度: 49
+2020/01/02 00:01:32.858826 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/AppleCarPlay to /usr/sbin/AppleCarPlay 完成
+2020/01/02 00:01:32.977749 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/riddleBoxCfg to /usr/sbin/riddleBoxCfg 完成
+2020/01/02 00:01:33.534010 upg.go:342: Flash 写入速度: 162369 Byte/s 
+2020/01/02 00:01:33.534207 upg.go:353: 已写入: 2273173 byte, 升级进度: 51
+[D]2020-01-02 00:01:33.929 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:33.929 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:33.929 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:34.568973 upg.go:353: 已写入: 2273173 byte, 升级进度: 54
+2020/01/02 00:01:35.605704 upg.go:353: 已写入: 2273173 byte, 升级进度: 57
+[D]2020-01-02 00:01:35.931 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:35.931 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:35.931 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:36.557337 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/ARMAndroidAuto to /usr/sbin/ARMAndroidAuto 完成
+2020/01/02 00:01:36.623117 upg.go:342: Flash 写入速度: 165770 Byte/s 
+2020/01/02 00:01:36.623306 upg.go:353: 已写入: 2818101 byte, 升级进度: 61
+2020/01/02 00:01:37.639185 upg.go:353: 已写入: 2818101 byte, 升级进度: 63
+2020/01/02 00:01:37.894755 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/ARMiPhoneIAP2 to /usr/sbin/ARMiPhoneIAP2 完成
+[D]2020-01-02 00:01:37.933 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:37.933 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:37.933 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:38.667667 upg.go:342: Flash 写入速度: 157363 Byte/s 
+2020/01/02 00:01:38.667860 upg.go:353: 已写入: 2989905 byte, 升级进度: 63
+2020/01/02 00:01:39.688586 upg.go:353: 已写入: 2989905 byte, 升级进度: 66
+[D]2020-01-02 00:01:39.936 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:39.936 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:39.936 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+check_log_size: 74501 byte
+2020/01/02 00:01:40.738797 upg.go:353: 已写入: 2989905 byte, 升级进度: 69
+2020/01/02 00:01:41.763602 upg.go:353: 已写入: 2989905 byte, 升级进度: 71
+[D]2020-01-02 00:01:41.938 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:41.938 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:41.938 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:42.777016 upg.go:353: 已写入: 2989905 byte, 升级进度: 74
+2020/01/02 00:01:43.790551 upg.go:353: 已写入: 2989905 byte, 升级进度: 77
+[D]2020-01-02 00:01:43.939 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:43.939 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:43.939 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:44.822636 upg.go:353: 已写入: 2989905 byte, 升级进度: 79
+2020/01/02 00:01:45.854165 upg.go:353: 已写入: 2989905 byte, 升级进度: 82
+[D]2020-01-02 00:01:45.941 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:45.941 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:45.941 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:46.236941 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/fakeiOSDevice to /usr/sbin/fakeiOSDevice 完成
+2020/01/02 00:01:46.883484 upg.go:342: Flash 写入速度: 152607 Byte/s 
+2020/01/02 00:01:46.883675 upg.go:353: 已写入: 4120409 byte, 升级进度: 82
+2020/01/02 00:01:47.916759 upg.go:353: 已写入: 4120409 byte, 升级进度: 85
+[D]2020-01-02 00:01:47.942 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:47.943 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:47.943 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:48.866556 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/bluetoothDaemon to /usr/sbin/bluetoothDaemon 完成
+2020/01/02 00:01:48.963313 upg.go:342: Flash 写入速度: 147698 Byte/s 
+2020/01/02 00:01:48.963506 upg.go:353: 已写入: 4283245 byte, 升级进度: 85
+2020/01/02 00:01:49.003446 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/hwfsTools to /usr/sbin/hwfsTools 完成
+2020/01/02 00:01:49.347545 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/colorLightDaemon to /usr/sbin/colorLightDaemon 完成
+2020/01/02 00:01:49.517336 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/boa to /usr/sbin/boa 完成
+[D]2020-01-02 00:01:49.944 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:49.944 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:49.944 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:49.983136 upg.go:342: Flash 写入速度: 145886 Byte/s 
+2020/01/02 00:01:49.983332 upg.go:353: 已写入: 4376585 byte, 升级进度: 87
+2020/01/02 00:01:50.390985 upgradeItemApps.go:402: 创建 /usr/lib/ 文件夹 后 覆盖 /tmp/update/usr/lib/libssl.so.1.1 to /usr/lib/libssl.so.1.1 完成
+2020/01/02 00:01:51.029103 upg.go:342: Flash 写入速度: 147628 Byte/s 
+2020/01/02 00:01:51.029291 upg.go:353: 已写入: 4576477 byte, 升级进度: 90
+2020/01/02 00:01:51.898658 upgradeItemApps.go:402: 创建 /usr/lib/ 文件夹 后 覆盖 /tmp/update/usr/lib/libBoxUI.so to /usr/lib/libBoxUI.so 完成
+[D]2020-01-02 00:01:51.946 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:51.946 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:51.946 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:52.059010 upg.go:342: Flash 写入速度: 151069 Byte/s 
+2020/01/02 00:01:52.059198 upg.go:353: 已写入: 4834233 byte, 升级进度: 94
+2020/01/02 00:01:53.074443 upg.go:353: 已写入: 4834233 byte, 升级进度: 97
+[D]2020-01-02 00:01:53.949 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_color) = 7!!
+[D]2020-01-02 00:01:53.949 65-76f12000/colorLightDaemon[getColor]: cJSON_GetArraySize(json_rule) = 2!!
+[D]2020-01-02 00:01:53.949 65-76f12000/colorLightDaemon[getColor]: status=Upgrading, err = 2!!
+2020/01/02 00:01:54.106608 upg.go:353: 已写入: 4834233 byte, 升级进度: 99
+2020/01/02 00:01:54.376006 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/boxImgTools to /usr/sbin/boxImgTools 完成

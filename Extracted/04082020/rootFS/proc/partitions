@@ -1,7 +1,0 @@
-major minor  #blocks  name
-
-  31        0        256 mtdblock0
-  31        1       5888 mtdblock1
-  31        2      10240 mtdblock2
-   8       16   15642624 sdb
-   8       17   15641600 sdb1

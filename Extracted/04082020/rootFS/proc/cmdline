@@ -1,1 +1,0 @@
-root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=21e0000.qspi:256k(uboot),5888K(kernel),10240K(rootfs) rootwait quiet rw

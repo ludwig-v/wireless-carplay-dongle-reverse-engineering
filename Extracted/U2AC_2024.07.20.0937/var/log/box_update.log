@@ -1,0 +1,1062 @@
+Save update log
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                12.5M     10.8M      1.7M  87% /
+devtmpfs                 60.2M         0     60.2M   0% /dev
+tmpfs                    60.3M      5.2M     55.1M   9% /tmp
+tmpfs                    60.3M         0     60.3M   0% /var/run
+/dev/sda1                14.3G     22.0M     14.3G   0% /mnt/UPAN
+MemTotal:         123460 kB
+MemFree:           90480 kB
+MemAvailable:      96160 kB
+Buffers:            3688 kB
+Cached:             9876 kB
+SwapCached:            0 kB
+Active:            17080 kB
+Inactive:           8092 kB
+Active(anon):      11660 kB
+Inactive(anon):     5264 kB
+Active(file):       5420 kB
+Inactive(file):     2828 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         11612 kB
+Mapped:             2328 kB
+Shmem:              5316 kB
+Slab:               5092 kB
+SReclaimable:       1872 kB
+SUnreclaim:         3220 kB
+KernelStack:         584 kB
+PageTables:          552 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:       61728 kB
+Committed_AS:     109524 kB
+VmallocTotal:    1941504 kB
+VmallocUsed:        8180 kB
+VmallocChunk:    1727240 kB
+S   UID   PID  PPID   VSZ   RSS TTY   STIME TIME     CMD
+S     0     1     0  3204   692 0:0   23:59 00:00:01 init
+S     0     2     0     0     0 0:0   23:59 00:00:00 [kthreadd]
+S     0     3     2     0     0 0:0   23:59 00:00:00 [ksoftirqd/0]
+S     0     4     2     0     0 0:0   23:59 00:00:00 [kworker/0:0]
+S     0     5     2     0     0 0:0   23:59 00:00:00 [kworker/0:0H]
+S     0     6     2     0     0 0:0   23:59 00:00:00 [kworker/u2:0]
+S     0     7     2     0     0 0:0   23:59 00:00:00 [rcu_preempt]
+S     0     8     2     0     0 0:0   23:59 00:00:00 [rcu_sched]
+S     0     9     2     0     0 0:0   23:59 00:00:00 [rcu_bh]
+S     0    10     2     0     0 0:0   23:59 00:00:00 [migration/0]
+S     0    11     2     0     0 0:0   23:59 00:00:00 [khelper]
+S     0    12     2     0     0 0:0   23:59 00:00:00 [kdevtmpfs]
+S     0    13     2     0     0 0:0   23:59 00:00:00 [writeback]
+S     0    14     2     0     0 0:0   23:59 00:00:00 [bioset]
+S     0    15     2     0     0 0:0   23:59 00:00:00 [crypto]
+S     0    16     2     0     0 0:0   23:59 00:00:00 [kblockd]
+S     0    17     2     0     0 0:0   23:59 00:00:00 [ata_sff]
+S     0    18     2     0     0 0:0   23:59 00:00:00 [khubd]
+S     0    19     2     0     0 0:0   23:59 00:00:00 [kworker/u2:1]
+S     0    26     2     0     0 0:0   23:59 00:00:00 [kworker/0:1]
+S     0    27     2     0     0 0:0   23:59 00:00:00 [cfg80211]
+S     0    28     2     0     0 0:0   23:59 00:00:00 [cfinteractive]
+S     0    29     2     0     0 0:0   23:59 00:00:00 [kswapd0]
+S     0    30     2     0     0 0:0   23:59 00:00:00 [fsnotify_mark]
+D     0    38     2     0     0 0:0   23:59 00:00:00 [ttyLogFileThrea]
+S     0    39     2     0     0 0:0   23:59 00:00:00 [spi32766]
+S     0    42     2     0     0 0:0   23:59 00:00:00 [ci_otg]
+S     0    43     2     0     0 0:0   23:59 00:00:00 [ci_otg]
+S     0    44     2     0     0 0:0   23:59 00:00:00 [kworker/u2:2]
+S     0    45     2     0     0 0:0   23:59 00:00:00 [watchdog]
+S     0    46     2     0     0 0:0   23:59 00:00:00 [ipv6_addrconf]
+S     0    47     2     0     0 0:0   23:59 00:00:00 [krfcommd]
+S     0    48     2     0     0 0:0   23:59 00:00:00 [deferwq]
+S     0    49     2     0     0 0:0   23:59 00:00:00 [irq/81-imx_ther]
+S     0    50     2     0     0 0:0   23:59 00:00:00 [jffs2_gcd_mtd2]
+S     0    60     1  3204    84 0:0   23:59 00:00:00 init
+S     0    86     1  3204   664 0:0   00:00 00:00:00 {exe} ash /script/attach_
+S     0   121     1  3204   608 0:0   00:00 00:00:00 {exe} ash /script/check_m
+S     0   123     1  8308  3908 0:0   00:00 00:00:00 ARMadb-driver
+S     0   138     1  4348  1400 0:0   00:00 00:00:00 dbus-daemon --system --pr
+S     0   149   123 43280  3612 0:0   00:00 00:00:00 ARMadb-driver
+S     0   188   123 17524  3744 0:0   00:00 00:00:00 ARMadb-driver
+S     0   189   123  8308  3044 0:0   00:00 00:00:00 ARMadb-driver
+S     0   205   189 28936  6216 0:0   00:00 00:00:05 fakeiOSDevice
+S     0   234     1 22568  1452 0:0   00:00 00:00:00 colorLightDaemon
+S     0   299     1  4088  1284 0:0   00:00 00:00:00 boxNetworkService
+S     0   324     2     0     0 0:0   00:00 00:00:00 [kworker/0:2]
+S     0   331     2     0     0 0:0   00:00 00:00:00 [scsi_eh_0]
+S     0   332     2     0     0 0:0   00:00 00:00:00 [scsi_tmf_0]
+S     0   333     2     0     0 0:0   00:00 00:00:00 [usb-storage]
+S     0   350     2     0     0 0:0   00:00 00:00:00 [kworker/u2:3]
+S     0   360     2     0     0 0:0   00:00 00:00:00 [kworker/0:1H]
+S     0   363     1  3204   672 0:0   00:00 00:00:00 {exe} ash /script/update_
+S     0   545     1  2492   844 0:0   00:00 00:00:00 boa
+S     0   646     1  4176  1372 0:0   00:00 00:00:00 hwSecret
+S     0   647     1  3204   412 0:0   00:00 00:00:00 {exe} ash /script/cpu_Usa
+S     0   648     1  3204   412 0:0   00:00 00:00:00 {exe} ash /script/check_l
+S     0   651   647  2204   744 0:0   00:00 00:00:00 riddle_top -m 3 -d 8
+S     0   656   648  3072   412 0:0   00:00 00:00:00 sleep 30
+S     0   835   647  3072   412 0:0   00:00 00:00:00 sleep 8
+S     0   883   121  3072   412 0:0   00:00 00:00:00 sleep 2
+S     0   931   363  3204   616 0:0   00:00 00:00:00 {exe} ash /tmp/update/tmp
+S     0   935    86  3072   412 0:0   00:00 00:00:00 sleep 0.1
+R     0   937   931  3208   680 0:0   00:00 00:00:00 ps -l
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 3.14.52+g94d07bb (sky@sky-vmware-1604) (gcc version 4.9.2 (GCC) ) #336 SMP PREEMPT Fri Aug 23 11:17:18 CST 2024
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: Freescale i.MX6 UltraLite 14x14 EVK Board
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 32768
+[    0.000000] free_area_init_node: node 0, pgdat 805f0000, node_mem_map 87ef8000
+[    0.000000]   Normal zone: 256 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 32768 pages, LIFO batch:7
+[    0.000000] PERCPU: Embedded 8 pages/cpu @87ee2000 s8256 r8192 d16320 u32768
+[    0.000000] pcpu-alloc: s8256 r8192 d16320 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 32512
+[    0.000000] Kernel command line: console=ttyLogFile0 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=21e0000.qspi:256k(uboot),3328K(kernel),12800K(rootfs) rootwait quiet rw
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 123256K/131072K available (4260K kernel code, 194K rwdata, 1384K rodata, 204K init, 478K bss, 7816K reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0x88800000 - 0xff000000   (1896 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0x88000000   ( 128 MB)
+[    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+[    0.000000]       .text : 0x80008000 - 0x8058b310   (5645 kB)
+[    0.000000]       .init : 0x8058c000 - 0x805bf040   ( 205 kB)
+[    0.000000]       .data : 0x805c0000 - 0x805f0b60   ( 195 kB)
+[    0.000000]        .bss : 0x805f0b6c - 0x806684c8   ( 479 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] Switching to timer-based delay loop
+[    0.000022] sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 1431655765682ns
+[    0.001583] clocksource_of_init: no matching clocksources found
+[    0.001865] log file data init success
+[    0.001978] console [ttyLogFile0] enabled
+[    0.001991] tty-log-file: registered console driver for tty log file 0
+[    0.002188] Console: colour dummy device 80x30
+[    0.002229] Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=30000)
+[    0.002258] pid_max: default: 32768 minimum: 301
+[    0.002638] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.002659] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.004300] CPU: Testing write buffer coherency: ok
+[    0.004830] CPU0: update cpu_power 1024
+[    0.004855] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.004909] Setting up static identity map for 0x8040aeb0 - 0x8040af08
+[    0.040850] Brought up 1 CPUs
+[    0.040876] SMP: Total of 1 processors activated (6.00 BogoMIPS).
+[    0.040889] CPU: All CPU(s) started in SVC mode.
+[    0.042271] devtmpfs: initialized
+[    0.053847] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.054625] pinctrl core: initialized pinctrl subsystem
+[    0.055486] regulator-dummy: no parameters
+[    0.056121] NET: Registered protocol family 16
+[    0.056804] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.058140] cpuidle: using governor ladder
+[    0.058159] cpuidle: using governor menu
+[    0.058420] Use WDOG1 as reset source
+[    0.078625] syscon 20c8000.anatop: regmap [mem 0x020c8000-0x020c8fff] registered
+[    0.079393] vdd3p0: 2625 <--> 3400 mV at 3000 mV 
+[    0.080308] cpu: 725 <--> 1450 mV at 1150 mV 
+[    0.081404] vddsoc: 725 <--> 1450 mV at 1175 mV 
+[    0.086843] syscon 20e4000.iomuxc-gpr: regmap [mem 0x020e4000-0x020e7fff] registered
+[    0.093622] syscon 21ac000.romcp: regmap [mem 0x021ac000-0x021affff] registered
+[    0.095498] syscon 21bc000.ocotp-ctrl: regmap [mem 0x021bc000-0x021bffff] registered
+[    0.102867] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.102890] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.104030] imx6ul-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+[    0.106058] 20dc000.gpc supply pu not found, using dummy regulator
+[    0.121404] bio: create slab <bio-0> at 0
+[    0.128520] mxs-dma 1804000.dma-apbh: initialized
+[    0.129549] can-3v3: 3300 mV 
+[    0.130282] wlreg_on: 3300 mV 
+[    0.131385] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58, base_baud = 5000000) is a IMX
+[    0.133215] 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 59, base_baud = 5000000) is a IMX
+[    0.134527] 21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 60, base_baud = 5000000) is a IMX
+[    0.136243] SCSI subsystem initialized
+[    0.136735] libata version 3.00 loaded.
+[    0.137157] usbcore: registered new interface driver usbfs
+[    0.137327] usbcore: registered new interface driver hub
+[    0.137640] usbcore: registered new device driver usb
+[    0.142303] i2c i2c-0: IMX I2C adapter registered
+[    0.143059] i2c i2c-1: IMX I2C adapter registered
+[    0.144003] Advanced Linux Sound Architecture Driver Initialized.
+[    0.146123] Bluetooth: Core ver 2.18
+[    0.146238] NET: Registered protocol family 31
+[    0.146253] Bluetooth: HCI device and connection manager initialized
+[    0.146289] Bluetooth: HCI socket layer initialized
+[    0.146317] Bluetooth: L2CAP socket layer initialized
+[    0.146430] Bluetooth: SCO socket layer initialized
+[    0.147367] cfg80211: Calling CRDA to update world regulatory domain
+[    0.147450] cfg80211: World regulatory domain updated:
+[    0.147463] cfg80211:  DFS Master region: unset
+[    0.147475] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[    0.147495] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (N/A, 2000 mBm)
+[    0.147511] cfg80211:   (2457000 KHz - 2482000 KHz @ 20000 KHz), (N/A, 2000 mBm)
+[    0.147528] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (N/A, 2000 mBm)
+[    0.147543] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (N/A, 2000 mBm)
+[    0.147558] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz), (N/A, 2000 mBm)
+[    0.147576] cfg80211:   (5490000 KHz - 5730000 KHz @ 160000 KHz), (N/A, 2000 mBm)
+[    0.147591] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (N/A, 2000 mBm)
+[    0.147607] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm)
+[    0.148279] Switched to clocksource mxc_timer1
+[    0.174708] NET: Registered protocol family 2
+[    0.176760] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.176817] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.176868] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.176975] TCP: reno registered
+[    0.177003] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.177058] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.177665] NET: Registered protocol family 1
+[    0.180493] ldo2p5-dummy: no parameters
+[    0.182787] Bus freq driver module loaded
+[    0.184750] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.201828] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.203653] fuse init (API version 7.22)
+[    0.204840] msgmni has been set to 240
+[    0.206791] io scheduler noop registered
+[    0.206809] io scheduler deadline registered
+[    0.206897] io scheduler cfq registered (default)
+[    0.208048] imx-weim 21b8000.weim: Driver registered.
+[    0.209789] imx-sdma 20ec000.sdma: no event needs to be remapped
+[    0.210000] imx-sdma 20ec000.sdma: loaded firmware 3.2
+[    0.219115] imx-sdma 20ec000.sdma: initialized
+[    0.221062] serial: Freescale lpuart driver
+[    0.247077] brd: module loaded
+[    0.259444] loop: module loaded
+[    0.265588] fsl-quadspi 21e0000.qspi: mx25l12805d (16384 Kbytes)
+[    0.265646] 3 cmdlinepart partitions found on MTD device 21e0000.qspi
+[    0.265661] Creating 3 MTD partitions on "21e0000.qspi":
+[    0.265718] 0x000000000000-0x000000040000 : "uboot"
+[    0.268868] 0x000000040000-0x000000380000 : "kernel"
+[    0.271755] 0x000000380000-0x000001000000 : "rootfs"
+[    0.274497] fsl-quadspi 21e0000.qspi: QuadSPI SPI NOR flash driver
+[    0.275453] spi_gpio spi4.17: gpio-miso property not found, switching to no-rx mode
+[    0.278635] usbcore: registered new interface driver cdc_ether
+[    0.278777] usbcore: registered new interface driver cdc_subset
+[    0.278895] usbcore: registered new interface driver zaurus
+[    0.278964] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.278980] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    0.279404] usbcore: registered new interface driver usb-storage
+[    0.283619] setup_reset_gpios:-2, flags 0
+[    0.283847] 2184000.usb supply vbus not found, using dummy regulator
+[    0.285027] mxs_phy 20c9000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.288908] ci_hdrc ci_hdrc.0: Init set fsm->a_vbus_vld = 1
+[    0.289600] setup_reset_gpios:-2, flags 0
+[    0.289977] 2184200.usb supply vbus not found, using dummy regulator
+[    0.291154] mxs_phy 20ca000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.292319] [otg_statemachine]  fsm->id = 0
+[    0.292335] [otg_set_state]  Set state: a_idle
+[    0.292354] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 1
+[    0.292393] ci_hdrc ci_hdrc.0: EHCI Host Controller
+[    0.297087] snvs_pwrkey 20cc000.snvs-pwrkey: can't get snvs clock
+[    0.297870] input: 20cc000.snvs-pwrkey as /devices/soc0/soc.1/2000000.aips-bus/20cc000.snvs-pwrkey/input/input0
+[    0.298052] snvs_pwrkey 20cc000.snvs-pwrkey: i.MX snvs powerkey probed
+[    0.298985] snvs_rtc 20cc034.snvs-rtc-lp: can't get snvs-rtc clock
+[    0.299359] check_alarm_past: alarm in the past
+[    0.300131] snvs_rtc 20cc034.snvs-rtc-lp: rtc core: registered 20cc034.snvs-rtc-lp as rtc0
+[    0.300462] i2c /dev entries driver
+[    0.302351] imx2-wdt 20bc000.wdog: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=0)
+[    0.303373] sdhci: Secure Digital Host Controller Interface driver
+[    0.303387] sdhci: Copyright(c) Pierre Ossman
+[    0.303399] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.305344] sdhci-esdhc-imx 2190000.usdhc: assigned as wifi host
+[    0.306582] mmc0: no vqmmc regulator found
+[    0.308466] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+[    0.309206] usb usb1: is_b_host:0, config:842e5800, parent:  (null), root_hub=842bf800
+[    0.309243] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.309268] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.309291] usb usb1: Product: EHCI Host Controller
+[    0.309313] usb usb1: Manufacturer: Linux 3.14.52+g94d07bb ehci_hcd
+[    0.309335] usb usb1: SerialNumber: ci_hdrc.0
+[    0.311143] hub 1-0:1.0: USB hub found
+[    0.311253] hub 1-0:1.0: 1 port detected
+[    0.312166] [otg_statemachine]  quit statemachine, changed = 1
+[    0.312261] [otg_set_state]  Set state: a_wait_vrise
+[    0.312300] [otg_statemachine]  quit statemachine, changed = 1
+[    0.348358] mmc0: SDHCI controller on 2190000.usdhc [2190000.usdhc] using ADMA
+[    0.361057] mmc1: no vqmmc regulator found
+[    0.361085] mmc1: no vmmc regulator found
+[    0.363020] sdhci-esdhc-imx 2190000.usdhc: card claims to support voltages below defined range 90ffffff
+[    0.383156] mmc0: new high speed SDIO card at address 0001
+[    0.398404] mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+[    0.408101] fsl-asrc 2034000.asrc: driver registered
+[    0.414465] [otg_set_state]  Set state: a_wait_bcon
+[    0.414500] [otg_statemachine]  quit statemachine, changed = 1
+[    0.421431] TCP: cubic registered
+[    0.422986] NET: Registered protocol family 10
+[    0.432956] sit: IPv6 over IPv4 tunneling driver
+[    0.448849] NET: Registered protocol family 17
+[    0.453294] Bluetooth: RFCOMM TTY layer initialized
+[    0.453342] Bluetooth: RFCOMM socket layer initialized
+[    0.453401] Bluetooth: RFCOMM ver 1.11
+[    0.453462] lib80211: common routines for IEEE802.11 drivers
+[    0.453477] lib80211_crypt: registered algorithm 'NULL'
+[    0.453491] lib80211_crypt: registered algorithm 'WEP'
+[    0.453504] lib80211_crypt: registered algorithm 'CCMP'
+[    0.453517] lib80211_crypt: registered algorithm 'TKIP'
+[    0.454199] check cpu speed flag: 03
+[    0.470072] can-3v3: disabling
+[    0.470097] regulator-dummy: disabling
+[    0.470858] driver->driver.name = android_usb ret=0
+[    0.470882] counting ret = 0 : 2184000.usb
+[    0.471152] file system registered
+[    0.472007] android_usb gadget: android_usb ready
+[    0.472152] snvs_rtc 20cc034.snvs-rtc-lp: setting system clock to 1970-01-01 00:00:00 UTC (0)
+[    0.506902] ALSA device list:
+[    0.510077]   No soundcards found.
+[    1.138201] VFS: Mounted root (jffs2 filesystem) on device 31:2.
+[    1.143074] devtmpfs: mounted
+[    1.143526] Freeing unused kernel memory: 204K (8058c000 - 805bf000)
+[    1.860392] random: nonblocking pool is initialized
+[    2.819289] btsco_platform_probe
+[    2.859474] audio-btsco sound2.16: btsco-codec <-> 202c000.sai mapping ok
+[    5.424725] driver->driver.name = zero ret=1
+[    5.424746] counting ret = 1 : 2184000.usb
+[    5.424757] counting ret = 0 : 2184200.usb
+[    5.424821] ptp iInterface = 19
+[    5.424851] [2184200.usb] dual speed ptp: IN/ep1in, OUT/ep2out, ISO-IN/ep3in
+[    5.428740] zero gadget: audio_buf_size 48000, req_buf_size 192, req_count 256
+[    5.428770] ptp_appdev iInterface = 19, str = Apple USB Multiplexor
+[    5.428796] ptp_appdev 2 iInterface = 13, str = PTP
+[    5.428821] dual speed ptp_appledev: IN/ep1in, OUT/ep2out, ISO-IN/ep3in, INTERFACE1-IN/ep5in, INTERFACE1-OUT/ep4out
+[    5.428834] ptp_appdev2 iInterface = 19
+[    5.428849] ptp_appdev2 2 iInterface = 13
+[    5.428914] dual speed ptp_appledev2: IN/ep1in, OUT/ep2out, ISO-IN/ep3in, INTERFACE1-IN/ep5in, INTERFACE1-OUT/ep4out, INTERFACE2-IN/ep6in, INTERFACE2-OUT/ep5out
+[    5.428928] zero gadget: iPhone, version: Kevin Shi 2020
+[    5.428940] zero gadget: iPhone, serial: 41de1cfe2e099bec5932187411378387653dbc63 
+[    5.428953] zero gadget: iPhone, hnp_interval_ms: 10 
+[    5.428964] zero gadget: zero ready
+[    5.429251] [otg_statemachine]  fsm->id = 1
+[    5.429266] [otg_set_state]  Set state: b_idle
+[    5.429285] [otg_statemachine]  quit statemachine, changed = 1
+[    5.429410] [otg_set_state]  Set state: b_peripheral
+[    5.429432] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 2
+[    5.429467] SDIS = 0
+[    5.429475] SLOM = 1<6>[    5.429500] [otg_statemachine]  quit statemachine, changed = 1
+[    6.229484] android_usb: already disabled
+[    6.230883] android_enable_function: iap2
+[    6.231025] android_enable_function: ncmandroid_usb gadget: _iap2_bind_config
+[    6.231053] ncm_function_bind_config MAC: 00:00:00:00:00:00
+[    6.249113] ncm0: MAC c2:8e:30:52:e9:a3
+[    6.249138] ncm0: HOST MAC 26:98:d9:34:fd:a1
+[    6.293460] ncm0: eth_open
+[    6.293497] ncm0: eth_start
+[   12.491954] [otg_set_state]  Set state: a_host
+[   12.491986] [otg_statemachine]  quit statemachine, changed = 1
+[   12.718471] usb 1-1: new high-speed USB device number 2 using ci_hdrc
+[   12.750441] usb 1-1: is_b_host:0, config:85e66200, parent:842bf800, root_hub=842bf800
+[   12.750471] usb 1-1: New USB device found, idVendor=0781, idProduct=5591
+[   12.750486] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   12.750500] usb 1-1: Product:  SanDisk 3.2Gen1
+[   12.750513] usb 1-1: Manufacturer:  USB
+[   12.750528] usb 1-1: SerialNumber: 03001131050323095733
+[   12.768846] usb-storage 1-1:1.0: USB Mass Storage device detected
+[   12.784984] scsi0 : usb-storage 1-1:1.0
+[   13.789774] scsi 0:0:0:0: Direct-Access      USB      SanDisk 3.2Gen1 1.00 PQ: 0 ANSI: 6
+[   13.807890] sd 0:0:0:0: [sda] 30031872 512-byte logical blocks: (15.3 GB/14.3 GiB)
+[   13.809009] sd 0:0:0:0: [sda] Write Protect is off
+[   13.809037] sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00
+[   13.809878] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[   13.837501]  sda: sda1
+[   13.859637] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[   13.939135] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   19.455270] sh (674): /proc/205/oom_adj is deprecated, please use /proc/205/oom_score_adj instead.
+[   29.068100] [otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 0 0 1
+[   29.068123] [otg_statemachine]  quit statemachine, changed = 0
+clocksource_of_init: no matching clocksources found
+mxs_phy 20c9000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+ci_hdrc ci_hdrc.0: Init set fsm->a_vbus_vld = 1
+mxs_phy 20ca000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+snvs_pwrkey 20cc000.snvs-pwrkey: can't get snvs clock
+snvs_rtc 20cc034.snvs-rtc-lp: can't get snvs-rtc clock
+driver->driver.name = android_usb ret=0
+counting ret = 0 : 2184000.usb
+Freeing unused kernel memory: 204K (8058c000 - 805bf000)
+----------------start ssh----------------
+---------------mount all--------------
+---------------Start mdev-------------
+-------------up network--------------
+**************************************
+Kernel version:linux-3.0.15
+iMX6UL 14x14 evk board rootfs
+Designer:ShiKai
+Date:2015.11.3
+**************************************
+Software Vserion: 2024.07.20.0937
+Start Main Service!!!
+
+Please press Enter to activate this console. Thu Jan  2 00:00:01 UTC 2020
+f_ptp.ko
+f_ptp_appledev.ko
+f_ptp_appledev2.ko
+g_iphone.ko
+storage_common.ko
+g_android_accessory.ko
+snd-soc-imx-btsco.ko
+snd-soc-imx-wm8960.ko
+snd-soc-bt-sco.ko
+snd-soc-wm8960.ko
+cdc_ncm.ko
+console=ttyLogFile0 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=21e0000.qspi:256k(uboot),3328K(kernel),12800K(rootfs) rootwait quiet rw
+BT WIFI Card Device ID: 0xb822
+Power Led On!!!
+tar: can't open '/lib/firmware/rtlbt/rtl8822_ko.tar.gz': No such file or directory
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+ifconfig: SIOCSIFHWADDR: No such device
+Setting Wi-Fi MAC address: 00:E0:4C:F4:63:90
+Wait Bluetooth driver decompress...
+audio codec: btsco
+[    2.819289] btsco_platform_probe
+[    2.859474] audio-btsco sound2.16: btsco-codec <-> 202c000.sai mapping ok
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+rm: can't remove '/var/run/dbus/pid': No such file or directory
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+01-02 12:00:02.544086 AM [RiddleBluetoothService] Get BluetoothProtocolType: 1
+[D]2020-01-02 00:00:02.633 123-76f95000/ARMadb-driver[main]: ADB_Driver main start!!!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[D]2020-01-02 00:00:02.775 123-76f95000/ARMadb-driver[main]: Not Check I2C!
+[D]2020-01-02 00:00:02.777 123-76f95000/ARMadb-driver[RiddlePlatform]: CheckBoxManuDateSign: 103cc4214377946f6988f495a62da887 103cc4214377946f6988f495a62da887
+[D]2020-01-02 00:00:02.798 123-76f95000/ARMadb-driver[Accessory_fd]: Have I2S Mic Record!!!
+[D]2020-01-02 00:00:02.802 123-7610a450/ARMadb-driver[Accessory_fd]: write_AV_Thread_   Start Suc
+[D]2020-01-02 00:00:02.803 123-7690a450/ARMadb-driver[RiddlePlatform]: BoxUUID: 6920a875102f61d7458bc26c7d49c368
+[D]2020-01-02 00:00:02.803 123-7690a450/ARMadb-driver[RiddlePlatform]: GetCacheBoxUUID: 
+[D]2020-01-02 00:00:02.805 123-7690a450/ARMadb-driver[RiddlePlatform]: ssid: AutoKit_, ssidSuffixLen: 3
+[D]2020-01-02 00:00:02.806 123-7690a450/ARMadb-driver[RiddlePlatform]: brandSsidName: AutoKit_C8F, ssidSuffixLen: 3, 11-8
+	name "AutoKit_C8F";
+[D]2020-01-02 00:00:02.821 123-7690a450/ARMadb-driver[RiddlePlatform]: Box bluetooth name: AutoKit_C8F is same as old, do nothing
+ssid=U2AC_AUTO-55
+[D]2020-01-02 00:00:02.835 123-7690a450/ARMadb-driver[RiddlePlatform]: Box WiFi name: U2AC_AUTO-55 is same as old, do nothing
+[D]2020-01-02 00:00:02.835 123-7690a450/ARMadb-driver[Accessory_fd]: start wifi!!!
+Wait Bluetooth driver decompress...
+config wifi channel: 36, freq: 5180
+5G wifi
+channel=36
+wpa_passphrase=12345678
+Wait Bluetooth driver decompress...
+hostapd start process.....
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Configuration file: /etc/hostapd.conf
+Line 43: invalid/unknown driver 'rtl871xdrv'
+Line 56: unknown configuration item 'device_name'
+Line 58: unknown configuration item 'manufacturer'
+3 errors found in configuration file '/etc/hostapd.conf'
+Failed to set up interface with /etc/hostapd.conf
+Failed to initialize interface
+Set WLAN0 IP: 192.168.50 
+Same IP, no need to reset
+/script/start_bluetooth_wifi.sh: line 132: can't create /proc/sys/net/ipv6/conf/wlan0/disable_ipv6: nonexistent directory
+ifconfig: SIOCSIFADDR: No such device
+[D]2020-01-02 00:00:03.279 123-76f95000/ARMadb-driver[main]: _hu_link_main start
+[D]2020-01-02 00:00:03.298 123-76f95000/ARMadb-driver[RiddlePlatform]: BoxUUID: 6920a875102f61d7458bc26c7d49c368
+[D]2020-01-02 00:00:03.298 123-76f95000/ARMadb-driver[RiddlePlatform]: GetCacheBoxUUID: 
+Wait Bluetooth driver decompress...
+udhcpd start process.....
+2020-01-02 00:00:03.352: info, Attaching option subnet to list
+2020-01-02 00:00:03.352: info, Attaching option lease to list
+2020-01-02 00:00:03.353: error, Failure parsing line 76 of /etc/udhcpd.conf
+2020-01-02 00:00:03.353: error, unable to parse 'option  0x2b    01056865776569  # option 43: "vendor info: hewei"'
+2020-01-02 00:00:03.353: info, udhcpd (v0.9.9-pre) started
+2020-01-02 00:00:03.353: error, max_leases value (254) not sane, setting to 101 instead
+2020-01-02 00:00:03.364: error, Unable to open /var/lib/udhcpd.leases for reading
+2020-01-02 00:00:03.381: error, SIOCGIFADDR failed, is the interface up and configured?: No such file or directory
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[D]2020-01-02 00:00:03.728 123-76f95000/ARMadb-driver[main]: fakeiOSDevice Started!!!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[D]2020-01-02 00:00:04.393 205-76e40000/fakeiOSDevice[BoxVideoUtils]: BoxVideoCache createed, frame_size: 102400, frmae_cnt: 10
+01-02 12:00:04.398910 AM [FakeCarPlayDevice] fakeiOSDevice On:
+01-02 12:00:04.402873 AM [ArmadbdriverClient] _preInitBox: 0x00EA96F0
+Wait Bluetooth driver decompress...
+insmod iPhone: hnp_interval_ms=10 serial=41de1cfe2e099bec5932187411378387653dbc63
+[    5.424725] driver->driver.name = zero ret=1
+[    5.424746] counting ret = 1 : 2184000.usb
+[    5.424757] counting ret = 0 : 2184200.usb
+[    5.424821] ptp iInterface = 19
+[    5.424851] [2184200.usb] dual speed ptp: IN/ep1in, OUT/ep2out, ISO-IN/ep3in
+[    5.428740] zero gadget: audio_buf_size 48000, req_buf_size 192, req_count 256
+[    5.428770] ptp_appdev iInterface = 19, str = Apple USB Multiplexor
+[    5.428796] ptp_appdev 2 iInterface = 13, str = PTP
+[    5.428821] dual speed ptp_appledev: IN/ep1in, OUT/ep2out, ISO-IN/ep3in, INTERFACE1-IN/ep5in, INTERFACE1-OUT/ep4out
+[    5.428834] ptp_appdev2 iInterface = 19
+[    5.428849] ptp_appdev2 2 iInterface = 13
+[    5.428914] dual speed ptp_appledev2: IN/ep1in, OUT/ep2out, ISO-IN/ep3in, INTERFACE1-IN/ep5in, INTERFACE1-OUT/ep4out, INTERFACE2-IN/ep6in, INTERFACE2-OUT/ep5out
+[    5.428928] zero gadget: iPhone, version: Kevin Shi 2020
+[    5.428940] zero gadget: iPhone, serial: 41de1cfe2e099bec5932187411378387653dbc63 
+[    5.428953] zero gadget: iPhone, hnp_interval_ms: 10 
+[    5.428964] zero gadget: zero ready
+[    5.429251] [otg_statemachine]  fsm->id = 1
+[    5.429266] [otg_set_state]  Set state: b_idle
+[    5.429285] [otg_statemachine]  quit statemachine, changed = 1
+[    5.429410] [otg_set_state]  Set state: b_peripheral
+[    5.429432] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 2
+[    5.429467] SDIS = 0
+[    5.429475] SLOM = 1[    5.429500] [otg_statemachine]  quit statemachine, changed = 1
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:04.802 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+[D]2020-01-02 00:00:04.806 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: _create_unix_socket /var/run/adb-driver SUC
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Start Carplay mdnsd!!!
+Wait Bluetooth driver decompress...
+900000
+Wait Bluetooth driver decompress...
+Start Carplay IAP2&NCM driver!!!
+mDNSResponder: mDNSResponder (Engineering Build) (Aug 20 2021 16:48:25) starting
+mDNSResponder: mDNS_AddDNSServer: Lock not held! mDNS_busy (0) mDNS_reentrancy (0)
+mDNSResponder: mDNSPlatformSourceAddrForDest: connect 1.1.1.1 failed errno 101 (Network is unreachable)
+[W]2020-01-02 00:00:05.301 123-76f95000/ARMadb-driver[main]: Ignore Linux Hub device hotplug message!
+[D]2020-01-02 00:00:05.304 123-76f95000/ARMadb-driver[MiddleManInterface]: pid:149 Control-InternalUse(30) connected, fd=5
+[E]2020-01-02 00:00:05.304 123-76f95000/ARMadb-driver[Accessory_fd]: Not Opened!!
+[W]2020-01-02 00:00:05.305 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+[    6.229484] android_usb: already disabled
+[    6.230883] android_enable_function: iap2
+[    6.231025] android_enable_function: ncmandroid_usb gadget: _iap2_bind_config
+[    6.231053] ncm_function_bind_config MAC: 00:00:00:00:00:00
+mDNSResponder: WARNING: mdnsd continuing as root because user "nobody" does not exist
+[    6.249113] ncm0: MAC c2:8e:30:52:e9:a3
+[    6.249138] ncm0: HOST MAC 26:98:d9:34:fd:a1
+Start NCM network
+Wait Bluetooth driver decompress...
+[    6.293460] ncm0: eth_open
+[    6.293497] ncm0: eth_start
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+mDNSResponder: DIRECTLINK_INTERFACE_NAME: ncm,usb,wlan, intfName: ncm0, DirectLink: 1
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:06.802 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:08.803 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Start Box Network Service
+Unzip boxImgTools
+Archive:  /usr/sbin/boxImgTools.zip
+Wait Bluetooth driver decompress...
+  inflating: boxImgTools
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:10.803 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[   12.491954] [otg_set_state]  Set state: a_host
+[   12.491986] [otg_statemachine]  quit statemachine, changed = 1
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[   12.718471] usb 1-1: new high-speed USB device number 2 using ci_hdrc
+Wait Bluetooth driver decompress...
+[   12.750441] usb 1-1: is_b_host:0, config:85e66200, parent:842bf800, root_hub=842bf800
+[   12.750471] usb 1-1: New USB device found, idVendor=0781, idProduct=5591
+[   12.750486] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   12.750500] usb 1-1: Product:  SanDisk 3.2Gen1
+[   12.750513] usb 1-1: Manufacturer:  USB
+[   12.750528] usb 1-1: SerialNumber: 03001131050323095733
+[D]2020-01-02 00:00:11.829 123-76f95000/ARMadb-driver[main]: LIBUSB_HOTPLUG_EVENT_DEVICE_ARRIVED iPhoneWorkMode(Invalid)
+[W]2020-01-02 00:00:11.843 123-76f95000/ARMadb-driver[main]: Iphone work mode invaild, Ignore hotplug message!
+[   12.768846] usb-storage 1-1:1.0: USB Mass Storage device detected
+[   12.784984] scsi0 : usb-storage 1-1:1.0
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:12.803 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+[   13.789774] scsi 0:0:0:0: Direct-Access      USB      SanDisk 3.2Gen1 1.00 PQ: 0 ANSI: 6
+[   13.807890] sd 0:0:0:0: [sda] 30031872 512-byte logical blocks: (15.3 GB/14.3 GiB)
+[   13.809009] sd 0:0:0:0: [sda] Write Protect is off
+[   13.809878] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+Wait Bluetooth driver decompress...
+[   13.837501]  sda: sda1
+[   13.859637] sd 0:0:0:0: [sda] Attached SCSI removable disk
+/dev/sda add
+/dev/sda1 PLUG IN
+[   13.939135] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Wait Bluetooth driver decompress...
+Update hwfs Start!!
+decompress M6_Update.hwfs
+Wait Bluetooth driver decompress...
+[D]2020-01-02 00:00:13.217 234-763c3450/colorLightDaemon[colorLightDaemon]: Change status to "Upgrading" or switch songs!!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Not need for decompression, can be upgraded directly
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:14.315 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Boot128 USBDrv Common Service Upg HUCP HUAA CarPlay AndroidAuto RTL8822BS WebAUTOKIT Cus_U2AC_AUTOKIT
+Boot128
+ Boot128 upgrade file format error or no need to upgrade
+USBDrv
+ USBDrv upgrade file format error or no need to upgrade
+Common
+ Common upgrade file format error or no need to upgrade
+Service
+ Service upgrade file format error or no need to upgrade
+Upg
+0000.00.00.0000
+Upg_2024.09.03.1021
+Wait Bluetooth driver decompress...
+./
+Wait Bluetooth driver decompress...
+./tmp/
+./tmp/upg
+./tmp/once.sh
+./tmp/finish.sh
+./tmp/remove_unnecessary_file.sh
+./etc/
+./etc/module_version/
+./etc/module_version/Upg.majorVersion
+./etc/module_version/Upg.version
+Wait Bluetooth driver decompress...
+Upg upgrade successful
+HUCP
+ HUCP upgrade file format error or no need to upgrade
+HUAA
+ HUAA upgrade file format error or no need to upgrade
+CarPlay
+ CarPlay upgrade file format error or no need to upgrade
+AndroidAuto
+ AndroidAuto upgrade file format error or no need to upgrade
+RTL8822BS
+0000.00.00.0000
+[E]2020-01-02 00:00:14.804 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+RTL8822BS_2024.01.26.1554
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+./
+./lib/
+./lib/firmware/
+./lib/firmware/rtlbt/
+./lib/firmware/rtlbt/rtl8822b_fw
+./lib/firmware/rtlbt/rtl8822_ko.tar.gz
+Wait Bluetooth driver decompress...
+./lib/firmware/rtlbt/rtl8822b_config
+./usr/
+./usr/lib/
+./usr/sbin/
+./usr/sbin/rtk_hciattach
+./etc/
+./etc/p2p_supplicant.conf
+./etc/hostapd.conf
+./etc/module_version/
+./etc/module_version/RTL8822BS.version
+./etc/module_version/RTL8822BS.majorVersion
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:15.317 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+RTL8822BS upgrade successful
+WebAUTOKIT
+ WebAUTOKIT upgrade file format error or no need to upgrade
+Cus_U2AC_AUTOKIT
+ Cus_U2AC_AUTOKIT upgrade file format error or no need to upgrade
+Wait Bluetooth driver decompress...
+Web Server Service!!!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+U2AC
+Wait Bluetooth driver decompress...
+remove /tmp/update//usr/sbin/wpa_supplicant
+remove /tmp/update//usr/sbin/wpa_cli
+remove /tmp/update//usr/sbin/iw
+Wait Bluetooth driver decompress...
+remove /tmp/update//etc/wpa_supplicant.conf
+remove /tmp/update//etc/p2p_supplicant.conf
+U2AW,A15W,O2W,UC2AW,U2AC,UC2CA,UC2AWD,UC2CAD,
+remove /tmp/update//usr/sbin/fakeAADevice
+Wait Bluetooth driver decompress...
+UC2W,UC2HW,UC2HC,UC2AW,UC2F,UC2D,UC2WD,UC2HWD,UC2HCD,U2AC,O2W,UC2CA,UC2AWD,UC2CAD,
+remove /tmp/update//usr/sbin/echoDelayTest
+remove /tmp/update//etc/DTMF-14809414327.pcm
+remove /tmp/update//etc/car_logo
+Wait Bluetooth driver decompress...
+remove /tmp/update//etc/hichain
+[W]2020-01-02 00:00:16.320 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+[02/Jan/2020:00:00:16 +0000] boa: server version Boa/0.94.101wk
+[02/Jan/2020:00:00:16 +0000] boa: server built Apr 11 2023 at 10:11:57.
+[02/Jan/2020:00:00:16 +0000] boa: starting server pid=545, port 80
+remove /tmp/update//etc/iccoa
+Wait Bluetooth driver decompress...
+remove /tmp/update//usr/sbin/DVRServer
+Wait Bluetooth driver decompress...
+Start upg
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+config wifi channel: 36, freq: 5180
+5G wifi
+[E]2020-01-02 00:00:16.804 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+channel=36
+wpa_passphrase=12345678
+Wait Bluetooth driver decompress...
+hostapd start process.....
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Configuration file: /etc/hostapd.conf
+Line 43: invalid/unknown driver 'rtl871xdrv'
+Line 56: unknown configuration item 'device_name'
+Line 58: unknown configuration item 'manufacturer'
+3 errors found in configuration file '/etc/hostapd.conf'
+Failed to set up interface with /etc/hostapd.conf
+Failed to initialize interface
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:17.321 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Set WLAN0 IP: 192.168.50 
+2020/01/02 00:00:17.372372 upg.go:377: main 
+Same IP, no need to reset
+/script/start_bluetooth_wifi.sh: line 132: can't create /proc/sys/net/ipv6/conf/wlan0/disable_ipv6: nonexistent directory
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:17.468903 upg.go:410: curRunningApps: 
+  PID USER       VSZ STAT COMMAND
+    1 root      3204 S    init
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    4 root         0 SW   [kworker/0:0]
+    5 root         0 SW<  [kworker/0:0H]
+    6 root         0 SW   [kworker/u2:0]
+    7 root         0 SW   [rcu_preempt]
+    8 root         0 SW   [rcu_sched]
+    9 root         0 SW   [rcu_bh]
+   10 root         0 SW   [migration/0]
+   11 root         0 SW<  [khelper]
+   12 root         0 SW   [kdevtmpfs]
+   13 root         0 SW<  [writeback]
+   14 root         0 SW<  [bioset]
+   15 root         0 SW<  [crypto]
+   16 root         0 SW<  [kblockd]
+   17 root         0 SW<  [ata_sff]
+   18 root         0 SW   [khubd]
+   19 root         0 SW   [kworker/u2:1]
+   26 root         0 SW   [kworker/0:1]
+   27 root         0 SW<  [cfg80211]
+   28 root         0 SW   [cfinteractive]
+   29 root         0 SW   [kswapd0]
+   30 root         0 SW   [fsnotify_mark]
+   38 root         0 DW   [ttyLogFileThrea]
+   39 root         0 SW   [spi32766]
+   42 root         0 SW<  [ci_otg]
+   43 root         0 SW<  [ci_otg]
+   44 root         0 SW   [kworker/u2:2]
+   45 root         0 SW   [watchdog]
+   46 root         0 SW<  [ipv6_addrconf]
+   47 root         0 SW<  [krfcommd]
+   48 root         0 SW<  [deferwq]
+   49 root         0 SW   [irq/81-imx_ther]
+   50 root         0 DWN  [jffs2_gcd_mtd2]
+   59 root      3204 S    {exe} ash /script/start_main_service.sh
+   60 root      3204 S    init
+   86 root      3204 S    {exe} ash /script/attach_bluetooth.sh
+   95 root      6156 S    bluetoothDaemon -n
+  121 root      3204 S    {exe} ash /script/check_mfg_mode.sh
+  123 root      8308 S    ARMadb-driver
+  138 root      4348 S    dbus-daemon --system --print-pid --print-address
+  149 root     43280 S    ARMadb-driver
+  188 root     17524 S    ARMadb-driver
+  189 root      8308 S    ARMadb-driver
+  205 root     28936 S    fakeiOSDevice
+  234 root     22568 S    colorLightDaemon
+  246 root      2916 S    mdnsd
+  299 root      4088 S    boxNetworkService
+  324 root         0 SW   [kworker/0:2]
+  331 root         0 SW   [scsi_eh_0]
+  332 root         0 SW<  [scsi_tmf_0]
+  333 root         0 SW   [usb-storage]
+  350 root         0 SW   [kworker/u2:3]
+  360 root         0 SW<  [kworker/0:1H]
+  363 root      3204 S    {exe} ash /script/update_box.sh /dev/sda1
+  463 root      3204 S    {exe} ash /tmp/update/tmp/once.sh
+  535 root      3072 S    sleep 2
+  545 root      2492 S    boa
+  563 root      3204 S    {exe} ash /script/start_bluetooth_wifi.sh
+  587 root      819m S    /tmp/upg
+  609 root      3072 R    ifconfig wlan0 192.168.50.2 netmask 255.255.255.0 mt
+  610 root      3208 R    ps
+
+2020/01/02 00:00:17.469450 upg.go:225: App: ARMiPhoneIAP2 没有运行， 无需退出
+ifconfig: SIOCSIFADDR: No such device
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:17.615989 upgradeItemApps.go:445: AnalyseProcess(adb):false false 
+2020/01/02 00:00:17.616175 upg.go:225: App: AppleCarPlay 没有运行， 无需退出
+2020/01/02 00:00:17.616271 upg.go:225: App: carlife 没有运行， 无需退出
+2020/01/02 00:00:17.616354 upg.go:225: App: usbmuxd 没有运行， 无需退出
+udhcpd start process.....
+2020-01-02 00:00:17.663: info, Attaching option subnet to list
+2020-01-02 00:00:17.664: info, Attaching option lease to list
+2020-01-02 00:00:17.664: error, Failure parsing line 76 of /etc/udhcpd.conf
+2020-01-02 00:00:17.665: error, unable to parse 'option  0x2b    01056865776569  # option 43: "vendor info: hewei"'
+2020-01-02 00:00:17.665: info, udhcpd (v0.9.9-pre) started
+2020-01-02 00:00:17.665: error, max_leases value (254) not sane, setting to 101 instead
+mDNSResponder: mDNSResponder (Engineering Build) (Aug 20 2021 16:48:25) stopping
+2020-01-02 00:00:17.677: error, Unable to open /var/lib/udhcpd.leases for reading
+Wait Bluetooth driver decompress...
+2020-01-02 00:00:17.735: error, SIOCGIFADDR failed, is the interface up and configured?: No such file or directory
+2020/01/02 00:00:17.758181 upgradeItemApps.go:445: AnalyseProcess(mdnsd):false false 
+2020/01/02 00:00:17.758373 upg.go:225: App: ARMAndroidAuto 没有运行， 无需退出
+Save Log to UPAN
+sig_term 15
+Wait Bluetooth driver decompress...
+check_log_size: 22573 byte
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:18.158108 upgradeItemApps.go:445: AnalyseProcess(bluetoothDaemon):false false 
+2020/01/02 00:00:18.158298 upg.go:225: App: hcid 没有运行， 无需退出
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:18.322 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+2020/01/02 00:00:18.379257 upg.go:353: 已写入: 0 byte, 升级进度: 11
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:18.453408 upgradeItemApps.go:445: AnalyseProcess(fakeiOSDevice):false true 205
+2020/01/02 00:00:18.518932 upgradeItemApps.go:445: AnalyseProcess(fakeiOSDevice):false true 205
+Wait Bluetooth driver decompress...
+[   19.455270] sh (674): /proc/205/oom_adj is deprecated, please use /proc/205/oom_score_adj instead.
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:18.666558 upgradeItem.go:116: memoryBytes: 90800-21844
+2020/01/02 00:00:18.681642 upgradeItem.go:92: Current System: 
+ supportCpu?:true software_version:2024.07.20.0937  mfgDate:20240720  memory(use:21844k free:90800k)
+2020/01/02 00:00:18.681815 flashOperator.go:269: mtd /dev/mtd0: size(262144k) erasesize(65536k)
+2020/01/02 00:00:18.681896 flashOperator.go:269: mtd /dev/mtd1: size(3407872k) erasesize(65536k)
+2020/01/02 00:00:18.681969 flashOperator.go:269: mtd /dev/mtd2: size(13107200k) erasesize(65536k)
+2020/01/02 00:00:18.682077 upgradeItem.go:165: GenCryptEnv 成功 
+Analyse Start!
+2020/01/02 00:00:18.686180 upgradeItemApps.go:69: IsUsingFlash(hostapd.conf):false 
+2020/01/02 00:00:18.686596 upgradeItemApps.go:335: /tmp/update/etc/hostapd.conf to /etc/hostapd.conf orgsize:958 newsize:506 
+2020/01/02 00:00:18.689942 upgradeItemApps.go:69: IsUsingFlash(RTL8822BS.majorVersion):false 
+2020/01/02 00:00:18.690392 upgradeItemApps.go:335: /tmp/update/etc/module_version/RTL8822BS.majorVersion to /etc/module_version/RTL8822BS.majorVersion orgsize:0 newsize:15 
+2020/01/02 00:00:18.690796 upgradeItemApps.go:69: IsUsingFlash(RTL8822BS.version):false 
+2020/01/02 00:00:18.691384 upgradeItemApps.go:335: /tmp/update/etc/module_version/RTL8822BS.version to /etc/module_version/RTL8822BS.version orgsize:0 newsize:15 
+2020/01/02 00:00:18.691854 upgradeItemApps.go:69: IsUsingFlash(Upg.majorVersion):false 
+2020/01/02 00:00:18.692149 upgradeItemApps.go:335: /tmp/update/etc/module_version/Upg.majorVersion to /etc/module_version/Upg.majorVersion orgsize:0 newsize:15 
+2020/01/02 00:00:18.692552 upgradeItemApps.go:69: IsUsingFlash(Upg.version):false 
+2020/01/02 00:00:18.692960 upgradeItemApps.go:335: /tmp/update/etc/module_version/Upg.version to /etc/module_version/Upg.version orgsize:0 newsize:15 
+2020/01/02 00:00:18.694111 upgradeItemApps.go:69: IsUsingFlash(rtl8822_ko.tar.gz):false 
+2020/01/02 00:00:18.694548 upgradeItemApps.go:335: /tmp/update/lib/firmware/rtlbt/rtl8822_ko.tar.gz to /lib/firmware/rtlbt/rtl8822_ko.tar.gz orgsize:0 newsize:1090587 
+2020/01/02 00:00:18.695174 upgradeItemApps.go:69: IsUsingFlash(rtl8822b_config):false 
+2020/01/02 00:00:18.695538 upgradeItemApps.go:335: /tmp/update/lib/firmware/rtlbt/rtl8822b_config to /lib/firmware/rtlbt/rtl8822b_config orgsize:0 newsize:2 
+2020/01/02 00:00:18.695941 upgradeItemApps.go:69: IsUsingFlash(rtl8822b_fw):false 
+2020/01/02 00:00:18.696277 upgradeItemApps.go:335: /tmp/update/lib/firmware/rtlbt/rtl8822b_fw to /lib/firmware/rtlbt/rtl8822b_fw orgsize:0 newsize:45148 
+2020/01/02 00:00:18.748561 upgradeItemApps.go:445: AnalyseProcess(rtk_hciattach):false false 
+2020/01/02 00:00:18.748737 upgradeItemApps.go:69: IsUsingFlash(rtk_hciattach):false 
+2020/01/02 00:00:18.748984 upgradeItemApps.go:335: /tmp/update/usr/sbin/rtk_hciattach to /usr/sbin/rtk_hciattach orgsize:0 newsize:21548 
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:18.787153 upgradeItemApps.go:204: hostapd.conf need -452 more, neednow: -452 
+2020/01/02 00:00:18.787529 upgradeItemApps.go:204: RTL8822BS.majorVersion need 15 more, neednow: -437 
+2020/01/02 00:00:18.787779 upgradeItemApps.go:204: RTL8822BS.version need 15 more, neednow: -422 
+2020/01/02 00:00:18.788093 upgradeItemApps.go:204: Upg.majorVersion need 15 more, neednow: -407 
+2020/01/02 00:00:18.788428 upgradeItemApps.go:204: Upg.version need 15 more, neednow: -392 
+2020/01/02 00:00:18.788718 upgradeItemApps.go:204: rtl8822_ko.tar.gz need 1090587 more, neednow: 1090195 
+2020/01/02 00:00:18.789021 upgradeItemApps.go:204: rtl8822b_config need 2 more, neednow: 1090197 
+2020/01/02 00:00:18.789283 upgradeItemApps.go:204: rtl8822b_fw need 45148 more, neednow: 1135345 
+2020/01/02 00:00:18.789616 upgradeItemApps.go:204: rtk_hciattach need 21548 more, neednow: 1156893 
+2020/01/02 00:00:18.789717 upgradeItemApps.go:211: mayNeedMoreFlashSpaceSize=1156893 minFlashSizeReserve=204800 freeSpace=2831155
+2020/01/02 00:00:18.789788 upgradeItemApps.go:232: AppUpdate May need more flash space: 1156893
+2020/01/02 00:00:18.789996 bootenvutils.go:414: Not open some file
+[E]2020-01-02 00:00:18.805 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+2020/01/02 00:00:18.828247 upg.go:470: 升级总共需要写入Flash: 1157851 byte
+2020/01/02 00:00:18.879438 upgradeItemApps.go:402: 创建 /etc/ 文件夹 后 覆盖 /tmp/update/etc/hostapd.conf to /etc/hostapd.conf 完成
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:18.926437 upgradeItemApps.go:402: 创建 /lib/firmware/rtlbt/ 文件夹 后 覆盖 /tmp/update/lib/firmware/rtlbt/rtl8822b_config to /lib/firmware/rtlbt/rtl8822b_config 完成
+2020/01/02 00:00:18.964389 upgradeItemApps.go:402: 创建 /etc/module_version/ 文件夹 后 覆盖 /tmp/update/etc/module_version/RTL8822BS.majorVersion to /etc/module_version/RTL8822BS.majorVersion 完成
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:19.035891 upgradeItemApps.go:402: 创建 /etc/module_version/ 文件夹 后 覆盖 /tmp/update/etc/module_version/RTL8822BS.version to /etc/module_version/RTL8822BS.version 完成
+2020/01/02 00:00:19.073362 upgradeItemApps.go:402: 创建 /etc/module_version/ 文件夹 后 覆盖 /tmp/update/etc/module_version/Upg.majorVersion to /etc/module_version/Upg.majorVersion 完成
+2020/01/02 00:00:19.111642 upgradeItemApps.go:402: 创建 /etc/module_version/ 文件夹 后 覆盖 /tmp/update/etc/module_version/Upg.version to /etc/module_version/Upg.version 完成
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:19.324 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:19.425213 upg.go:353: 已写入: 569 byte, 升级进度: 11
+2020/01/02 00:00:19.460859 upgradeItemApps.go:402: 创建 /usr/sbin/ 文件夹 后 覆盖 /tmp/update/usr/sbin/rtk_hciattach to /usr/sbin/rtk_hciattach 完成
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:19.608606 upgradeItemApps.go:402: 创建 /lib/firmware/rtlbt/ 文件夹 后 覆盖 /tmp/update/lib/firmware/rtlbt/rtl8822b_fw to /lib/firmware/rtlbt/rtl8822b_fw 完成
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:20.324 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:20.447456 upg.go:353: 已写入: 67265 byte, 升级进度: 16
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:20.805 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:21.327 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:21.468606 upg.go:353: 已写入: 67265 byte, 升级进度: 23
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:22.330 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:22.494026 upg.go:353: 已写入: 67265 byte, 升级进度: 31
+Wait Bluetooth driver decompress...
+BluetoothDaemon quit!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:22.805 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:23.331 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:23.541794 upg.go:353: 已写入: 67265 byte, 升级进度: 39
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:24.333 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:24.563199 upg.go:353: 已写入: 67265 byte, 升级进度: 47
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:24.805 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:25.334 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:25.589930 upg.go:353: 已写入: 67265 byte, 升级进度: 55
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:26.336 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:26.617545 upg.go:353: 已写入: 67265 byte, 升级进度: 62
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:26.806 123-7510a450/ARMadb-driver[Accessory_fd]: Still not connect to AppServer!
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:27.337 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+2020/01/02 00:00:27.422257 upgradeItemApps.go:402: 创建 /lib/firmware/rtlbt/ 文件夹 后 覆盖 /tmp/update/lib/firmware/rtlbt/rtl8822_ko.tar.gz to /lib/firmware/rtlbt/rtl8822_ko.tar.gz 完成
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:27.655303 upg.go:342: Flash 写入速度: 128650 Byte/s 
+2020/01/02 00:00:27.655473 upg.go:353: 已写入: 1157851 byte, 升级进度: 99
+Wait Bluetooth driver decompress...
+2020/01/02 00:00:27.723091 upg.go:502: upgrade successfully
+Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:27.867 123-7690a450/ARMadb-driver[Accessory_fd]: Hardware BT Error!!!Wait Bluetooth driver decompress...
+[E]2020-01-02 00:00:27.879 123-7690a450/ARMadb-driver[Accessory_fd]: Hardware WiFi Error!!!Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[   29.068100] [otg_statemachine]  OTG_STATE_B_PERIPHERAL:, 0 0 1
+[   29.068123] [otg_statemachine]  quit statemachine, changed = 0
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
+[W]2020-01-02 00:00:28.338 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+[W]2020-01-02 00:00:28.338 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+[W]2020-01-02 00:00:28.338 123-76f95000/ARMadb-driver[RiddleDataExchangeUtils]: 		 $$$ 清除发送缓冲，因为fd已经不可用
+Wait Bluetooth driver decompress...
+Wait Bluetooth driver decompress...
