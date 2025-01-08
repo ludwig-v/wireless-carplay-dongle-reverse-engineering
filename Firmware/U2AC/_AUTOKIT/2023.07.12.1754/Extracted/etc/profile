@@ -1,0 +1,16 @@
+#Ash profile
+#vim:syntax=sh
+#No core file by defaults
+#ulimit -S -c 0>/dev/null>&1
+export LD_LIBRARY_PATH=/tmp/lib:/lib:/usr/lib
+export PATH=/tmp/bin:$PATH
+PATH=$PATH
+USER=`id -un`
+LOGNAME=$USER
+PS1='[(\t)\u@\w]#'
+HOSTNAME='/bin/hostname'
+export USER LOGNAME PS1 PATH
+
+#common alias
+alias ll='ls -alF'
+alias la='ls -A'
