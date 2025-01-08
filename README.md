@@ -1,5 +1,4 @@
 
-
 ![Carlinkit V2](https://i.imgur.com/ZL3dq41.png)
 
 ## Carlinkit / Carplay2Air Reverse Engineering
@@ -10,9 +9,9 @@
 |--|--|
 | Flash | Macronix 25L12835F (16MB) |
 | SoC | Freescale i.MX6 UltraLite |
-| CPU | ARM Cortex-A7 (ARMv7) |
-| RAM | Micron/SK hynix 1Gb (64x16)
-| Wi-Fi/BT | RTL8822BS (Realtek) or Fn-Link L287B-SR (Marvell) or LGX4358 (Broadcom) or LGX8354S (Broadcom) |
+| CPU | ARM Cortex-A7 (ARMv7) *- **Fake** ATMEL AT91SAM9260 marking -* |
+| RAM | Micron/SK Hynix 1Gb (64x16) |
+| Wi-Fi/BT | RTL8822BS or RTL8822CS or RTL8733BS (Realtek) or Fn-Link L287B-SR (Marvell) or LGX4358 (Broadcom) or LGX8354S (Broadcom) |
 
 ## Hardware differences
 
