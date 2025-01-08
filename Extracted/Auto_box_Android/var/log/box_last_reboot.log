@@ -1,0 +1,666 @@
+Save last log when reboot
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                12.5M      9.5M      3.0M  76% /
+devtmpfs                 60.2M         0     60.2M   0% /dev
+tmpfs                    60.3M      5.3M     55.0M   9% /tmp
+/dev/sda1                28.6G      5.0G     23.6G  18% /mnt/UPAN
+MemTotal:         123468 kB
+MemFree:           87864 kB
+MemAvailable:     100168 kB
+Buffers:            7352 kB
+Cached:            12744 kB
+SwapCached:            0 kB
+Active:            16524 kB
+Inactive:           7424 kB
+Active(anon):       6488 kB
+Inactive(anon):     2792 kB
+Active(file):      10036 kB
+Inactive(file):     4632 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                12 kB
+Writeback:             0 kB
+AnonPages:          3876 kB
+Mapped:             2716 kB
+Shmem:              5428 kB
+Slab:               5708 kB
+SReclaimable:       2280 kB
+SUnreclaim:         3428 kB
+KernelStack:         584 kB
+PageTables:          356 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:       61732 kB
+Committed_AS:      54080 kB
+VmallocTotal:    1941504 kB
+VmallocUsed:        8692 kB
+VmallocChunk:    1743624 kB
+S   UID   PID  PPID   VSZ   RSS TTY   STIME TIME     CMD
+S     0     1     0  2168   392 0:0   23:59 00:00:01 init
+S     0     2     0     0     0 0:0   23:59 00:00:00 [kthreadd]
+S     0     3     2     0     0 0:0   23:59 00:00:00 [ksoftirqd/0]
+S     0     4     2     0     0 0:0   23:59 00:00:00 [kworker/0:0]
+S     0     5     2     0     0 0:0   23:59 00:00:00 [kworker/0:0H]
+S     0     6     2     0     0 0:0   23:59 00:00:00 [kworker/u2:0]
+S     0     7     2     0     0 0:0   23:59 00:00:00 [rcu_preempt]
+S     0     8     2     0     0 0:0   23:59 00:00:00 [rcu_sched]
+S     0     9     2     0     0 0:0   23:59 00:00:00 [rcu_bh]
+S     0    10     2     0     0 0:0   23:59 00:00:00 [migration/0]
+S     0    11     2     0     0 0:0   23:59 00:00:00 [khelper]
+S     0    12     2     0     0 0:0   23:59 00:00:00 [kdevtmpfs]
+S     0    13     2     0     0 0:0   23:59 00:00:00 [writeback]
+S     0    14     2     0     0 0:0   23:59 00:00:00 [bioset]
+S     0    15     2     0     0 0:0   23:59 00:00:00 [crypto]
+S     0    16     2     0     0 0:0   23:59 00:00:00 [kblockd]
+S     0    17     2     0     0 0:0   23:59 00:00:00 [ata_sff]
+S     0    18     2     0     0 0:0   23:59 00:00:00 [khubd]
+S     0    19     2     0     0 0:0   23:59 00:00:00 [kworker/u2:1]
+S     0    26     2     0     0 0:0   23:59 00:00:00 [kworker/0:1]
+S     0    27     2     0     0 0:0   23:59 00:00:00 [cfg80211]
+S     0    28     2     0     0 0:0   23:59 00:00:00 [cfinteractive]
+S     0    29     2     0     0 0:0   23:59 00:00:00 [kswapd0]
+S     0    30     2     0     0 0:0   23:59 00:00:00 [fsnotify_mark]
+S     0    38     2     0     0 0:0   23:59 00:00:00 [ttyLogFileThrea]
+S     0    39     2     0     0 0:0   23:59 00:00:00 [spi32766]
+S     0    42     2     0     0 0:0   23:59 00:00:00 [ci_otg]
+S     0    43     2     0     0 0:0   23:59 00:00:00 [ci_otg]
+S     0    44     2     0     0 0:0   23:59 00:00:00 [kworker/u2:2]
+S     0    45     2     0     0 0:0   23:59 00:00:00 [ipv6_addrconf]
+S     0    46     2     0     0 0:0   23:59 00:00:00 [krfcommd]
+S     0    47     2     0     0 0:0   23:59 00:00:00 [deferwq]
+S     0    48     2     0     0 0:0   23:59 00:00:00 [irq/81-imx_ther]
+S     0    49     2     0     0 0:0   23:59 00:00:01 [jffs2_gcd_mtd2]
+S     0    59     1  2168    40 0:0   23:59 00:00:00 init
+S     0    74     2     0     0 0:0   23:59 00:00:00 [kworker/0:2]
+S     0    86     1  9384  2228 0:0   23:59 00:00:01 ARMadb-driver
+S     0    90     2     0     0 0:0   23:59 00:00:00 [scsi_eh_0]
+S     0    91     2     0     0 0:0   23:59 00:00:00 [scsi_tmf_0]
+S     0    92     2     0     0 0:0   23:59 00:00:00 [usb-storage]
+S     0   106     2     0     0 0:0   00:00 00:00:00 [kworker/u2:3]
+S     0   118     2     0     0 0:0   00:00 00:00:00 [kworker/0:1H]
+S     0   122     1  2168   360 0:0   00:00 00:00:00 {exe} ash /script/update_
+S     0   130   122  2168   344 0:0   00:00 00:00:00 {U2W.sh} /bin/sh /mnt/UPA
+S     0   136     1  2236   540 0:0   00:00 00:00:00 boa
+S     0   149   130  2188   816 0:0   00:00 00:00:00 /tmp/dropbear -vFEsg
+S     0   151     2     0     0 0:0   00:00 00:00:00 [btfwwork]
+S     0   154    86 28272  2536 0:0   00:00 00:00:00 ARMadb-driver
+S     0   155    86 17576  1756 0:0   00:00 00:00:00 ARMadb-driver
+S     0   176     2     0     0 0:0   00:00 00:00:00 [ksdioirqd/mmc0]
+S     0   180     1 15928  2508 0:0   00:00 00:00:00 bluetoothDaemon -n
+D     0   181     2     0     0 0:0   00:00 00:00:00 [RTW_XMIT_THREAD]
+D     0   182     2     0     0 0:0   00:00 00:00:00 [RTW_RECV_THREAD]
+D     0   183     2     0     0 0:0   00:00 00:00:01 [RTW_CMD_THREAD]
+D     0   184     2     0     0 0:0   00:00 00:00:00 [RTWHALXT]
+S     0   202     1  4348   884 0:0   00:00 00:00:00 dbus-daemon --system --pr
+S     0   217     2     0     0 0:0   00:00 00:00:00 [kworker/u3:0]
+S     0   218     2     0     0 0:0   00:00 00:00:00 [hci0]
+S     0   219     2     0     0 0:0   00:00 00:00:00 [hci0]
+S     0   222     2     0     0 0:0   00:00 00:00:00 [kworker/u3:1]
+S     0   223     2     0     0 0:0   00:00 00:00:00 [kworker/u3:2]
+S     0   225     1  1900   192 0:0   00:00 00:00:00 rtk_hciattach -s 115200 t
+S     0   254     1  2352   764 0:0   00:00 00:00:00 hostapd /etc/hostapd.conf
+S     0   261     1  2168   252 0:0   00:00 00:00:00 udhcpd
+S     0   314   149  2640   992 0:0   00:00 00:00:01 /tmp/dropbear -vFEsg
+S     0   317   314  2172   396 pts0  00:00 00:00:00 -sh
+S     0   733     1  2168   260 0:0   00:01 00:00:00 /bin/sh /script/after_shu
+R     0   737   733  2172   260 0:0   00:01 00:00:00 ps -l
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 3.14.52+g94d07bb (sky@sky-vmware-1604) (gcc version 4.9.2 (GCC) ) #100 SMP PREEMPT Thu Jan 28 14:43:46 CST 2021
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: Freescale i.MX6 UltraLite 14x14 EVK Board
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 32768
+[    0.000000] free_area_init_node: node 0, pgdat 805ee780, node_mem_map 87ef8000
+[    0.000000]   Normal zone: 256 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 32768 pages, LIFO batch:7
+[    0.000000] PERCPU: Embedded 8 pages/cpu @87ee3000 s8256 r8192 d16320 u32768
+[    0.000000] pcpu-alloc: s8256 r8192 d16320 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 32512
+[    0.000000] Kernel command line: console=ttyLogFile0 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=21e0000.qspi:256k(uboot),3328K(kernel),12800K(rootfs) rootwait quiet rw
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 123264K/131072K available (4264K kernel code, 196K rwdata, 1372K rodata, 204K init, 478K bss, 7808K reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0x88800000 - 0xff000000   (1896 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0x88000000   ( 128 MB)
+[    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+[    0.000000]       .text : 0x80008000 - 0x805893ac   (5637 kB)
+[    0.000000]       .init : 0x8058a000 - 0x805bd040   ( 205 kB)
+[    0.000000]       .data : 0x805be000 - 0x805ef2e0   ( 197 kB)
+[    0.000000]        .bss : 0x805ef2ec - 0x80666cc8   ( 479 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] Switching to timer-based delay loop
+[    0.000022] sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 1431655765682ns
+[    0.001569] clocksource_of_init: no matching clocksources found
+[    0.001854] log file data init success
+[    0.001965] console [ttyLogFile0] enabled
+[    0.001978] tty-log-file: registered console driver for tty log file 0
+[    0.002177] Console: colour dummy device 80x30
+[    0.002215] Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=30000)
+[    0.002244] pid_max: default: 32768 minimum: 301
+[    0.002627] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.002650] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.004304] CPU: Testing write buffer coherency: ok
+[    0.004839] CPU0: update cpu_power 1024
+[    0.004863] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.004916] Setting up static identity map for 0x8040c2e0 - 0x8040c338
+[    0.040849] Brought up 1 CPUs
+[    0.040876] SMP: Total of 1 processors activated (6.00 BogoMIPS).
+[    0.040889] CPU: All CPU(s) started in SVC mode.
+[    0.042286] devtmpfs: initialized
+[    0.053758] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.054534] pinctrl core: initialized pinctrl subsystem
+[    0.055408] regulator-dummy: no parameters
+[    0.056050] NET: Registered protocol family 16
+[    0.056730] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.058066] cpuidle: using governor ladder
+[    0.058084] cpuidle: using governor menu
+[    0.058340] Use WDOG1 as reset source
+[    0.078309] syscon 20c8000.anatop: regmap [mem 0x020c8000-0x020c8fff] registered
+[    0.079044] vdd3p0: 2625 <--> 3400 mV at 3000 mV 
+[    0.079991] cpu: 725 <--> 1450 mV at 1150 mV 
+[    0.081087] vddsoc: 725 <--> 1450 mV at 1175 mV 
+[    0.086480] syscon 20e4000.iomuxc-gpr: regmap [mem 0x020e4000-0x020e7fff] registered
+[    0.093281] syscon 21ac000.romcp: regmap [mem 0x021ac000-0x021affff] registered
+[    0.095161] syscon 21bc000.ocotp-ctrl: regmap [mem 0x021bc000-0x021bffff] registered
+[    0.102240] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.102261] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.103388] imx6ul-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+[    0.105417] 20dc000.gpc supply pu not found, using dummy regulator
+[    0.120545] bio: create slab <bio-0> at 0
+[    0.127702] mxs-dma 1804000.dma-apbh: initialized
+[    0.128731] can-3v3: 3300 mV 
+[    0.129441] wlreg_on: 3300 mV 
+[    0.130372] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 58, base_baud = 5000000) is a IMX
+[    0.132363] 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 59, base_baud = 5000000) is a IMX
+[    0.133689] 21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 60, base_baud = 5000000) is a IMX
+[    0.135393] SCSI subsystem initialized
+[    0.135914] libata version 3.00 loaded.
+[    0.136334] usbcore: registered new interface driver usbfs
+[    0.136508] usbcore: registered new interface driver hub
+[    0.136826] usbcore: registered new device driver usb
+[    0.141442] i2c i2c-0: IMX I2C adapter registered
+[    0.142197] i2c i2c-1: IMX I2C adapter registered
+[    0.143142] Advanced Linux Sound Architecture Driver Initialized.
+[    0.145228] Bluetooth: Core ver 2.18
+[    0.145346] NET: Registered protocol family 31
+[    0.145360] Bluetooth: HCI device and connection manager initialized
+[    0.145395] Bluetooth: HCI socket layer initialized
+[    0.145422] Bluetooth: L2CAP socket layer initialized
+[    0.145534] Bluetooth: SCO socket layer initialized
+[    0.146472] cfg80211: Calling CRDA to update world regulatory domain
+[    0.147155] Switched to clocksource mxc_timer1
+[    0.173589] NET: Registered protocol family 2
+[    0.175621] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.175677] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.175729] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.175835] TCP: reno registered
+[    0.175866] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.175922] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.176537] NET: Registered protocol family 1
+[    0.179301] ldo2p5-dummy: no parameters
+[    0.181607] Bus freq driver module loaded
+[    0.183535] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.200592] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.202400] fuse init (API version 7.22)
+[    0.203549] msgmni has been set to 240
+[    0.205507] io scheduler noop registered
+[    0.205527] io scheduler deadline registered
+[    0.205615] io scheduler cfq registered (default)
+[    0.206786] imx-weim 21b8000.weim: Driver registered.
+[    0.208506] imx-sdma 20ec000.sdma: no event needs to be remapped
+[    0.208716] imx-sdma 20ec000.sdma: loaded firmware 3.2
+[    0.217791] imx-sdma 20ec000.sdma: initialized
+[    0.219701] serial: Freescale lpuart driver
+[    0.245692] brd: module loaded
+[    0.257865] loop: module loaded
+[    0.264012] fsl-quadspi 21e0000.qspi: mx25l12805d (16384 Kbytes)
+[    0.264088] 3 cmdlinepart partitions found on MTD device 21e0000.qspi
+[    0.264104] Creating 3 MTD partitions on "21e0000.qspi":
+[    0.264130] 0x000000000000-0x000000040000 : "uboot"
+[    0.267127] 0x000000040000-0x000000380000 : "kernel"
+[    0.270133] 0x000000380000-0x000001000000 : "rootfs"
+[    0.272866] fsl-quadspi 21e0000.qspi: QuadSPI SPI NOR flash driver
+[    0.273843] spi_gpio spi4.15: gpio-miso property not found, switching to no-rx mode
+[    0.276848] usbcore: registered new interface driver cdc_ether
+[    0.276982] usbcore: registered new interface driver cdc_subset
+[    0.277249] usbcore: registered new interface driver zaurus
+[    0.277322] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.277337] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    0.277781] usbcore: registered new interface driver usb-storage
+[    0.281932] setup_reset_gpios:-2, flags 0
+[    0.282163] 2184000.usb supply vbus not found, using dummy regulator
+[    0.283336] mxs_phy 20c9000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.287021] ci_hdrc ci_hdrc.0: Init set fsm->a_vbus_vld = 1
+[    0.287867] setup_reset_gpios:-2, flags 0
+[    0.288243] 2184200.usb supply vbus not found, using dummy regulator
+[    0.289466] mxs_phy 20ca000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+[    0.290615] [otg_statemachine]  fsm->id = 0
+[    0.290632] [otg_set_state]  Set state: a_idle
+[    0.290651] [otg_set_protocol]  Changing role fsm->protocol= 0; new protocol= 1
+[    0.290675] ci_hdrc ci_hdrc.0: ci_otg_start_host 1
+[    0.290714] ci_hdrc ci_hdrc.0: EHCI Host Controller
+[    0.290765] ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+[    0.295364] snvs_pwrkey 20cc000.snvs-pwrkey: can't get snvs clock
+[    0.296151] input: 20cc000.snvs-pwrkey as /devices/soc0/soc.1/2000000.aips-bus/20cc000.snvs-pwrkey/input/input0
+[    0.296352] snvs_pwrkey 20cc000.snvs-pwrkey: i.MX snvs powerkey probed
+[    0.297043] snvs_rtc 20cc034.snvs-rtc-lp: can't get snvs-rtc clock
+[    0.297735] check_alarm_past: alarm in the past
+[    0.298353] snvs_rtc 20cc034.snvs-rtc-lp: rtc core: registered 20cc034.snvs-rtc-lp as rtc0
+[    0.298677] i2c /dev entries driver
+[    0.300564] imx2-wdt 20bc000.wdog: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=0)
+[    0.301579] sdhci: Secure Digital Host Controller Interface driver
+[    0.301592] sdhci: Copyright(c) Pierre Ossman
+[    0.301605] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.303499] sdhci-esdhc-imx 2190000.usdhc: assigned as wifi host
+[    0.304770] mmc0: no vqmmc regulator found
+[    0.307349] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+[    0.308099] usb usb1: is_b_host:0, config:842e8400, parent:  (null), root_hub=842bf800
+[    0.308134] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.308159] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.308182] usb usb1: Product: EHCI Host Controller
+[    0.308204] usb usb1: Manufacturer: Linux 3.14.52+g94d07bb ehci_hcd
+[    0.308223] usb usb1: SerialNumber: ci_hdrc.0
+[    0.310031] hub 1-0:1.0: USB hub found
+[    0.310141] hub 1-0:1.0: 1 port detected
+[    0.311050] [otg_statemachine]  quit statemachine, changed = 1
+[    0.311148] [otg_set_state]  Set state: a_wait_vrise
+[    0.311189] [otg_statemachine]  quit statemachine, changed = 1
+[    0.347230] mmc0: SDHCI controller on 2190000.usdhc [2190000.usdhc] using ADMA
+[    0.359945] mmc1: no vqmmc regulator found
+[    0.359971] mmc1: no vmmc regulator found
+[    0.361906] sdhci-esdhc-imx 2190000.usdhc: card claims to support voltages below defined range 90ffffff
+[    0.382011] mmc0: new high speed SDIO card at address 0001
+[    0.397274] mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+[    0.405480] wm8960 0-001a: Failed to issue reset
+[    0.405732] wm8960: probe of 0-001a failed with error -5
+[    0.408520] fsl-asrc 2034000.asrc: driver registered
+[    0.413372] [otg_set_state]  Set state: a_wait_bcon
+[    0.413411] [otg_statemachine]  quit statemachine, changed = 1
+[    0.424368] TCP: cubic registered
+[    0.425924] NET: Registered protocol family 10
+[    0.434877] sit: IPv6 over IPv4 tunneling driver
+[    0.452844] NET: Registered protocol family 17
+[    0.453142] Bluetooth: RFCOMM TTY layer initialized
+[    0.453184] Bluetooth: RFCOMM socket layer initialized
+[    0.453242] Bluetooth: RFCOMM ver 1.11
+[    0.453273] lib80211: common routines for IEEE802.11 drivers
+[    0.453288] lib80211_crypt: registered algorithm 'NULL'
+[    0.453301] lib80211_crypt: registered algorithm 'WEP'
+[    0.453314] lib80211_crypt: registered algorithm 'CCMP'
+[    0.453327] lib80211_crypt: registered algorithm 'TKIP'
+[    0.454021] check cpu speed flag: 01
+[    0.468962] can-3v3: disabling
+[    0.468986] regulator-dummy: disabling
+[    0.469784] driver->driver.name = android_usb ret=0
+[    0.469808] counting ret = 0 : 2184000.usb
+[    0.470054] file system registered
+[    0.470916] android_usb gadget: android_usb ready
+[    0.471054] snvs_rtc 20cc034.snvs-rtc-lp: setting system clock to 1970-01-01 00:00:00 UTC (0)
+[    0.508759] ALSA device list:
+[    0.508774]   No soundcards found.
+[    1.389545] VFS: Mounted root (jffs2 filesystem) on device 31:2.
+[    1.390408] devtmpfs: mounted
+[    1.391143] Freeing unused kernel memory: 204K (8058a000 - 805bd000)
+[    2.943860] random: nonblocking pool is initialized
+[    3.038287] [otg_set_state]  Set state: a_host
+[    3.038319] [otg_statemachine]  quit statemachine, changed = 1
+[    3.086749] cdc_ncm: disagrees about version of symbol module_layout
+[    3.267348] usb 1-1: new high-speed USB device number 2 using ci_hdrc
+[    3.299578] usb 1-1: is_b_host:0, config:84443a00, parent:842bf800, root_hub=842bf800
+[    3.299607] usb 1-1: New USB device found, idVendor=0781, idProduct=5591
+[    3.299626] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    3.299643] usb 1-1: Product:  SanDisk 3.2Gen1
+[    3.299658] usb 1-1: Manufacturer:  USB
+[    3.299674] usb 1-1: SerialNumber: 0501c175f347d42d94392d79fbccebe86cf92e82a48494edafd5383db796329c770700000000000000000000bf67302600110a10915581073bab0077
+[    3.319467] usb-storage 1-1:1.0: USB Mass Storage device detected
+[    3.332548] scsi0 : usb-storage 1-1:1.0
+[    4.306239] android_usb: already disabled
+[    4.316942] android_enable_function: iap2
+[    4.316992] android_enable_function: ncmandroid_usb gadget: _iap2_bind_config
+[    4.326231] ncm_function_bind_config MAC: 00:00:00:00:00:00
+[    4.348967] scsi 0:0:0:0: Direct-Access      USB      SanDisk 3.2Gen1 1.00 PQ: 0 ANSI: 6
+[    4.351994] ncm0: MAC c2:8e:30:52:e9:a3
+[    4.352012] ncm0: HOST MAC 26:98:d9:34:fd:a1
+[    4.390548] sd 0:0:0:0: [sda] 60088320 512-byte logical blocks: (30.7 GB/28.6 GiB)
+[    4.391397] sd 0:0:0:0: [sda] Write Protect is off
+[    4.391424] sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00
+[    4.392540] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[    4.426873]  sda: sda1
+[    4.442406] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[    4.496834] ncm0: eth_open
+[    4.496861] ncm0: eth_start
+[    4.696588] FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    6.409826] Bluetooth: HCI UART driver ver 2.2.3b3fa69.20191024-161739
+[    6.409847] Bluetooth: HCI H4 protocol initialized
+[    6.409856] Bluetooth: HCI Realtek H5 protocol initialized
+[    6.409867] rtk_btcoex: rtk_btcoex_init: version: 1.2
+[    6.409875] rtk_btcoex: create workqueue
+[    6.414290] rtk_btcoex: alloc buffers 1408, 2240 for ev and l2
+[    8.685875] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   10.557708] Bluetooth: h5_open
+[   10.557748] Bluetooth: hci_uart_register_dev
+[   10.571485] rtk_btcoex: Open BTCOEX
+[   10.583808] rtk_btcoex: BTCOEX hci_rev 0xaa7b
+[   10.583824] rtk_btcoex: BTCOEX lmp_subver 0x9a3a
+[   10.912784] rtk_btcoex: BTCOEX hci_rev 0xaa7b
+[   10.912799] rtk_btcoex: BTCOEX lmp_subver 0x9a3a
+[   12.158102] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   12.847153] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+clocksource_of_init: no matching clocksources found
+mxs_phy 20c9000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+ci_hdrc ci_hdrc.0: Init set fsm->a_vbus_vld = 1
+mxs_phy 20ca000.usbphy: config usb vbus valid thresh to: 0, vbus_value: 00100000
+ci_hdrc ci_hdrc.0: ci_otg_start_host 1
+snvs_pwrkey 20cc000.snvs-pwrkey: can't get snvs clock
+snvs_rtc 20cc034.snvs-rtc-lp: can't get snvs-rtc clock
+wm8960 0-001a: Failed to issue reset
+driver->driver.name = android_usb ret=0
+counting ret = 0 : 2184000.usb
+Freeing unused kernel memory: 204K (8058a000 - 805bd000)
+----------------start ssh----------------
+---------------mount all--------------
+---------------Start mdev-------------
+-------------up network--------------
+**************************************
+Kernel version:linux-3.0.15
+iMX6UL 14x14 evk board rootfs
+Designer:ShiKai
+Date:2015.11.3
+**************************************
+Software Vserion: 2020.10.27.1239
+Start Main Service!!!
+
+Please press Enter to activate this console. Thu Jan  2 00:00:00 UTC 2020
+cdc_ncm.ko
+console=ttyLogFile0 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=21e0000.qspi:256k(uboot),3328K(kernel),12800K(rootfs) rootwait quiet rw
+insmod: can't read '/tmp/storage_common.ko': No such file or directory
+insmod: can't read '/tmp/g_android_accessory.ko': No such file or directory
+insmod: can't insert '/tmp/cdc_ncm.ko': invalid module format
+Start Carplay mdnsd!!!
+BT WIFI Card Device ID: 0xb822
+rtk_hci_uart.ko
+88x2bs.ko
+Start Carplay IAP2&NCM driver!!!
+android_usb: already disabled
+android_enable_function: iap2
+android_enable_function: ncmStart NCM network
+/dev/sda1 PLUG IN
+/dev/sda add
+Web Server Service!!!
+mDNSResponder: mDNSResponder (Engineering Build) (Dec 14 2020 14:29:55) starting
+mDNSResponder: mDNS_AddDNSServer: Lock not held! mDNS_busy (0) mDNS_reentrancy (0)
+mDNSResponder: mDNSPlatformSourceAddrForDest: connect 1.1.1.1 failed errno 101 (Network is unreachable)
+mDNSResponder: WARNING: mdnsd continuing as root because user "nobody" does not exist
+Save Log to UPAN
+[02/Jan/2020:00:00:02 +0000] boa: server version Boa/0.94.101wk
+[02/Jan/2020:00:00:02 +0000] boa: server built Jul 30 2019 at 15:42:27.
+[02/Jan/2020:00:00:02 +0000] boa: starting server pid=136, port 80
+Start load Bluetooth!!!
+[2020-01-02 00:00:04.238176]Realtek Bluetooth ERROR: Signature 30 0a 00 00 is incorrect
+[2020-01-02 00:00:04.347071]<ConfigFileUtils.c,633>: Set Box bluetooth name: LoadKit-5861
+ssid=LoadKit-6f34
+01-02 12:00:04.476257 AM [CAccessory_fd] Still not connect to AppServer!
+_create_unix_socket /var/run/adb-driver SUC
+01-02 12:00:04.716443 AM [BluetoothDaemonControler_fd] BluetoothDaemonControler_fd::EnsureBluetoothUp
+EnsureBluetoothUp
+01-02 12:00:05.408566 AM [CAccessory_fd] Still not connect to AppServer!
+(CheckPollResult)+75: pid:154 Android adb Mirror(1) connected, fd=5
+01-02 12:00:05.409130 AM [CAccessory_fd] Still not connect to AppServer!
+(CheckPollResult)+75: pid:154 Control-InternalUse(30) connected, fd=6
+01-02 12:00:05.409450 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:05.409610 AM [CAccessory_fd] Not Opened!!
+01-02 12:00:05.409880 AM [CAccessory_fd] Still not connect to AppServer!
+		 $$$ 清除发送缓冲，因为fd已经不可用
+rm: can't remove '/var/run/dbus/pid': No such file or directory
+01-02 12:00:06.411754 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:06.412146 AM [BluetoothDaemonControler_fd] BluetoothDaemonControler_fd::EnsureBluetoothUp
+EnsureBluetoothUp
+01-02 12:00:06.442369 AM ### [ASSERT] BluetoothDaemonControler.cpp:114 "", "!dbus_error_is_set(&error)" 
+Setting Wi-Fi MAC address: 00:E0:4C:F6:B0:31
+ash: write error: Device or resource busy
+01-02 12:00:07.444462 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:07.444855 AM [BluetoothDaemonControler_fd] BluetoothDaemonControler_fd::EnsureBluetoothUp
+EnsureBluetoothUp
+01-02 12:00:07.463479 AM ### [ASSERT] BluetoothDaemonControler.cpp:114 "", "!dbus_error_is_set(&error)" 
+check_rtk_hciattach_done_ms 2200!
+01-02 12:00:08.177171 AM [RiddleBluetoothService] _getDefaltAdapterPath err=The name org.bluez was not provided by any .service files
+hcid[229]: Bluetooth HCI daemon
+hcid[229]: Enabling debug information
+hcid[229]: Starting SDP server
+hcid[229]: HCI dev 0 registered
+01-02 12:00:08.396959 AM [RiddleBluetoothService] _getDefaltAdapterPath err=No such adapter
+hcid[229]: HCI dev 0 up
+hcid[229]: Device hci0 has been added
+hcid[229]: Starting security manager 0
+01-02 12:00:08.465985 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:08.466193 AM [BluetoothDaemonControler_fd] BluetoothDaemonControler_fd::EnsureBluetoothUp
+EnsureBluetoothUp
+01-02 12:00:08.578079 AM ### [ASSERT] BluetoothDaemonControler.cpp:114 "", "!dbus_error_is_set(&error)" 
+hcid[229]: Device hci0 has been activated
+01-02 12:00:08.837666 AM [RiddleBluetoothService] defaulAdaptorPath_=/org/bluez/hci0
+IAP2 service registered
+NearBy service registered
+HiChain service registered
+Serial Port service registered
+01-02 12:00:09.579894 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:09.580281 AM [BluetoothDaemonControler_fd] BluetoothDaemonControler_fd::EnsureBluetoothUp
+EnsureBluetoothUp
+01-02 12:00:09.599526 AM [RiddleBluetoothService] RiddleBluetoothService::OnDbusMessage TestAlive
+01-02 12:00:09.600599 AM [RiddleBluetoothService] RiddleBluetoothService::OnDbusMessage TestAlive
+01-02 12:00:09.617839 AM [RiddleBluetoothService] RiddleBluetoothService::OnDbusMessage ListRemoteDevices
+RiddleBluetoothService_Interface_Control::OnDbusMessage ListRemoteDevices
+DeviceList(0): 
+
+01-02 12:00:09.625870 AM [CAccessory_fd] boxType: Auto_Box
+01-02 12:00:09.627089 AM [RiddleBluetoothService] RiddleBluetoothService::OnDbusMessage Listen
+RiddleBluetoothService_Interface_Control::OnDbusMessage Listen
+hostapd start process.....
+Configuration file: /etc/hostapd.conf
+drv->ifindex=4
+l2_sock_recv==l2_sock_xmit=0x0x616640
+Failed to request a scan of neighboring BSSes
++rtl871x_sta_deauth_ops, ff:ff:ff:ff:ff:ff is deauth, reason=2
+rtl871x_set_key_ops
+rtl871x_set_key_ops
+rtl871x_set_key_ops
+rtl871x_set_key_ops
+Using interface wlan0 with hwaddr 00:e0:4c:f6:b0:31 and ssid 'LoadKit-6f34'
+rtl871x_set_wps_assoc_resp_ie
+rtl871x_set_wps_beacon_ie
+rtl871x_set_wps_probe_resp_ie
+rtl871x_set_key_ops
+Add Carplay Information Element!!!!
+Carplay Information Element Set bluetooth mac: c4
+Carplay Information Element Set bluetooth mac: 6e
+Carplay Information Element Set bluetooth mac: 7b
+Carplay Information Element Set bluetooth mac: 86
+Carplay Information Element Set bluetooth mac: e8
+Carplay Information Element Set bluetooth mac: 59
+Carplay Information Element Set Wifi mac: 00
+Carplay Information Element Set Wifi mac: e0
+Carplay Information Element Set Wifi mac: 4c
+Carplay Information Element Set Wifi mac: f6
+Carplay Information Element Set Wifi mac: b0
+Carplay Information Element Set Wifi mac: 31
+rtl871x_set_beacon_ops
+rtl871x_set_hidden_ssid ignore_broadcast_ssid:0, LoadKit-6f34,12
+rtl871x_set_acl
+udhcpd start process.....
+mdnsd runing.....
+01-02 12:00:10.852977 AM [CAccessory_fd] Still not connect to AppServer!
+		 $$$ 清除发送缓冲，因为fd已经不可用
+01-02 12:00:11.854913 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:12.856747 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:13.858557 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:14.860409 AM [CAccessory_fd] Reset Accessory!!
+/script/start_accessory.sh: line 18: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+/script/start_accessory.sh: line 22: can't create /sys/class/android_usb_accessory/android0/idVendor: nonexistent directory
+/script/start_accessory.sh: line 23: can't create /sys/class/android_usb_accessory/android0/idProduct: nonexistent directory
+/script/start_accessory.sh: line 24: can't create /sys/class/android_usb_accessory/android0/functions: nonexistent directory
+/script/start_accessory.sh: line 25: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+01-02 12:00:15.896235 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:16.898217 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:17.900222 AM [CAccessory_fd] Still not connect to AppServer!
+		 $$$ 清除发送缓冲，因为fd已经不可用
+01-02 12:00:18.901752 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:19.903829 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:20.905867 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:21.907944 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:22.910026 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:23.912506 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:24.914639 AM [CAccessory_fd] Reset Accessory!!
+/script/start_accessory.sh: line 18: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+/script/start_accessory.sh: line 22: can't create /sys/class/android_usb_accessory/android0/idVendor: nonexistent directory
+/script/start_accessory.sh: line 23: can't create /sys/class/android_usb_accessory/android0/idProduct: nonexistent directory
+/script/start_accessory.sh: line 24: can't create /sys/class/android_usb_accessory/android0/functions: nonexistent directory
+/script/start_accessory.sh: line 25: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+01-02 12:00:25.942815 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:26.944940 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:27.947006 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:28.948723 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:29.950534 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:30.951767 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:31.953747 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:32.955453 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:33.957232 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:34.959304 AM [CAccessory_fd] Reset Accessory!!
+/script/start_accessory.sh: line 18: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+/script/start_accessory.sh: line 22: can't create /sys/class/android_usb_accessory/android0/idVendor: nonexistent directory
+/script/start_accessory.sh: line 23: can't create /sys/class/android_usb_accessory/android0/idProduct: nonexistent directory
+/script/start_accessory.sh: line 24: can't create /sys/class/android_usb_accessory/android0/functions: nonexistent directory
+/script/start_accessory.sh: line 25: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+01-02 12:00:35.982401 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:36.984237 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:37.986299 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:38.988342 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:39.990436 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:40.992533 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:41.994540 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:42.996616 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:43.998631 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:45.000733 AM [CAccessory_fd] Reset Accessory!!
+/script/start_accessory.sh: line 18: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+/script/start_accessory.sh: line 22: can't create /sys/class/android_usb_accessory/android0/idVendor: nonexistent directory
+/script/start_accessory.sh: line 23: can't create /sys/class/android_usb_accessory/android0/idProduct: nonexistent directory
+/script/start_accessory.sh: line 24: can't create /sys/class/android_usb_accessory/android0/functions: nonexistent directory
+/script/start_accessory.sh: line 25: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+01-02 12:00:46.025384 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:47.027548 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:48.029258 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:49.031287 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:50.033542 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:51.035635 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:52.037718 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:53.039798 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:54.041876 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:55.043973 AM [CAccessory_fd] Reset Accessory!!
+/script/start_accessory.sh: line 18: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+/script/start_accessory.sh: line 22: can't create /sys/class/android_usb_accessory/android0/idVendor: nonexistent directory
+/script/start_accessory.sh: line 23: can't create /sys/class/android_usb_accessory/android0/idProduct: nonexistent directory
+/script/start_accessory.sh: line 24: can't create /sys/class/android_usb_accessory/android0/functions: nonexistent directory
+/script/start_accessory.sh: line 25: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+01-02 12:00:56.072374 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:57.074542 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:58.076614 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:00:59.078689 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:00.080774 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:01.083031 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:02.085111 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:03.087199 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:04.088933 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:05.090845 AM [CAccessory_fd] Reset Accessory!!
+/script/start_accessory.sh: line 18: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+/script/start_accessory.sh: line 22: can't create /sys/class/android_usb_accessory/android0/idVendor: nonexistent directory
+/script/start_accessory.sh: line 23: can't create /sys/class/android_usb_accessory/android0/idProduct: nonexistent directory
+/script/start_accessory.sh: line 24: can't create /sys/class/android_usb_accessory/android0/functions: nonexistent directory
+/script/start_accessory.sh: line 25: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+01-02 12:01:06.115397 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:07.117587 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:08.119600 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:09.121731 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:10.123854 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:11.125871 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:12.127959 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:13.130062 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:14.132147 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:15.134284 AM [CAccessory_fd] Reset Accessory!!
+/script/start_accessory.sh: line 18: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+/script/start_accessory.sh: line 22: can't create /sys/class/android_usb_accessory/android0/idVendor: nonexistent directory
+/script/start_accessory.sh: line 23: can't create /sys/class/android_usb_accessory/android0/idProduct: nonexistent directory
+/script/start_accessory.sh: line 24: can't create /sys/class/android_usb_accessory/android0/functions: nonexistent directory
+/script/start_accessory.sh: line 25: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+01-02 12:01:16.162424 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:17.164556 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:18.166627 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:19.168672 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:20.170758 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:21.172933 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:22.175024 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:23.176763 AM [CAccessory_fd] Still not connect to AppServer!
+mDNSResponder: mDNSResponder (Engineering Build) (Dec 14 2020 14:29:55) stopping
+sig_term 15
+hcid[229]: Unregister path: /org/bluez/hci0
+hcid[229]: Stopping SDP server_OnDbusMessage! Release
+
+hcid[229]: Exit
+01-02 12:01:23.619764 AM [RiddleBluetoothService] _getDefaltAdapterPath err=Message did not receive a reply (timeout by message bus)
+01-02 12:01:24.178572 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:25.180288 AM [CAccessory_fd] Reset Accessory!!
+/script/start_accessory.sh: line 18: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+/script/start_accessory.sh: line 22: can't create /sys/class/android_usb_accessory/android0/idVendor: nonexistent directory
+/script/start_accessory.sh: line 23: can't create /sys/class/android_usb_accessory/android0/idProduct: nonexistent directory
+/script/start_accessory.sh: line 24: can't create /sys/class/android_usb_accessory/android0/functions: nonexistent directory
+/script/start_accessory.sh: line 25: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+01-02 12:01:26.206529 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:27.208083 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:28.209641 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:29.211293 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:30.212824 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:31.214349 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:32.215870 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:33.217395 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:34.218956 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:35.220494 AM [CAccessory_fd] Reset Accessory!!
+/script/start_accessory.sh: line 18: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+/script/start_accessory.sh: line 22: can't create /sys/class/android_usb_accessory/android0/idVendor: nonexistent directory
+/script/start_accessory.sh: line 23: can't create /sys/class/android_usb_accessory/android0/idProduct: nonexistent directory
+/script/start_accessory.sh: line 24: can't create /sys/class/android_usb_accessory/android0/functions: nonexistent directory
+/script/start_accessory.sh: line 25: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+01-02 12:01:36.246273 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:37.247877 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:38.249397 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:39.250934 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:40.252524 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:41.254034 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:42.255547 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:43.258309 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:44.259752 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:45.261534 AM [CAccessory_fd] Reset Accessory!!
+/script/start_accessory.sh: line 18: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+/script/start_accessory.sh: line 22: can't create /sys/class/android_usb_accessory/android0/idVendor: nonexistent directory
+/script/start_accessory.sh: line 23: can't create /sys/class/android_usb_accessory/android0/idProduct: nonexistent directory
+/script/start_accessory.sh: line 24: can't create /sys/class/android_usb_accessory/android0/functions: nonexistent directory
+/script/start_accessory.sh: line 25: can't create /sys/class/android_usb_accessory/android0/enable: nonexistent directory
+01-02 12:01:46.306574 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:47.308185 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:48.309706 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:49.311360 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:50.312971 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:51.315108 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:52.317178 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:53.319227 AM [CAccessory_fd] Still not connect to AppServer!
+01-02 12:01:54.320975 AM [CAccessory_fd] Still not connect to AppServer!
