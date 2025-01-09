@@ -35,8 +35,8 @@ Unfortunately, it didn't last long. Carlinkit has been made aware of this repo, 
 
 ### Rooting the device via software
 
-It is possible to gain root access from Carlinkit 1.0 / 2.0 / 3.0 without any hardware method by flashing any "ROLLBACK" firmware (packed with the new method and restoring old method) then flash any Custom Firmware available.
-It is not possible to gain root access from Carlinkit 4.0 or 5.0 without any hardware method.
+It is possible to gain root access from Carlinkit 1.0 / 2.0 (*Realtek RTL8822BS Wifi chip only*) without any hardware method by flashing any "ROLLBACK" firmware (packed with the new method and restoring old method) then flash any Custom Firmware available.
+It is not possible to gain root access from Carlinkit 3.0 (only due to Wifi drivers) or 4.0 or 5.0 without any hardware method.
 
 Please note that packing method is different between 1.0 / 2.0 / 3.0 (U2W) and 4.0 (U2AW) and 5.0 (U2AC), this way Carlinkit ensures you stick with your original device functionalities.
 
