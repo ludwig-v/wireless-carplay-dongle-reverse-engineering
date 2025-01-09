@@ -8,6 +8,8 @@ For a flash dump named dump.bin, extract rootFS from the dump by using this comm
 
 Follow the development guide to install jefferson via poetry (mandatory, patch needed later): https://github.com/onekey-sec/jefferson/
 
+You can also use my patched fork : https://github.com/ludwig-v/jefferson_carlinkit
+
 **Problem ? Custom JFFS2 implementation has been made by Carlinkit**, they use custom compression algorithm 0x1**6** inside some inodes of the filesystem which is based on Zlib (JFFS2_COMPR_ZLIB = 0x0**6**) but non standard.
 
 **After poking around for hours** I finally understood that they deliberately created this custom method to break files extraction from conventional tools (like *jefferson*) and **they probably did this using a single line of code**.
@@ -16,7 +18,7 @@ Follow the development guide to install jefferson via poetry (mandatory, patch n
 
 Rectifying these characters allows successful Zlib decompression !
 
-You must replace *jffs2.py* of jefferson by the patched one present inside this repository, it is adding JFFS2_COMPR_CARLINKIT_ZLIB (0x16) compression method and also provide a fix for symlinks if the directory was not previously created.
+If you use original repository of jefferson you must replace *jffs2.py* of jefferson by the patched one present inside this repository, it is adding JFFS2_COMPR_CARLINKIT_ZLIB (0x16) compression method and also provide a fix for symlinks if the directory was not previously created.
 
 You can now extract rootFS by using this command (replace */path/to* to desired path):
 
