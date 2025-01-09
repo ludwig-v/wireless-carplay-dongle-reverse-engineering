@@ -6,7 +6,6 @@ import stat
 import struct
 import sys
 import zlib
-import base64
 from pathlib import Path
 
 import cstruct
@@ -196,12 +195,15 @@ class Jffs2_raw_inode(cstruct.CStruct):
                 print(node_data.hex()[:20])
                 self.data = node_data
         except Exception as e:
-            print("Error:", e)
+            print(
+                "Original data written due to decompression error on inode {}: {}".format(self.ino, e),
+                file=sys.stderr,
+            )
             self.data = node_data
 
         if len(self.data) != self.dsize:
-            print("data length mismatch! Excepted / Length", self.dsize, len(self.data), self.compr)
-        
+            print("data length mismatch!")
+
         if mtd_crc(data[: self.size - 8]) == self.node_crc:
             self.node_crc_match = True
         else:
