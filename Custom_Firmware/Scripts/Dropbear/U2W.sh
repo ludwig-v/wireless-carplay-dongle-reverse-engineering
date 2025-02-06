@@ -25,6 +25,7 @@ ln -s /tmp/libz.so.1.2.11 /usr/lib/libz.so
 mkdir /root
 mkdir /root/.ssh
 cp /mnt/UPAN/cplay2air.pub /root/.ssh/authorized_keys
+chmod 700 /root
 chmod 700 /root/.ssh
 chmod 600 /root/.ssh/authorized_keys
 chown root:root /root
