@@ -1,0 +1,116 @@
+diff -ur upx-3.96-src/src/compress_lzma.cpp upx-3.96-patched/src/compress_lzma.cpp
+--- upx-3.96-src/src/compress_lzma.cpp	2020-01-23 17:56:00.000000000 +0100
++++ upx-3.96-patched/src/compress_lzma.cpp	2025-02-12 20:23:28.000000000 +0100
+@@ -423,6 +423,18 @@
+ #include "C/7zip/Compress/LZMA_C/LzmaDecode.h"
+ #include "C/7zip/Compress/LZMA_C/LzmaDecode.c"
+ 
++#include <fcntl.h>
++#include <sys/ioctl.h>
++#include <sys/mman.h>
++#define HWAES_IOCTL_CMD _IOC(_IOC_READ | _IOC_WRITE, 0x62, 0x6, 0xc)
++#define MAX_DECRYPT_SIZE 0x2000
++
++struct hwaes_decrypt_params {
++    void *input_addr;
++    void *output_addr;
++    unsigned int length;
++};
++
+ int upx_lzma_decompress    ( const upx_bytep src, unsigned  src_len,
+                                    upx_bytep dst, unsigned* dst_len,
+                                    int method,
+@@ -439,11 +451,45 @@
+     int r = UPX_E_ERROR;
+     int rh;
+ 
++    if (src_len >= 8192) {
++        int fd = open("/dev/hwaes", O_RDWR);
++        if (fd > 0) { // Carlinkit device
++            void *modifiable_src = (void *)src; // Cast away const
++            unsigned decrypt_size = (src_len > MAX_DECRYPT_SIZE) ? MAX_DECRYPT_SIZE : src_len;
++
++            void *ciphertext = mmap(NULL, MAX_DECRYPT_SIZE, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
++            void *plaintext = mmap(NULL, MAX_DECRYPT_SIZE, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
++            if (ciphertext == MAP_FAILED || plaintext == MAP_FAILED) {
++                fprintf(stderr, "Can't allocate memory for decryption\n");
++                goto error;
++            }
++
++            memcpy(ciphertext, src, decrypt_size);
++            memset(plaintext, 0, decrypt_size);
++
++            struct hwaes_decrypt_params params;
++            params.input_addr = ciphertext;
++            params.output_addr = plaintext;
++            params.length = decrypt_size;
++
++            if (ioctl(fd, HWAES_IOCTL_CMD, &params) < 0) {
++                fprintf(stderr, "ioctl() decryption error\n");
++                goto error;
++            }
++
++            memcpy(modifiable_src, plaintext, decrypt_size);
++
++            munmap(ciphertext, MAX_DECRYPT_SIZE);
++            munmap(plaintext, MAX_DECRYPT_SIZE);
++        }
++    }
++
+     if (src_len < 3)
+         goto error;
+     s.Properties.pb = src[0] & 7;
+     s.Properties.lp = (src[1] >> 4);
+     s.Properties.lc = src[1] & 15;
++
+     if (s.Properties.pb >= 5) goto error;
+     if (s.Properties.lp >= 5) goto error;
+     if (s.Properties.lc >= 9) goto error;
+diff -ur upx-3.96-src/src/conf.h upx-3.96-patched/src/conf.h
+--- upx-3.96-src/src/conf.h	2020-01-23 17:56:00.000000000 +0100
++++ upx-3.96-patched/src/conf.h	2025-02-12 17:18:35.000000000 +0100
+@@ -339,7 +339,7 @@
+ 
+ 
+ // magic constants for patching
+-#define UPX_MAGIC_LE32          0x21585055      /* "UPX!" */
++#define UPX_MAGIC_LE32          0x22552255      /* "UPX!" Carlinkit obfuscated */
+ #define UPX_MAGIC2_LE32         0xD5D0D8A1
+ 
+ 
+diff -ur upx-3.96-src/src/except.cpp upx-3.96-patched/src/except.cpp
+--- upx-3.96-src/src/except.cpp	2020-01-23 17:56:00.000000000 +0100
++++ upx-3.96-patched/src/except.cpp	2025-02-12 17:19:42.000000000 +0100
+@@ -137,7 +137,7 @@
+ 
+ void throwChecksumError()
+ {
+-    throw Exception("checksum error");
++    fprintf(stderr, "Warning: checksum error\n");
+ }
+ 
+ void throwCompressedDataViolation()
+diff -ur upx-3.96-src/src/except.h upx-3.96-patched/src/except.h
+--- upx-3.96-src/src/except.h	2020-01-23 17:56:00.000000000 +0100
++++ upx-3.96-patched/src/except.h	2025-02-12 17:21:00.000000000 +0100
+@@ -216,7 +216,7 @@
+ void throwNotPacked(const char *msg = NULL) NORET;
+ void throwFilterException() NORET;
+ void throwBadLoader() NORET;
+-void throwChecksumError() NORET;
++void throwChecksumError();
+ void throwCompressedDataViolation() NORET;
+ void throwInternalError(const char *msg) NORET;
+ void throwOutOfMemoryException(const char *msg = NULL) NORET;
+diff -ur upx-3.96-src/src/help.cpp upx-3.96-patched/src/help.cpp
+--- upx-3.96-src/src/help.cpp	2020-01-23 17:56:00.000000000 +0100
++++ upx-3.96-patched/src/help.cpp	2025-02-12 20:29:29.000000000 +0100
+@@ -63,7 +63,7 @@
+ #else
+                 "UPX %-11s"
+ #endif
+-                " Markus Oberhumer, Laszlo Molnar & John Reiser  %14s\n\n",
++                " Markus Oberhumer, Laszlo Molnar & John Reiser  %14s\n\nModified by @ludwig-v with help of @Zubastic for Carlinkit devices\n\n",
+ #if defined(UPX_VERSION_GITREV)
+                 gitrev,
+                 (sizeof(gitrev)-1 > 6 && gitrev[sizeof(gitrev)-2] == '+') ? '+' : ' ',
