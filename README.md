@@ -31,14 +31,11 @@ Carlinkit created its own segmentation mainly for marketing using different soft
 This repository started when I gained root access by flashing a custom image back in 2020.
 Firmware images were just obfuscated tarball archives, building a dictionary was enough to unpack and repack firmware images.
 
-Unfortunately, it didn't last long. Carlinkit has been made aware of this repo, they changed the firmware images packing in firmware 2021.03.06 with a new binary, they also hardened the kernel in next firmwares to block any usage of "strace" to reverse the new binary.
+Unfortunately, it didn't last long. Carlinkit has been made aware of this repo, they changed the firmware images packing in firmware 2021.03.06 with a new binary (now pwned in 2025), they also hardened the kernel in next firmwares to block any usage of "strace" to reverse binaries.
 
 ### Rooting the device via software
 
-It is possible to gain root access from Carlinkit 1.0 / 2.0 (*Realtek RTL8822BS Wifi chip only*) without any hardware method by flashing any "ROLLBACK" firmware (packed with the new method and restoring old method) then flash any Custom Firmware available.
-It is not possible to gain root access from Carlinkit 3.0 (only due to Wifi drivers) or 4.0 or 5.0 without any hardware method.
-
-Please note that packing method is different between 1.0 / 2.0 / 3.0 (U2W) and 4.0 (U2AW) and 5.0 (U2AC), this way Carlinkit ensures you stick with your original device functionalities.
+It is possible to gain root access from Carlinkit devices without any hardware method by flashing any Custom Firmware available.
 
 ### Switch device firmware via hardware
 
@@ -67,8 +64,6 @@ Tested so far:
  - 5.0 to U2AW ❌ *(Not booting)*
 
 Please note that **Carlinkit controls devices activation** (via /etc/uuid_sign), your device will work but will be blocked in activation mode, new activations now require a login / password that nobody has, **save your original flash in a safe place** before trying this.
-
-*Successfully switched 2 Carlinkit 2.0 units to U2AW with new activation in 2021 / 2022.*
 
 ### Rooting the device via hardware
 
