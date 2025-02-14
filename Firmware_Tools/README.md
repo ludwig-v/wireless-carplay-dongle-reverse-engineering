@@ -1,6 +1,17 @@
 ### Firmware Tools
 
-### ⚠️ Please note that this packing / unpacking method is not working anymore since firmware 2021.03.06 (U2W - Carlinkit 1.0 / 2.0 / 3.0) and new binary have yet to be reverse engineered.
+### Firmware encrypt / decrypt for firmware >= 2021.03.06 (AES encrypted tarball archive)
+
+    bash Firmware<FIRMWARE_TYPE>.sh <encrypt|decrypt> <input_file> <output_file>
+
+Replace **<FIRMWARE_TYPE>** by the firmware type you are working with (also works for HWFS "modules" files)
+
+| U2W | U2AW | U2AC |
+|--|--|--|
+| V1 V2 V3 | V4 | V5 |
+
+
+### Firmware encrypt / decrypt for firmware < 2021.03.06 (Obfuscated tarball archive, U2W only)
 
 Convert a stock firmware .img to .tar.gz:
 
@@ -17,6 +28,9 @@ Pack "U2W_Update" folder to .tar.gz:
 Convert a tar.gz firmware archive to .img:
 
     php U2W_Crypt.php U2W_Update.tar.gz
+
+### UI modding
+
 Unpack images from rc.dll and rcvec.dll files (from ui.tar.gz):
 
     php UI_DLL.php
