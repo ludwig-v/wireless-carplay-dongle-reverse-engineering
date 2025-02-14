@@ -20,11 +20,11 @@ diff -ur upx-3.96-src/src/compress_lzma.cpp upx-3.96-patched/src/compress_lzma.c
  int upx_lzma_decompress    ( const upx_bytep src, unsigned  src_len,
                                     upx_bytep dst, unsigned* dst_len,
                                     int method,
-@@ -439,11 +451,45 @@
+@@ -439,11 +451,47 @@
      int r = UPX_E_ERROR;
      int rh;
  
-+    if (src_len >= 8192) {
++    if (src_len >= 8192 && (src[0] & 7) >= 5) {
 +        int fd = open("/dev/hwaes", O_RDWR);
 +        if (fd > 0) { // Carlinkit device
 +            void *modifiable_src = (void *)src; // Cast away const
@@ -54,6 +54,8 @@ diff -ur upx-3.96-src/src/compress_lzma.cpp upx-3.96-patched/src/compress_lzma.c
 +
 +            munmap(ciphertext, MAX_DECRYPT_SIZE);
 +            munmap(plaintext, MAX_DECRYPT_SIZE);
++            
++            close(fd);
 +        }
 +    }
 +
