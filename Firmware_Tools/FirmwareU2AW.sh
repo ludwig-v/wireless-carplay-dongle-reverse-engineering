@@ -47,7 +47,11 @@ if [ ! -f "$INPUT_FILE" ]; then
 fi
 
 # Get file size
-FILESIZE=$(stat -c%s "$INPUT_FILE")
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    FILESIZE=$(stat -f %z "$INPUT_FILE")
+else
+    FILESIZE=$(stat -c%s "$INPUT_FILE")
+fi
 BLOCK_SIZE=16
 REMAINDER=$(( FILESIZE % BLOCK_SIZE ))
 
