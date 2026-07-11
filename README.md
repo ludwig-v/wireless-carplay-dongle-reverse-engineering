@@ -107,6 +107,8 @@ The device can be seen as "SP Blank 6ULL" when powered by USB-OTG but it is not 
 
 ## Links to interesting repos
 
+https://github.com/catplay-labs/catplay : 💖 Open-source complete rewrite in Rust for Carlinkit Mini Ultra Dongle
+
 https://github.com/segfly/carlinkit-modding
 
 https://github.com/Henkru/cplay2air-wifi-passphrase-patch
