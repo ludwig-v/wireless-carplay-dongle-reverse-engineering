@@ -1,0 +1,33 @@
+diff --git a/drivers/crypto/Kconfig b/drivers/crypto/Kconfig
+index a6688d549..99df50fdb 100644
+--- a/drivers/crypto/Kconfig
++++ b/drivers/crypto/Kconfig
+@@ -11,6 +11,19 @@ menuconfig CRYPTO_HW
+ 
+ if CRYPTO_HW
+ 
++config CRYPTO_DEV_MXS_DCP_HEWEI
++	bool "Carlinkit MXS DCP Hewei /dev/hwaes compatibility"
++	depends on CRYPTO
++	select CRYPTO_AES
++	select CRYPTO_CBC
++	select CRYPTO_MD5
++	select CRYPTO_SHA1
++	select MPILIB
++	help
++	  Compatibility interface for the private Carlinkit hardware AES and
++	  UUID-signature ioctls. The activation check reads the i.MX6UL OCOTP
++	  shadow registers but never programs OTP fuses.
++
+ source "drivers/crypto/allwinner/Kconfig"
+ 
+ config CRYPTO_DEV_PADLOCK
+diff --git a/drivers/crypto/Makefile b/drivers/crypto/Makefile
+index 322ae8854..e45a440b4 100644
+--- a/drivers/crypto/Makefile
++++ b/drivers/crypto/Makefile
+@@ -50,3 +50,4 @@ obj-y += intel/
+ obj-y += starfive/
+ obj-y += cavium/
+ obj-y += ti/
++obj-$(CONFIG_CRYPTO_DEV_MXS_DCP_HEWEI) += mxs-dcp-hewei.o

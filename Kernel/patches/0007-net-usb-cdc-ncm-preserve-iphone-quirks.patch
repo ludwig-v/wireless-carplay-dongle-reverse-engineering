@@ -1,0 +1,68 @@
+diff --git a/drivers/net/usb/cdc_ncm.c b/drivers/net/usb/cdc_ncm.c
+index 81d7e99fc..ac9336793 100644
+--- a/drivers/net/usb/cdc_ncm.c
++++ b/drivers/net/usb/cdc_ncm.c
+@@ -67,6 +67,9 @@ static void cdc_ncm_tx_timeout_start(struct cdc_ncm_ctx *ctx);
+ static enum hrtimer_restart cdc_ncm_tx_timer_cb(struct hrtimer *hr_timer);
+ static struct usb_driver cdc_ncm_driver;
+ 
++#define CDC_NCM_IPHONE_NTB_MAX_SIZE_RX	12288
++#define CDC_NCM_IPHONE_NTB_MAX_SIZE_TX	15224
++
+ struct cdc_ncm_stats {
+ 	char stat_string[ETH_GSTRING_LEN];
+ 	int sizeof_stat;
+@@ -706,11 +709,15 @@ static int cdc_ncm_setup(struct usbnet *dev)
+ 	/* be conservative when selecting initial buffer size to
+ 	 * increase the number of hosts this will work for
+ 	 */
+-	def_rx = min_t(u32, CDC_NCM_NTB_DEF_SIZE_RX,
++	def_rx = min_t(u32, CDC_NCM_IPHONE_NTB_MAX_SIZE_RX,
+ 		       le32_to_cpu(ctx->ncm_parm.dwNtbInMaxSize));
+-	def_tx = min_t(u32, CDC_NCM_NTB_DEF_SIZE_TX,
++	def_tx = min_t(u32, CDC_NCM_IPHONE_NTB_MAX_SIZE_TX,
+ 		       le32_to_cpu(ctx->ncm_parm.dwNtbOutMaxSize));
+ 
++	dev_info(&dev->intf->dev,
++		 "Using iPhone maximum receive/send lengths=%u/%u\n",
++		 def_rx, def_tx);
++
+ 	/* clamp rx_max and tx_max and inform device */
+ 	cdc_ncm_update_rxtx_max(dev, def_rx, def_tx);
+ 
+@@ -925,7 +932,8 @@ int cdc_ncm_bind_common(struct usbnet *dev, struct usb_interface *intf, u8 data_
+ 	 * empirically on a Sierra Wireless MC7455 running 02.08.02.00
+ 	 * firmware.
+ 	 */
+-	usleep_range(10000, 20000);
++	dev_info(&intf->dev, "Delay load NCM\n");
++	msleep(220);
+ 
+ 	/* configure data interface */
+ 	temp = usb_set_interface(dev->udev, iface_no, data_altsetting);
+@@ -945,12 +953,20 @@ int cdc_ncm_bind_common(struct usbnet *dev, struct usb_interface *intf, u8 data_
+ 	usb_set_intfdata(ctx->control, dev);
+ 
+ 	if (ctx->ether_desc) {
+-		temp = usbnet_get_ethernet_addr(dev, ctx->ether_desc->iMACAddress);
+-		if (temp) {
+-			dev_err(&intf->dev, "failed to get mac address\n");
+-			goto error2;
++		if (intf->cur_altsetting->desc.bInterfaceNumber ==
++		    ctx->ether_desc->iMACAddress) {
++			dev_info(&intf->dev,
++				 "iMACAddress matches interface number; skipping MAC read\n");
++		} else {
++			temp = usbnet_get_ethernet_addr(dev,
++						   ctx->ether_desc->iMACAddress);
++			if (temp) {
++				dev_err(&intf->dev, "failed to get mac address\n");
++				goto error2;
++			}
++			dev_info(&intf->dev, "MAC-Address: %pM\n",
++				 dev->net->dev_addr);
+ 		}
+-		dev_info(&intf->dev, "MAC-Address: %pM\n", dev->net->dev_addr);
+ 	}
+ 
+ 	/* finish setting up the device specific data */

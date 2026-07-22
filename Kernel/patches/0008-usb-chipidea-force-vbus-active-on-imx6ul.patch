@@ -1,0 +1,14 @@
+diff --git a/drivers/usb/chipidea/ci_hdrc_imx.c b/drivers/usb/chipidea/ci_hdrc_imx.c
+index 30d9cdb8c..89ec7acba 100644
+--- a/drivers/usb/chipidea/ci_hdrc_imx.c
++++ b/drivers/usb/chipidea/ci_hdrc_imx.c
+@@ -62,7 +62,8 @@ static const struct ci_hdrc_imx_platform_flag imx6sx_usb_data = {
+ static const struct ci_hdrc_imx_platform_flag imx6ul_usb_data = {
+ 	.flags = CI_HDRC_SUPPORTS_RUNTIME_PM |
+ 		CI_HDRC_TURN_VBUS_EARLY_ON |
+-		CI_HDRC_DISABLE_DEVICE_STREAMING,
++		CI_HDRC_DISABLE_DEVICE_STREAMING |
++		CI_HDRC_FORCE_VBUS_ACTIVE_ALWAYS,
+ };
+ 
+ static const struct ci_hdrc_imx_platform_flag imx7d_usb_data = {

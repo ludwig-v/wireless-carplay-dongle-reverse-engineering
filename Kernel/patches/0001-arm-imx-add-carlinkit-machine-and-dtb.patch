@@ -1,0 +1,67 @@
+diff --git a/arch/arm/boot/dts/nxp/imx/Makefile b/arch/arm/boot/dts/nxp/imx/Makefile
+index 07eea2159..3e8b689ed 100644
+--- a/arch/arm/boot/dts/nxp/imx/Makefile
++++ b/arch/arm/boot/dts/nxp/imx/Makefile
+@@ -392,6 +392,7 @@ dtb-$(CONFIG_SOC_IMX6UL) += \
+ 	imx6ul-tx6ul-mainboard.dtb \
+ 	imx6ul-var-som-concerto.dtb \
+ 	imx6ull-14x14-evk.dtb \
++	imx6ull-carlinkit.dtb \
+ 	imx6ull-14x14-evk-emmc.dtb \
+ 	imx6ull-14x14-evk-btwifi.dtb \
+ 	imx6ull-14x14-evk-gpmi-weim.dtb \
+diff --git a/arch/arm/mach-imx/Kconfig b/arch/arm/mach-imx/Kconfig
+index 5e403c5a2..83a849f89 100644
+--- a/arch/arm/mach-imx/Kconfig
++++ b/arch/arm/mach-imx/Kconfig
+@@ -137,6 +137,7 @@ config SOC_IMX6
+ 	select ARM_CPU_SUSPEND if (PM || CPU_IDLE)
+ 	select ARM_GIC
+ 	select HAVE_IMX_ANATOP
++	select HAVE_IMX_BUSFREQ
+ 	select HAVE_IMX_GPC
+ 	select HAVE_IMX_MMDC
+ 	select HAVE_IMX_SRC
+diff --git a/arch/arm/mach-imx/Makefile b/arch/arm/mach-imx/Makefile
+index 29d877092..5a2dc9a6e 100644
+--- a/arch/arm/mach-imx/Makefile
++++ b/arch/arm/mach-imx/Makefile
+@@ -52,7 +52,7 @@ obj-$(CONFIG_SOC_IMX6Q) += mach-imx6q.o ddr3_freq_imx6.o smp_wfe_imx6.o \
+ obj-$(CONFIG_SOC_IMX6SL) += mach-imx6sl.o lpddr2_freq_imx6.o
+ obj-$(CONFIG_SOC_IMX6SLL) += mach-imx6sl.o lpddr2_freq_imx6sll.o
+ obj-$(CONFIG_SOC_IMX6SX) += mach-imx6sx.o ddr3_freq_imx6sx.o smp_wfe_imx6.o lpddr2_freq_imx6sx.o
+-obj-$(CONFIG_SOC_IMX6UL) += mach-imx6ul.o
++obj-$(CONFIG_SOC_IMX6UL) += mach-imx6ul.o ddr3_freq_imx6sx.o lpddr2_freq_imx6sx.o
+ obj-$(CONFIG_SOC_IMX7D_CA7) += mach-imx7d.o pm-imx7.o ddr3_freq_imx7d.o smp_wfe.o \
+ 			   lpddr3_freq_imx.o suspend-imx7.o
+ obj-$(CONFIG_SOC_IMX7D_CM4) += mach-imx7d-cm4.o
+diff --git a/arch/arm/mach-imx/mach-imx6ul.c b/arch/arm/mach-imx/mach-imx6ul.c
+index 21b7fcdf5..82b7c3c8b 100644
+--- a/arch/arm/mach-imx/mach-imx6ul.c
++++ b/arch/arm/mach-imx/mach-imx6ul.c
+@@ -5,6 +5,7 @@
+ #include <linux/irqchip.h>
+ #include <linux/of_platform.h>
+ #include <asm/mach/arch.h>
++#include <asm/mach/map.h>
+ 
+ #include "common.h"
+ #include "cpuidle.h"
+@@ -23,6 +24,7 @@ static void __init imx6ul_init_machine(void)
+ 
+ static void __init imx6ul_init_irq(void)
+ {
++	imx_gpc_check_dt();
+ 	imx_init_revision_from_anatop();
+ 	imx_src_init();
+ 	irqchip_init();
+@@ -39,8 +41,8 @@ static void __init imx6ul_init_late(void)
+ 
+ static void __init imx6ul_map_io(void)
+ {
++	debug_ll_io_init();
+ 	imx6_pm_map_io();
+-	imx_busfreq_map_io();
+ }
+ 
+ static const char * const imx6ul_dt_compat[] __initconst = {

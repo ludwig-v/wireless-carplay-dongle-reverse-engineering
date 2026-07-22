@@ -1,0 +1,201 @@
+// SPDX-License-Identifier: (GPL-2.0 OR MIT)
+/*
+ * Carlinkit wireless CarPlay dongle (i.MX6ULL + RTL8822BS).
+ *
+ * The board started from the i.MX6UL 14x14 EVK design.  Keep the EVK
+ * peripherals used by the vendor firmware, but describe the actual ULL SoC,
+ * RAM size, QSPI flash, SDIO Wi-Fi power and Bluetooth UART wiring.
+ */
+
+/dts-v1/;
+
+#include "imx6ull.dtsi"
+#include "imx6ul-14x14-evk.dtsi"
+
+/ {
+	model = "Carlinkit i.MX6ULL wireless CarPlay dongle";
+	compatible = "fsl,imx6ul-14x14-evk", "fsl,imx6ull";
+
+	/* The production dongle has 128 MiB, not the EVK's 512 MiB. */
+	memory@80000000 {
+		device_type = "memory";
+		reg = <0x80000000 0x08000000>;
+	};
+
+	/* The EVK CMA pool alone is larger than this board's entire RAM. */
+	/delete-node/ reserved-memory;
+};
+
+&clks {
+	assigned-clocks = <&clks IMX6UL_CLK_PLL3_PFD2>,
+			  <&clks IMX6UL_CLK_PLL4_AUDIO_DIV>;
+	assigned-clock-rates = <320000000>, <786432000>;
+};
+
+/* GPIO1_IO05 is the active-low RTL8822BS WL_REG_ON line. */
+&reg_sd1_vmmc {
+	regulator-name = "wlreg_on";
+	gpio = <&gpio1 5 GPIO_ACTIVE_LOW>;
+	/delete-property/ enable-active-high;
+	/delete-property/ off-on-delay-us;
+	enable-active-low;
+};
+
+/* UART3 RTS/CTS pins belong to Bluetooth, not FLEXCAN1. */
+/delete-node/ &can1;
+
+/* The vendor UART2 wiring only uses TX and RX. */
+&pinctrl_uart2 {
+	fsl,pins = <
+		MX6UL_PAD_UART2_TX_DATA__UART2_DCE_TX	0x1b0b1
+		MX6UL_PAD_UART2_RX_DATA__UART2_DCE_RX	0x1b0b1
+	>;
+};
+
+&iomuxc {
+	pinctrl_uart3: uart3grp {
+		fsl,pins = <
+			MX6UL_PAD_UART3_TX_DATA__UART3_DCE_TX	0x1b0b1
+			MX6UL_PAD_UART3_RX_DATA__UART3_DCE_RX	0x1b0b1
+			MX6UL_PAD_UART3_RTS_B__UART3_DCE_RTS	0x1b0b1
+			MX6UL_PAD_UART3_CTS_B__UART3_DCE_CTS	0x1b0b1
+		>;
+	};
+
+	pinctrl_carlinkit_wifi: carlinkitwifigrp {
+		fsl,pins = <
+			MX6UL_PAD_GPIO1_IO05__GPIO1_IO05	0x17059
+			MX6UL_PAD_GPIO1_IO09__GPIO1_IO09	0x17059
+		>;
+	};
+};
+
+&uart3 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_uart3>;
+	uart-has-rtscts;
+	status = "okay";
+};
+
+/*
+ * The vendor MFi authentication library opens the numbered I2C character
+ * devices directly.  Keep both EVK buses and their aliases, but remove the
+ * EVK-only clients: the dongle's MFi coprocessor is accessed from userspace
+ * and therefore intentionally has no kernel DT child node.
+ */
+&i2c1 {
+	clock-frequency = <100000>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_i2c1>;
+	status = "okay";
+	/delete-node/ magnetometer@e;
+	/delete-node/ fxls8471@1e;
+};
+
+&i2c2 {
+	clock-frequency = <100000>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_i2c2>;
+	status = "okay";
+	/delete-node/ wm8960@1a;
+	/delete-node/ ov5640@3c;
+};
+
+/* Both connectors are dual-role in the vendor board DT. */
+&usbotg1 {
+	dr_mode = "otg";
+	disable-over-current;
+	status = "okay";
+};
+
+&usbotg2 {
+	dr_mode = "otg";
+	disable-over-current;
+	status = "okay";
+};
+
+&pinctrl_usdhc1 {
+	fsl,pins = <
+		MX6UL_PAD_SD1_CMD__USDHC1_CMD		0x17059
+		MX6UL_PAD_SD1_CLK__USDHC1_CLK		0x10071
+		MX6UL_PAD_SD1_DATA0__USDHC1_DATA0	0x17059
+		MX6UL_PAD_SD1_DATA1__USDHC1_DATA1	0x17059
+		MX6UL_PAD_SD1_DATA2__USDHC1_DATA2	0x17059
+		MX6UL_PAD_SD1_DATA3__USDHC1_DATA3	0x17059
+	>;
+};
+
+&usdhc1 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_usdhc1 &pinctrl_carlinkit_wifi>;
+	/delete-property/ pinctrl-1;
+	/delete-property/ pinctrl-2;
+	/delete-property/ cd-gpios;
+	no-1-8-v;
+	non-removable;
+	keep-power-in-suspend;
+	wakeup-source;
+	vmmc-supply = <&reg_sd1_vmmc>;
+	wifi-host;
+	status = "okay";
+};
+
+&usdhc2 {
+	no-1-8-v;
+	non-removable;
+	keep-power-in-suspend;
+	wakeup-source;
+	status = "okay";
+};
+
+&qspi {
+	/delete-node/ n25q256a@0;
+
+	flash0: flash@0 {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		compatible = "mx25l12805d", "jedec,spi-nor";
+		reg = <0>;
+		spi-max-frequency = <29000000>;
+		spi-rx-bus-width = <4>;
+		spi-tx-bus-width = <1>;
+	};
+};
+
+&gpio_spi {
+	registers-default = /bits/ 8 <0xb7>;
+};
+
+/* SIM2 does not exist on i.MX6ULL. */
+/delete-node/ &sim2;
+
+/*
+ * Remove EVK peripherals that are not populated on the dongle.  Besides
+ * preventing pin ownership conflicts, this keeps the DTB inside the fixed
+ * compressed environment-update slot used by the vendor U-Boot.
+ */
+/delete-node/ &can2;
+/delete-node/ &csi;
+/delete-node/ &fec1;
+/delete-node/ &fec2;
+/delete-node/ &lcdif;
+/delete-node/ &pwm1;
+/delete-node/ &pxp;
+/delete-node/ &sai2;
+/delete-node/ &sim1;
+/delete-node/ &tsc;
+/delete-node/ &reg_can_3v3;
+/delete-node/ &reg_peri_3v3;
+
+/ {
+	/delete-node/ backlight-display;
+	/delete-node/ pxp_v4l2;
+	/delete-node/ sound;
+	/delete-node/ sound-wm8960;
+
+	aliases {
+		/delete-property/ ethernet0;
+		/delete-property/ ethernet1;
+		/delete-property/ sai2;
+	};
+};

@@ -1,0 +1,19 @@
+diff --git a/drivers/net/wireless/Kconfig b/drivers/net/wireless/Kconfig
+index c6599594d..d8f9cc812 100644
+--- a/drivers/net/wireless/Kconfig
++++ b/drivers/net/wireless/Kconfig
+@@ -40,3 +40,5 @@ source "drivers/net/wireless/quantenna/Kconfig"
+ source "drivers/net/wireless/virtual/Kconfig"
+ 
+ endif # WLAN
++
++source "drivers/net/wireless/rtl8822bs/Kconfig"
+diff --git a/drivers/net/wireless/Makefile b/drivers/net/wireless/Makefile
+index e1c4141c6..7f004f846 100644
+--- a/drivers/net/wireless/Makefile
++++ b/drivers/net/wireless/Makefile
+@@ -23,3 +23,4 @@ obj-$(CONFIG_WLAN_VENDOR_TI) += ti/
+ obj-$(CONFIG_WLAN_VENDOR_ZYDAS) += zydas/
+ 
+ obj-$(CONFIG_WLAN) += virtual/
++obj-$(CONFIG_RTL8822BS) += rtl8822bs/

@@ -1,0 +1,14 @@
+diff --git a/drivers/usb/chipidea/otg.c b/drivers/usb/chipidea/otg.c
+index 647e98f4e..27137cd41 100644
+--- a/drivers/usb/chipidea/otg.c
++++ b/drivers/usb/chipidea/otg.c
+@@ -188,7 +188,8 @@ void ci_handle_id_switch(struct ci_hdrc *ci)
+ 		ci_role_stop(ci);
+ 
+ 		if (role == CI_ROLE_GADGET &&
+-				IS_ERR(ci->platdata->vbus_extcon.edev))
++		    !(ci->platdata->flags & CI_HDRC_FORCE_VBUS_ACTIVE_ALWAYS) &&
++		    IS_ERR(ci->platdata->vbus_extcon.edev))
+ 			/*
+ 			 * Wait vbus lower than OTGSC_BSV before connecting
+ 			 * to host. If connecting status is from an external

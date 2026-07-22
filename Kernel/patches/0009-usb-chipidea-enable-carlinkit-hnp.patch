@@ -1,0 +1,58 @@
+diff --git a/drivers/usb/chipidea/ci.h b/drivers/usb/chipidea/ci.h
+index a6c3c4222..8eb7eaadc 100644
+--- a/drivers/usb/chipidea/ci.h
++++ b/drivers/usb/chipidea/ci.h
+@@ -13,6 +13,7 @@
+ #include <linux/list.h>
+ #include <linux/irqreturn.h>
+ #include <linux/usb.h>
++#include <linux/usb/chipidea.h>
+ #include <linux/usb/gadget.h>
+ #include <linux/usb/otg-fsm.h>
+ #include <linux/usb/otg.h>
+diff --git a/drivers/usb/chipidea/core.c b/drivers/usb/chipidea/core.c
+index 5f1c321b6..22b333dea 100644
+--- a/drivers/usb/chipidea/core.c
++++ b/drivers/usb/chipidea/core.c
+@@ -732,6 +732,15 @@ static int ci_get_platdata(struct device *dev,
+ 					&platdata->ci_otg_caps);
+ 		if (ret)
+ 			return ret;
++
++		/*
++		 * Carlinkit's bootloader DT marks the i.MX6UL OTG port with
++		 * hnp-disable, but its g_iphone driver requests an HNP role swap
++		 * through inputs/b_bus_req after Apple request 0x51.  Preserve
++		 * the vendor-kernel behaviour despite that stale DT property.
++		 */
++		if (of_device_is_compatible(dev->of_node, "fsl,imx6ul-usb"))
++			platdata->ci_otg_caps.hnp_support = true;
+ 	}
+ 
+ 	if (usb_get_maximum_speed(dev) == USB_SPEED_FULL)
+diff --git a/drivers/usb/chipidea/otg_fsm.c b/drivers/usb/chipidea/otg_fsm.c
+index a09354448..671136b2c 100644
+--- a/drivers/usb/chipidea/otg_fsm.c
++++ b/drivers/usb/chipidea/otg_fsm.c
+@@ -149,11 +149,19 @@ b_bus_req_store(struct device *dev, struct device_attribute *attr,
+ 		ci->fsm.b_bus_req = 1;
+ 		if (ci->fsm.otg->state == OTG_STATE_B_PERIPHERAL) {
+ 			ci->gadget.host_request_flag = 1;
+-			mutex_unlock(&ci->fsm.lock);
+-			return count;
++
++			/*
++			 * Apple request 0x51 is the role-switch hand-off used by
++			 * the Carlinkit fake-iPhone gadget.  Some head units do
++			 * not issue B_HNP_ENABLE or a separately observable bus
++			 * suspend, so provide those inputs before running the FSM.
++			 */
++			ci->gadget.b_hnp_enable = 1;
++			ci->fsm.a_bus_suspend = 1;
+ 		}
+ 	}
+ 
++	/* The vendor kernel also queues the FSM while B_PERIPHERAL. */
+ 	ci_otg_queue_work(ci);
+ 	mutex_unlock(&ci->fsm.lock);
+ 

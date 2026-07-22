@@ -1,0 +1,128 @@
+diff --git a/drivers/bluetooth/Kconfig b/drivers/bluetooth/Kconfig
+index 7df69ccb6..32d67fa42 100644
+--- a/drivers/bluetooth/Kconfig
++++ b/drivers/bluetooth/Kconfig
+@@ -511,4 +511,6 @@ config BT_INTEL_PCIE
+ 
+ 	  Say Y here to compiler support for Intel Bluetooth PCIe device into
+ 	  the kernel or say M to compile it as module (btintel_pcie)
++source "drivers/bluetooth/rtkbt/Kconfig"
++
+ endmenu
+diff --git a/drivers/bluetooth/Makefile b/drivers/bluetooth/Makefile
+index 81856512d..8c2a61be9 100644
+--- a/drivers/bluetooth/Makefile
++++ b/drivers/bluetooth/Makefile
+@@ -53,3 +53,4 @@ hci_uart-$(CONFIG_BT_HCIUART_AG6XX)	+= hci_ag6xx.o
+ hci_uart-$(CONFIG_BT_HCIUART_MRVL)	+= hci_mrvl.o
+ hci_uart-$(CONFIG_BT_HCIUART_AML)	+= hci_aml.o
+ hci_uart-objs				:= $(hci_uart-y)
++obj-$(CONFIG_RTK_HCI_UART)	+= rtkbt/
+diff --git a/include/net/bluetooth/hci.h b/include/net/bluetooth/hci.h
+index cb4c02d00..c63b8fb76 100644
+--- a/include/net/bluetooth/hci.h
++++ b/include/net/bluetooth/hci.h
+@@ -378,6 +378,10 @@ enum {
+ 	 */
+ 	HCI_QUIRK_BROKEN_READ_PAGE_SCAN_TYPE,
+ 
++	HCI_QUIRK_IGNORE_INIT_UNKNOWN_COMMAND,
++	HCI_QUIRK_KEEP_POWERED_AFTER_SETUP,
++	HCI_QUIRK_HIDE_DURING_SETUP,
++
+ 	__HCI_NUM_QUIRKS,
+ };
+ 
+diff --git a/net/bluetooth/hci_core.c b/net/bluetooth/hci_core.c
+index 8ccec73dc..164eed614 100644
+--- a/net/bluetooth/hci_core.c
++++ b/net/bluetooth/hci_core.c
+@@ -807,6 +807,10 @@ int hci_get_dev_list(void __user *arg)
+ 	list_for_each_entry(hdev, &hci_dev_list, list) {
+ 		unsigned long flags = hdev->flags;
+ 
++		if (hci_test_quirk(hdev, HCI_QUIRK_HIDE_DURING_SETUP) &&
++		    hci_dev_test_flag(hdev, HCI_SETUP))
++			continue;
++
+ 		/* When the auto-off is configured it means the transport
+ 		 * is running, but in that case still indicate that the
+ 		 * device is actually down.
+@@ -843,6 +847,12 @@ int hci_get_dev_info(void __user *arg)
+ 	if (!hdev)
+ 		return -ENODEV;
+ 
++	if (hci_test_quirk(hdev, HCI_QUIRK_HIDE_DURING_SETUP) &&
++	    hci_dev_test_flag(hdev, HCI_SETUP)) {
++		hci_dev_put(hdev);
++		return -ENODEV;
++	}
++
+ 	/* When the auto-off is configured it means the transport
+ 	 * is running, but in that case still indicate that the
+ 	 * device is actually down.
+@@ -975,8 +985,20 @@ static void hci_power_on(struct work_struct *work)
+ 		hci_dev_clear_flag(hdev, HCI_AUTO_OFF);
+ 		hci_dev_do_close(hdev);
+ 	} else if (hci_dev_test_flag(hdev, HCI_AUTO_OFF)) {
+-		queue_delayed_work(hdev->req_workqueue, &hdev->power_off,
+-				   HCI_AUTO_OFF_TIMEOUT);
++		if (hci_test_quirk(hdev, HCI_QUIRK_KEEP_POWERED_AFTER_SETUP)) {
++			/*
++			 * Legacy hcid normally claims setup power through
++			 * HCIDEVUP. Keep a successfully initialized controller
++			 * powered for the vendor userspace.
++			 */
++			hci_dev_clear_flag(hdev, HCI_AUTO_OFF);
++			if (!hci_dev_test_flag(hdev, HCI_USER_CHANNEL) &&
++			    !hci_dev_test_flag(hdev, HCI_MGMT))
++				hci_dev_set_flag(hdev, HCI_BONDABLE);
++		} else {
++			queue_delayed_work(hdev->req_workqueue, &hdev->power_off,
++					   HCI_AUTO_OFF_TIMEOUT);
++		}
+ 	}
+ 
+ 	if (hci_dev_test_and_clear_flag(hdev, HCI_SETUP)) {
+diff --git a/net/bluetooth/hci_sync.c b/net/bluetooth/hci_sync.c
+index e94b62844..49b566918 100644
+--- a/net/bluetooth/hci_sync.c
++++ b/net/bluetooth/hci_sync.c
+@@ -4719,7 +4719,9 @@ static int hci_get_mws_transport_config_sync(struct hci_dev *hdev)
+ /* Check for Synchronization Train support */
+ static int hci_read_sync_train_params_sync(struct hci_dev *hdev)
+ {
+-	if (!lmp_sync_train_capable(hdev))
++	/* RTL8822B advertises this command but rejects it as unknown. */
++	if (!lmp_sync_train_capable(hdev) ||
++	    hci_test_quirk(hdev, HCI_QUIRK_IGNORE_INIT_UNKNOWN_COMMAND))
+ 		return 0;
+ 
+ 	return __hci_cmd_sync_status(hdev, HCI_OP_READ_SYNC_TRAIN_PARAMS,
+diff --git a/net/bluetooth/hci_sysfs.c b/net/bluetooth/hci_sysfs.c
+index 041ce9adc..447b8cc35 100644
+--- a/net/bluetooth/hci_sysfs.c
++++ b/net/bluetooth/hci_sysfs.c
+@@ -102,8 +102,22 @@ static ssize_t reset_store(struct device *dev, struct device_attribute *attr,
+ }
+ static DEVICE_ATTR_WO(reset);
+ 
++/*
++ * Legacy Carlinkit userspace polls this attribute before starting hcid.
++ * Keep the old HCI sysfs ABI for the vendor daemon.
++ */
++static ssize_t address_show(struct device *dev,
++			    struct device_attribute *attr, char *buf)
++{
++	struct hci_dev *hdev = to_hci_dev(dev);
++
++	return sysfs_emit(buf, "%pMR\n", &hdev->bdaddr);
++}
++static DEVICE_ATTR_RO(address);
++
+ static struct attribute *bt_host_attrs[] = {
+ 	&dev_attr_reset.attr,
++	&dev_attr_address.attr,
+ 	NULL,
+ };
+ ATTRIBUTE_GROUPS(bt_host);

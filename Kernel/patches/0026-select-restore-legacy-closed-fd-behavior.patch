@@ -1,0 +1,28 @@
+From: Carlinkit Linux port
+Subject: [PATCH] select: restore legacy closed-fd behavior for Carlinkit
+
+Carlinkit's proprietary multithreaded daemons close and replace descriptors
+while another thread is blocked in select(). Upstream commit 68514dacf271
+(stable backport 145407e54fd1) made a concurrently closed descriptor visible
+as ready by adding EPOLLNVAL to the select result masks. On this appliance
+that wakes the old socket path during the Bluetooth-to-Wi-Fi handover and
+causes intermittent CarPlay connection failure.
+
+The proprietary userspace requires the earlier result-mask behavior. Keep the
+modern select implementation, but ignore EPOLLNVAL as pre-5.15.18 did.
+
+--- a/fs/select.c
++++ b/fs/select.c
+@@ -466,11 +466,9 @@ get_max:
+ }
+ 
+-#define POLLIN_SET (EPOLLRDNORM | EPOLLRDBAND | EPOLLIN | EPOLLHUP | EPOLLERR |\
+-			EPOLLNVAL)
+-#define POLLOUT_SET (EPOLLWRBAND | EPOLLWRNORM | EPOLLOUT | EPOLLERR |\
+-			 EPOLLNVAL)
+-#define POLLEX_SET (EPOLLPRI | EPOLLNVAL)
++#define POLLIN_SET (EPOLLRDNORM | EPOLLRDBAND | EPOLLIN | EPOLLHUP | EPOLLERR)
++#define POLLOUT_SET (EPOLLWRBAND | EPOLLWRNORM | EPOLLOUT | EPOLLERR)
++#define POLLEX_SET (EPOLLPRI)
+ 
+ static inline __poll_t select_poll_one(int fd, poll_table *wait, unsigned long in,

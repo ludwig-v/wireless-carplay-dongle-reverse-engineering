@@ -1,0 +1,92 @@
+diff --git a/fs/jffs2/compr_zlib.c b/fs/jffs2/compr_zlib.c
+index 5698dae5d..e5fae8aab 100644
+--- a/fs/jffs2/compr_zlib.c
++++ b/fs/jffs2/compr_zlib.c
+@@ -187,6 +187,30 @@ static int jffs2_zlib_decompress(unsigned char *data_in,
+ 	return 0;
+ }
+ 
++static int jffs2_carlinkit_zlib_decompress(unsigned char *data_in,
++					   unsigned char *cpage_out,
++					   uint32_t srclen, uint32_t destlen)
++{
++	unsigned char *swapped_data;
++	uint32_t i;
++	int ret;
++
++	swapped_data = kmemdup(data_in, srclen, GFP_KERNEL);
++	if (!swapped_data)
++		return -ENOMEM;
++
++	for (i = 0; i < srclen; i++) {
++		if (swapped_data[i] == 0x32)
++			swapped_data[i] = 0x60;
++		else if (swapped_data[i] == 0x60)
++			swapped_data[i] = 0x32;
++	}
++
++	ret = jffs2_zlib_decompress(swapped_data, cpage_out, srclen, destlen);
++	kfree(swapped_data);
++	return ret;
++}
++
+ static struct jffs2_compressor jffs2_zlib_comp = {
+     .priority = JFFS2_ZLIB_PRIORITY,
+     .name = "zlib",
+@@ -200,6 +224,15 @@ static struct jffs2_compressor jffs2_zlib_comp = {
+ #endif
+ };
+ 
++static struct jffs2_compressor jffs2_carlinkit_zlib_comp = {
++	.priority = JFFS2_ZLIB_PRIORITY,
++	.name = "carlinkit-zlib",
++	.compr = JFFS2_COMPR_CARLINKIT_ZLIB,
++	.compress = NULL,
++	.decompress = &jffs2_carlinkit_zlib_decompress,
++	.disabled = 1,
++};
++
+ int __init jffs2_zlib_init(void)
+ {
+     int ret;
+@@ -208,15 +241,24 @@ int __init jffs2_zlib_init(void)
+     if (ret)
+ 	    return ret;
+ 
+-    ret = jffs2_register_compressor(&jffs2_zlib_comp);
+-    if (ret)
+-	    free_workspaces();
++	ret = jffs2_register_compressor(&jffs2_zlib_comp);
++	if (ret) {
++		free_workspaces();
++		return ret;
++	}
++
++	ret = jffs2_register_compressor(&jffs2_carlinkit_zlib_comp);
++	if (ret) {
++		jffs2_unregister_compressor(&jffs2_zlib_comp);
++		free_workspaces();
++	}
+ 
+     return ret;
+ }
+ 
+ void jffs2_zlib_exit(void)
+ {
+-    jffs2_unregister_compressor(&jffs2_zlib_comp);
++	jffs2_unregister_compressor(&jffs2_carlinkit_zlib_comp);
++	jffs2_unregister_compressor(&jffs2_zlib_comp);
+     free_workspaces();
+ }
+diff --git a/include/uapi/linux/jffs2.h b/include/uapi/linux/jffs2.h
+index 637ee4a79..601f0373d 100644
+--- a/include/uapi/linux/jffs2.h
++++ b/include/uapi/linux/jffs2.h
+@@ -45,6 +45,7 @@
+ #define JFFS2_COMPR_COPY	0x04
+ #define JFFS2_COMPR_DYNRUBIN	0x05
+ #define JFFS2_COMPR_ZLIB	0x06
++#define JFFS2_COMPR_CARLINKIT_ZLIB 0x16
+ #define JFFS2_COMPR_LZO		0x07
+ /* Compatibility flags. */
+ #define JFFS2_COMPAT_MASK 0xc000      /* What do to if an unknown nodetype is found */

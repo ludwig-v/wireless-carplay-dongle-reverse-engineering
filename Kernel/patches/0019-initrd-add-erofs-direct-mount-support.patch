@@ -1,0 +1,317 @@
+diff --git a/include/linux/root_dev.h b/include/linux/root_dev.h
+index 847c9a061..3d9507a32 100644
+--- a/include/linux/root_dev.h
++++ b/include/linux/root_dev.h
+@@ -11,6 +11,7 @@ enum {
+ 	Root_CIFS = MKDEV(UNNAMED_MAJOR, 254),
+ 	Root_Generic = MKDEV(UNNAMED_MAJOR, 253),
+ 	Root_RAM0 = MKDEV(RAMDISK_MAJOR, 0),
++	Root_INITRD = MKDEV(INITRD_MAJOR, 0),
+ };
+ 
+ extern dev_t ROOT_DEV;
+diff --git a/include/uapi/linux/major.h b/include/uapi/linux/major.h
+index 4e5f2b3a3..90c054589 100644
+--- a/include/uapi/linux/major.h
++++ b/include/uapi/linux/major.h
+@@ -175,4 +175,6 @@
+ #define BLOCK_EXT_MAJOR		259
+ #define SCSI_OSD_MAJOR		260	/* open-osd's OSD scsi device */
+ 
++#define INITRD_MAJOR		420
++
+ #endif
+diff --git a/init/Makefile b/init/Makefile
+index d6f75d890..5611da162 100644
+--- a/init/Makefile
++++ b/init/Makefile
+@@ -18,6 +18,7 @@ obj-y                          += init_task.o
+ 
+ mounts-y			:= do_mounts.o
+ mounts-$(CONFIG_BLK_DEV_RAM)	+= do_mounts_rd.o
++mounts-$(CONFIG_BLK_DEV_RAM)	+= initrd_blk.o
+ mounts-$(CONFIG_BLK_DEV_INITRD)	+= do_mounts_initrd.o
+ 
+ #
+diff --git a/init/do_mounts.c b/init/do_mounts.c
+index 6af29da88..1b74c7b80 100644
+--- a/init/do_mounts.c
++++ b/init/do_mounts.c
+@@ -446,6 +446,8 @@ static dev_t __init parse_root_device(char *root_device_name)
+ 		return Root_CIFS;
+ 	if (strcmp(root_device_name, "/dev/ram") == 0)
+ 		return Root_RAM0;
++	if (strcmp(root_device_name, "/dev/initrd") == 0)
++		return Root_INITRD;
+ 
+ 	error = early_lookup_bdev(root_device_name, &dev);
+ 	if (error) {
+@@ -458,6 +460,11 @@ static dev_t __init parse_root_device(char *root_device_name)
+ 	return dev;
+ }
+ 
++bool __init is_root_initrd(void)
++{
++	return strcmp(saved_root_name, "/dev/initrd") == 0;
++}
++
+ /*
+  * Prepare the namespace - decide what/where to mount, load ramdisks, etc.
+  */
+diff --git a/init/do_mounts.h b/init/do_mounts.h
+index 6069ea3eb..c9d20a338 100644
+--- a/init/do_mounts.h
++++ b/init/do_mounts.h
+@@ -50,3 +50,5 @@ static inline void init_flush_fput(void)
+ 	flush_delayed_fput();
+ 	task_work_run();
+ }
++
++bool __init is_root_initrd(void);
+diff --git a/init/do_mounts_initrd.c b/init/do_mounts_initrd.c
+index f6867bad0..9b93cbe92 100644
+--- a/init/do_mounts_initrd.c
++++ b/init/do_mounts_initrd.c
+@@ -136,6 +136,11 @@ static void __init handle_initrd(char *root_device_name)
+ bool __init initrd_load(char *root_device_name)
+ {
+ 	if (mount_initrd) {
++		if (ROOT_DEV == Root_INITRD) {
++			pr_info("RAMDISK: mounting /dev/initrd directly\n");
++			return false;
++		}
++
+ 		create_dev("/dev/ram", Root_RAM0);
+ 		/*
+ 		 * Load the initrd data into /dev/ram0. Execute it as initrd
+diff --git a/init/do_mounts_rd.c b/init/do_mounts_rd.c
+index 19d9f33dc..e013195ca 100644
+--- a/init/do_mounts_rd.c
++++ b/init/do_mounts_rd.c
+@@ -12,6 +12,7 @@
+ 
+ #include "do_mounts.h"
+ #include "../fs/squashfs/squashfs_fs.h"
++#include "../fs/erofs/erofs_fs.h"
+ 
+ #include <linux/decompress/generic.h>
+ 
+@@ -48,6 +49,7 @@ static int __init crd_load(decompress_fn deco);
+  *	romfs
+  *	cramfs
+  *	squashfs
++ *	erofs
+  *	gzip
+  *	bzip2
+  *	lzma
+@@ -64,6 +66,7 @@ identify_ramdisk_image(struct file *file, loff_t pos,
+ 	struct romfs_super_block *romfsb;
+ 	struct cramfs_super *cramfsb;
+ 	struct squashfs_super_block *squashfsb;
++	struct erofs_super_block *erofsb;
+ 	int nblocks = -1;
+ 	unsigned char *buf;
+ 	const char *compress_name;
+@@ -78,6 +81,7 @@ identify_ramdisk_image(struct file *file, loff_t pos,
+ 	romfsb = (struct romfs_super_block *) buf;
+ 	cramfsb = (struct cramfs_super *) buf;
+ 	squashfsb = (struct squashfs_super_block *) buf;
++	erofsb = (struct erofs_super_block *) buf;
+ 	memset(buf, 0xe5, size);
+ 
+ 	/*
+@@ -166,6 +170,17 @@ identify_ramdisk_image(struct file *file, loff_t pos,
+ 		goto done;
+ 	}
+ 
++	/* EROFS places its superblock at EROFS_SUPER_OFFSET. */
++	pos = start_block * BLOCK_SIZE + EROFS_SUPER_OFFSET;
++	kernel_read(file, buf, size, &pos);
++	if (le32_to_cpu(erofsb->magic) == EROFS_SUPER_MAGIC_V1) {
++		pr_notice("RAMDISK: erofs filesystem found at block %d\n",
++			  start_block);
++		nblocks = DIV_ROUND_UP(i_size_read(file_inode(file)),
++				       BLOCK_SIZE);
++		goto done;
++	}
++
+ 	printk(KERN_NOTICE
+ 	       "RAMDISK: Couldn't find valid RAM disk image starting at %d.\n",
+ 	       start_block);
+diff --git a/init/initramfs.c b/init/initramfs.c
+index 6ddbfb17f..c7e60c6f4 100644
+--- a/init/initramfs.c
++++ b/init/initramfs.c
+@@ -700,6 +700,11 @@ static void __init populate_initrd_image(char *err)
+ 	struct file *file;
+ 	loff_t pos = 0;
+ 
++	if (is_root_initrd()) {
++		pr_info("RAMDISK: retaining image for direct /dev/initrd mount\n");
++		return;
++	}
++
+ 	printk(KERN_INFO "rootfs image is not initramfs (%s); looks like an initrd\n",
+ 			err);
+ 	file = filp_open("/initrd.image", O_WRONLY|O_CREAT|O_LARGEFILE, 0700);
+@@ -742,21 +747,22 @@ static void __init do_populate_rootfs(void *unused, async_cookie_t cookie)
+ done:
+ 	security_initramfs_populated();
+ 
++	do_retain_initrd |= is_root_initrd();
++
+ 	/*
+ 	 * If the initrd region is overlapped with crashkernel reserved region,
+ 	 * free only memory that is not part of crashkernel region.
+ 	 */
+ 	if (!do_retain_initrd && initrd_start && !kexec_free_initrd()) {
+ 		free_initrd_mem(initrd_start, initrd_end);
++		initrd_start = 0;
++		initrd_end = 0;
+ 	} else if (do_retain_initrd && initrd_start) {
+ 		bin_attr_initrd.size = initrd_end - initrd_start;
+ 		bin_attr_initrd.private = (void *)initrd_start;
+ 		if (sysfs_create_bin_file(firmware_kobj, &bin_attr_initrd))
+ 			pr_err("Failed to create initrd sysfs file");
+ 	}
+-	initrd_start = 0;
+-	initrd_end = 0;
+-
+ 	init_flush_fput();
+ }
+ 
+diff --git a/init/initrd_blk.c b/init/initrd_blk.c
+new file mode 100644
+index 000000000..8d59b8c12
+--- /dev/null
++++ b/init/initrd_blk.c
+@@ -0,0 +1,129 @@
++// SPDX-License-Identifier: GPL-2.0-only
++/*
++ * Read-only block-device view of the retained boot initrd.
++ *
++ * This allows an EROFS image supplied as an initrd to be mounted directly
++ * with root=/dev/initrd instead of first copying it into /dev/ram0.
++ */
++#include <linux/bio.h>
++#include <linux/blkdev.h>
++#include <linux/init.h>
++#include <linux/initrd.h>
++#include <linux/major.h>
++#include <linux/module.h>
++#include <linux/slab.h>
++
++struct initrd_device {
++	struct gendisk *disk;
++	phys_addr_t size;
++};
++
++static struct initrd_device *initrd_dev;
++
++static void initrd_submit_bio(struct bio *bio)
++{
++	struct initrd_device *dev = bio->bi_bdev->bd_disk->private_data;
++	struct bvec_iter iter;
++	struct bio_vec bvec;
++	sector_t sector = bio->bi_iter.bi_sector;
++
++	if (!initrd_start || op_is_write(bio->bi_opf)) {
++		bio_io_error(bio);
++		return;
++	}
++
++	bio_for_each_segment(bvec, bio, iter) {
++		phys_addr_t offset = sector << SECTOR_SHIFT;
++		void *mem;
++
++		if (offset + bvec.bv_len > dev->size) {
++			bio_io_error(bio);
++			return;
++		}
++
++		mem = kmap_local_page(bvec.bv_page) + bvec.bv_offset;
++		memcpy(mem, (void *)(initrd_start + offset), bvec.bv_len);
++		kunmap_local(mem);
++		flush_dcache_page(bvec.bv_page);
++		sector += bvec.bv_len >> SECTOR_SHIFT;
++	}
++
++	bio_endio(bio);
++}
++
++static const struct block_device_operations initrd_fops = {
++	.owner = THIS_MODULE,
++	.submit_bio = initrd_submit_bio,
++};
++
++static int __init initrd_blk_init(void)
++{
++	struct queue_limits limits = {
++		.logical_block_size = SECTOR_SIZE,
++		.physical_block_size = PAGE_SIZE,
++		.features = BLK_FEAT_SYNCHRONOUS | BLK_FEAT_NOWAIT,
++	};
++	struct gendisk *disk;
++	phys_addr_t size;
++	int error;
++
++	if (!initrd_start || !initrd_end)
++		return -ENODEV;
++
++	size = initrd_end - initrd_start;
++	if (size < SECTOR_SIZE)
++		return -EINVAL;
++
++	initrd_dev = kzalloc(sizeof(*initrd_dev), GFP_KERNEL);
++	if (!initrd_dev)
++		return -ENOMEM;
++
++	disk = blk_alloc_disk(&limits, NUMA_NO_NODE);
++	if (IS_ERR(disk)) {
++		error = PTR_ERR(disk);
++		goto free_device;
++	}
++
++	initrd_dev->disk = disk;
++	initrd_dev->size = size;
++	disk->major = INITRD_MAJOR;
++	disk->first_minor = 0;
++	disk->minors = 1;
++	disk->fops = &initrd_fops;
++	disk->private_data = initrd_dev;
++	strscpy(disk->disk_name, "initrd", DISK_NAME_LEN);
++	set_capacity(disk, size >> SECTOR_SHIFT);
++
++	error = add_disk(disk);
++	if (error)
++		goto put_disk;
++
++	pr_info("initrd_blk: registered read-only /dev/initrd (%llu KiB)\n",
++		(unsigned long long)(size >> 10));
++	return 0;
++
++put_disk:
++	put_disk(disk);
++free_device:
++	kfree(initrd_dev);
++	initrd_dev = NULL;
++	return error;
++}
++
++static void __exit initrd_blk_exit(void)
++{
++	if (!initrd_dev)
++		return;
++
++	del_gendisk(initrd_dev->disk);
++	put_disk(initrd_dev->disk);
++	kfree(initrd_dev);
++	initrd_dev = NULL;
++}
++
++module_init(initrd_blk_init);
++module_exit(initrd_blk_exit);
++
++MODULE_LICENSE("GPL");
++MODULE_DESCRIPTION("Retained initrd block device");
++MODULE_ALIAS_BLOCKDEV_MAJOR(INITRD_MAJOR);

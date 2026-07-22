@@ -1,0 +1,38 @@
+
+menu "Realtek Bluetooth UART device drivers"
+	depends on BT
+
+config RTK_HCI_UART
+	tristate "Realtek HCI UART driver"
+	depends on TTY
+	help
+	  Bluetooth HCI UART driver.
+	  This driver is required if you want to use Bluetooth devices with
+	  serial port interface. You will also need this driver if you have 
+	  UART based Bluetooth PCMCIA and CF devices like Xircom Credit Card 
+	  adapter and BrainBoxes Bluetooth PC Card.
+
+	  Say Y here to compile support for Bluetooth UART devices into the
+	  kernel or say M to compile it as module (rtk_hci_uart).
+
+config BT_HCIUART_RTKH4
+	bool "UART (H4) protocol support"
+	depends on RTK_HCI_UART 
+	help
+	  UART (H4) is serial protocol for communication between Bluetooth 
+	  device and host. This protocol is required for most Bluetooth devices 
+	  with UART interface, including PCMCIA and CF cards. 
+
+	  Say Y here to compile support for HCI UART (H4) protocol.
+
+config BT_HCIUART_RTKH5
+	bool "Realtek H5 protocol support"
+	depends on RTK_HCI_UART 
+	help
+	  Realtek H5 is serial protocol for communication 
+	  between Realtek Bluetooth device and host. This protocol is required for 
+	  Realtek uart h5 bluetooth controller
+
+	  Say Y here to compile support for Realtek HCI H5 protocol.
+
+endmenu

@@ -1,0 +1,12 @@
+diff --git a/drivers/bluetooth/btbcm.c b/drivers/bluetooth/btbcm.c
+index 3a3a56ddb..5844ba154 100644
+--- a/drivers/bluetooth/btbcm.c
++++ b/drivers/bluetooth/btbcm.c
+@@ -515,6 +515,7 @@ static const struct bcm_subver_table bcm_uart_subver_table[] = {
+ 	{ 0x4106, "BCM4335A0"	},	/* 002.001.006 */
+ 	{ 0x410c, "BCM43430B0"	},	/* 002.001.012 */
+ 	{ 0x2119, "BCM4373A0"	},	/* 001.001.025 */
++	{ 0x240f, "BCM4358A3"	},	/* 001.004.015 */
+ 	{ }
+ };
+ 

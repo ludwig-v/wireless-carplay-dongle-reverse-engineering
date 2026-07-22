@@ -1,0 +1,124 @@
+diff --git a/drivers/usb/gadget/Kconfig b/drivers/usb/gadget/Kconfig
+index 76521555e..02fc1c3cd 100644
+--- a/drivers/usb/gadget/Kconfig
++++ b/drivers/usb/gadget/Kconfig
+@@ -153,6 +153,27 @@ config USB_F_ACM
+ config USB_F_SS_LB
+ 	tristate
+ 
++config USB_F_PTP
++	tristate
++	select USB_LIBCOMPOSITE
++	help
++	  Carlinkit PTP-compatible source/sink function.
++
++config USB_ANDROID_CARLINKIT
++	bool "Carlinkit Android iAP2/NCM gadget"
++	select USB_LIBCOMPOSITE
++	select USB_U_ETHER
++	select USB_F_NCM
++	help
++	  Built-in Android-style iAP2 and CDC-NCM composite gadget.
++
++config USB_G_IPHONE
++	tristate "Carlinkit iPhone/iAP2 gadget"
++	select USB_LIBCOMPOSITE
++	select USB_F_PTP
++	help
++	  Apple-compatible PTP, UAC1 and iAP2 composite gadget.
++
+ config USB_U_SERIAL
+ 	tristate
+ 
+diff --git a/drivers/usb/gadget/composite.c b/drivers/usb/gadget/composite.c
+index 5b3866909..512d8be70 100644
+--- a/drivers/usb/gadget/composite.c
++++ b/drivers/usb/gadget/composite.c
+@@ -1175,8 +1175,8 @@ int usb_add_config(struct usb_composite_dev *cdev,
+ }
+ EXPORT_SYMBOL_GPL(usb_add_config);
+ 
+-static void remove_config(struct usb_composite_dev *cdev,
+-			      struct usb_configuration *config)
++void usb_remove_config(struct usb_composite_dev *cdev,
++		       struct usb_configuration *config)
+ {
+ 	while (!list_empty(&config->functions)) {
+ 		struct usb_function		*f;
+@@ -1193,6 +1193,7 @@ static void remove_config(struct usb_composite_dev *cdev,
+ 			/* may free memory for "c" */
+ 	}
+ }
++EXPORT_SYMBOL_GPL(usb_remove_config);
+ 
+ /*-------------------------------------------------------------------------*/
+ 
+@@ -2344,7 +2345,7 @@ static void __composite_unbind(struct usb_gadget *gadget, bool unbind_driver)
+ 		struct usb_configuration	*c;
+ 		c = list_first_entry(&cdev->configs,
+ 				struct usb_configuration, list);
+-		remove_config(cdev, c);
++		usb_remove_config(cdev, c);
+ 	}
+ 	if (cdev->driver->unbind && unbind_driver)
+ 		cdev->driver->unbind(cdev);
+diff --git a/drivers/usb/gadget/function/Makefile b/drivers/usb/gadget/function/Makefile
+index 7ce163727..4c1a4f8b8 100644
+--- a/drivers/usb/gadget/function/Makefile
++++ b/drivers/usb/gadget/function/Makefile
+@@ -11,6 +11,7 @@ usb_f_acm-y			:= f_acm.o
+ obj-$(CONFIG_USB_F_ACM)		+= usb_f_acm.o
+ usb_f_ss_lb-y			:= f_loopback.o f_sourcesink.o
+ obj-$(CONFIG_USB_F_SS_LB)	+= usb_f_ss_lb.o
++obj-$(CONFIG_USB_F_PTP)		+= f_ptp.o
+ obj-$(CONFIG_USB_U_SERIAL)	+= u_serial.o
+ usb_f_serial-y			:= f_serial.o
+ obj-$(CONFIG_USB_F_SERIAL)	+= usb_f_serial.o
+diff --git a/drivers/usb/gadget/function/f_ncm.c b/drivers/usb/gadget/function/f_ncm.c
+index 834d64e22..efe070a03 100644
+--- a/drivers/usb/gadget/function/f_ncm.c
++++ b/drivers/usb/gadget/function/f_ncm.c
+@@ -1682,7 +1682,8 @@ static struct usb_function_instance *ncm_alloc_inst(void)
+ 
+ 	mutex_init(&opts->lock);
+ 	opts->func_inst.free_func_inst = ncm_free_inst;
+-	opts->net = gether_setup_default();
++	/* Carlinkit userspace configures the gadget link as ncm0. */
++	opts->net = gether_setup_name_default("ncm");
+ 	if (IS_ERR(opts->net)) {
+ 		struct net_device *net = opts->net;
+ 		kfree(opts);
+diff --git a/drivers/usb/gadget/legacy/Makefile b/drivers/usb/gadget/legacy/Makefile
+index 4d864bf82..ec189f3bb 100644
+--- a/drivers/usb/gadget/legacy/Makefile
++++ b/drivers/usb/gadget/legacy/Makefile
+@@ -22,6 +22,7 @@ g_dbgp-y			:= dbgp.o
+ g_nokia-y			:= nokia.o
+ g_webcam-y			:= webcam.o
+ g_ncm-y				:= ncm.o
++g_iphone-y			:= iphone.o
+ g_acm_ms-y			:= acm_ms.o
+ g_tcm_usb_gadget-y		:= tcm_usb_gadget.o
+ 
+@@ -41,6 +42,8 @@ obj-$(CONFIG_USB_G_MULTI)	+= g_multi.o
+ obj-$(CONFIG_USB_G_NOKIA)	+= g_nokia.o
+ obj-$(CONFIG_USB_G_WEBCAM)	+= g_webcam.o
+ obj-$(CONFIG_USB_G_NCM)		+= g_ncm.o
++obj-$(CONFIG_USB_G_IPHONE)	+= g_iphone.o
++obj-$(CONFIG_USB_ANDROID_CARLINKIT) += android_carlinkit.o
+ obj-$(CONFIG_USB_G_ACM_MS)	+= g_acm_ms.o
+ obj-$(CONFIG_USB_GADGET_TARGET)	+= tcm_usb_gadget.o
+ obj-$(CONFIG_USB_RAW_GADGET)	+= raw_gadget.o
+diff --git a/include/linux/usb/composite.h b/include/linux/usb/composite.h
+index c18041faf..b285bc902 100644
+--- a/include/linux/usb/composite.h
++++ b/include/linux/usb/composite.h
+@@ -596,6 +596,8 @@ struct usb_configuration *usb_get_config(struct usb_composite_dev *cdev,
+ 		int val);
+ int usb_add_config_only(struct usb_composite_dev *cdev,
+ 		struct usb_configuration *config);
++void usb_remove_config(struct usb_composite_dev *cdev,
++		       struct usb_configuration *config);
+ void usb_remove_function(struct usb_configuration *c, struct usb_function *f);
+ 
+ #define DECLARE_USB_FUNCTION(_name, _inst_alloc, _func_alloc)		\

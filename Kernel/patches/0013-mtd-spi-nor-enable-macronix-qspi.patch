@@ -1,0 +1,28 @@
+diff --git a/drivers/mtd/spi-nor/macronix.c b/drivers/mtd/spi-nor/macronix.c
+index e97f5cbd9..7199eb852 100644
+--- a/drivers/mtd/spi-nor/macronix.c
++++ b/drivers/mtd/spi-nor/macronix.c
+@@ -130,9 +130,13 @@ static const struct flash_info macronix_nor_parts[] = {
+ 		.size = SZ_8M,
+ 		.no_sfdp_flags = SECT_4K,
+ 	}, {
+-		/* MX25L12805D */
+ 		.id = SNOR_ID(0xc2, 0x20, 0x18),
+-		.flags = SPI_NOR_HAS_LOCK | SPI_NOR_4BIT_BP,
++		.name = "mx25l12805d",
++		.size = SZ_16M,
++		.flags = SPI_NOR_HAS_LOCK | SPI_NOR_4BIT_BP |
++			 SPI_NOR_SKIP_SFDP,
++		.no_sfdp_flags = SECT_4K | SPI_NOR_DUAL_READ |
++				 SPI_NOR_QUAD_READ,
+ 	}, {
+ 		/* MX25L25635E, MX25L25645G */
+ 		.id = SNOR_ID(0xc2, 0x20, 0x19),
+@@ -184,6 +188,7 @@ static const struct flash_info macronix_nor_parts[] = {
+ 		.id = SNOR_ID(0xc2, 0x25, 0x38),
+ 		.name = "mx25u12835f",
+ 		.size = SZ_16M,
++		.flags = SPI_NOR_SKIP_SFDP,
+ 		.no_sfdp_flags = SECT_4K | SPI_NOR_DUAL_READ | SPI_NOR_QUAD_READ,
+ 	}, {
+ 		/* MX25U51245G */

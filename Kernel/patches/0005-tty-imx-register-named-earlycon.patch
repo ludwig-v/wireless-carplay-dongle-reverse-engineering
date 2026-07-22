@@ -1,0 +1,11 @@
+diff --git a/drivers/tty/serial/imx_earlycon.c b/drivers/tty/serial/imx_earlycon.c
+index 63f7f7f2e..f21cf5664 100644
+--- a/drivers/tty/serial/imx_earlycon.c
++++ b/drivers/tty/serial/imx_earlycon.c
+@@ -44,6 +44,8 @@ imx_console_early_setup(struct earlycon_device *dev, const char *opt)
+ 	return 0;
+ }
++EARLYCON_DECLARE(imx21, imx_console_early_setup);
++EARLYCON_DECLARE(imx6q, imx_console_early_setup);
+ OF_EARLYCON_DECLARE(ec_imx6q, "fsl,imx6q-uart", imx_console_early_setup);
+ OF_EARLYCON_DECLARE(ec_imx21, "fsl,imx21-uart", imx_console_early_setup);
